@@ -1,0 +1,12 @@
+# Arquivos objeto compilados
+*.slo
+*.lo
+*.o
+*.obj
+
+# Executáveis
+*.exe
+*.out
+*.app
+
+.gitkeep
