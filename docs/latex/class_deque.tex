@@ -1,0 +1,183 @@
+\hypertarget{class_deque}{}\doxysection{Deque\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_deque}\index{Deque$<$ T $>$@{Deque$<$ T $>$}}
+
+
+Classe para representar um deque.  
+
+
+
+
+{\ttfamily \#include $<$deque.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_deque_ad962e9c9ddb2c3290ea91f796d7051bc}{Deque}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_deque}{Deque}}. Inicializa o deque com nós sentinelas vazios. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_deque_a7a214bb3ef8cb676f9ef0e9825ae4b1b}{$\sim$\+Deque}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_deque}{Deque}}. Libera a memória ocupada pelos nós do deque. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_deque_a5a5cd3d73d5fce7b5fdf446a6f8a6850}{get\+Tamanho}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o tamanho atual do deque. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_deque_a805b4e677528144b31ffe200815c88f4}{is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em Verifica se o deque está vazio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_deque_a30a44a9f19688bb642d8e68e12e49b1d}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Remove todos os elementos do deque. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_deque_a83104f36739e9fe26dc2e4244fa7f37b}{insert\+Front}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Insere um elemento no início do deque. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_deque_ac058cd4d0204a8b0acbbf4e0a1131144}{insert\+Back}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Insere um elemento no final do deque. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_deque_a05c04fe476637b82031c3650520acdae}{remove\+Front}} ()
+\begin{DoxyCompactList}\small\item\em Remove o elemento do início do deque. Se o deque estiver vazio, nenhum elemento será removido. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_deque_ac0febed308f1c00f147f2e45fa823f4a}{remove\+Back}} ()
+\begin{DoxyCompactList}\small\item\em Remove o elemento do final do deque. Se o deque estiver vazio, nenhum elemento será removido. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_deque_ab1cc5599cec9b0ace56bf4d07de71fa8}{print\+Deque}} () const
+\begin{DoxyCompactList}\small\item\em Imprime os elementos do deque. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Deque$<$ T $>$}
+Classe para representar um deque. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & O tipo dos elementos do deque. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_deque_ad962e9c9ddb2c3290ea91f796d7051bc}\label{class_deque_ad962e9c9ddb2c3290ea91f796d7051bc}} 
+\index{Deque$<$ T $>$@{Deque$<$ T $>$}!Deque@{Deque}}
+\index{Deque@{Deque}!Deque$<$ T $>$@{Deque$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Deque()}{Deque()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_deque}{Deque}}$<$ T $>$\mbox{\hyperlink{class_deque}{\+::\+Deque}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_deque}{Deque}}. Inicializa o deque com nós sentinelas vazios. 
+
+\mbox{\Hypertarget{class_deque_a7a214bb3ef8cb676f9ef0e9825ae4b1b}\label{class_deque_a7a214bb3ef8cb676f9ef0e9825ae4b1b}} 
+\index{Deque$<$ T $>$@{Deque$<$ T $>$}!````~Deque@{$\sim$Deque}}
+\index{````~Deque@{$\sim$Deque}!Deque$<$ T $>$@{Deque$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Deque()}{~Deque()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_deque}{Deque}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_deque}{Deque}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destrutor da classe \mbox{\hyperlink{class_deque}{Deque}}. Libera a memória ocupada pelos nós do deque. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_deque_a30a44a9f19688bb642d8e68e12e49b1d}\label{class_deque_a30a44a9f19688bb642d8e68e12e49b1d}} 
+\index{Deque$<$ T $>$@{Deque$<$ T $>$}!clear@{clear}}
+\index{clear@{clear}!Deque$<$ T $>$@{Deque$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_deque}{Deque}}$<$ T $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove todos os elementos do deque. 
+
+\mbox{\Hypertarget{class_deque_a5a5cd3d73d5fce7b5fdf446a6f8a6850}\label{class_deque_a5a5cd3d73d5fce7b5fdf446a6f8a6850}} 
+\index{Deque$<$ T $>$@{Deque$<$ T $>$}!getTamanho@{getTamanho}}
+\index{getTamanho@{getTamanho}!Deque$<$ T $>$@{Deque$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getTamanho()}{getTamanho()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{class_deque}{Deque}}$<$ T $>$\+::get\+Tamanho (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém o tamanho atual do deque. 
+
+\begin{DoxyReturn}{Returns}
+O tamanho do deque. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_deque_ac058cd4d0204a8b0acbbf4e0a1131144}\label{class_deque_ac058cd4d0204a8b0acbbf4e0a1131144}} 
+\index{Deque$<$ T $>$@{Deque$<$ T $>$}!insertBack@{insertBack}}
+\index{insertBack@{insertBack}!Deque$<$ T $>$@{Deque$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insertBack()}{insertBack()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_deque}{Deque}}$<$ T $>$\+::insert\+Back (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insere um elemento no final do deque. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & O valor do elemento a ser inserido. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_deque_a83104f36739e9fe26dc2e4244fa7f37b}\label{class_deque_a83104f36739e9fe26dc2e4244fa7f37b}} 
+\index{Deque$<$ T $>$@{Deque$<$ T $>$}!insertFront@{insertFront}}
+\index{insertFront@{insertFront}!Deque$<$ T $>$@{Deque$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insertFront()}{insertFront()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_deque}{Deque}}$<$ T $>$\+::insert\+Front (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insere um elemento no início do deque. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & O valor do elemento a ser inserido. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_deque_a805b4e677528144b31ffe200815c88f4}\label{class_deque_a805b4e677528144b31ffe200815c88f4}} 
+\index{Deque$<$ T $>$@{Deque$<$ T $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Deque$<$ T $>$@{Deque$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_deque}{Deque}}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Verifica se o deque está vazio. 
+
+\begin{DoxyReturn}{Returns}
+true se o deque está vazio, false caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_deque_ab1cc5599cec9b0ace56bf4d07de71fa8}\label{class_deque_ab1cc5599cec9b0ace56bf4d07de71fa8}} 
+\index{Deque$<$ T $>$@{Deque$<$ T $>$}!printDeque@{printDeque}}
+\index{printDeque@{printDeque}!Deque$<$ T $>$@{Deque$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{printDeque()}{printDeque()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_deque}{Deque}}$<$ T $>$\+::print\+Deque (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Imprime os elementos do deque. 
+
+\mbox{\Hypertarget{class_deque_ac0febed308f1c00f147f2e45fa823f4a}\label{class_deque_ac0febed308f1c00f147f2e45fa823f4a}} 
+\index{Deque$<$ T $>$@{Deque$<$ T $>$}!removeBack@{removeBack}}
+\index{removeBack@{removeBack}!Deque$<$ T $>$@{Deque$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeBack()}{removeBack()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_deque}{Deque}}$<$ T $>$\+::remove\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove o elemento do final do deque. Se o deque estiver vazio, nenhum elemento será removido. 
+
+\mbox{\Hypertarget{class_deque_a05c04fe476637b82031c3650520acdae}\label{class_deque_a05c04fe476637b82031c3650520acdae}} 
+\index{Deque$<$ T $>$@{Deque$<$ T $>$}!removeFront@{removeFront}}
+\index{removeFront@{removeFront}!Deque$<$ T $>$@{Deque$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeFront()}{removeFront()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_deque}{Deque}}$<$ T $>$\+::remove\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove o elemento do início do deque. Se o deque estiver vazio, nenhum elemento será removido. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{deque_8hpp}{deque.\+hpp}}\end{DoxyCompactItemize}

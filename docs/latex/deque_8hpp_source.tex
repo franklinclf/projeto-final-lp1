@@ -1,0 +1,126 @@
+\hypertarget{deque_8hpp_source}{}\doxysection{deque.\+hpp}
+\label{deque_8hpp_source}\index{include/deque.hpp@{include/deque.hpp}}
+\mbox{\hyperlink{deque_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ \_\_DEQUE\_\_}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ \_\_DEQUE\_\_}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_deque}{Deque}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{struct\ }Node}
+\DoxyCodeLine{00025\ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ T\ data;\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ Node\ *anterior;\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ Node\ *proximo;\ }
+\DoxyCodeLine{00029\ \ \ \ \ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ Node\ *cabeca;\ }
+\DoxyCodeLine{00032\ \ \ \ \ Node\ *cauda;\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ tamanho;\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_deque_ad962e9c9ddb2c3290ea91f796d7051bc}{Deque}}()}
+\DoxyCodeLine{00041\ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ cabeca\ =\ \textcolor{keyword}{new}\ Node();}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ cauda\ =\ \textcolor{keyword}{new}\ Node();}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ cabeca-\/>proximo\ =\ cauda;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ cauda-\/>anterior\ =\ cabeca;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ tamanho\ =\ 0;}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_deque_a7a214bb3ef8cb676f9ef0e9825ae4b1b}{\string~Deque}}()}
+\DoxyCodeLine{00054\ \ \ \ \ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_deque_a30a44a9f19688bb642d8e68e12e49b1d}{clear}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ cabeca;}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ cauda;}
+\DoxyCodeLine{00058\ \ \ \ \ \}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_deque_a5a5cd3d73d5fce7b5fdf446a6f8a6850}{getTamanho}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00066\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ tamanho;}
+\DoxyCodeLine{00068\ \ \ \ \ \}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_deque_a805b4e677528144b31ffe200815c88f4}{isEmpty}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00076\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ tamanho\ ==\ 0;}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_deque_a30a44a9f19688bb642d8e68e12e49b1d}{clear}}()}
+\DoxyCodeLine{00084\ \ \ \ \ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!\mbox{\hyperlink{class_deque_a805b4e677528144b31ffe200815c88f4}{isEmpty}}())}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_deque_a05c04fe476637b82031c3650520acdae}{removeFront}}();}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00089\ \ \ \ \ \}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_deque_a83104f36739e9fe26dc2e4244fa7f37b}{insertFront}}(\textcolor{keyword}{const}\ T\ \&value)}
+\DoxyCodeLine{00097\ \ \ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ Node\ *novoNode\ =\ \textcolor{keyword}{new}\ Node();}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ novoNode-\/>data\ =\ value;}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ novoNode-\/>proximo\ =\ cabeca-\/>proximo;}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ novoNode-\/>anterior\ =\ cabeca;}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ cabeca-\/>proximo-\/>anterior\ =\ novoNode;}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ cabeca-\/>proximo\ =\ novoNode;}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ tamanho++;}
+\DoxyCodeLine{00107\ \ \ \ \ \}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_deque_ac058cd4d0204a8b0acbbf4e0a1131144}{insertBack}}(\textcolor{keyword}{const}\ T\ \&value)}
+\DoxyCodeLine{00115\ \ \ \ \ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ Node\ *novoNode\ =\ \textcolor{keyword}{new}\ Node();}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ novoNode-\/>data\ =\ value;}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ novoNode-\/>proximo\ =\ cauda;}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ novoNode-\/>anterior\ =\ cauda-\/>anterior;}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ cauda-\/>anterior-\/>proximo\ =\ novoNode;}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ cauda-\/>anterior\ =\ novoNode;}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ tamanho++;}
+\DoxyCodeLine{00125\ \ \ \ \ \}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_deque_a05c04fe476637b82031c3650520acdae}{removeFront}}()}
+\DoxyCodeLine{00132\ \ \ \ \ \{}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_deque_a805b4e677528144b31ffe200815c88f4}{isEmpty}}())}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ Node\ *nodeToRemove\ =\ cabeca-\/>proximo;}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ cabeca-\/>proximo\ =\ nodeToRemove-\/>proximo;}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ nodeToRemove-\/>proximo-\/>anterior\ =\ cabeca;}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ nodeToRemove;}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ tamanho-\/-\/;}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00142\ \ \ \ \ \}}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_deque_ac0febed308f1c00f147f2e45fa823f4a}{removeBack}}()}
+\DoxyCodeLine{00149\ \ \ \ \ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_deque_a805b4e677528144b31ffe200815c88f4}{isEmpty}}())}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ Node\ *nodeToRemove\ =\ cauda-\/>anterior;}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ cauda-\/>anterior\ =\ nodeToRemove-\/>anterior;}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ nodeToRemove-\/>anterior-\/>proximo\ =\ cauda;}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ nodeToRemove;}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ tamanho-\/-\/;}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00159\ \ \ \ \ \}}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_deque_ab1cc5599cec9b0ace56bf4d07de71fa8}{printDeque}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00165\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ Node\ *current\ =\ cabeca-\/>proximo;}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (current\ !=\ cauda)}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ current-\/>data\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ current\ =\ current-\/>proximo;}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{00173\ \ \ \ \ \}}
+\DoxyCodeLine{00174\ \};}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,38 @@
+\hypertarget{quadro_8hpp_source}{}\doxysection{quadro.\+hpp}
+\label{quadro_8hpp_source}\index{include/quadro.hpp@{include/quadro.hpp}}
+\mbox{\hyperlink{quadro_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ \_\_QUADRO\_\_}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ \_\_QUADRO\_\_}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{colunas_8hpp}{colunas.hpp}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{deque_8hpp}{deque.hpp}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_quadro}{Quadro}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{string}\ titulo;\ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_deque}{Deque<ColunaNomeada*>}}\ quadro;\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_quadro_a45b2665fb425c610d83ce88745a9dc42}{Quadro}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ titulo)\ :\ titulo(titulo)\ \{\}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_quadro_af569ac1f73c8e6859effde0e2aa115d4}{\string~Quadro}}()\ \{\}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quadro_ad62775dde9768f3e99b18d4044561c16}{setTitulo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ titulo)\ \{\}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_quadro_ae7d0917a7f636dd5caea103a82d49f47}{getTitulo}}()\ \{\}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quadro_aad10794686544ac6282ce474158aac84}{adicionarColuna}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_coluna_nomeada}{ColunaNomeada}}\&\ coluna)\ \{\}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quadro_a0b8f025326cedd638d766723f6136caa}{removerColuna}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ nome)\ \{\}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quadro_a4825bbae01e73515649ff2e5c31e05f7}{imprimirQuadro}}()\ \{\}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{friend}\ ostream\&\ \mbox{\hyperlink{class_quadro_a9f1d513f116dbe76a4247f0e4726d9fb}{operator<<}}(ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_quadro}{Quadro}}\&\ quadro);}
+\DoxyCodeLine{00073\ \};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ \_\_QUADRO\_\_}}
+
+\end{DoxyCode}

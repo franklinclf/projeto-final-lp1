@@ -1,0 +1,167 @@
+\hypertarget{class_coluna}{}\doxysection{Coluna Class Reference}
+\label{class_coluna}\index{Coluna@{Coluna}}
+
+
+Classe base abstrata que representa uma coluna em um Gerenciador de Tarefas.  
+
+
+
+
+{\ttfamily \#include $<$colunas.\+hpp$>$}
+
+Inheritance diagram for Coluna\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_coluna}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coluna_a2e8fe8cedc02da91079d12db66b70521}{Coluna}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \mbox{\hyperlink{class_coluna}{Coluna}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_coluna_a36f4bb6f842dccb8482ded78004c08cf}{$\sim$\+Coluna}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_coluna}{Coluna}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coluna_a9769f114b18fd26af9c205da15da8021}{set\+Quantidade}} (int \mbox{\hyperlink{class_coluna_a7663eac472aa94012354977cea1fbd37}{quantidade}})
+\begin{DoxyCompactList}\small\item\em Define a quantidade de tarefas na coluna. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_coluna_a43b3841328251918b3bd62365eefae7a}{get\+Quantidade}} ()
+\begin{DoxyCompactList}\small\item\em Obtém a quantidade de tarefas na coluna. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coluna_a851932e9368de0fc36f1f4f3583ff8af}{adicionar\+Tarefa}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Adiciona uma tarefa à coluna. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coluna_a4f5de8172ac9e414edb06a4561acf7e7}{remover\+Tarefa}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Remove uma tarefa da coluna. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_coluna_a4a1231bd47b5b5c2af34e9025cedadd7}{imprimir}} ()=0
+\begin{DoxyCompactList}\small\item\em Imprime as tarefas da coluna. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_coluna_a7663eac472aa94012354977cea1fbd37}{quantidade}}
+\item 
+\mbox{\hyperlink{class_lista_duplamente_encadeada}{Lista\+Duplamente\+Encadeada}}$<$ \mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ $>$ \mbox{\hyperlink{class_coluna_afe6c4b367ee779a4ec59547c38514764}{lista}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe base abstrata que representa uma coluna em um Gerenciador de Tarefas. 
+
+\begin{DoxyAuthor}{Author}
+Franklin Oliveira 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_coluna_a2e8fe8cedc02da91079d12db66b70521}\label{class_coluna_a2e8fe8cedc02da91079d12db66b70521}} 
+\index{Coluna@{Coluna}!Coluna@{Coluna}}
+\index{Coluna@{Coluna}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{Coluna()}{Coluna()}}
+{\footnotesize\ttfamily Coluna\+::\+Coluna (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor padrão da classe \mbox{\hyperlink{class_coluna}{Coluna}}. 
+
+\mbox{\Hypertarget{class_coluna_a36f4bb6f842dccb8482ded78004c08cf}\label{class_coluna_a36f4bb6f842dccb8482ded78004c08cf}} 
+\index{Coluna@{Coluna}!````~Coluna@{$\sim$Coluna}}
+\index{````~Coluna@{$\sim$Coluna}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{$\sim$Coluna()}{~Coluna()}}
+{\footnotesize\ttfamily Coluna\+::$\sim$\+Coluna (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destrutor da classe \mbox{\hyperlink{class_coluna}{Coluna}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_coluna_a851932e9368de0fc36f1f4f3583ff8af}\label{class_coluna_a851932e9368de0fc36f1f4f3583ff8af}} 
+\index{Coluna@{Coluna}!adicionarTarefa@{adicionarTarefa}}
+\index{adicionarTarefa@{adicionarTarefa}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{adicionarTarefa()}{adicionarTarefa()}}
+{\footnotesize\ttfamily void Coluna\+::adicionar\+Tarefa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adiciona uma tarefa à coluna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Ponteiro para a tarefa a ser adicionada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_coluna_a43b3841328251918b3bd62365eefae7a}\label{class_coluna_a43b3841328251918b3bd62365eefae7a}} 
+\index{Coluna@{Coluna}!getQuantidade@{getQuantidade}}
+\index{getQuantidade@{getQuantidade}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{getQuantidade()}{getQuantidade()}}
+{\footnotesize\ttfamily int Coluna\+::get\+Quantidade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém a quantidade de tarefas na coluna. 
+
+\begin{DoxyReturn}{Returns}
+A quantidade de tarefas. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coluna_a4a1231bd47b5b5c2af34e9025cedadd7}\label{class_coluna_a4a1231bd47b5b5c2af34e9025cedadd7}} 
+\index{Coluna@{Coluna}!imprimir@{imprimir}}
+\index{imprimir@{imprimir}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{imprimir()}{imprimir()}}
+{\footnotesize\ttfamily virtual void Coluna\+::imprimir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Imprime as tarefas da coluna. 
+
+
+
+Implemented in \mbox{\hyperlink{class_coluna_nomeada_a737b8a17d03ae7e98782372a2573da47}{Coluna\+Nomeada}}.
+
+\mbox{\Hypertarget{class_coluna_a4f5de8172ac9e414edb06a4561acf7e7}\label{class_coluna_a4f5de8172ac9e414edb06a4561acf7e7}} 
+\index{Coluna@{Coluna}!removerTarefa@{removerTarefa}}
+\index{removerTarefa@{removerTarefa}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{removerTarefa()}{removerTarefa()}}
+{\footnotesize\ttfamily void Coluna\+::remover\+Tarefa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove uma tarefa da coluna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Ponteiro para a tarefa a ser removida. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_coluna_a9769f114b18fd26af9c205da15da8021}\label{class_coluna_a9769f114b18fd26af9c205da15da8021}} 
+\index{Coluna@{Coluna}!setQuantidade@{setQuantidade}}
+\index{setQuantidade@{setQuantidade}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{setQuantidade()}{setQuantidade()}}
+{\footnotesize\ttfamily void Coluna\+::set\+Quantidade (\begin{DoxyParamCaption}\item[{int}]{quantidade }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define a quantidade de tarefas na coluna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quantidade} & A quantidade de tarefas. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_coluna_afe6c4b367ee779a4ec59547c38514764}\label{class_coluna_afe6c4b367ee779a4ec59547c38514764}} 
+\index{Coluna@{Coluna}!lista@{lista}}
+\index{lista@{lista}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{lista}{lista}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lista_duplamente_encadeada}{Lista\+Duplamente\+Encadeada}}$<$\mbox{\hyperlink{class_tarefa}{Tarefa}}$\ast$$>$ Coluna\+::lista\hspace{0.3cm}{\ttfamily [protected]}}
+
+Lista duplamente encadeada de ponteiros para tarefas. \mbox{\Hypertarget{class_coluna_a7663eac472aa94012354977cea1fbd37}\label{class_coluna_a7663eac472aa94012354977cea1fbd37}} 
+\index{Coluna@{Coluna}!quantidade@{quantidade}}
+\index{quantidade@{quantidade}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{quantidade}{quantidade}}
+{\footnotesize\ttfamily int Coluna\+::quantidade\hspace{0.3cm}{\ttfamily [protected]}}
+
+Quantidade de tarefas na coluna. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{colunas_8hpp}{colunas.\+hpp}}\end{DoxyCompactItemize}
