@@ -1,123 +1,97 @@
-/**
- * @file colunas.hpp
- * @brief Definição das classes Coluna e ColunaNomeada para um Gerenciador de Tarefas.
- * @author Franklin Oliveira
- */
-
 #ifndef __COLUNAS__
 #define __COLUNAS__
 
-#include "tarefa.hpp"
-#include "listaDuplamenteEncadeada.hpp"
-#include <vector>
+#include <iostream>
 #include <string>
+#include "listaDuplamenteEncadeada.hpp"
 
-using std::string;
-using std::ostream;
-
-/**
- * @class Coluna
- * @brief Classe base abstrata que representa uma coluna em um Gerenciador de Tarefas.
- * @author Franklin Oliveira
- */
-class Coluna {
+class Coluna
+{
 protected:
-    int quantidade; /**< Quantidade de tarefas na coluna. */
-    ListaDuplamenteEncadeada<Tarefa*> lista; /**< Lista duplamente encadeada de ponteiros para tarefas. */
+    Lista lista;
 
 public:
-    /**
-     * @brief Construtor padrão da classe Coluna.
-     */
-    Coluna() {}
+    virtual ~Coluna() {}
 
-    /**
-     * @brief Destrutor da classe Coluna.
-     */
-    ~Coluna() {}
-
-    /**
-     * @brief Define a quantidade de tarefas na coluna.
-     * @param quantidade A quantidade de tarefas.
-     */
-    void setQuantidade(int quantidade) {}
-
-    /**
-     * @brief Obtém a quantidade de tarefas na coluna.
-     * @return A quantidade de tarefas.
-     */
-    int getQuantidade() {}
-
-    /**
-     * @brief Adiciona uma tarefa à coluna.
-     * @param t Ponteiro para a tarefa a ser adicionada.
-     */
-    void adicionarTarefa(Tarefa* t) {}
-
-    /**
-     * @brief Remove uma tarefa da coluna.
-     * @param t Ponteiro para a tarefa a ser removida.
-     */
-    void removerTarefa(Tarefa* t) {}
-
-    /**
-     * @brief Imprime as tarefas da coluna.
-     */
-    virtual void imprimir() = 0;
+    virtual void inserirTarefa(Tarefa t) = 0;
+    virtual void removerTarefa(int indice) = 0;
+    virtual void moverTarefa(int indice, Coluna &colunaDestino) = 0;
+    virtual void imprimir() const = 0;
 };
 
-/**
- * @class ColunaNomeada
- * @brief Classe que representa uma coluna nomeada em um Gerenciador de Tarefas.
- * @author Franklin Oliveira
- */
-class ColunaNomeada : public Coluna {
+class ColunaNomeada : public Coluna
+{
 private:
-    string nome; /**< Nome da coluna. */
+    std::string nome;
+    std::string descricao;
 
 public:
-    /**
-     * @brief Construtor da classe ColunaNomeada.
-     * @param nome O nome da coluna.
-     */
-    ColunaNomeada(const string& nome) : nome(nome) {}
+    ColunaNomeada(std::string n, std::string d) : nome(n), descricao(d) {}
 
-    /**
-     * @brief Destrutor da classe ColunaNomeada.
-     */
-    ~ColunaNomeada() {}
+    void inserirTarefa(Tarefa t) override
+    {
+        lista.inserirFim(t);
+    }
 
-    /**
-     * @brief Define o nome da coluna.
-     * @param nome O nome da coluna.
-     */
-    void setNome(const string& nome) {}
+    void removerTarefa(int indice) override
+    {
+        lista.removerPorIndice(indice);
+    }
 
-    /**
-     * @brief Obtém o nome da coluna.
-     * @return O nome da coluna.
-     */
-    string getNome() {}
+    void moverTarefa(int indice, Coluna &colunaDestino) override
+    {
+        Tarefa tarefa = lista.obterPorIndice(indice);
+        colunaDestino.inserirTarefa(tarefa);
+        lista.removerPorIndice(indice);
+    }
 
-    /**
-     * @brief Move uma tarefa para outra coluna.
-     * @param t Ponteiro para a tarefa a ser movida.
-     * @param colunaDestino Ponteiro para a coluna de destino.
-     */
-    void moverTarefa(Tarefa* t, Coluna* colunaDestino) {}
+    void imprimir() const override
+    {
+        std::cout << "Coluna: " << nome << std::endl;
+        std::cout << "Descricao: " << descricao << std::endl;
+        std::cout << "Quantidade de tarefas: " << lista.getTamanho() << std::endl;
 
-    /**
-     * @brief Imprime as tarefas da coluna nomeada.
-     */
-    void imprimir() {}
+        for (int i = 0; i < lista.getTamanho(); i++)
+        {
+            Tarefa tarefa = lista.obterPorIndice(i);
+            std::cout << tarefa << std::endl;
+        }
+    }
 
-    /**
-     * @brief Sobrecarga do operador de inserção para imprimir a coluna nomeada.
-     * @param os O stream de saída.
-     * @param coluna A coluna nomeada a ser impressa.
-     * @return O stream de saída atualizado.
-     */
-    friend ostream& operator<<(ostream& os, const ColunaNomeada& coluna);
+    void ordenar()
+    {
+        lista.ordenarPorPrioridade();
+    }
 };
 
-#endif  // __COLUNAS__
+class ColunaArquivo : public Coluna
+{
+public:
+    void inserirTarefa(Tarefa t) override
+    {
+        lista.inserirFim(t);
+    }
+
+    void removerTarefa(int indice) override
+    {
+        lista.removerPorIndice(indice);
+    }
+
+    void moverTarefa(int indice, Coluna &colunaDestino) override
+    {
+        Tarefa tarefa = lista.obterPorIndice(indice);
+        colunaDestino.inserirTarefa(tarefa);
+        lista.removerPorIndice(indice);
+    }
+
+    void imprimir() const override
+    {
+        for (int i = 0; i < lista.getTamanho(); i++)
+        {
+            Tarefa tarefa = lista.obterPorIndice(i);
+            std::cout << tarefa.getTitulo() << std::endl;
+        }
+    }
+};
+
+#endif

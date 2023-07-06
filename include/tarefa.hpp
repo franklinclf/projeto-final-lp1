@@ -1,190 +1,126 @@
-/**
- * @file tarefa.hpp
- * @brief Este arquivo contém as definições das classes Data e Tarefa.
- *        A classe Data representa uma data com dia, mês e ano.
- *        A classe Tarefa representa uma tarefa com título, descrição, prioridade e prazo.
- *        O código define métodos para configurar e obter informações relacionadas às tarefas.
- * @author Franklin Oliveira
- */
-
-#ifndef __TASK__
-#define __TASK__
+#ifndef __TAREFA__
+#define __TAREFA__
 
 #include <string>
-using std::string;
+#include <iostream>
+#include "pessoa.hpp"
+
+using std::cout;
 using std::ostream;
+using std::string;
 
-/**
- * @brief Classe para representar uma data com dia, mês e ano.
- */
-class Data
-{
-private:
-    int dia; /**< O dia da data. */
-    int mes; /**< O mês da data. */
-    int ano; /**< O ano da data. */
-
-public:
-    /**
-     * @brief Construtor da classe Data.
-     *
-     * @param d O dia da data.
-     * @param m O mês da data.
-     * @param a O ano da data.
-     */
-    Data(int d, int m, int a) : dia(d), mes(m), ano(a) {}
-
-    /**
-     * @brief Destrutor da classe Data.
-     */
-    ~Data(){}
-
-    /**
-     * @brief Define o dia da data.
-     *
-     * @param d O novo valor para o dia.
-     */
-    void setDia(int d) {}
-
-    /**
-     * @brief Define o mês da data.
-     *
-     * @param m O novo valor para o mês.
-     */
-    void setMes(int m) {}
-
-    /**
-     * @brief Define o ano da data.
-     *
-     * @param a O novo valor para o ano.
-     */
-    void setAno(int a) {}
-
-    /**
-     * @brief Obtém o dia da data.
-     *
-     * @return O dia da data.
-     */
-    int getDia() {}
-
-    /**
-     * @brief Obtém o mês da data.
-     *
-     * @return O mês da data.
-     */
-    int getMes() {}
-
-    /**
-     * @brief Obtém o ano da data.
-     *
-     * @return O ano da data.
-     */
-    int getAno() {}
-
-    /**
-     * @brief Obtém a representação da data como uma string.
-     *
-     * @return A data formatada como string.
-     */
-    string getData() {}
-};
-
-/**
- * @brief Classe para representar uma tarefa com título, descrição, prioridade e prazo.
- */
 class Tarefa
 {
-protected:
-    string titulo;      /**< O título da tarefa. */
-    string descricao;   /**< A descrição da tarefa. */
-    int prioridade;     /**< A prioridade da tarefa. */
-    Data *prazo;        /**< O prazo da tarefa. */
+private:
+    string titulo;
+    string descricao;
+    int prioridade;
+    Colaborador responsavel;
+
+    static string alinhamento(const string &texto, int width)
+    {
+        int espacos = width - texto.length();
+        if (espacos > 0)
+        {
+            int espacosEsquerda = espacos / 2;
+            int espacosDireita = espacos - espacosEsquerda;
+            return std::string(espacosEsquerda, ' ') + texto + std::string(espacosDireita, ' ');
+        }
+        return texto;
+    }
+
+    static string quebrarLinha(const string &texto, int width)
+    {
+        string resultado;
+        int posicao = 0;
+        while (posicao < texto.length())
+        {
+            string linha = texto.substr(posicao, width - 4);
+            if (linha.back() == ' ')
+            {
+                resultado += "| " + linha + std::string(width - 4 - linha.length(), ' ') + " |\n";
+            }
+            else
+            {
+                int posEspaco = linha.find_last_of(' ');
+                if (posEspaco != string::npos)
+                {
+                    linha[posEspaco] = ' ';
+                    resultado += "| " + linha + std::string(width - 4 - linha.length(), ' ') + " |\n";
+                }
+                else
+                {
+                    resultado += "| " + linha + std::string(width - 4 - linha.length(), ' ') + " |\n";
+                }
+            }
+            posicao += width - 4;
+        }
+        return resultado;
+    }
 
 public:
-    /**
-     * @brief Construtor da classe Tarefa.
-     *
-     * @param t O título da tarefa.
-     * @param d A descrição da tarefa.
-     * @param p A prioridade da tarefa.
-     * @param dia O dia do prazo da tarefa.
-     * @param mes O mês do prazo da tarefa.
-     * @param ano O ano do prazo da tarefa.
-     */
-    Tarefa(string t, string d, int p, int dia, int mes, int ano) : titulo(t), descricao(d), prioridade(p), prazo(new Data(dia, mes, ano)) {}
+    Tarefa() {}
 
-    /**
-     * @brief Destrutor da classe Tarefa.
-     */
+    Tarefa(string t, string d) : titulo(t), descricao(d), prioridade(0) {}
+
     ~Tarefa() {}
 
-    /**
-     * @brief Define o título da tarefa.
-     *
-     * @param t O novo valor para o título.
-     */
-    void setTitulo(string t) {}
+    void setTitulo(string t)
+    {
+        titulo = t;
+    }
 
-    /**
-     * @brief Define a descrição da tarefa.
-     *
-     * @param d O novo valor para a descrição.
-     */
-    void setDescricao(string d) {}
+    void setDescricao(string d)
+    {
+        descricao = d;
+    }
 
-    /**
-     * @brief Define a prioridade da tarefa.
-     *
-     * @param p O novo valor para a prioridade.
-     */
-    void setPrioridade(int p) {}
+    void setPrioridade(int p)
+    {
+        prioridade = p;
+    }
 
-    /**
-     * @brief Define o prazo da tarefa.
-     *
-     * @param d O novo dia do prazo.
-     * @param m O novo mês do prazo.
-     * @param a O novo ano do prazo.
-     */
-    void setPrazo(int d, int m, int a) {}
+    void setResponsavel(Colaborador r)
+    {
+        responsavel = r;
+    }
 
-    /**
-     * @brief Obtém o título da tarefa.
-     *
-     * @return O título da tarefa.
-     */
-    string getTitulo() {}
+    string getTitulo()
+    {
+        return titulo;
+    }
 
-    /**
-     * @brief Obtém a descrição da tarefa.
-     *
-     * @return A descrição da tarefa.
-     */
-    string getDescricao() {}
+    string getDescricao()
+    {
+        return descricao;
+    }
 
-    /**
-     * @brief Obtém a prioridade da tarefa.
-     *
-     * @return A prioridade da tarefa.
-     */
-    int getPrioridade() {}
+    int getPrioridade()
+    {
+        return prioridade;
+    }
 
-    /**
-     * @brief Obtém o prazo da tarefa como uma string formatada.
-     *
-     * @return O prazo da tarefa como uma string.
-     */
-    string getData() {}
+    Colaborador getResponsavel()
+    {
+        return responsavel;
+    }
 
-    /**
-     * @brief Imprime as informações da tarefa.
-     */
-    void imprimir() {}
+    friend std::ostream &operator<<(std::ostream &os, Tarefa &tarefa)
+    {
+        const int quadroWidth = 40;
 
-    /**
-     * @brief Faz a sobrecarga do operador "<<" para imprimir uma tarefa;
-     */
-    friend ostream& operator<<(ostream& os, const Tarefa& tarefa) {}
+        os << "+" << std::string(quadroWidth, '-') << "+\n";
+        os << "| " << alinhamento(tarefa.titulo, quadroWidth - 3) << " |\n";
+        os << "+" << std::string(quadroWidth, '-') << "+\n";
+        os << "| Descricao: " << std::string(quadroWidth - 14, ' ') << " |\n";
+        os << quebrarLinha(tarefa.descricao, quadroWidth + 1);
+        os << "+" << std::string(quadroWidth, '-') << "+\n";
+        os << "| Prioridade: " << alinhamento(std::to_string(tarefa.prioridade), quadroWidth - 15) << " |\n";
+        os << "| Responsavel: " << alinhamento(tarefa.responsavel.getNome(), quadroWidth - 16) << " |\n";
+        os << "+" << std::string(quadroWidth, '-') << "+\n";
+
+        return os;
+    }
 };
 
 #endif

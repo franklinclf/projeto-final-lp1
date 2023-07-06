@@ -1,186 +1,234 @@
-/**
- * @file listaDuplamenteEncadeada.hpp
- * @brief Este arquivo contém a definição da classe ListaDuplamenteEncadeada.
- *        A classe ListaDuplamenteEncadeada é uma lista duplamente encadeada com nós sentinelas.
- *        Ela permite a inserção, remoção e impressão dos elementos.
- * @author Franklin Oliveira
- */
-
 #ifndef __LISTA__
 #define __LISTA__
+#include <iostream>
+#include "tarefa.hpp"
 
-/**
- * @brief Classe para representar uma lista duplamente encadeada com nós sentinelas.
- *
- * @tparam T O tipo dos elementos da lista.
- */
-template <typename T>
-class ListaDuplamenteEncadeada
-{
+class No {
 private:
-    /**
-     * @brief Estrutura interna que representa um nó da lista.
-     */
-    struct Node
-    {
-        T data; /**< O dado armazenado no nó. */
-        Node *anterior; /**< O ponteiro para o nó anterior. */
-        Node *proximo; /**< O ponteiro para o nó seguinte. */
-    };
-
-    Node *cabeca; /**< O ponteiro para o nó cabeça (sentinela inicial). */
-    Node *cauda; /**< O ponteiro para o nó cauda (sentinela final). */
-    int tamanho; /**< O tamanho atual da lista. */
+    Tarefa tarefa;
+    No* proximo;
+    No* anterior;
 
 public:
-    /**
-     * @brief Construtor da classe ListaDuplamenteEncadeada.
-     *        Inicializa a lista com nós sentinelas vazios.
-     */
-    ListaDuplamenteEncadeada()
-    {
-        cabeca = new Node();
-        cauda = new Node();
-        cabeca->proximo = cauda;
-        cauda->anterior = cabeca;
-        tamanho = 0;
+    No(Tarefa t) : tarefa(t), proximo(nullptr), anterior(nullptr) {}
+
+    Tarefa getTarefa() const {
+        return tarefa;
     }
 
-    /**
-     * @brief Destrutor da classe ListaDuplamenteEncadeada.
-     *        Libera a memória ocupada pelos nós da lista.
-     */
-    ~ListaDuplamenteEncadeada()
-    {
-        clear();
-        delete cabeca;
-        delete cauda;
+    void setTarefa(Tarefa t) {
+        tarefa = t;
     }
 
-    /**
-     * @brief Obtém o tamanho atual da lista.
-     *
-     * @return O tamanho da lista.
-     */
-    int getTamanho() const
-    {
+    No* getProximo() const {
+        return proximo;
+    }
+
+    void setProximo(No* p) {
+        proximo = p;
+    }
+
+    No* getAnterior() const {
+        return anterior;
+    }
+
+    void setAnterior(No* a) {
+        anterior = a;
+    }
+};
+
+class Lista {
+private:
+    No* sentinelaInicio;
+    No* sentinelaFim;
+    int tamanho;
+
+public:
+    Lista() : tamanho(0) {
+        sentinelaInicio = new No(Tarefa());
+        sentinelaFim = new No(Tarefa());
+
+        sentinelaInicio->setProximo(sentinelaFim);
+        sentinelaFim->setAnterior(sentinelaInicio);
+    }
+
+    ~Lista() {
+        limpar();
+        delete sentinelaInicio;
+        delete sentinelaFim;
+    }
+
+    int getTamanho() const {
         return tamanho;
     }
 
-    /**
-     * @brief Verifica se a lista está vazia.
-     *
-     * @return true se a lista está vazia, false caso contrário.
-     */
-    bool isEmpty() const
-    {
+    bool vazia() const {
         return tamanho == 0;
     }
 
-    /**
-     * @brief Remove todos os elementos da lista.
-     */
-    void clear()
-    {
-        while (!isEmpty())
-        {
-            removeFront();
-        }
-    }
+    void inserirInicio(Tarefa t) {
+        No* novoNo = new No(t);
 
-    /**
-     * @brief Insere um elemento no início da lista.
-     *
-     * @param value O valor do elemento a ser inserido.
-     */
-    void insertFront(const T &value)
-    {
-        Node *novoNode = new Node();
-        novoNode->data = value;
+        novoNo->setProximo(sentinelaInicio->getProximo());
+        novoNo->setAnterior(sentinelaInicio);
 
-        novoNode->proximo = cabeca->proximo;
-        novoNode->anterior = cabeca;
-        cabeca->proximo->anterior = novoNode;
-        cabeca->proximo = novoNode;
+        sentinelaInicio->getProximo()->setAnterior(novoNo);
+        sentinelaInicio->setProximo(novoNo);
 
         tamanho++;
     }
 
-    /**
-     * @brief Insere um elemento no final da lista.
-     *
-     * @param value O valor do elemento a ser inserido.
-     */
-    void insertBack(const T &value)
-    {
-        Node *novoNode = new Node();
-        novoNode->data = value;
+    void inserirFim(Tarefa t) {
+        No* novoNo = new No(t);
 
-        novoNode->proximo = cauda;
-        novoNode->anterior = cauda->anterior;
-        cauda->anterior->proximo = novoNode;
-        cauda->anterior = novoNode;
+        novoNo->setProximo(sentinelaFim);
+        novoNo->setAnterior(sentinelaFim->getAnterior());
+
+        sentinelaFim->getAnterior()->setProximo(novoNo);
+        sentinelaFim->setAnterior(novoNo);
 
         tamanho++;
     }
 
-    /**
-     * @brief Remove o elemento do início da lista.
-     *        Se a lista estiver vazia, nenhum elemento será removido.
-     */
-    void removeFront()
-    {
-        if (!isEmpty())
-        {
-            Node *nodeToRemove = cabeca->proximo;
-            cabeca->proximo = nodeToRemove->proximo;
-            nodeToRemove->proximo->anterior = cabeca;
+    void inserirPorIndice(Tarefa t, int indice) {
+        if (indice < 0 || indice > tamanho) {
+            throw std::out_of_range("Indice invalido");
+        }
 
-            delete nodeToRemove;
+        if (indice == 0) {
+            inserirInicio(t);
+        } else if (indice == tamanho) {
+            inserirFim(t);
+        } else {
+            No* novoNo = new No(t);
+            No* atual = sentinelaInicio->getProximo();
+
+            for (int i = 0; i < indice; i++) {
+                atual = atual->getProximo();
+            }
+
+            novoNo->setProximo(atual);
+            novoNo->setAnterior(atual->getAnterior());
+
+            atual->getAnterior()->setProximo(novoNo);
+            atual->setAnterior(novoNo);
+
+            tamanho++;
+        }
+    }
+
+    void removerInicio() {
+        if (vazia()) {
+            throw std::out_of_range("Lista vazia");
+        }
+
+        No* noRemovido = sentinelaInicio->getProximo();
+        No* proximoNo = noRemovido->getProximo();
+
+        sentinelaInicio->setProximo(proximoNo);
+        proximoNo->setAnterior(sentinelaInicio);
+
+        delete noRemovido;
+        tamanho--;
+    }
+
+    void removerFim() {
+        if (vazia()) {
+            throw std::out_of_range("Lista vazia");
+        }
+
+        No* noRemovido = sentinelaFim->getAnterior();
+        No* anteriorNo = noRemovido->getAnterior();
+
+        anteriorNo->setProximo(sentinelaFim);
+        sentinelaFim->setAnterior(anteriorNo);
+
+        delete noRemovido;
+        tamanho--;
+    }
+
+    void removerPorIndice(int indice) {
+        if (indice < 0 || indice >= tamanho) {
+            throw std::out_of_range("Indice invalido");
+        }
+
+        if (indice == 0) {
+            removerInicio();
+        } else if (indice == tamanho - 1) {
+            removerFim();
+        } else {
+            No* atual = sentinelaInicio->getProximo();
+
+            for (int i = 0; i < indice; i++) {
+                atual = atual->getProximo();
+            }
+
+            No* noRemovido = atual;
+            No* proximoNo = atual->getProximo();
+            No* anteriorNo = atual->getAnterior();
+
+            anteriorNo->setProximo(proximoNo);
+            proximoNo->setAnterior(anteriorNo);
+
+            delete noRemovido;
             tamanho--;
         }
     }
 
-    /**
-     * @brief Remove o elemento do final da lista.
-     *        Se a lista estiver vazia, nenhum elemento será removido.
-     */
-    void removeBack()
-    {
-        if (!isEmpty())
-        {
-            Node *nodeToRemove = cauda->anterior;
-            cauda->anterior = nodeToRemove->anterior;
-            nodeToRemove->anterior->proximo = cauda;
-
-            delete nodeToRemove;
-            tamanho--;
+    void limpar() {
+        while (!vazia()) {
+            removerInicio();
         }
     }
 
-    /**
-     * @brief Imprime os elementos da lista.
-     */
-    void printList() const
-    {
-        Node *current = cabeca->proximo;
-        while (current != cauda)
-        {
-            std::cout << *(current->data) << " ";
-            current = current->proximo;
+    Tarefa obterPorIndice(int indice) const {
+        if (indice < 0 || indice >= tamanho) {
+            throw std::out_of_range("Indice invalido");
         }
-        std::cout << std::endl;
+
+        No* atual = sentinelaInicio->getProximo();
+
+        for (int i = 0; i < indice; i++) {
+            atual = atual->getProximo();
+        }
+
+        return atual->getTarefa();
     }
 
-    /**
-     * @brief Ordena os nos pela prioridade do conteudo usando selection sort.
-     */
-    void selectionSortPorPrioridade() {}
+    void ordenarPorPrioridade() {
+        if (tamanho <= 1) {
+            return;
+        }
 
-    /**
-     * @brief Ordena os nos pela prioridade do conteudo usando bubble sort.
-     */
-    void bubbleSortPorPrioridade() {}
+        bool trocou;
+        do {
+            No* atual = sentinelaInicio->getProximo();
+            No* anterior = sentinelaInicio;
+
+            trocou = false;
+
+            while (atual != sentinelaFim->getAnterior()) {
+                if (atual->getTarefa().getPrioridade() > atual->getProximo()->getTarefa().getPrioridade()) {
+                    No* proximo = atual->getProximo();
+                    No* proximoDoProximo = proximo->getProximo();
+
+                    anterior->setProximo(proximo);
+                    proximo->setProximo(atual);
+                    atual->setProximo(proximoDoProximo);
+
+                    proximoDoProximo->setAnterior(atual);
+                    atual->setAnterior(proximo);
+                    proximo->setAnterior(anterior);
+
+                    trocou = true;
+                } else {
+                    anterior = atual;
+                    atual = atual->getProximo();
+                }
+            }
+        } while (trocou);
+    }
+
 };
 
 #endif
