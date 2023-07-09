@@ -15,7 +15,7 @@ private:
     string titulo;
     string descricao;
     int prioridade;
-    Colaborador responsavel;
+    Colaborador* responsavel;
 
     static string alinhamento(const string &texto, int width)
     {
@@ -33,7 +33,7 @@ private:
     {
         string resultado;
         int posicao = 0;
-        while (posicao < texto.length())
+        while (posicao < (int)texto.length())
         {
             string linha = texto.substr(posicao, width - 4);
             if (linha.back() == ' ')
@@ -43,7 +43,7 @@ private:
             else
             {
                 int posEspaco = linha.find_last_of(' ');
-                if (posEspaco != string::npos)
+                if (posEspaco != (int)string::npos)
                 {
                     linha[posEspaco] = ' ';
                     resultado += "| " + linha + std::string(width - 4 - linha.length(), ' ') + " |\n";
@@ -80,7 +80,7 @@ public:
         prioridade = p;
     }
 
-    void setResponsavel(Colaborador r)
+    void setResponsavel(Colaborador* r)
     {
         responsavel = r;
     }
@@ -100,7 +100,7 @@ public:
         return prioridade;
     }
 
-    Colaborador getResponsavel()
+    Colaborador* getResponsavel()
     {
         return responsavel;
     }
@@ -116,7 +116,24 @@ public:
         os << quebrarLinha(tarefa.descricao, quadroWidth + 1);
         os << "+" << std::string(quadroWidth, '-') << "+\n";
         os << "| Prioridade: " << alinhamento(std::to_string(tarefa.prioridade), quadroWidth - 15) << " |\n";
-        os << "| Responsavel: " << alinhamento(tarefa.responsavel.getNome(), quadroWidth - 16) << " |\n";
+        os << "| Responsavel: " << alinhamento(tarefa.responsavel->getNome(), quadroWidth - 16) << " |\n";
+        os << "+" << std::string(quadroWidth, '-') << "+\n";
+
+        return os;
+    }
+
+    friend std::ostream &operator<<(std::ostream &os, Tarefa* &tarefa)
+    {
+        const int quadroWidth = 40;
+
+        os << "+" << std::string(quadroWidth, '-') << "+\n";
+        os << "| " << alinhamento(tarefa->titulo, quadroWidth - 3) << " |\n";
+        os << "+" << std::string(quadroWidth, '-') << "+\n";
+        os << "| Descricao: " << std::string(quadroWidth - 14, ' ') << " |\n";
+        os << quebrarLinha(tarefa->descricao, quadroWidth + 1);
+        os << "+" << std::string(quadroWidth, '-') << "+\n";
+        os << "| Prioridade: " << alinhamento(std::to_string(tarefa->prioridade), quadroWidth - 15) << " |\n";
+        os << "| Responsavel: " << alinhamento(tarefa->responsavel->getNome(), quadroWidth - 16) << " |\n";
         os << "+" << std::string(quadroWidth, '-') << "+\n";
 
         return os;
