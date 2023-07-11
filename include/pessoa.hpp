@@ -4,18 +4,19 @@
 #include <iostream>
 #include <string>
 
-using std::string;
 using std::cout;
 using std::ostream;
+using std::string;
 
-class Pessoa {
-    protected:
+class Pessoa
+{
+protected:
     string nome;
     string contato;
 
-    public:
+public:
     Pessoa() {}
-    Pessoa(string n, string c): nome(n), contato(c) {}
+    Pessoa(string n, string c) : nome(n), contato(c) {}
     ~Pessoa() {}
 
     void setNome(string n)
@@ -37,17 +38,25 @@ class Pessoa {
     {
         return contato;
     }
-
 };
 
-class Colaborador : public Pessoa{
-    private:
+class Colaborador : public Pessoa
+{
+private:
     string funcao;
     int tarefasAtribuidas;
+    int idUnico;
+    static int contador;
 
-    public:
-    Colaborador() {}
-    Colaborador(string n, string c, string f): Pessoa(n, c), funcao(f) {}
+public:
+    Colaborador()
+    {
+        idUnico = ++contador;
+    }
+    Colaborador(string n, string c, string f) : Pessoa(n, c), funcao(f)
+    {
+        idUnico = ++contador;
+    }
     ~Colaborador() {}
 
     void setFuncao(string f)
@@ -70,11 +79,17 @@ class Colaborador : public Pessoa{
         return tarefasAtribuidas;
     }
 
-    friend ostream& operator<<(std::ostream& out, Colaborador& colaborador)
+    int getID()
     {
-        out << "Nome: " << colaborador.nome << "\n";
-        out << "Contato: " << colaborador.contato << "\n";
-        out << "Função: " << colaborador.funcao << "\n";
+        return idUnico;
+    }
+
+    friend ostream &operator<<(std::ostream &out, Colaborador *&colaborador)
+    {
+        out << "ID: " << colaborador->idUnico << "\n";
+        out << "Nome: " << colaborador->nome << "\n";
+        out << "Contato: " << colaborador->contato << "\n";
+        out << "Funcaoo: " << colaborador->funcao << "\n";
 
         return out;
     }

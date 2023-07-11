@@ -61,7 +61,9 @@ private:
 public:
     Tarefa() {}
 
-    Tarefa(string t, string d) : titulo(t), descricao(d), prioridade(0) {}
+    Tarefa(string t, string d) : titulo(t), descricao(d), prioridade(0) {
+        responsavel = nullptr;
+    }
 
     ~Tarefa() {}
 
@@ -133,7 +135,14 @@ public:
         os << quebrarLinha(tarefa->descricao, quadroWidth + 1);
         os << "+" << std::string(quadroWidth, '-') << "+\n";
         os << "| Prioridade: " << alinhamento(std::to_string(tarefa->prioridade), quadroWidth - 15) << " |\n";
-        os << "| Responsavel: " << alinhamento(tarefa->responsavel->getNome(), quadroWidth - 16) << " |\n";
+        if(tarefa->responsavel != nullptr)
+        {
+            os << "| Responsavel: " << alinhamento(tarefa->responsavel->getNome(), quadroWidth - 16) << " |\n";
+        }
+        else
+        {
+            os << "| Responsavel: " << alinhamento("Nao designado.", quadroWidth - 16) << " |\n";
+        }
         os << "+" << std::string(quadroWidth, '-') << "+\n";
 
         return os;

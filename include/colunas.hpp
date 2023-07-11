@@ -5,6 +5,8 @@
 #include <string>
 #include "listaDuplamenteEncadeada.hpp"
 
+using namespace std;
+
 class Coluna
 {
 protected:
@@ -20,20 +22,21 @@ public:
 
     virtual Tarefa* obterTarefa(int indice) = 0;
     virtual int getTamanho() = 0;
-    virtual std::string getNome() = 0;
-    virtual std::string getDescricao() = 0;
-    virtual void setNome(std::string n) = 0;
-    virtual void setDescricao(std::string d) = 0;
+    virtual string getNome() = 0;
+    virtual string getDescricao() = 0;
+    virtual void setNome(string n) = 0;
+    virtual void setDescricao(string d) = 0;
+    virtual void ordenar() = 0;
 };
 
 class ColunaNomeada : public Coluna
 {
 private:
-    std::string nome;
-    std::string descricao;
+    string nome;
+    string descricao;
 
 public:
-    ColunaNomeada(std::string n, std::string d) : nome(n), descricao(d) {}
+    ColunaNomeada(string n, string d) : nome(n), descricao(d) {}
 
     void inserirTarefa(Tarefa* t) override
     {
@@ -59,13 +62,13 @@ public:
 
     void imprimir() const override
     {
-        std::cout << "Descricao: " << descricao << std::endl;
-        std::cout << "Quantidade de tarefas: " << lista.getTamanho() << "\n\n";
+        cout << "Descricao: " << descricao << endl;
+        cout << "Quantidade de tarefas: " << lista.getTamanho() << "\n\n";
 
         for (int i = 0; i < lista.getTamanho(); i++)
         {
             Tarefa* tarefa = lista.obterPorIndice(i);
-            std::cout << "Indice da tarefa: " << i << "\n" << tarefa << std::endl;
+            cout << "Indice da tarefa: " << i << "\n" << tarefa << endl;
         }
     }
 
@@ -74,22 +77,22 @@ public:
         lista.ordenarPorPrioridade();
     }
 
-    std::string getNome() override
+    string getNome() override
     {
         return nome;
     }
 
-    std::string getDescricao()
+    string getDescricao()
     {
         return descricao;
     }
 
-    void setNome(std::string n)
+    void setNome(string n)
     {
         nome = n;
     }
 
-    void setDescricao(std::string d)
+    void setDescricao(string d)
     {
         descricao = d;
     }
@@ -108,7 +111,7 @@ class ColunaArquivo : public Coluna
 public:
 
     ColunaArquivo() {}
-    ColunaArquivo(std::string n, std::string d) : nome(n), descricao(d) {}
+    ColunaArquivo(string n, string d) : nome(n), descricao(d) {}
     ~ColunaArquivo() {}
 
     void inserirTarefa(Tarefa* t) override
@@ -133,22 +136,22 @@ public:
         lista.lightDelete(indice);
     }
 
-    std::string getNome() override
+    string getNome() override
     {
         return nome;
     }
 
-    std::string getDescricao()
+    string getDescricao()
     {
         return descricao;
     }
 
-    void setNome(std::string n)
+    void setNome(string n)
     {
         nome = n;
     }
 
-    void setDescricao(std::string d)
+    void setDescricao(string d)
     {
         descricao = d;
     }
@@ -160,11 +163,16 @@ public:
 
     void imprimir() const override
     {
+        cout << "-+- Coluna Arquivo -+-" << endl;
         for (int i = 0; i < lista.getTamanho(); i++)
         {
             Tarefa* tarefa = lista.obterPorIndice(i);
-            std::cout << tarefa->getTitulo() << std::endl;
+            cout << tarefa->getTitulo() << endl;
         }
+    }
+
+    void ordenar(){
+        return;
     }
 };
 
