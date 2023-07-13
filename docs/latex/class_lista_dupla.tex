@@ -1,0 +1,180 @@
+\hypertarget{class_lista_dupla}{}\doxysection{Lista\+Dupla Class Reference}
+\label{class_lista_dupla}\index{ListaDupla@{ListaDupla}}
+
+
+Classe que implementa uma lista duplamente encadeada de tarefas de um quadro de tarefas.  
+
+
+
+
+{\ttfamily \#include $<$lista\+Duplamente\+Encadeada.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lista_dupla_a5c057b40433f1dda8d221809c13c2619}\label{class_lista_dupla_a5c057b40433f1dda8d221809c13c2619}} 
+{\bfseries Lista\+Dupla} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \mbox{\hyperlink{class_lista_dupla}{Lista\+Dupla}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lista_dupla_a63481f371df6767019c8705208067514}\label{class_lista_dupla_a63481f371df6767019c8705208067514}} 
+{\bfseries $\sim$\+Lista\+Dupla} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_lista_dupla}{Lista\+Dupla}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_lista_dupla_a86f5652f339d3af5fd81c6b913c95a52}{get\+Tamanho}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o tamanho da lista. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lista_dupla_a66888490f518d19c2d5cb3d3a053b816}{vazia}} () const
+\begin{DoxyCompactList}\small\item\em Verifica se a lista está vazia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_dupla_af02559c4c5c8265c8db861300cf598d8}{inserir\+Inicio}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Insere uma tarefa no início da lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_dupla_a997a8daa9fb1ccea46c233558ade8b4b}{inserir\+Fim}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Insere uma tarefa no fim da lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_dupla_a8c0235db1d94b2dcbd4d22fec5645ac3}{inserir\+Por\+Indice}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$t, int indice)
+\begin{DoxyCompactList}\small\item\em Insere uma tarefa na lista pelo índice. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lista_dupla_a6c0c785cb9c4a4a2fbe25beb370bd102}\label{class_lista_dupla_a6c0c785cb9c4a4a2fbe25beb370bd102}} 
+void {\bfseries remover\+Inicio} ()
+\begin{DoxyCompactList}\small\item\em Remove a tarefa do início da lista. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lista_dupla_a0ec55e77494913e1041f772fb5abf176}\label{class_lista_dupla_a0ec55e77494913e1041f772fb5abf176}} 
+void {\bfseries remover\+Fim} ()
+\begin{DoxyCompactList}\small\item\em Remove a tarefa do fim da lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_dupla_ab976735e9038a9bd590a764b2a832e45}{remover\+Por\+Indice}} (int indice)
+\begin{DoxyCompactList}\small\item\em Remove a tarefa da lista pelo índice. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_dupla_a924380dcc218b78c4de0e0accc80e012}{light\+Delete}} (int indice)
+\begin{DoxyCompactList}\small\item\em Remove a tarefa da lista, mas mantém o nó na lista sem referência à tarefa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lista_dupla_abfef1d092f78fb6862087097d809f1e7}\label{class_lista_dupla_abfef1d092f78fb6862087097d809f1e7}} 
+void {\bfseries limpar} ()
+\begin{DoxyCompactList}\small\item\em Remove todos os nós da lista e libera a memória. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ \mbox{\hyperlink{class_lista_dupla_a837ec6a1d28dbddd64b2028372f846c3}{obter\+Por\+Indice}} (int indice) const
+\begin{DoxyCompactList}\small\item\em Obtém a tarefa da lista pelo índice. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lista_dupla_a0da08b292785498fc7bb358a84bed282}\label{class_lista_dupla_a0da08b292785498fc7bb358a84bed282}} 
+void {\bfseries ordenar\+Por\+Prioridade} ()
+\begin{DoxyCompactList}\small\item\em Ordena a lista de tarefas por prioridade. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que implementa uma lista duplamente encadeada de tarefas de um quadro de tarefas. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lista_dupla_a86f5652f339d3af5fd81c6b913c95a52}\label{class_lista_dupla_a86f5652f339d3af5fd81c6b913c95a52}} 
+\index{ListaDupla@{ListaDupla}!getTamanho@{getTamanho}}
+\index{getTamanho@{getTamanho}!ListaDupla@{ListaDupla}}
+\doxysubsubsection{\texorpdfstring{getTamanho()}{getTamanho()}}
+{\footnotesize\ttfamily int Lista\+Dupla\+::get\+Tamanho (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém o tamanho da lista. 
+
+\begin{DoxyReturn}{Returns}
+Tamanho da lista. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lista_dupla_a997a8daa9fb1ccea46c233558ade8b4b}\label{class_lista_dupla_a997a8daa9fb1ccea46c233558ade8b4b}} 
+\index{ListaDupla@{ListaDupla}!inserirFim@{inserirFim}}
+\index{inserirFim@{inserirFim}!ListaDupla@{ListaDupla}}
+\doxysubsubsection{\texorpdfstring{inserirFim()}{inserirFim()}}
+{\footnotesize\ttfamily void Lista\+Dupla\+::inserir\+Fim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insere uma tarefa no fim da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Ponteiro para a tarefa a ser inserida. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lista_dupla_af02559c4c5c8265c8db861300cf598d8}\label{class_lista_dupla_af02559c4c5c8265c8db861300cf598d8}} 
+\index{ListaDupla@{ListaDupla}!inserirInicio@{inserirInicio}}
+\index{inserirInicio@{inserirInicio}!ListaDupla@{ListaDupla}}
+\doxysubsubsection{\texorpdfstring{inserirInicio()}{inserirInicio()}}
+{\footnotesize\ttfamily void Lista\+Dupla\+::inserir\+Inicio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insere uma tarefa no início da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Ponteiro para a tarefa a ser inserida. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lista_dupla_a8c0235db1d94b2dcbd4d22fec5645ac3}\label{class_lista_dupla_a8c0235db1d94b2dcbd4d22fec5645ac3}} 
+\index{ListaDupla@{ListaDupla}!inserirPorIndice@{inserirPorIndice}}
+\index{inserirPorIndice@{inserirPorIndice}!ListaDupla@{ListaDupla}}
+\doxysubsubsection{\texorpdfstring{inserirPorIndice()}{inserirPorIndice()}}
+{\footnotesize\ttfamily void Lista\+Dupla\+::inserir\+Por\+Indice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$}]{t,  }\item[{int}]{indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insere uma tarefa na lista pelo índice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Ponteiro para a tarefa a ser inserida. \\
+\hline
+{\em indice} & Índice de inserção. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lista_dupla_a924380dcc218b78c4de0e0accc80e012}\label{class_lista_dupla_a924380dcc218b78c4de0e0accc80e012}} 
+\index{ListaDupla@{ListaDupla}!lightDelete@{lightDelete}}
+\index{lightDelete@{lightDelete}!ListaDupla@{ListaDupla}}
+\doxysubsubsection{\texorpdfstring{lightDelete()}{lightDelete()}}
+{\footnotesize\ttfamily void Lista\+Dupla\+::light\+Delete (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove a tarefa da lista, mas mantém o nó na lista sem referência à tarefa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indice} & Índice da tarefa a ser removida. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lista_dupla_a837ec6a1d28dbddd64b2028372f846c3}\label{class_lista_dupla_a837ec6a1d28dbddd64b2028372f846c3}} 
+\index{ListaDupla@{ListaDupla}!obterPorIndice@{obterPorIndice}}
+\index{obterPorIndice@{obterPorIndice}!ListaDupla@{ListaDupla}}
+\doxysubsubsection{\texorpdfstring{obterPorIndice()}{obterPorIndice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ Lista\+Dupla\+::obter\+Por\+Indice (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém a tarefa da lista pelo índice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indice} & Índice da tarefa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para a tarefa encontrada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lista_dupla_ab976735e9038a9bd590a764b2a832e45}\label{class_lista_dupla_ab976735e9038a9bd590a764b2a832e45}} 
+\index{ListaDupla@{ListaDupla}!removerPorIndice@{removerPorIndice}}
+\index{removerPorIndice@{removerPorIndice}!ListaDupla@{ListaDupla}}
+\doxysubsubsection{\texorpdfstring{removerPorIndice()}{removerPorIndice()}}
+{\footnotesize\ttfamily void Lista\+Dupla\+::remover\+Por\+Indice (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove a tarefa da lista pelo índice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indice} & Índice da tarefa a ser removida. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lista_dupla_a66888490f518d19c2d5cb3d3a053b816}\label{class_lista_dupla_a66888490f518d19c2d5cb3d3a053b816}} 
+\index{ListaDupla@{ListaDupla}!vazia@{vazia}}
+\index{vazia@{vazia}!ListaDupla@{ListaDupla}}
+\doxysubsubsection{\texorpdfstring{vazia()}{vazia()}}
+{\footnotesize\ttfamily bool Lista\+Dupla\+::vazia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Verifica se a lista está vazia. 
+
+\begin{DoxyReturn}{Returns}
+true se a lista estiver vazia, false caso contrário. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{lista_duplamente_encadeada_8hpp}{lista\+Duplamente\+Encadeada.\+hpp}}\end{DoxyCompactItemize}

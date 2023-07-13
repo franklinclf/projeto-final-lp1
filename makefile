@@ -11,7 +11,7 @@ BUILD_DIR = build
 BIN_DIR = bin
 
 # Nome do executável
-TARGET = $(BIN_DIR)/program
+TARGET = $(BIN_DIR)/KanBan
 
 # Obtenção da lista de arquivos fonte
 SRCS := $(wildcard $(SRC_DIR)/*.cpp)
@@ -29,7 +29,7 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
 
 # Regra para limpar os arquivos objeto e o executável
 clean:
-	rm -rf $(BUILD_DIR) $(BIN_DIR)
+	rm -rf $(BUILD_DIR)/*.o $(BIN_DIR)/*.exe
 
 # Regra para reconstruir o projeto
 rebuild: clean $(TARGET)

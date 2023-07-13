@@ -1,0 +1,144 @@
+\hypertarget{tarefa_8hpp_source}{}\doxysection{tarefa.\+hpp}
+\label{tarefa_8hpp_source}\index{include/tarefa.hpp@{include/tarefa.hpp}}
+\mbox{\hyperlink{tarefa_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ \_\_TAREFA\_\_}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ \_\_TAREFA\_\_}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pessoa_8hpp}{pessoa.hpp}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ }std::cout;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ }std::ostream;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ }std::string;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tarefa}{Tarefa}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{string}\ titulo;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{string}\ descricao;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ prioridade;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_colaborador}{Colaborador}}*\ responsavel;\ \ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ alinhamento(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&texto,\ \textcolor{keywordtype}{int}\ width)}
+\DoxyCodeLine{00036\ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ espacos\ =\ width\ -\/\ texto.length();}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (espacos\ >\ 0)}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ espacosEsquerda\ =\ espacos\ /\ 2;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ espacosDireita\ =\ espacos\ -\/\ espacosEsquerda;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::string(espacosEsquerda,\ \textcolor{charliteral}{'\ '})\ +\ texto\ +\ std::string(espacosDireita,\ \textcolor{charliteral}{'\ '});}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ texto;}
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ quebrarLinha(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&texto,\ \textcolor{keywordtype}{int}\ width)}
+\DoxyCodeLine{00054\ \ \ \ \ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ resultado;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ posicao\ =\ 0;}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (posicao\ <\ (\textcolor{keywordtype}{int})texto.length())}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ linha\ =\ texto.substr(posicao,\ width\ -\/\ 4);}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (linha.back()\ ==\ \textcolor{charliteral}{'\ '})}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ resultado\ +=\ \textcolor{stringliteral}{"{}|\ "{}}\ +\ linha\ +\ std::string(width\ -\/\ 4\ -\/\ linha.length(),\ \textcolor{charliteral}{'\ '})\ +\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ posEspaco\ =\ linha.find\_last\_of(\textcolor{charliteral}{'\ '});}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (posEspaco\ !=\ (\textcolor{keywordtype}{int})string::npos)}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ linha[posEspaco]\ =\ \textcolor{charliteral}{'\ '};}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ resultado\ +=\ \textcolor{stringliteral}{"{}|\ "{}}\ +\ linha\ +\ std::string(width\ -\/\ 4\ -\/\ linha.length(),\ \textcolor{charliteral}{'\ '})\ +\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ resultado\ +=\ \textcolor{stringliteral}{"{}|\ "{}}\ +\ linha\ +\ std::string(width\ -\/\ 4\ -\/\ linha.length(),\ \textcolor{charliteral}{'\ '})\ +\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ posicao\ +=\ width\ -\/\ 4;}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ resultado;}
+\DoxyCodeLine{00080\ \ \ \ \ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00086\ \ \ \ \ \mbox{\hyperlink{class_tarefa_a120eea6d4d78b034aec8da4ad4d773c0}{Tarefa}}()\ \{\}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{class_tarefa_aa1ebf7eca61dba3665083dc5977e62ef}{Tarefa}}(\textcolor{keywordtype}{string}\ t,\ \textcolor{keywordtype}{string}\ d)\ :\ titulo(t),\ descricao(d),\ prioridade(0)\ \{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ responsavel\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00095\ \ \ \ \ \}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{class_tarefa_afbc2dece079311193c18a17600dca6e3}{Tarefa}}(\textcolor{keywordtype}{string}\ t,\ \textcolor{keywordtype}{string}\ d,\ \textcolor{keywordtype}{int}\ p,\ \mbox{\hyperlink{class_colaborador}{Colaborador}}*\ r)\ :\ titulo(t),\ descricao(d),\ prioridade(p),\ responsavel(r)\ \{\}}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{class_tarefa_ac0aded2b1a1333b92633e4f82d3d3ab7}{\string~Tarefa}}()\ \{\}}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tarefa_a79e7e9660e18cd200ba67e18f370df5f}{setTitulo}}(\textcolor{keywordtype}{string}\ t)}
+\DoxyCodeLine{00116\ \ \ \ \ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ titulo\ =\ t;}
+\DoxyCodeLine{00118\ \ \ \ \ \}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tarefa_a940984f91c30d56dcdc2e9815e2b3cc7}{setDescricao}}(\textcolor{keywordtype}{string}\ d)}
+\DoxyCodeLine{00125\ \ \ \ \ \{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ descricao\ =\ d;}
+\DoxyCodeLine{00127\ \ \ \ \ \}}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tarefa_ab063c2349c20692e1aa021b829720847}{setPrioridade}}(\textcolor{keywordtype}{int}\ p)}
+\DoxyCodeLine{00134\ \ \ \ \ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ prioridade\ =\ p;}
+\DoxyCodeLine{00136\ \ \ \ \ \}}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tarefa_a21b76d5cedc9cd577a99065bc84b4884}{setResponsavel}}(\mbox{\hyperlink{class_colaborador}{Colaborador}}*\ r)}
+\DoxyCodeLine{00143\ \ \ \ \ \{}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ responsavel\ =\ r;}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ ++r;}
+\DoxyCodeLine{00146\ \ \ \ \ \}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_tarefa_acafe89fa135d5af459beff157c292faa}{getTitulo}}()}
+\DoxyCodeLine{00153\ \ \ \ \ \{}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ titulo;}
+\DoxyCodeLine{00155\ \ \ \ \ \}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_tarefa_ae2d353e0cd6fa0eb8d4d70eb36b49a10}{getDescricao}}()}
+\DoxyCodeLine{00162\ \ \ \ \ \{}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ descricao;}
+\DoxyCodeLine{00164\ \ \ \ \ \}}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_tarefa_a7bf9fd90402ab301884f4dcbb36dcec8}{getPrioridade}}()}
+\DoxyCodeLine{00171\ \ \ \ \ \{}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ prioridade;}
+\DoxyCodeLine{00173\ \ \ \ \ \}}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00179\ \ \ \ \ \mbox{\hyperlink{class_colaborador}{Colaborador}}*\ \mbox{\hyperlink{class_tarefa_a5a24414bd9d3ee8186112415cb7a9bcd}{getResponsavel}}()}
+\DoxyCodeLine{00180\ \ \ \ \ \{}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ responsavel;}
+\DoxyCodeLine{00182\ \ \ \ \ \}}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&\mbox{\hyperlink{class_tarefa_a58971dffa1b7fee253a4920434684b30}{operator<<}}(std::ostream\ \&os,\ \mbox{\hyperlink{class_tarefa}{Tarefa}}*\ \&tarefa)}
+\DoxyCodeLine{00191\ \ \ \ \ \{}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ quadroWidth\ =\ 40;}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}+"{}}\ <<\ std::string(quadroWidth,\ \textcolor{charliteral}{'-\/'})\ <<\ \textcolor{stringliteral}{"{}+\(\backslash\)n"{}};}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}|\ "{}}\ <<\ alinhamento(tarefa-\/>titulo,\ quadroWidth\ -\/\ 3)\ <<\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}+"{}}\ <<\ std::string(quadroWidth,\ \textcolor{charliteral}{'-\/'})\ <<\ \textcolor{stringliteral}{"{}+\(\backslash\)n"{}};}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}|\ Descricao:\ "{}}\ <<\ std::string(quadroWidth\ -\/\ 14,\ \textcolor{charliteral}{'\ '})\ <<\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ os\ <<\ quebrarLinha(tarefa-\/>descricao,\ quadroWidth\ +\ 1);}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}+"{}}\ <<\ std::string(quadroWidth,\ \textcolor{charliteral}{'-\/'})\ <<\ \textcolor{stringliteral}{"{}+\(\backslash\)n"{}};}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}|\ Prioridade:\ "{}}\ <<\ alinhamento(std::to\_string(tarefa-\/>prioridade),\ quadroWidth\ -\/\ 15)\ <<\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(tarefa-\/>responsavel\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}|\ Responsavel:\ "{}}\ <<\ alinhamento(tarefa-\/>responsavel-\/>\mbox{\hyperlink{class_pessoa_aedeca9c83ea13db9c487ceb48ac37da7}{getNome}}(),\ quadroWidth\ -\/\ 16)\ <<\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}|\ Responsavel:\ "{}}\ <<\ alinhamento(\textcolor{stringliteral}{"{}Nao\ designado."{}},\ quadroWidth\ -\/\ 16)\ <<\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}+"{}}\ <<\ std::string(quadroWidth,\ \textcolor{charliteral}{'-\/'})\ <<\ \textcolor{stringliteral}{"{}+\(\backslash\)n"{}};}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ os;}
+\DoxyCodeLine{00212\ \ \ \ \ \}}
+\DoxyCodeLine{00213\ \};}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00215\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

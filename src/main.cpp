@@ -1,11 +1,27 @@
+/**
+ * @file main.cpp
+ * @brief Sistema de Gerenciamento de Tarefas
+ *
+ * Este programa implementa um sistema de quadro KanBan que permite a criação
+ * de quadros, colunas, tarefas, colaboradores, e a realização de diversas operações
+ * como adicionar, editar e remover colunas e tarefas, mover tarefas entre colunas,
+ * designar colaboradores para tarefas, entre outras.
+ *
+ * @author Franklin Oliveira
+ */
 #include <iostream>
 #include <cstdlib>
 #include <string>
-#include <limits>
+#include <fstream>
 #include "../include/quadro.hpp"
+#include "../include/listaDuplamenteEncadeada.hpp"
+#include "../include/listaSimplesmenteEncadeada.hpp"
 
 using namespace std;
 
+/**
+ * @brief Limpa a tela do console.
+ */
 void limparConsole()
 {
 #ifdef _WIN32
@@ -15,14 +31,24 @@ void limparConsole()
 #endif
 }
 
+/**
+ * @brief Limpa o buffer do console.
+ */
 void clearBuffer()
 {
     cin.clear();
-    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    cin.ignore(100, '\n');
 }
 
 int Colaborador::contador = 0;
 
+/**
+ * @brief Realiza uma busca binária em uma equipe de colaboradores pelo ID.
+ *
+ * @param equipe O conjunto de colaboradores a ser pesquisado.
+ * @param id O ID do colaborador a ser encontrado.
+ * @return Um ponteiro para o colaborador encontrado ou nullptr se não for encontrado.
+ */
 Colaborador *buscaBinaria(const set<Colaborador *, comparador> &equipe, int id)
 {
     auto inicio = equipe.begin();
@@ -30,23 +56,31 @@ Colaborador *buscaBinaria(const set<Colaborador *, comparador> &equipe, int id)
 
     while (inicio != fim)
     {
-        if ((*inicio)->getID() == id)
+        auto meio = std::next(inicio, std::distance(inicio, fim) / 2);
+
+        if ((*meio)->getID() == id)
         {
-            return *inicio;
+            return *meio;
         }
-        else if ((*inicio)->getID() < id)
+        else if ((*meio)->getID() < id)
         {
-            ++inicio;
+            inicio = std::next(meio);
         }
         else
         {
-            return nullptr;
+            fim = meio;
         }
     }
 
     return nullptr;
 }
 
+/**
+ * @brief Cria e cadastra um novo colaborador no quadro KanBan.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan.
+ * @return O ponteiro para o novo colaborador cadastrado.
+ */
 Colaborador *cadastrarColaborador(Quadro *&KanBan)
 {
     clearBuffer();
@@ -64,6 +98,11 @@ Colaborador *cadastrarColaborador(Quadro *&KanBan)
     return colaborador;
 }
 
+/**
+ * @brief Cria um novo quadro KanBan.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan a ser criado.
+ */
 void criarQuadro(Quadro *&KanBan)
 {
     clearBuffer();
@@ -79,6 +118,11 @@ void criarQuadro(Quadro *&KanBan)
     KanBan = new Quadro(nome, desc);
 }
 
+/**
+ * @brief Cria e adiciona uma nova coluna ao quadro KanBan.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan.
+ */
 void criarColuna(Quadro *&KanBan)
 {
     clearBuffer();
@@ -96,9 +140,14 @@ void criarColuna(Quadro *&KanBan)
     cout << "Coluna adiconada com sucesso!" << endl;
 }
 
+/**
+ * @brief Edita uma coluna existente no quadro KanBan.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan.
+ */
 void editarColuna(Quadro *&KanBan)
 {
-    
+
     if (KanBan->getNumeroColunas() == 0)
     {
         cout << "Crie uma coluna primeiro!" << endl;
@@ -137,6 +186,11 @@ void editarColuna(Quadro *&KanBan)
     cout << "Coluna editada com sucesso!" << endl;
 }
 
+/**
+ * @brief Remove uma coluna do quadro KanBan.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan.
+ */
 void removerColuna(Quadro *&KanBan)
 {
     clearBuffer();
@@ -161,6 +215,11 @@ void removerColuna(Quadro *&KanBan)
     cout << "Coluna removida com sucesso!" << endl;
 }
 
+/**
+ * @brief Adiciona uma nova tarefa a uma coluna no quadro KanBan.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan.
+ */
 void adicionarTarefa(Quadro *&KanBan)
 {
     if (KanBan->getNumeroColunas() == 0)
@@ -172,7 +231,7 @@ void adicionarTarefa(Quadro *&KanBan)
     clearBuffer();
 
     KanBan->imprimir();
-    
+
     int indice;
 
     cout << "Digite o indice da coluna: ";
@@ -184,7 +243,6 @@ void adicionarTarefa(Quadro *&KanBan)
     }
 
     clearBuffer();
-
 
     string titulo, descricao;
     int prioridade;
@@ -260,6 +318,11 @@ void adicionarTarefa(Quadro *&KanBan)
     return;
 }
 
+/**
+ * @brief Move uma tarefa de uma coluna para outra no quadro KanBan.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan.
+ */
 void moverTarefas(Quadro *&KanBan)
 {
     if (KanBan->getNumeroColunas() == 0)
@@ -288,8 +351,7 @@ void moverTarefas(Quadro *&KanBan)
         return;
     }
 
-
-    if(KanBan->obterColuna(indiceColuna)->getTamanho() == 0)
+    if (KanBan->obterColuna(indiceColuna)->getTamanho() == 0)
     {
         cout << "Coluna vazia!" << endl;
         clearBuffer();
@@ -336,6 +398,11 @@ void moverTarefas(Quadro *&KanBan)
     return;
 }
 
+/**
+ * @brief Edita uma tarefa existente no quadro KanBan.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan.
+ */
 void editarTarefa(Quadro *&KanBan)
 {
     if (KanBan->getNumeroColunas() == 0)
@@ -354,8 +421,11 @@ void editarTarefa(Quadro *&KanBan)
     if (!(std::cin >> indiceColuna) || indiceColuna < 0 || indiceColuna >= KanBan->getNumeroColunas())
     {
         cout << "Indice invalido!" << endl;
+        clearBuffer();
         return;
     }
+
+    clearBuffer();
 
     int indiceTarefa;
     cout << "Digite o indice da tarefa: ";
@@ -364,6 +434,8 @@ void editarTarefa(Quadro *&KanBan)
         cout << "Indice invalido!" << endl;
         return;
     }
+
+    clearBuffer();
 
     string titulo;
     cout << "Novo titulo da Tarefa (deixe em branco para manter): ";
@@ -381,27 +453,64 @@ void editarTarefa(Quadro *&KanBan)
         KanBan->obterColuna(indiceColuna)->obterTarefa(indiceTarefa)->setDescricao(desc);
     }
 
+    string input;
     int prioridade;
+
     cout << "Novo prioridade da Tarefa (deixe em branco para manter): ";
-    if (!(std::cin >> prioridade) || prioridade < 0)
+    std::getline(std::cin, input);
+
+    if (!(input.empty()))
     {
-        cout << "Prioridade invalida!" << endl;
-        clearBuffer();
+        try
+        {
+            prioridade = stoi(input);
+            KanBan->obterColuna(indiceColuna)->obterTarefa(indiceTarefa)->setPrioridade(prioridade);
+        }
+        catch (...)
+        {
+            cout << "Prioridade invalida!" << endl;
+            clearBuffer();
+            return;
+        }
+    }
+
+    string input2;
+    int ID;
+
+    cout << "ID do novo responsavel (deixe em branco para manter): ";
+    std::getline(std::cin, input2);
+
+    if (!(input2.empty()))
+    {
+        try
+        {
+            ID = stoi(input2);
+        }
+        catch (...)
+        {
+            cout << "ID invalido!" << endl;
+            clearBuffer();
+            return;
+        }
+    }
+
+    if (buscaBinaria(KanBan->getEquipe(), ID) == nullptr)
+    {
+        cout << "Colaborador nao cadastrado." << endl;
         return;
     }
-    if (std::cin.peek() == '\n')
-    {
-        return;
-    }
-    else
-    {
-        KanBan->obterColuna(indiceColuna)->obterTarefa(indiceTarefa)->setPrioridade(prioridade);
-    }
+
+    KanBan->obterColuna(indiceColuna)->obterTarefa(indiceTarefa)->setResponsavel(buscaBinaria(KanBan->getEquipe(), ID));
 
     cout << "Tarefa editada com sucesso!" << endl;
     return;
 }
 
+/**
+ * @brief Remove uma tarefa de uma coluna no quadro KanBan.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan.
+ */
 void removerTarefa(Quadro *&KanBan)
 {
     if (KanBan->getNumeroColunas() == 0)
@@ -435,10 +544,15 @@ void removerTarefa(Quadro *&KanBan)
     cout << "Tarefa removida com sucesso!" << endl;
 }
 
+/**
+ * @brief Adiciona uma nova coluna do tipo "arquivo" ao quadro KanBan.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan.
+ */
 void adicionarColunaArquivo(Quadro *&KanBan)
 {
     clearBuffer();
-    cout << "Colunas do tipo \"arquivo\" são utilizadas para armazenar tarefas finalizadas e/ou obsoletas." << endl;
+    cout << "Colunas do tipo \"arquivo\" sao utilizadas para armazenar tarefas finalizadas e/ou obsoletas." << endl;
 
     string nome, desc;
     cout << "Digite o nome da coluna: ";
@@ -450,6 +564,11 @@ void adicionarColunaArquivo(Quadro *&KanBan)
     KanBan->adicionarColuna(colunaArquivo);
 }
 
+/**
+ * @brief Move uma coluna de uma posição para outra no quadro KanBan.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan.
+ */
 void moverColuna(Quadro *&KanBan)
 {
     if (KanBan->getNumeroColunas() == 0)
@@ -488,6 +607,11 @@ void moverColuna(Quadro *&KanBan)
     cout << "Coluna movida com sucesso!" << endl;
 }
 
+/**
+ * @brief Ordena as tarefas em uma coluna do quadro KanBan com base na prioridade.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan.
+ */
 void ordenarColuna(Quadro *&KanBan)
 {
     if (KanBan->getNumeroColunas() == 0)
@@ -495,7 +619,7 @@ void ordenarColuna(Quadro *&KanBan)
         cout << "Crie uma coluna primeiro." << endl;
         return;
     }
-    
+
     clearBuffer();
 
     KanBan->imprimir();
@@ -524,6 +648,11 @@ void exibirColaboradores(Quadro *&KanBan)
     KanBan->exibirColaboradores();
 }
 
+/**
+ * @brief Busca um colaborador pelo ID no quadro KanBan e exibe suas informações.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan.
+ */
 void buscarColaborador(Quadro *&KanBan)
 {
     if (KanBan->getEquipe().size() == 0)
@@ -552,6 +681,195 @@ void buscarColaborador(Quadro *&KanBan)
     }
 }
 
+/**
+ * @brief Salva o quadro KanBan em um arquivo.
+ *
+ * @param KanBan O ponteiro para o quadro KanBan.
+ * @param fileName O nome do arquivo de saída.
+ */
+void salvarQuadro(Quadro *&KanBan, string fileName)
+{
+    if (KanBan->getNumeroColunas() == 0)
+    {
+        cout << "Crie uma coluna primeiro!" << endl;
+        return;
+    }
+
+    ofstream file(fileName);
+
+    if (!file)
+    {
+        cout << "Erro ao abrir arquivo." << endl;
+        return;
+    }
+
+    // quadro
+    file << KanBan->getNome();
+    file << "\n";
+    file << KanBan->getDescricao();
+    file << "\n";
+
+    // equipe
+    set<Colaborador *, comparador> equipe = KanBan->getEquipe();
+    int tamanhoEquipe = equipe.size();
+    file << tamanhoEquipe;
+    file << "\n";
+    for (Colaborador *colaborador : equipe)
+    {
+        file << colaborador->getNome();
+        file << "\t";
+        file << colaborador->getContato();
+        file << "\t";
+        file << colaborador->getFuncao();
+        file << "\t";
+        file << colaborador->getID();
+        file << "\n";
+    }
+
+    // colunas
+
+    int numeroColunas = KanBan->getNumeroColunas();
+    file << numeroColunas;
+    file << "\n";
+    for (int i = 0; i < numeroColunas; i++)
+    {
+        file << KanBan->obterColuna(i)->getNome();
+        file << "\t";
+        file << KanBan->obterColuna(i)->getDescricao();
+        file << "\t";
+        string tipoColuna = "nomeada";
+        if (dynamic_cast<ColunaArquivo *>(KanBan->obterColuna(i)) != nullptr)
+        {
+            tipoColuna = "arquivo";
+        }
+        file << tipoColuna;
+        file << "\t";
+        // tarefas
+        int numeroTarefas = KanBan->obterColuna(i)->getTamanho();
+        file << numeroTarefas;
+        file << "\n";
+        for (int j = 0; j < numeroTarefas; j++)
+        {
+            Tarefa *tarefa = KanBan->obterColuna(i)->obterTarefa(j);
+            file << tarefa->getTitulo();
+            file << "\t";
+            file << tarefa->getDescricao();
+            file << "\t";
+            file << tarefa->getPrioridade();
+            file << "\t";
+            if (tarefa->getResponsavel() == nullptr)
+            {
+                file << "nullptr";
+            }
+            else
+            {
+                file << tarefa->getResponsavel()->getID();
+            }
+            file << "\n";
+        }
+    }
+
+    cout << "Quadro salvo com sucesso!" << endl;
+
+    file.close();
+}
+
+/**
+ * @brief Carrega um quadro KanBan a partir de um arquivo.
+ *
+ * @param fileName O nome do arquivo a ser carregado.
+ * @return O ponteiro para o quadro KanBan carregado.
+ */
+Quadro *carregarQuadro(string fileName)
+{
+    ifstream file(fileName);
+
+    if (!file)
+    {
+        cout << "Erro ao abrir arquivo." << endl;
+        return nullptr;
+    }
+
+    string nomeQuadro, descricaoQuadro;
+    getline(file, nomeQuadro);
+    getline(file, descricaoQuadro);
+
+    Quadro *quadro = new Quadro(nomeQuadro, descricaoQuadro);
+
+    int tamanhoEquipe;
+    file >> tamanhoEquipe;
+    file.ignore(100, '\n');
+
+    for (int i = 0; i < tamanhoEquipe; i++)
+    {
+        string nome, contato, funcao;
+        int id;
+        getline(file, nome, '\t');
+        getline(file, contato, '\t');
+        getline(file, funcao, '\t');
+        file >> id;
+        file.ignore(100, '\n');
+        quadro->inserirColaborador(new Colaborador(nome, contato, funcao));
+    }
+
+    int numeroColunas;
+    file >> numeroColunas;
+    file.ignore(100, '\n');
+
+    for (int i = 0; i < numeroColunas; i++)
+    {
+        string nomeColuna, descricaoColuna, tipoColuna;
+        getline(file, nomeColuna, '\t');
+        getline(file, descricaoColuna, '\t');
+        getline(file, tipoColuna, '\t');
+
+        Coluna *coluna;
+        if (tipoColuna == "arquivo")
+        {
+            coluna = new ColunaArquivo(nomeColuna, descricaoColuna);
+        }
+        else
+        {
+            coluna = new ColunaNomeada(nomeColuna, descricaoColuna);
+        }
+
+        int numeroTarefas;
+        file >> numeroTarefas;
+        file.ignore(100, '\n');
+
+        for (int j = 0; j < numeroTarefas; j++)
+        {
+            Tarefa *tarefa;
+            string titulo, descricao, responsavelString;
+            int prioridade, responsavelID;
+            getline(file, titulo, '\t');
+            getline(file, descricao, '\t');
+            file >> prioridade;
+            file.ignore(100, '\t');
+            getline(file, responsavelString, '\n');
+            if (responsavelString == "nullptr")
+            {
+                tarefa = new Tarefa(titulo, descricao, prioridade, nullptr);
+            }
+            else
+            {
+                responsavelID = stoi(responsavelString);
+                tarefa = new Tarefa(titulo, descricao, prioridade, buscaBinaria(quadro->getEquipe(), responsavelID));
+            }
+
+            coluna->inserirTarefa(tarefa);
+        }
+
+        quadro->adicionarColuna(coluna);
+    }
+
+    file.close();
+
+    cout << "Quadro carregado com sucesso!" << endl;
+
+    return quadro;
+}
+
 int main()
 {
     limparConsole();
@@ -562,7 +880,7 @@ int main()
 
     while (opcao != 0)
     {
-        
+
         if (!quadroCriadoOuCarregado)
         {
             cout << "\n\n========== MENU INICIAL ==========" << endl;
@@ -588,7 +906,14 @@ int main()
             else if (opcao == 2)
             {
                 limparConsole();
-                break;
+                string fileName;
+                cout << "Digite o nome do arquivo (com extensao): ";
+                cin >> fileName;
+                KanBan = carregarQuadro(fileName);
+                if (KanBan != nullptr)
+                {
+                    quadroCriadoOuCarregado = true;
+                }
             }
             else if (opcao == 0)
             {
@@ -600,13 +925,12 @@ int main()
                 limparConsole();
                 cout << "Opcao invalida. Tente novamente." << endl;
                 clearBuffer();
-                continue;
             }
         }
 
         else
         {
-            cout << "\n\n========== MENU ==========" << endl;
+            cout << "\n========== MENU ==========" << endl;
             cout << "1. Adicionar coluna" << endl;
             cout << "2. Editar coluna" << endl;
             cout << "3. Remover coluna" << endl;
@@ -717,11 +1041,12 @@ int main()
             else if (opcao == 15)
             {
                 limparConsole();
-                break;
+                salvarQuadro(KanBan, "save.txt");
             }
             else if (opcao == 0)
             {
                 limparConsole();
+                salvarQuadro(KanBan, "save.txt");
                 break;
             }
             else
