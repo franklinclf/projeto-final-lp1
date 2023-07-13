@@ -1,0 +1,144 @@
+\hypertarget{tarefa_8hpp_source}{}\doxysection{tarefa.\+hpp}
+\label{tarefa_8hpp_source}\index{include/tarefa.hpp@{include/tarefa.hpp}}
+\mbox{\hyperlink{tarefa_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00007}00007\ \textcolor{preprocessor}{\#ifndef\ \_\_TAREFA\_\_}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00008}00008\ \textcolor{preprocessor}{\#define\ \_\_TAREFA\_\_}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pessoa_8hpp}{pessoa.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00014}00014\ \textcolor{keyword}{using\ }std::cout;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00015}00015\ \textcolor{keyword}{using\ }std::ostream;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00016}00016\ \textcolor{keyword}{using\ }std::string;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00021}\mbox{\hyperlink{class_tarefa}{00021}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tarefa}{Tarefa}}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00022}00022\ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00023}00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00024}00024\ \ \ \ \ \textcolor{keywordtype}{string}\ titulo;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00025}00025\ \ \ \ \ \textcolor{keywordtype}{string}\ descricao;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00026}00026\ \ \ \ \ \textcolor{keywordtype}{int}\ prioridade;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00027}00027\ \ \ \ \ \mbox{\hyperlink{class_colaborador}{Colaborador}}*\ responsavel;\ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00035}00035\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ alinhamento(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&texto,\ \textcolor{keywordtype}{int}\ width)}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00036}00036\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ espacos\ =\ width\ -\/\ texto.length();}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (espacos\ >\ 0)}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ espacosEsquerda\ =\ espacos\ /\ 2;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ espacosDireita\ =\ espacos\ -\/\ espacosEsquerda;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::string(espacosEsquerda,\ \textcolor{charliteral}{'\ '})\ +\ texto\ +\ std::string(espacosDireita,\ \textcolor{charliteral}{'\ '});}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ texto;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00045}00045\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00053}00053\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ quebrarLinha(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&texto,\ \textcolor{keywordtype}{int}\ width)}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00054}00054\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ resultado;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ posicao\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (posicao\ <\ (\textcolor{keywordtype}{int})texto.length())}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ linha\ =\ texto.substr(posicao,\ width\ -\/\ 4);}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (linha.back()\ ==\ \textcolor{charliteral}{'\ '})}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ resultado\ +=\ \textcolor{stringliteral}{"{}|\ "{}}\ +\ linha\ +\ std::string(width\ -\/\ 4\ -\/\ linha.length(),\ \textcolor{charliteral}{'\ '})\ +\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ posEspaco\ =\ linha.find\_last\_of(\textcolor{charliteral}{'\ '});}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (posEspaco\ !=\ (\textcolor{keywordtype}{int})string::npos)}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ linha[posEspaco]\ =\ \textcolor{charliteral}{'\ '};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ resultado\ +=\ \textcolor{stringliteral}{"{}|\ "{}}\ +\ linha\ +\ std::string(width\ -\/\ 4\ -\/\ linha.length(),\ \textcolor{charliteral}{'\ '})\ +\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ resultado\ +=\ \textcolor{stringliteral}{"{}|\ "{}}\ +\ linha\ +\ std::string(width\ -\/\ 4\ -\/\ linha.length(),\ \textcolor{charliteral}{'\ '})\ +\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ posicao\ +=\ width\ -\/\ 4;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00078}00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00079}00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ resultado;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00080}00080\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00082}00082\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00086}\mbox{\hyperlink{class_tarefa_a120eea6d4d78b034aec8da4ad4d773c0}{00086}}\ \ \ \ \ \mbox{\hyperlink{class_tarefa_a120eea6d4d78b034aec8da4ad4d773c0}{Tarefa}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00093}\mbox{\hyperlink{class_tarefa_aa1ebf7eca61dba3665083dc5977e62ef}{00093}}\ \ \ \ \ \mbox{\hyperlink{class_tarefa_aa1ebf7eca61dba3665083dc5977e62ef}{Tarefa}}(\textcolor{keywordtype}{string}\ t,\ \textcolor{keywordtype}{string}\ d)\ :\ titulo(t),\ descricao(d),\ prioridade(0)\ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00094}00094\ \ \ \ \ \ \ \ \ responsavel\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00095}00095\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00104}\mbox{\hyperlink{class_tarefa_afbc2dece079311193c18a17600dca6e3}{00104}}\ \ \ \ \ \mbox{\hyperlink{class_tarefa_afbc2dece079311193c18a17600dca6e3}{Tarefa}}(\textcolor{keywordtype}{string}\ t,\ \textcolor{keywordtype}{string}\ d,\ \textcolor{keywordtype}{int}\ p,\ \mbox{\hyperlink{class_colaborador}{Colaborador}}*\ r)\ :\ titulo(t),\ descricao(d),\ prioridade(p),\ responsavel(r)\ \{\}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00109}\mbox{\hyperlink{class_tarefa_ac0aded2b1a1333b92633e4f82d3d3ab7}{00109}}\ \ \ \ \ \mbox{\hyperlink{class_tarefa_ac0aded2b1a1333b92633e4f82d3d3ab7}{\string~Tarefa}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00115}\mbox{\hyperlink{class_tarefa_a79e7e9660e18cd200ba67e18f370df5f}{00115}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tarefa_a79e7e9660e18cd200ba67e18f370df5f}{setTitulo}}(\textcolor{keywordtype}{string}\ t)}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00116}00116\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00117}00117\ \ \ \ \ \ \ \ \ titulo\ =\ t;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00118}00118\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00124}\mbox{\hyperlink{class_tarefa_a940984f91c30d56dcdc2e9815e2b3cc7}{00124}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tarefa_a940984f91c30d56dcdc2e9815e2b3cc7}{setDescricao}}(\textcolor{keywordtype}{string}\ d)}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00125}00125\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00126}00126\ \ \ \ \ \ \ \ \ descricao\ =\ d;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00127}00127\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00128}00128\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00133}\mbox{\hyperlink{class_tarefa_ab063c2349c20692e1aa021b829720847}{00133}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tarefa_ab063c2349c20692e1aa021b829720847}{setPrioridade}}(\textcolor{keywordtype}{int}\ p)}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00134}00134\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00135}00135\ \ \ \ \ \ \ \ \ prioridade\ =\ p;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00136}00136\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00142}\mbox{\hyperlink{class_tarefa_a21b76d5cedc9cd577a99065bc84b4884}{00142}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tarefa_a21b76d5cedc9cd577a99065bc84b4884}{setResponsavel}}(\mbox{\hyperlink{class_colaborador}{Colaborador}}*\ r)}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00143}00143\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00144}00144\ \ \ \ \ \ \ \ \ responsavel\ =\ r;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00145}00145\ \ \ \ \ \ \ \ \ ++r;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00146}00146\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00147}00147\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00152}\mbox{\hyperlink{class_tarefa_acafe89fa135d5af459beff157c292faa}{00152}}\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_tarefa_acafe89fa135d5af459beff157c292faa}{getTitulo}}()}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00153}00153\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00154}00154\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ titulo;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00155}00155\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00156}00156\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00161}\mbox{\hyperlink{class_tarefa_ae2d353e0cd6fa0eb8d4d70eb36b49a10}{00161}}\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_tarefa_ae2d353e0cd6fa0eb8d4d70eb36b49a10}{getDescricao}}()}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00162}00162\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00163}00163\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ descricao;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00164}00164\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00165}00165\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00170}\mbox{\hyperlink{class_tarefa_a7bf9fd90402ab301884f4dcbb36dcec8}{00170}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_tarefa_a7bf9fd90402ab301884f4dcbb36dcec8}{getPrioridade}}()}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00171}00171\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00172}00172\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ prioridade;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00173}00173\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00174}00174\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00179}\mbox{\hyperlink{class_tarefa_a5a24414bd9d3ee8186112415cb7a9bcd}{00179}}\ \ \ \ \ \mbox{\hyperlink{class_colaborador}{Colaborador}}*\ \mbox{\hyperlink{class_tarefa_a5a24414bd9d3ee8186112415cb7a9bcd}{getResponsavel}}()}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00180}00180\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00181}00181\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ responsavel;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00182}00182\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00183}00183\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00190}\mbox{\hyperlink{class_tarefa_a58971dffa1b7fee253a4920434684b30}{00190}}\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&\mbox{\hyperlink{class_tarefa_a58971dffa1b7fee253a4920434684b30}{operator<<}}(std::ostream\ \&os,\ \mbox{\hyperlink{class_tarefa}{Tarefa}}*\ \&tarefa)}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00191}00191\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00192}00192\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ quadroWidth\ =\ 40;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00193}00193\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00194}00194\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}+"{}}\ <<\ std::string(quadroWidth,\ \textcolor{charliteral}{'-\/'})\ <<\ \textcolor{stringliteral}{"{}+\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00195}00195\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}|\ "{}}\ <<\ alinhamento(tarefa-\/>titulo,\ quadroWidth\ -\/\ 3)\ <<\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00196}00196\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}+"{}}\ <<\ std::string(quadroWidth,\ \textcolor{charliteral}{'-\/'})\ <<\ \textcolor{stringliteral}{"{}+\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00197}00197\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}|\ Descricao:\ "{}}\ <<\ std::string(quadroWidth\ -\/\ 14,\ \textcolor{charliteral}{'\ '})\ <<\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00198}00198\ \ \ \ \ \ \ \ \ os\ <<\ quebrarLinha(tarefa-\/>descricao,\ quadroWidth\ +\ 1);}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00199}00199\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}+"{}}\ <<\ std::string(quadroWidth,\ \textcolor{charliteral}{'-\/'})\ <<\ \textcolor{stringliteral}{"{}+\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00200}00200\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}|\ Prioridade:\ "{}}\ <<\ alinhamento(std::to\_string(tarefa-\/>prioridade),\ quadroWidth\ -\/\ 15)\ <<\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00201}00201\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(tarefa-\/>responsavel\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00202}00202\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00203}00203\ \ \ \ \ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}|\ Responsavel:\ "{}}\ <<\ alinhamento(tarefa-\/>responsavel-\/>\mbox{\hyperlink{class_pessoa_aedeca9c83ea13db9c487ceb48ac37da7}{getNome}}(),\ quadroWidth\ -\/\ 16)\ <<\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00204}00204\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00205}00205\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00206}00206\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00207}00207\ \ \ \ \ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}|\ Responsavel:\ "{}}\ <<\ alinhamento(\textcolor{stringliteral}{"{}Nao\ designado."{}},\ quadroWidth\ -\/\ 16)\ <<\ \textcolor{stringliteral}{"{}\ |\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00208}00208\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00209}00209\ \ \ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}+"{}}\ <<\ std::string(quadroWidth,\ \textcolor{charliteral}{'-\/'})\ <<\ \textcolor{stringliteral}{"{}+\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00210}00210\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00211}00211\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ os;}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00212}00212\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00213}00213\ \};}
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00214}00214\ }
+\DoxyCodeLine{\Hypertarget{tarefa_8hpp_source_l00215}00215\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

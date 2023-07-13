@@ -1,0 +1,286 @@
+\hypertarget{class_coluna}{}\doxysection{Coluna Class Reference}
+\label{class_coluna}\index{Coluna@{Coluna}}
+
+
+Classe abstrata que representa uma coluna de um quadro de tarefas.  
+
+
+
+
+{\ttfamily \#include $<$colunas.\+hpp$>$}
+
+Inheritance diagram for Coluna\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d3/d3c/class_coluna}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_coluna_ac09fa33160badb14b7e4a095f15fb551}{inserir\+Tarefa}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$t)=0
+\begin{DoxyCompactList}\small\item\em Insere uma tarefa na coluna. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_coluna_ae2733f6d09e1d3f9a2b136ad4517c4d0}{remover\+Tarefa}} (int indice)=0
+\begin{DoxyCompactList}\small\item\em Remove uma tarefa da coluna. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_coluna_a48875a7414e5f4d15bfed749bb0a5586}{imprimir}} () const =0
+\begin{DoxyCompactList}\small\item\em Imprime as informações da coluna. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_coluna_afc72b9e6d07bb8c8bf926e6c96ed5e4f}{mover\+Tarefa}} (int indice, \mbox{\hyperlink{class_coluna}{Coluna}} $\ast$coluna\+Destino)=0
+\begin{DoxyCompactList}\small\item\em Move uma tarefa de uma coluna para outra. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ \mbox{\hyperlink{class_coluna_a1b697b50e065b83454e023c4ab24c4ef}{obter\+Tarefa}} (int indice)=0
+\begin{DoxyCompactList}\small\item\em Obtém uma tarefa da coluna pelo seu índice. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_coluna_a98df8d945c71c2cdc352d610325fea02}{get\+Tamanho}} ()=0
+\begin{DoxyCompactList}\small\item\em Obtém o tamanho da coluna, ou seja, a quantidade de tarefas nela contidas. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_coluna_a25ecf45ce1e1c7a03b9c92d4a5da0544}{get\+Nome}} ()=0
+\begin{DoxyCompactList}\small\item\em Obtém o nome da coluna. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_coluna_a2a359c5e42f66995c0529b2f2184d33f}{get\+Descricao}} ()=0
+\begin{DoxyCompactList}\small\item\em Obtém a descrição da coluna. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_coluna_a8b576e2bbe66a544614667ca355d6545}{set\+Nome}} (string n)=0
+\begin{DoxyCompactList}\small\item\em Define o nome da coluna. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_coluna_a38913a9091206a4672e2ab608d8a7804}{set\+Descricao}} (string d)=0
+\begin{DoxyCompactList}\small\item\em Define a descrição da coluna. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_coluna_a072f1cae205d24c75bbf6e240e66c025}{ordenar}} ()=0
+\begin{DoxyCompactList}\small\item\em Ordena as tarefas da coluna por prioridade. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lista_dupla}{Lista\+Dupla}} \mbox{\hyperlink{class_coluna_a24093db18d53602f1b4b9ca436489ea8}{lista}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe abstrata que representa uma coluna de um quadro de tarefas. 
+
+Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00020}{20}} of file \mbox{\hyperlink{colunas_8hpp_source}{colunas.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_coluna_a914ff6225d464e612b7ce6cfa0c73fed}\label{class_coluna_a914ff6225d464e612b7ce6cfa0c73fed}} 
+\index{Coluna@{Coluna}!````~Coluna@{$\sim$Coluna}}
+\index{````~Coluna@{$\sim$Coluna}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{$\sim$Coluna()}{~Coluna()}}
+{\footnotesize\ttfamily virtual Coluna\+::$\sim$\+Coluna (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00026}{26}} of file \mbox{\hyperlink{colunas_8hpp_source}{colunas.\+hpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_coluna_a2a359c5e42f66995c0529b2f2184d33f}\label{class_coluna_a2a359c5e42f66995c0529b2f2184d33f}} 
+\index{Coluna@{Coluna}!getDescricao@{getDescricao}}
+\index{getDescricao@{getDescricao}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{getDescricao()}{getDescricao()}}
+{\footnotesize\ttfamily virtual string Coluna\+::get\+Descricao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Obtém a descrição da coluna. 
+
+\begin{DoxyReturn}{Returns}
+Descrição da coluna. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_coluna_nomeada_a5ca1fef4b69d671c80f399435b567af4}{Coluna\+Nomeada}}, and \mbox{\hyperlink{class_coluna_arquivo_aa9c91a9dbac4a43620a220010fd2a4fc}{Coluna\+Arquivo}}.
+
+\mbox{\Hypertarget{class_coluna_a25ecf45ce1e1c7a03b9c92d4a5da0544}\label{class_coluna_a25ecf45ce1e1c7a03b9c92d4a5da0544}} 
+\index{Coluna@{Coluna}!getNome@{getNome}}
+\index{getNome@{getNome}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily virtual string Coluna\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Obtém o nome da coluna. 
+
+\begin{DoxyReturn}{Returns}
+Nome da coluna. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_coluna_nomeada_a4aa6abb21a20d7fb4d5d81aa584d8683}{Coluna\+Nomeada}}, and \mbox{\hyperlink{class_coluna_arquivo_aa93ac97c8f31a46c939ee6e9e4803fa5}{Coluna\+Arquivo}}.
+
+\mbox{\Hypertarget{class_coluna_a98df8d945c71c2cdc352d610325fea02}\label{class_coluna_a98df8d945c71c2cdc352d610325fea02}} 
+\index{Coluna@{Coluna}!getTamanho@{getTamanho}}
+\index{getTamanho@{getTamanho}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{getTamanho()}{getTamanho()}}
+{\footnotesize\ttfamily virtual int Coluna\+::get\+Tamanho (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Obtém o tamanho da coluna, ou seja, a quantidade de tarefas nela contidas. 
+
+\begin{DoxyReturn}{Returns}
+Tamanho da coluna. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_coluna_nomeada_af0ed75048904b4399b9955873f1ba7ba}{Coluna\+Nomeada}}, and \mbox{\hyperlink{class_coluna_arquivo_a07705485463aba703ff87ea7d82691c5}{Coluna\+Arquivo}}.
+
+\mbox{\Hypertarget{class_coluna_a48875a7414e5f4d15bfed749bb0a5586}\label{class_coluna_a48875a7414e5f4d15bfed749bb0a5586}} 
+\index{Coluna@{Coluna}!imprimir@{imprimir}}
+\index{imprimir@{imprimir}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{imprimir()}{imprimir()}}
+{\footnotesize\ttfamily virtual void Coluna\+::imprimir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Imprime as informações da coluna. 
+
+
+
+Implemented in \mbox{\hyperlink{class_coluna_nomeada_ad0566fe1cc3fef87feeff8e76b74dffd}{Coluna\+Nomeada}}, and \mbox{\hyperlink{class_coluna_arquivo_af89c858cfeb225706983f3e91090792f}{Coluna\+Arquivo}}.
+
+\mbox{\Hypertarget{class_coluna_ac09fa33160badb14b7e4a095f15fb551}\label{class_coluna_ac09fa33160badb14b7e4a095f15fb551}} 
+\index{Coluna@{Coluna}!inserirTarefa@{inserirTarefa}}
+\index{inserirTarefa@{inserirTarefa}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{inserirTarefa()}{inserirTarefa()}}
+{\footnotesize\ttfamily virtual void Coluna\+::inserir\+Tarefa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Insere uma tarefa na coluna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Ponteiro para a tarefa a ser inserida. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_coluna_nomeada_a660583902ae4cacabf28e61edee5ccd4}{Coluna\+Nomeada}}, and \mbox{\hyperlink{class_coluna_arquivo_aeb82024caaccd6083d0ea0447ec2ba7e}{Coluna\+Arquivo}}.
+
+\mbox{\Hypertarget{class_coluna_afc72b9e6d07bb8c8bf926e6c96ed5e4f}\label{class_coluna_afc72b9e6d07bb8c8bf926e6c96ed5e4f}} 
+\index{Coluna@{Coluna}!moverTarefa@{moverTarefa}}
+\index{moverTarefa@{moverTarefa}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{moverTarefa()}{moverTarefa()}}
+{\footnotesize\ttfamily virtual void Coluna\+::mover\+Tarefa (\begin{DoxyParamCaption}\item[{int}]{indice,  }\item[{\mbox{\hyperlink{class_coluna}{Coluna}} $\ast$}]{coluna\+Destino }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Move uma tarefa de uma coluna para outra. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indice} & Índice da tarefa a ser movida. \\
+\hline
+{\em coluna\+Destino} & Ponteiro para a coluna de destino. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_coluna_nomeada_ab47ba7b160204e7001f88c06ec25a305}{Coluna\+Nomeada}}, and \mbox{\hyperlink{class_coluna_arquivo_ac4f7235fe2e8bbcdb959f5100d7c1bb7}{Coluna\+Arquivo}}.
+
+\mbox{\Hypertarget{class_coluna_a1b697b50e065b83454e023c4ab24c4ef}\label{class_coluna_a1b697b50e065b83454e023c4ab24c4ef}} 
+\index{Coluna@{Coluna}!obterTarefa@{obterTarefa}}
+\index{obterTarefa@{obterTarefa}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{obterTarefa()}{obterTarefa()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ Coluna\+::obter\+Tarefa (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Obtém uma tarefa da coluna pelo seu índice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indice} & Índice da tarefa desejada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para a tarefa encontrada. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_coluna_nomeada_a3f8cdd94b330161896b219720b7bc8e2}{Coluna\+Nomeada}}, and \mbox{\hyperlink{class_coluna_arquivo_abb1d729c65cf4680de28dd85fe20c737}{Coluna\+Arquivo}}.
+
+\mbox{\Hypertarget{class_coluna_a072f1cae205d24c75bbf6e240e66c025}\label{class_coluna_a072f1cae205d24c75bbf6e240e66c025}} 
+\index{Coluna@{Coluna}!ordenar@{ordenar}}
+\index{ordenar@{ordenar}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{ordenar()}{ordenar()}}
+{\footnotesize\ttfamily virtual void Coluna\+::ordenar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Ordena as tarefas da coluna por prioridade. 
+
+
+
+Implemented in \mbox{\hyperlink{class_coluna_nomeada_a73e9583ff304eef0a61d772976dac074}{Coluna\+Nomeada}}, and \mbox{\hyperlink{class_coluna_arquivo_af2122dc4d83288ec375515d4d16004a2}{Coluna\+Arquivo}}.
+
+\mbox{\Hypertarget{class_coluna_ae2733f6d09e1d3f9a2b136ad4517c4d0}\label{class_coluna_ae2733f6d09e1d3f9a2b136ad4517c4d0}} 
+\index{Coluna@{Coluna}!removerTarefa@{removerTarefa}}
+\index{removerTarefa@{removerTarefa}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{removerTarefa()}{removerTarefa()}}
+{\footnotesize\ttfamily virtual void Coluna\+::remover\+Tarefa (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove uma tarefa da coluna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indice} & Índice da tarefa a ser removida. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_coluna_nomeada_ad9f5dc15ca20616f353008e5a3aa27e3}{Coluna\+Nomeada}}, and \mbox{\hyperlink{class_coluna_arquivo_aae317988e21d9072edf5de1543085f14}{Coluna\+Arquivo}}.
+
+\mbox{\Hypertarget{class_coluna_a38913a9091206a4672e2ab608d8a7804}\label{class_coluna_a38913a9091206a4672e2ab608d8a7804}} 
+\index{Coluna@{Coluna}!setDescricao@{setDescricao}}
+\index{setDescricao@{setDescricao}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{setDescricao()}{setDescricao()}}
+{\footnotesize\ttfamily virtual void Coluna\+::set\+Descricao (\begin{DoxyParamCaption}\item[{string}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Define a descrição da coluna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Descrição da coluna. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_coluna_nomeada_a3173b4eb484cab5fb328091bccd5379c}{Coluna\+Nomeada}}, and \mbox{\hyperlink{class_coluna_arquivo_a033b6173b2d25af8dd0513ef235bd493}{Coluna\+Arquivo}}.
+
+\mbox{\Hypertarget{class_coluna_a8b576e2bbe66a544614667ca355d6545}\label{class_coluna_a8b576e2bbe66a544614667ca355d6545}} 
+\index{Coluna@{Coluna}!setNome@{setNome}}
+\index{setNome@{setNome}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily virtual void Coluna\+::set\+Nome (\begin{DoxyParamCaption}\item[{string}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Define o nome da coluna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Nome da coluna. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_coluna_nomeada_a7a62c3debc4f87172a8e47a092437086}{Coluna\+Nomeada}}, and \mbox{\hyperlink{class_coluna_arquivo_a11e41b94814603cacc5ca29099d6efe1}{Coluna\+Arquivo}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_coluna_a24093db18d53602f1b4b9ca436489ea8}\label{class_coluna_a24093db18d53602f1b4b9ca436489ea8}} 
+\index{Coluna@{Coluna}!lista@{lista}}
+\index{lista@{lista}!Coluna@{Coluna}}
+\doxysubsubsection{\texorpdfstring{lista}{lista}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lista_dupla}{Lista\+Dupla}} Coluna\+::lista\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00023}{23}} of file \mbox{\hyperlink{colunas_8hpp_source}{colunas.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{colunas_8hpp}{colunas.\+hpp}}\end{DoxyCompactItemize}

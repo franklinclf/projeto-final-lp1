@@ -608,9 +608,15 @@ void moverColuna(Quadro *&KanBan)
 }
 
 /**
- * @brief Ordena as tarefas em uma coluna do quadro KanBan com base na prioridade.
+ * @brief Ordena as tarefas por prioridade usando o algoritmo Bubble Sort.
  *
+ * Esta função implementa o algoritmo de ordenação conhecido como Bubble Sort (ou ordenação por flutuação).
+ * O algoritmo compara pares de elementos adjacentes e os troca de posição se estiverem fora de ordem, repetindo esse processo até
+ * que a lista esteja completamente ordenada. 
+ * 
  * @param KanBan O ponteiro para o quadro KanBan.
+ *
+ * @note A complexidade do Bubble Sort é quadrática, O(n^2), onde n é o número de elementos na lista.
  */
 void ordenarColuna(Quadro *&KanBan)
 {
@@ -651,7 +657,13 @@ void exibirColaboradores(Quadro *&KanBan)
 /**
  * @brief Busca um colaborador pelo ID no quadro KanBan e exibe suas informações.
  *
+ * Esta função realiza uma busca binária no vetor de colaboradores do quadro KanBan para encontrar
+ * um colaborador com o ID fornecido. O algoritmo de busca binária é utilizado devido à sua eficiência
+ * em listas ordenadas, reduzindo o número de comparações necessárias.
+ *
  * @param KanBan O ponteiro para o quadro KanBan.
+ *
+ * @note A complexidade do algoritmo de busca binária é O(log n), onde n é o número de colaboradores no quadro.
  */
 void buscarColaborador(Quadro *&KanBan)
 {

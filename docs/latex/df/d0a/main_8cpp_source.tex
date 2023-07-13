@@ -1,0 +1,967 @@
+\hypertarget{main_8cpp_source}{}\doxysection{main.\+cpp}
+\label{main_8cpp_source}\index{src/main.cpp@{src/main.cpp}}
+\mbox{\hyperlink{main_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00015}00015\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00016}00016\ \textcolor{preprocessor}{\#include\ "{}../include/quadro.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00017}00017\ \textcolor{preprocessor}{\#include\ "{}../include/listaDuplamenteEncadeada.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00018}00018\ \textcolor{preprocessor}{\#include\ "{}../include/listaSimplesmenteEncadeada.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00020}00020\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00025}\mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{00025}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}()}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00026}00026\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00027}00027\ \textcolor{preprocessor}{\#ifdef\ \_WIN32}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00028}00028\ \ \ \ \ system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00029}00029\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00030}00030\ \ \ \ \ system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00031}00031\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00032}00032\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00037}\mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{00037}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}()}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00038}00038\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00039}00039\ \ \ \ \ cin.clear();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00040}00040\ \ \ \ \ cin.ignore(100,\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00041}00041\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00043}00043\ \textcolor{keywordtype}{int}\ Colaborador::contador\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00052}\mbox{\hyperlink{main_8cpp_a2faf12c27b7e1711848f39f038c45f70}{00052}}\ \mbox{\hyperlink{class_colaborador}{Colaborador}}\ *\mbox{\hyperlink{main_8cpp_a2faf12c27b7e1711848f39f038c45f70}{buscaBinaria}}(\textcolor{keyword}{const}\ set<Colaborador\ *,\ comparador>\ \&equipe,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00053}00053\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keyword}{auto}\ inicio\ =\ equipe.begin();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00055}00055\ \ \ \ \ \textcolor{keyword}{auto}\ fim\ =\ equipe.end();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{keywordflow}{while}\ (inicio\ !=\ fim)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00058}00058\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ meio\ =\ std::next(inicio,\ std::distance(inicio,\ fim)\ /\ 2);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((*meio)-\/>getID()\ ==\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *meio;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ ((*meio)-\/>getID()\ <\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ inicio\ =\ std::next(meio);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ fim\ =\ meio;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00073}00073\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00076}00076\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00084}\mbox{\hyperlink{main_8cpp_aed504424b48ab1ef3ce656ba1d439ae0}{00084}}\ \mbox{\hyperlink{class_colaborador}{Colaborador}}\ *\mbox{\hyperlink{main_8cpp_aed504424b48ab1ef3ce656ba1d439ae0}{cadastrarColaborador}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00085}00085\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00086}00086\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00087}00087\ \ \ \ \ \textcolor{keywordtype}{string}\ nome,\ contato,\ funcao;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00088}00088\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ nome\ do\ colaborador:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00089}00089\ \ \ \ \ getline(cin,\ nome);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00090}00090\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ contato\ do\ colaborador:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00091}00091\ \ \ \ \ getline(cin,\ contato);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00092}00092\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ a\ funcao\ do\ colaborador:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00093}00093\ \ \ \ \ getline(cin,\ funcao);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00095}00095\ \ \ \ \ \mbox{\hyperlink{class_colaborador}{Colaborador}}\ *colaborador\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_colaborador}{Colaborador}}(nome,\ contato,\ funcao);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00096}00096\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_ae11cee4915eee6bf9b192ac8680fadf6}{inserirColaborador}}(colaborador);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00098}00098\ \ \ \ \ \textcolor{keywordflow}{return}\ colaborador;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00099}00099\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00106}\mbox{\hyperlink{main_8cpp_a3efe6ab2635ad7386bcff5f15661a081}{00106}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a3efe6ab2635ad7386bcff5f15661a081}{criarQuadro}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00107}00107\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00108}00108\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00110}00110\ \ \ \ \ \textcolor{keywordtype}{string}\ nome,\ desc;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00112}00112\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ nome\ do\ quadro:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00113}00113\ \ \ \ \ getline(cin,\ nome);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00115}00115\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ a\ descricao\ do\ quadro:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00116}00116\ \ \ \ \ getline(cin,\ desc);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00118}00118\ \ \ \ \ KanBan\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_quadro}{Quadro}}(nome,\ desc);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00119}00119\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00126}\mbox{\hyperlink{main_8cpp_a48e1cbf9de98941d548837997b582870}{00126}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a48e1cbf9de98941d548837997b582870}{criarColuna}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00127}00127\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00128}00128\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00129}00129\ \ \ \ \ \textcolor{keywordtype}{string}\ nome,\ desc;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00131}00131\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ nome\ da\ coluna:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00132}00132\ \ \ \ \ getline(cin,\ nome);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00134}00134\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ a\ descricao\ da\ coluna:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00135}00135\ \ \ \ \ getline(cin,\ desc);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00136}00136\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00137}00137\ \ \ \ \ \mbox{\hyperlink{class_coluna}{Coluna}}\ *coluna\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_coluna_nomeada}{ColunaNomeada}}(nome,\ desc);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00138}00138\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_ae21d17fb833175bd68b00970c772fcd3}{adicionarColuna}}(coluna);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00140}00140\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Coluna\ adiconada\ com\ sucesso!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00141}00141\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00142}00142\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00148}\mbox{\hyperlink{main_8cpp_a512a56ef22516c5454d0f925b16adcd6}{00148}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a512a56ef22516c5454d0f925b16adcd6}{editarColuna}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00149}00149\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00150}00150\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00151}00151\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}()\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00152}00152\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00153}00153\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Crie\ uma\ coluna\ primeiro!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00154}00154\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00155}00155\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00156}00156\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00157}00157\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00158}00158\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00159}00159\ \ \ \ \ \textcolor{keywordtype}{int}\ indice;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00160}00160\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00161}00161\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ indice\ da\ coluna:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00162}00162\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ indice)\ ||\ indice\ <\ 0\ ||\ indice\ >=\ KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}())}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00163}00163\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00164}00164\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00165}00165\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00166}00166\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00167}00167\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00168}00168\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00169}00169\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00170}00170\ \ \ \ \ \textcolor{keywordtype}{string}\ nome,\ desc;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00172}00172\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Novo\ nome\ da\ coluna\ (para\ manter,\ deixe\ vazio):\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00173}00173\ \ \ \ \ std::getline(std::cin,\ nome);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00174}00174\ \ \ \ \ \textcolor{keywordflow}{if}\ (nome\ !=\ \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00175}00175\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00176}00176\ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indice)-\/>\mbox{\hyperlink{class_coluna_a8b576e2bbe66a544614667ca355d6545}{setNome}}(nome);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00177}00177\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00178}00178\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00179}00179\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Novo\ descricao\ da\ coluna\ (para\ manter,\ deixe\ vazio):\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00180}00180\ \ \ \ \ std::getline(std::cin,\ desc);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00181}00181\ \ \ \ \ \textcolor{keywordflow}{if}\ (desc\ !=\ \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00182}00182\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00183}00183\ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indice)-\/>\mbox{\hyperlink{class_coluna_a38913a9091206a4672e2ab608d8a7804}{setDescricao}}(desc);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00184}00184\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00185}00185\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00186}00186\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Coluna\ editada\ com\ sucesso!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00187}00187\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00188}00188\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00194}\mbox{\hyperlink{main_8cpp_aaa15a96063fb4377e5ac1d46a68321c0}{00194}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_aaa15a96063fb4377e5ac1d46a68321c0}{removerColuna}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00195}00195\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00196}00196\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00197}00197\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}()\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00198}00198\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00199}00199\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Crie\ uma\ coluna\ primeiro!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00200}00200\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00201}00201\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00202}00202\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00203}00203\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00204}00204\ \ \ \ \ \textcolor{keywordtype}{int}\ indice;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00205}00205\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00206}00206\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ indice\ da\ coluna\ a\ ser\ removida:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00207}00207\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00208}00208\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ indice)\ ||\ indice\ <\ 0\ ||\ indice\ >=\ KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}())}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00209}00209\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00210}00210\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00211}00211\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00212}00212\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00213}00213\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00214}00214\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a977fc54d38236a3a70a20e65101f51c4}{removerColuna}}(indice);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00215}00215\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Coluna\ removida\ com\ sucesso!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00216}00216\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00217}00217\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00223}\mbox{\hyperlink{main_8cpp_a0d931717ab3053bc49784e26575b01d6}{00223}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a0d931717ab3053bc49784e26575b01d6}{adicionarTarefa}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00224}00224\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00225}00225\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}()\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00226}00226\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00227}00227\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Crie\ uma\ coluna\ primeiro!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00228}00228\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00229}00229\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00230}00230\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00231}00231\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00232}00232\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00233}00233\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00234}00234\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00235}00235\ \ \ \ \ \textcolor{keywordtype}{int}\ indice;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00236}00236\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00237}00237\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ indice\ da\ coluna:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00238}00238\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ indice)\ ||\ indice\ <\ 0\ ||\ indice\ >=\ KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}())}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00239}00239\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00240}00240\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00241}00241\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00242}00242\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00243}00243\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00244}00244\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00245}00245\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00246}00246\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00247}00247\ \ \ \ \ \textcolor{keywordtype}{string}\ titulo,\ descricao;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00248}00248\ \ \ \ \ \textcolor{keywordtype}{int}\ prioridade;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00249}00249\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00250}00250\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ titulo\ da\ tarefa:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00251}00251\ \ \ \ \ std::getline(std::cin,\ titulo);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00252}00252\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00253}00253\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ a\ descricao\ da\ tarefa:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00254}00254\ \ \ \ \ std::getline(std::cin,\ descricao);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00255}00255\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00256}00256\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ a\ prioridade\ da\ tarefa:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00257}00257\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ prioridade)\ ||\ prioridade\ <\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00258}00258\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00259}00259\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Prioridade\ invalida!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00260}00260\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00261}00261\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00262}00262\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00263}00263\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00264}00264\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00265}00265\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00266}00266\ \ \ \ \ \mbox{\hyperlink{class_tarefa}{Tarefa}}\ *tarefa\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_tarefa}{Tarefa}}(titulo,\ descricao);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00267}00267\ \ \ \ \ tarefa-\/>\mbox{\hyperlink{class_tarefa_ab063c2349c20692e1aa021b829720847}{setPrioridade}}(prioridade);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00268}00268\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indice)-\/>\mbox{\hyperlink{class_coluna_ac09fa33160badb14b7e4a095f15fb551}{inserirTarefa}}(tarefa);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00269}00269\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00270}00270\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Tarefa\ adicionada\ com\ sucesso!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00271}00271\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00272}00272\ \ \ \ \ \textcolor{keywordtype}{char}\ decisao;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00273}00273\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Quer\ designar\ essa\ tarefa\ a\ algum\ colaborador?\ (S/N)\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00274}00274\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00275}00275\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ decisao)\ ||\ toupper(decisao)\ !=\ \textcolor{charliteral}{'S'})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00276}00276\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00277}00277\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00278}00278\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00279}00279\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00280}00280\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00281}00281\ \ \ \ \ \textcolor{keywordtype}{char}\ decisao2;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00282}00282\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Criar\ novo\ colaborador?\ (S/N)\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00283}00283\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00284}00284\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ decisao2))}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00285}00285\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00286}00286\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Operacao\ invalida."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00287}00287\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00288}00288\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00289}00289\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00290}00290\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (toupper(decisao2)\ ==\ \textcolor{charliteral}{'S'})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00291}00291\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00292}00292\ \ \ \ \ \ \ \ \ tarefa-\/>\mbox{\hyperlink{class_tarefa_a21b76d5cedc9cd577a99065bc84b4884}{setResponsavel}}(\mbox{\hyperlink{main_8cpp_aed504424b48ab1ef3ce656ba1d439ae0}{cadastrarColaborador}}(KanBan));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00293}00293\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Colaborador\ designado\ com\ sucesso!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00294}00294\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00295}00295\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00296}00296\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00297}00297\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ idColaborador;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00298}00298\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}ID\ do\ colaborador:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00299}00299\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ idColaborador))}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00300}00300\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00301}00301\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00302}00302\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00303}00303\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00304}00304\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00305}00305\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00306}00306\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{main_8cpp_a2faf12c27b7e1711848f39f038c45f70}{buscaBinaria}}(KanBan-\/>\mbox{\hyperlink{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}{getEquipe}}(),\ idColaborador)\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00307}00307\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00308}00308\ \ \ \ \ \ \ \ \ \ \ \ \ tarefa-\/>\mbox{\hyperlink{class_tarefa_a21b76d5cedc9cd577a99065bc84b4884}{setResponsavel}}(\mbox{\hyperlink{main_8cpp_a2faf12c27b7e1711848f39f038c45f70}{buscaBinaria}}(KanBan-\/>\mbox{\hyperlink{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}{getEquipe}}(),\ idColaborador));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00309}00309\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Colaborador\ designado\ com\ sucesso!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00310}00310\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00311}00311\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00312}00312\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00313}00313\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00314}00314\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00315}00315\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00316}00316\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00317}00317\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00318}00318\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00319}00319\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00320}00320\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00326}\mbox{\hyperlink{main_8cpp_a2eddfb0aac0ba265acd5268ce3d8e919}{00326}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a2eddfb0aac0ba265acd5268ce3d8e919}{moverTarefas}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00327}00327\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00328}00328\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}()\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00329}00329\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00330}00330\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Crie\ uma\ coluna\ primeiro!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00331}00331\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00332}00332\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00333}00333\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00334}00334\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}()\ <\ 2)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00335}00335\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00336}00336\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Crie\ mais\ uma\ coluna\ primeiro."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00337}00337\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00338}00338\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00339}00339\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00340}00340\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00341}00341\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00342}00342\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00343}00343\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00344}00344\ \ \ \ \ \textcolor{keywordtype}{int}\ indiceColuna;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00345}00345\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00346}00346\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ indice\ da\ coluna\ que\ contem\ essa\ tarefa:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00347}00347\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ indiceColuna)\ ||\ indiceColuna\ <\ 0\ ||\ indiceColuna\ >=\ KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}())}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00348}00348\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00349}00349\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00350}00350\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00351}00351\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00352}00352\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00353}00353\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00354}00354\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indiceColuna)-\/>\mbox{\hyperlink{class_coluna_a98df8d945c71c2cdc352d610325fea02}{getTamanho}}()\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00355}00355\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00356}00356\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Coluna\ vazia!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00357}00357\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00358}00358\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00359}00359\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00360}00360\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00361}00361\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00362}00362\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00363}00363\ \ \ \ \ \textcolor{keywordtype}{int}\ indiceTarefa;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00364}00364\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00365}00365\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ indice\ da\ tarefa\ que\ deseja\ mover:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00366}00366\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ indiceTarefa)\ ||\ indiceTarefa\ <\ 0\ ||\ indiceTarefa\ >=\ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indiceColuna)-\/>\mbox{\hyperlink{class_coluna_a98df8d945c71c2cdc352d610325fea02}{getTamanho}}())}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00367}00367\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00368}00368\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00369}00369\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00370}00370\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00371}00371\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00372}00372\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00373}00373\ \ \ \ \ \mbox{\hyperlink{class_tarefa}{Tarefa}}\ *tarefa\ =\ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indiceColuna)-\/>\mbox{\hyperlink{class_coluna_a1b697b50e065b83454e023c4ab24c4ef}{obterTarefa}}(indiceTarefa);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00374}00374\ \ \ \ \ cout\ <<\ tarefa;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00375}00375\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00376}00376\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00377}00377\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00378}00378\ \ \ \ \ \textcolor{keywordtype}{char}\ decisao;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00379}00379\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Quer\ mover\ essa\ tarefa\ para\ outra\ coluna?\ (S/N)\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00380}00380\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ decisao)\ ||\ toupper(decisao)\ !=\ \textcolor{charliteral}{'S'})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00381}00381\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00382}00382\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00383}00383\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00384}00384\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00385}00385\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ indice\ da\ coluna\ para\ qual\ voce\ quer\ mover\ a\ tarefa:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00386}00386\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00387}00387\ \ \ \ \ \textcolor{keywordtype}{int}\ indiceDestino;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00388}00388\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ indiceDestino)\ ||\ indiceDestino\ <\ 0\ ||\ indiceDestino\ >=\ KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}())}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00389}00389\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00390}00390\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00391}00391\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00392}00392\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00393}00393\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00394}00394\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00395}00395\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00396}00396\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00397}00397\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indiceColuna)-\/>\mbox{\hyperlink{class_coluna_afc72b9e6d07bb8c8bf926e6c96ed5e4f}{moverTarefa}}(indiceTarefa,\ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indiceDestino));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00398}00398\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00399}00399\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00400}00400\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00406}\mbox{\hyperlink{main_8cpp_ac8773e0e3b3c75454e680ff43c6fcd7f}{00406}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_ac8773e0e3b3c75454e680ff43c6fcd7f}{editarTarefa}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00407}00407\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00408}00408\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}()\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00409}00409\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00410}00410\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Crie\ uma\ coluna\ primeiro!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00411}00411\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00412}00412\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00413}00413\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00414}00414\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00415}00415\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00416}00416\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00417}00417\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00418}00418\ \ \ \ \ \textcolor{keywordtype}{int}\ indiceColuna;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00419}00419\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00420}00420\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ indice\ da\ coluna:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00421}00421\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ indiceColuna)\ ||\ indiceColuna\ <\ 0\ ||\ indiceColuna\ >=\ KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}())}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00422}00422\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00423}00423\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00424}00424\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00425}00425\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00426}00426\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00427}00427\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00428}00428\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00429}00429\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00430}00430\ \ \ \ \ \textcolor{keywordtype}{int}\ indiceTarefa;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00431}00431\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ indice\ da\ tarefa:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00432}00432\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ indiceTarefa)\ ||\ indiceTarefa\ <\ 0\ ||\ indiceTarefa\ >=\ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indiceColuna)-\/>\mbox{\hyperlink{class_coluna_a98df8d945c71c2cdc352d610325fea02}{getTamanho}}())}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00433}00433\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00434}00434\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00435}00435\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00436}00436\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00437}00437\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00438}00438\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00439}00439\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00440}00440\ \ \ \ \ \textcolor{keywordtype}{string}\ titulo;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00441}00441\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Novo\ titulo\ da\ Tarefa\ (deixe\ em\ branco\ para\ manter):\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00442}00442\ \ \ \ \ std::getline(std::cin,\ titulo);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00443}00443\ \ \ \ \ \textcolor{keywordflow}{if}\ (titulo\ !=\ \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00444}00444\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00445}00445\ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indiceColuna)-\/>\mbox{\hyperlink{class_coluna_a1b697b50e065b83454e023c4ab24c4ef}{obterTarefa}}(indiceTarefa)-\/>\mbox{\hyperlink{class_tarefa_a79e7e9660e18cd200ba67e18f370df5f}{setTitulo}}(titulo);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00446}00446\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00447}00447\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00448}00448\ \ \ \ \ \textcolor{keywordtype}{string}\ desc;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00449}00449\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Novo\ descricao\ da\ Tarefa\ (deixe\ em\ branco\ para\ manter):\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00450}00450\ \ \ \ \ std::getline(std::cin,\ desc);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00451}00451\ \ \ \ \ \textcolor{keywordflow}{if}\ (desc\ !=\ \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00452}00452\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00453}00453\ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indiceColuna)-\/>\mbox{\hyperlink{class_coluna_a1b697b50e065b83454e023c4ab24c4ef}{obterTarefa}}(indiceTarefa)-\/>\mbox{\hyperlink{class_tarefa_a940984f91c30d56dcdc2e9815e2b3cc7}{setDescricao}}(desc);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00454}00454\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00455}00455\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00456}00456\ \ \ \ \ \textcolor{keywordtype}{string}\ input;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00457}00457\ \ \ \ \ \textcolor{keywordtype}{int}\ prioridade;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00458}00458\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00459}00459\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Novo\ prioridade\ da\ Tarefa\ (deixe\ em\ branco\ para\ manter):\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00460}00460\ \ \ \ \ std::getline(std::cin,\ input);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00461}00461\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00462}00462\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(input.empty()))}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00463}00463\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00464}00464\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00465}00465\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00466}00466\ \ \ \ \ \ \ \ \ \ \ \ \ prioridade\ =\ stoi(input);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00467}00467\ \ \ \ \ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indiceColuna)-\/>\mbox{\hyperlink{class_coluna_a1b697b50e065b83454e023c4ab24c4ef}{obterTarefa}}(indiceTarefa)-\/>\mbox{\hyperlink{class_tarefa_ab063c2349c20692e1aa021b829720847}{setPrioridade}}(prioridade);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00468}00468\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00469}00469\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (...)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00470}00470\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00471}00471\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Prioridade\ invalida!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00472}00472\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00473}00473\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00474}00474\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00475}00475\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00476}00476\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00477}00477\ \ \ \ \ \textcolor{keywordtype}{string}\ input2;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00478}00478\ \ \ \ \ \textcolor{keywordtype}{int}\ ID;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00479}00479\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00480}00480\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}ID\ do\ novo\ responsavel\ (deixe\ em\ branco\ para\ manter):\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00481}00481\ \ \ \ \ std::getline(std::cin,\ input2);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00482}00482\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00483}00483\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(input2.empty()))}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00484}00484\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00485}00485\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00486}00486\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00487}00487\ \ \ \ \ \ \ \ \ \ \ \ \ ID\ =\ stoi(input2);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00488}00488\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00489}00489\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (...)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00490}00490\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00491}00491\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}ID\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00492}00492\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00493}00493\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00494}00494\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00495}00495\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00496}00496\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00497}00497\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{main_8cpp_a2faf12c27b7e1711848f39f038c45f70}{buscaBinaria}}(KanBan-\/>\mbox{\hyperlink{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}{getEquipe}}(),\ ID)\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00498}00498\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00499}00499\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Colaborador\ nao\ cadastrado."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00500}00500\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00501}00501\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00502}00502\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00503}00503\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indiceColuna)-\/>\mbox{\hyperlink{class_coluna_a1b697b50e065b83454e023c4ab24c4ef}{obterTarefa}}(indiceTarefa)-\/>\mbox{\hyperlink{class_tarefa_a21b76d5cedc9cd577a99065bc84b4884}{setResponsavel}}(\mbox{\hyperlink{main_8cpp_a2faf12c27b7e1711848f39f038c45f70}{buscaBinaria}}(KanBan-\/>\mbox{\hyperlink{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}{getEquipe}}(),\ ID));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00504}00504\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00505}00505\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Tarefa\ editada\ com\ sucesso!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00506}00506\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00507}00507\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00508}00508\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00514}\mbox{\hyperlink{main_8cpp_aee02b44e62983f07d64c57db154c0467}{00514}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_aee02b44e62983f07d64c57db154c0467}{removerTarefa}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00515}00515\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00516}00516\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}()\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00517}00517\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00518}00518\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Crie\ uma\ coluna\ primeiro!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00519}00519\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00520}00520\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00521}00521\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00522}00522\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00523}00523\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00524}00524\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00525}00525\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00526}00526\ \ \ \ \ \textcolor{keywordtype}{int}\ indiceColuna,\ indiceTarefa;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00527}00527\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00528}00528\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ indice\ da\ coluna:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00529}00529\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ indiceColuna)\ ||\ indiceColuna\ <\ 0\ ||\ indiceColuna\ >=\ KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}())}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00530}00530\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00531}00531\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00532}00532\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00533}00533\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00534}00534\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00535}00535\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ indice\ da\ tarefa:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00536}00536\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ indiceTarefa)\ ||\ indiceTarefa\ <\ 0\ ||\ indiceTarefa\ >=\ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indiceColuna)-\/>\mbox{\hyperlink{class_coluna_a98df8d945c71c2cdc352d610325fea02}{getTamanho}}())}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00537}00537\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00538}00538\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00539}00539\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00540}00540\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00541}00541\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00542}00542\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indiceColuna)-\/>\mbox{\hyperlink{class_coluna_ae2733f6d09e1d3f9a2b136ad4517c4d0}{removerTarefa}}(indiceTarefa);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00543}00543\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00544}00544\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Tarefa\ removida\ com\ sucesso!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00545}00545\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00546}00546\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00552}\mbox{\hyperlink{main_8cpp_adeb70abb0e6d3cf5e724363a38ce80ca}{00552}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_adeb70abb0e6d3cf5e724363a38ce80ca}{adicionarColunaArquivo}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00553}00553\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00554}00554\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00555}00555\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Colunas\ do\ tipo\ \(\backslash\)"{}arquivo\(\backslash\)"{}\ sao\ utilizadas\ para\ armazenar\ tarefas\ finalizadas\ e/ou\ obsoletas."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00556}00556\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00557}00557\ \ \ \ \ \textcolor{keywordtype}{string}\ nome,\ desc;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00558}00558\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ nome\ da\ coluna:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00559}00559\ \ \ \ \ getline(cin,\ nome);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00560}00560\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ a\ descricao\ da\ coluna:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00561}00561\ \ \ \ \ getline(cin,\ desc);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00562}00562\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00563}00563\ \ \ \ \ \mbox{\hyperlink{class_coluna}{Coluna}}\ *colunaArquivo\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_coluna_arquivo}{ColunaArquivo}}(nome,\ desc);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00564}00564\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_ae21d17fb833175bd68b00970c772fcd3}{adicionarColuna}}(colunaArquivo);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00565}00565\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00566}00566\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00572}\mbox{\hyperlink{main_8cpp_a23877ef139dcc4300c8f74067c517d27}{00572}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a23877ef139dcc4300c8f74067c517d27}{moverColuna}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00573}00573\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00574}00574\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}()\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00575}00575\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00576}00576\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Crie\ uma\ coluna\ primeiro!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00577}00577\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00578}00578\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00579}00579\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00580}00580\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}()\ <\ 2)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00581}00581\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00582}00582\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Crie\ mais\ uma\ coluna\ primeiro."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00583}00583\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00584}00584\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00585}00585\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00586}00586\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00587}00587\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00588}00588\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00589}00589\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00590}00590\ \ \ \ \ \textcolor{keywordtype}{int}\ indice,\ indiceDestino;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00591}00591\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ indice\ da\ coluna:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00592}00592\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ indice)\ ||\ indice\ <\ 0\ ||\ indice\ >=\ KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}())}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00593}00593\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00594}00594\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00595}00595\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00596}00596\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00597}00597\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00598}00598\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ indice\ da\ coluna\ destino:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00599}00599\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ indiceDestino)\ ||\ indiceDestino\ <\ 0\ ||\ indiceDestino\ >=\ KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}())}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00600}00600\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00601}00601\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00602}00602\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00603}00603\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00604}00604\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00605}00605\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_ab9b6209542640bb5a3e0fb84cf62d6eb}{moverColuna}}(indice,\ indiceDestino);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00606}00606\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00607}00607\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Coluna\ movida\ com\ sucesso!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00608}00608\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00609}00609\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00621}\mbox{\hyperlink{main_8cpp_ac91dd762f55fe21f3a2226d59abff942}{00621}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_ac91dd762f55fe21f3a2226d59abff942}{ordenarColuna}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00622}00622\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00623}00623\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}()\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00624}00624\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00625}00625\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Crie\ uma\ coluna\ primeiro."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00626}00626\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00627}00627\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00628}00628\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00629}00629\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00630}00630\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00631}00631\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00632}00632\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00633}00633\ \ \ \ \ \textcolor{keywordtype}{int}\ indice;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00634}00634\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ indice\ da\ coluna:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00635}00635\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ indice)\ ||\ indice\ <\ 0\ ||\ indice\ >=\ KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}())}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00636}00636\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00637}00637\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Indice\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00638}00638\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00639}00639\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00640}00640\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00641}00641\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(indice)-\/>\mbox{\hyperlink{class_coluna_a072f1cae205d24c75bbf6e240e66c025}{ordenar}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00642}00642\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00643}00643\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Coluna\ ordenada\ com\ sucesso!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00644}00644\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00645}00645\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00646}00646\ \textcolor{keywordtype}{void}\ exibirColaboradores(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00647}00647\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00648}00648\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}{getEquipe}}().size()\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00649}00649\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00650}00650\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Nenhum\ colaborador\ adicionado."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00651}00651\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00652}00652\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00653}00653\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00654}00654\ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_ae9b22eeda08e196887b9033beb358c41}{exibirColaboradores}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00655}00655\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00656}00656\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00668}\mbox{\hyperlink{main_8cpp_a437489a63da65aff2f992d1273edacaa}{00668}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a437489a63da65aff2f992d1273edacaa}{buscarColaborador}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00669}00669\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00670}00670\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}{getEquipe}}().size()\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00671}00671\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00672}00672\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Nenhum\ colaborador\ adicionado."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00673}00673\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00674}00674\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00675}00675\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00676}00676\ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00677}00677\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ ID\ do\ colaborador:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00678}00678\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(std::cin\ >>\ \textcolor{keywordtype}{id})\ ||\ \textcolor{keywordtype}{id}\ <\ 1)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00679}00679\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00680}00680\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}ID\ invalido!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00681}00681\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00682}00682\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00683}00683\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00684}00684\ \ \ \ \ \mbox{\hyperlink{class_colaborador}{Colaborador}}\ *colaborador\ =\ \mbox{\hyperlink{main_8cpp_a2faf12c27b7e1711848f39f038c45f70}{buscaBinaria}}(KanBan-\/>\mbox{\hyperlink{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}{getEquipe}}(),\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00685}00685\ \ \ \ \ \textcolor{keywordflow}{if}\ (colaborador\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00686}00686\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00687}00687\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Colaborador\ encontrado!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00688}00688\ \ \ \ \ \ \ \ \ cout\ <<\ colaborador;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00689}00689\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00690}00690\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00691}00691\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00692}00692\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Colaborador\ nao\ encontrado!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00693}00693\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00694}00694\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00695}00695\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00702}\mbox{\hyperlink{main_8cpp_a3a0d238b444da51e7f04f65f8d390fd0}{00702}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a3a0d238b444da51e7f04f65f8d390fd0}{salvarQuadro}}(\mbox{\hyperlink{class_quadro}{Quadro}}\ *\&KanBan,\ \textcolor{keywordtype}{string}\ fileName)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00703}00703\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00704}00704\ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}()\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00705}00705\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00706}00706\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Crie\ uma\ coluna\ primeiro!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00707}00707\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00708}00708\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00709}00709\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00710}00710\ \ \ \ \ ofstream\ file(fileName);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00711}00711\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00712}00712\ \ \ \ \ \textcolor{keywordflow}{if}\ (!file)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00713}00713\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00714}00714\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Erro\ ao\ abrir\ arquivo."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00715}00715\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00716}00716\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00717}00717\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00718}00718\ \ \ \ \ \textcolor{comment}{//\ quadro}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00719}00719\ \ \ \ \ file\ <<\ KanBan-\/>\mbox{\hyperlink{class_quadro_ae87472bb79c7073b7d6747d930d41a23}{getNome}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00720}00720\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00721}00721\ \ \ \ \ file\ <<\ KanBan-\/>\mbox{\hyperlink{class_quadro_a7a8e238c28a7fb111f555a8508041824}{getDescricao}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00722}00722\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00723}00723\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00724}00724\ \ \ \ \ \textcolor{comment}{//\ equipe}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00725}00725\ \ \ \ \ set<Colaborador\ *,\ comparador>\ equipe\ =\ KanBan-\/>\mbox{\hyperlink{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}{getEquipe}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00726}00726\ \ \ \ \ \textcolor{keywordtype}{int}\ tamanhoEquipe\ =\ equipe.size();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00727}00727\ \ \ \ \ file\ <<\ tamanhoEquipe;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00728}00728\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00729}00729\ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_colaborador}{Colaborador}}\ *colaborador\ :\ equipe)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00730}00730\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00731}00731\ \ \ \ \ \ \ \ \ file\ <<\ colaborador-\/>getNome();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00732}00732\ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00733}00733\ \ \ \ \ \ \ \ \ file\ <<\ colaborador-\/>getContato();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00734}00734\ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00735}00735\ \ \ \ \ \ \ \ \ file\ <<\ colaborador-\/>getFuncao();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00736}00736\ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00737}00737\ \ \ \ \ \ \ \ \ file\ <<\ colaborador-\/>getID();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00738}00738\ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00739}00739\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00740}00740\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00741}00741\ \ \ \ \ \textcolor{comment}{//\ colunas}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00742}00742\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00743}00743\ \ \ \ \ \textcolor{keywordtype}{int}\ numeroColunas\ =\ KanBan-\/>\mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{getNumeroColunas}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00744}00744\ \ \ \ \ file\ <<\ numeroColunas;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00745}00745\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00746}00746\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ numeroColunas;\ i++)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00747}00747\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00748}00748\ \ \ \ \ \ \ \ \ file\ <<\ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(i)-\/>\mbox{\hyperlink{class_coluna_a25ecf45ce1e1c7a03b9c92d4a5da0544}{getNome}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00749}00749\ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00750}00750\ \ \ \ \ \ \ \ \ file\ <<\ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(i)-\/>\mbox{\hyperlink{class_coluna_a2a359c5e42f66995c0529b2f2184d33f}{getDescricao}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00751}00751\ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00752}00752\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ tipoColuna\ =\ \textcolor{stringliteral}{"{}nomeada"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00753}00753\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{class_coluna_arquivo}{ColunaArquivo}}\ *\textcolor{keyword}{>}(KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(i))\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00754}00754\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00755}00755\ \ \ \ \ \ \ \ \ \ \ \ \ tipoColuna\ =\ \textcolor{stringliteral}{"{}arquivo"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00756}00756\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00757}00757\ \ \ \ \ \ \ \ \ file\ <<\ tipoColuna;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00758}00758\ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00759}00759\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ tarefas}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00760}00760\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ numeroTarefas\ =\ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(i)-\/>\mbox{\hyperlink{class_coluna_a98df8d945c71c2cdc352d610325fea02}{getTamanho}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00761}00761\ \ \ \ \ \ \ \ \ file\ <<\ numeroTarefas;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00762}00762\ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00763}00763\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <\ numeroTarefas;\ j++)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00764}00764\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00765}00765\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_tarefa}{Tarefa}}\ *tarefa\ =\ KanBan-\/>\mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obterColuna}}(i)-\/>\mbox{\hyperlink{class_coluna_a1b697b50e065b83454e023c4ab24c4ef}{obterTarefa}}(j);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00766}00766\ \ \ \ \ \ \ \ \ \ \ \ \ file\ <<\ tarefa-\/>\mbox{\hyperlink{class_tarefa_acafe89fa135d5af459beff157c292faa}{getTitulo}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00767}00767\ \ \ \ \ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00768}00768\ \ \ \ \ \ \ \ \ \ \ \ \ file\ <<\ tarefa-\/>\mbox{\hyperlink{class_tarefa_ae2d353e0cd6fa0eb8d4d70eb36b49a10}{getDescricao}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00769}00769\ \ \ \ \ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00770}00770\ \ \ \ \ \ \ \ \ \ \ \ \ file\ <<\ tarefa-\/>\mbox{\hyperlink{class_tarefa_a7bf9fd90402ab301884f4dcbb36dcec8}{getPrioridade}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00771}00771\ \ \ \ \ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00772}00772\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tarefa-\/>\mbox{\hyperlink{class_tarefa_a5a24414bd9d3ee8186112415cb7a9bcd}{getResponsavel}}()\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00773}00773\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00774}00774\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}nullptr"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00775}00775\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00776}00776\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00777}00777\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00778}00778\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ file\ <<\ tarefa-\/>\mbox{\hyperlink{class_tarefa_a5a24414bd9d3ee8186112415cb7a9bcd}{getResponsavel}}()-\/>\mbox{\hyperlink{class_colaborador_ad5284a3ae726d3cc39f160005b30c66d}{getID}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00779}00779\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00780}00780\ \ \ \ \ \ \ \ \ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00781}00781\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00782}00782\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00783}00783\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00784}00784\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Quadro\ salvo\ com\ sucesso!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00785}00785\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00786}00786\ \ \ \ \ file.close();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00787}00787\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00788}00788\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00795}\mbox{\hyperlink{main_8cpp_ac19c0f76269ed6195cad2776a32e04f1}{00795}}\ \mbox{\hyperlink{class_quadro}{Quadro}}\ *\mbox{\hyperlink{main_8cpp_ac19c0f76269ed6195cad2776a32e04f1}{carregarQuadro}}(\textcolor{keywordtype}{string}\ fileName)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00796}00796\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00797}00797\ \ \ \ \ ifstream\ file(fileName);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00798}00798\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00799}00799\ \ \ \ \ \textcolor{keywordflow}{if}\ (!file)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00800}00800\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00801}00801\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Erro\ ao\ abrir\ arquivo."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00802}00802\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00803}00803\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00804}00804\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00805}00805\ \ \ \ \ \textcolor{keywordtype}{string}\ nomeQuadro,\ descricaoQuadro;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00806}00806\ \ \ \ \ getline(file,\ nomeQuadro);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00807}00807\ \ \ \ \ getline(file,\ descricaoQuadro);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00808}00808\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00809}00809\ \ \ \ \ \mbox{\hyperlink{class_quadro}{Quadro}}\ *quadro\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_quadro}{Quadro}}(nomeQuadro,\ descricaoQuadro);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00810}00810\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00811}00811\ \ \ \ \ \textcolor{keywordtype}{int}\ tamanhoEquipe;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00812}00812\ \ \ \ \ file\ >>\ tamanhoEquipe;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00813}00813\ \ \ \ \ file.ignore(100,\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00814}00814\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00815}00815\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ tamanhoEquipe;\ i++)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00816}00816\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00817}00817\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ nome,\ contato,\ funcao;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00818}00818\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00819}00819\ \ \ \ \ \ \ \ \ getline(file,\ nome,\ \textcolor{charliteral}{'\(\backslash\)t'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00820}00820\ \ \ \ \ \ \ \ \ getline(file,\ contato,\ \textcolor{charliteral}{'\(\backslash\)t'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00821}00821\ \ \ \ \ \ \ \ \ getline(file,\ funcao,\ \textcolor{charliteral}{'\(\backslash\)t'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00822}00822\ \ \ \ \ \ \ \ \ file\ >>\ id;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00823}00823\ \ \ \ \ \ \ \ \ file.ignore(100,\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00824}00824\ \ \ \ \ \ \ \ \ quadro-\/>\mbox{\hyperlink{class_quadro_ae11cee4915eee6bf9b192ac8680fadf6}{inserirColaborador}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_colaborador}{Colaborador}}(nome,\ contato,\ funcao));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00825}00825\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00826}00826\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00827}00827\ \ \ \ \ \textcolor{keywordtype}{int}\ numeroColunas;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00828}00828\ \ \ \ \ file\ >>\ numeroColunas;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00829}00829\ \ \ \ \ file.ignore(100,\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00830}00830\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00831}00831\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ numeroColunas;\ i++)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00832}00832\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00833}00833\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ nomeColuna,\ descricaoColuna,\ tipoColuna;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00834}00834\ \ \ \ \ \ \ \ \ getline(file,\ nomeColuna,\ \textcolor{charliteral}{'\(\backslash\)t'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00835}00835\ \ \ \ \ \ \ \ \ getline(file,\ descricaoColuna,\ \textcolor{charliteral}{'\(\backslash\)t'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00836}00836\ \ \ \ \ \ \ \ \ getline(file,\ tipoColuna,\ \textcolor{charliteral}{'\(\backslash\)t'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00837}00837\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00838}00838\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_coluna}{Coluna}}\ *coluna;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00839}00839\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tipoColuna\ ==\ \textcolor{stringliteral}{"{}arquivo"{}})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00840}00840\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00841}00841\ \ \ \ \ \ \ \ \ \ \ \ \ coluna\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_coluna_arquivo}{ColunaArquivo}}(nomeColuna,\ descricaoColuna);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00842}00842\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00843}00843\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00844}00844\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00845}00845\ \ \ \ \ \ \ \ \ \ \ \ \ coluna\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_coluna_nomeada}{ColunaNomeada}}(nomeColuna,\ descricaoColuna);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00846}00846\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00847}00847\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00848}00848\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ numeroTarefas;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00849}00849\ \ \ \ \ \ \ \ \ file\ >>\ numeroTarefas;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00850}00850\ \ \ \ \ \ \ \ \ file.ignore(100,\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00851}00851\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00852}00852\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <\ numeroTarefas;\ j++)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00853}00853\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00854}00854\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_tarefa}{Tarefa}}\ *tarefa;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00855}00855\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ titulo,\ descricao,\ responsavelString;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00856}00856\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ prioridade,\ responsavelID;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00857}00857\ \ \ \ \ \ \ \ \ \ \ \ \ getline(file,\ titulo,\ \textcolor{charliteral}{'\(\backslash\)t'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00858}00858\ \ \ \ \ \ \ \ \ \ \ \ \ getline(file,\ descricao,\ \textcolor{charliteral}{'\(\backslash\)t'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00859}00859\ \ \ \ \ \ \ \ \ \ \ \ \ file\ >>\ prioridade;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00860}00860\ \ \ \ \ \ \ \ \ \ \ \ \ file.ignore(100,\ \textcolor{charliteral}{'\(\backslash\)t'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00861}00861\ \ \ \ \ \ \ \ \ \ \ \ \ getline(file,\ responsavelString,\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00862}00862\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (responsavelString\ ==\ \textcolor{stringliteral}{"{}nullptr"{}})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00863}00863\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00864}00864\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tarefa\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_tarefa}{Tarefa}}(titulo,\ descricao,\ prioridade,\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00865}00865\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00866}00866\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00867}00867\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00868}00868\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ responsavelID\ =\ stoi(responsavelString);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00869}00869\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tarefa\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_tarefa}{Tarefa}}(titulo,\ descricao,\ prioridade,\ \mbox{\hyperlink{main_8cpp_a2faf12c27b7e1711848f39f038c45f70}{buscaBinaria}}(quadro-\/>\mbox{\hyperlink{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}{getEquipe}}(),\ responsavelID));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00870}00870\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00871}00871\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00872}00872\ \ \ \ \ \ \ \ \ \ \ \ \ coluna-\/>\mbox{\hyperlink{class_coluna_ac09fa33160badb14b7e4a095f15fb551}{inserirTarefa}}(tarefa);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00873}00873\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00874}00874\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00875}00875\ \ \ \ \ \ \ \ \ quadro-\/>\mbox{\hyperlink{class_quadro_ae21d17fb833175bd68b00970c772fcd3}{adicionarColuna}}(coluna);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00876}00876\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00877}00877\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00878}00878\ \ \ \ \ file.close();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00879}00879\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00880}00880\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Quadro\ carregado\ com\ sucesso!"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00881}00881\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00882}00882\ \ \ \ \ \textcolor{keywordflow}{return}\ quadro;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00883}00883\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00884}00884\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00885}00885\ \textcolor{keywordtype}{int}\ main()}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00886}00886\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00887}00887\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00888}00888\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00889}00889\ \ \ \ \ \mbox{\hyperlink{class_quadro}{Quadro}}\ *KanBan\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00890}00890\ \ \ \ \ \textcolor{keywordtype}{bool}\ quadroCriadoOuCarregado\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00891}00891\ \ \ \ \ \textcolor{keywordtype}{int}\ opcao\ =\ -\/1;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00892}00892\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00893}00893\ \ \ \ \ \textcolor{keywordflow}{while}\ (opcao\ !=\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00894}00894\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00895}00895\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00896}00896\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!quadroCriadoOuCarregado)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00897}00897\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00898}00898\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n==========\ MENU\ INICIAL\ =========="{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00899}00899\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}1.\ Criar\ quadro"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00900}00900\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}2.\ Carregar\ quadro"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00901}00901\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}0.\ Sair"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00902}00902\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}==================================="{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00903}00903\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00904}00904\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ a\ opcao\ desejada:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00905}00905\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!(std::cin\ >>\ opcao)\ ||\ opcao\ <\ 0\ ||\ opcao\ >\ 2)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00906}00906\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00907}00907\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Entrada\ invalida.\ Tente\ novamente."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00908}00908\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00909}00909\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ a\ opcao\ desejada:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00910}00910\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00911}00911\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00912}00912\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (opcao\ ==\ 1)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00913}00913\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00914}00914\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00915}00915\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a3efe6ab2635ad7386bcff5f15661a081}{criarQuadro}}(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00916}00916\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ quadroCriadoOuCarregado\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00917}00917\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00918}00918\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 2)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00919}00919\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00920}00920\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00921}00921\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ fileName;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00922}00922\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ o\ nome\ do\ arquivo\ (com\ extensao):\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00923}00923\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cin\ >>\ fileName;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00924}00924\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ KanBan\ =\ \mbox{\hyperlink{main_8cpp_ac19c0f76269ed6195cad2776a32e04f1}{carregarQuadro}}(fileName);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00925}00925\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (KanBan\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00926}00926\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00927}00927\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ quadroCriadoOuCarregado\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00928}00928\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00929}00929\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00930}00930\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00931}00931\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00932}00932\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00933}00933\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00934}00934\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00935}00935\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00936}00936\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00937}00937\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00938}00938\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Opcao\ invalida.\ Tente\ novamente."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00939}00939\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00940}00940\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00941}00941\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00942}00942\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00943}00943\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00944}00944\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00945}00945\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n==========\ MENU\ =========="{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00946}00946\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}1.\ Adicionar\ coluna"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00947}00947\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}2.\ Editar\ coluna"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00948}00948\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}3.\ Remover\ coluna"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00949}00949\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}4.\ Adicionar\ tarefa"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00950}00950\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}5.\ Mover\ tarefas"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00951}00951\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}6.\ Editar\ tarefa"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00952}00952\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}7.\ Remover\ tarefa"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00953}00953\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}8.\ Adicionar\ coluna\ de\ Arquivo"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00954}00954\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}9.\ Mover\ coluna"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00955}00955\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}10.\ Ordenar\ coluna"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00956}00956\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}11.\ Cadastrar\ colaborador"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00957}00957\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}12.\ Exibir\ lista\ de\ colaboradores"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00958}00958\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}13.\ Buscar\ colaborador"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00959}00959\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}14.\ Imprimir\ quadro"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00960}00960\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}15.\ Salvar\ quadro"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00961}00961\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}0.\ Sair"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00962}00962\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}=========================="{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00963}00963\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00964}00964\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ a\ opcao\ desejada:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00965}00965\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!(std::cin\ >>\ opcao)\ ||\ opcao\ <\ 0\ ||\ opcao\ >\ 15)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00966}00966\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00967}00967\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Entrada\ invalida.\ Tente\ novamente."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00968}00968\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clearBuffer}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00969}00969\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Digite\ a\ opcao\ desejada:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00970}00970\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00971}00971\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00972}00972\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (opcao\ ==\ 1)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00973}00973\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00974}00974\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00975}00975\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48e1cbf9de98941d548837997b582870}{criarColuna}}(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00976}00976\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00977}00977\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00978}00978\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 2)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00979}00979\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00980}00980\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00981}00981\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a512a56ef22516c5454d0f925b16adcd6}{editarColuna}}(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00982}00982\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00983}00983\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00984}00984\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 3)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00985}00985\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00986}00986\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00987}00987\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_aaa15a96063fb4377e5ac1d46a68321c0}{removerColuna}}(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00988}00988\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00989}00989\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00990}00990\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 4)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00991}00991\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00992}00992\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00993}00993\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a0d931717ab3053bc49784e26575b01d6}{adicionarTarefa}}(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00994}00994\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00995}00995\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00996}00996\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 5)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00997}00997\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00998}00998\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00999}00999\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a2eddfb0aac0ba265acd5268ce3d8e919}{moverTarefas}}(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01000}01000\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01001}01001\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01002}01002\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 6)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01003}01003\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01004}01004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01005}01005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_ac8773e0e3b3c75454e680ff43c6fcd7f}{editarTarefa}}(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01006}01006\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01007}01007\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01008}01008\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 7)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01009}01009\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01010}01010\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01011}01011\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_aee02b44e62983f07d64c57db154c0467}{removerTarefa}}(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01012}01012\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01013}01013\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01014}01014\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 8)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01015}01015\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01016}01016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01017}01017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_adeb70abb0e6d3cf5e724363a38ce80ca}{adicionarColunaArquivo}}(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01018}01018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01019}01019\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01020}01020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 9)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01021}01021\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01022}01022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01023}01023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a23877ef139dcc4300c8f74067c517d27}{moverColuna}}(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01024}01024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01025}01025\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01026}01026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 10)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01027}01027\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01028}01028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01029}01029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_ac91dd762f55fe21f3a2226d59abff942}{ordenarColuna}}(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01030}01030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01031}01031\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01032}01032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 11)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01033}01033\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01034}01034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01035}01035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_aed504424b48ab1ef3ce656ba1d439ae0}{cadastrarColaborador}}(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01036}01036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_ae9b22eeda08e196887b9033beb358c41}{exibirColaboradores}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01037}01037\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01038}01038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 12)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01039}01039\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01040}01040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01041}01041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ exibirColaboradores(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01042}01042\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01043}01043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 13)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01044}01044\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01045}01045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01046}01046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a437489a63da65aff2f992d1273edacaa}{buscarColaborador}}(KanBan);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01047}01047\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01048}01048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 14)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01049}01049\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01050}01050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01051}01051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ KanBan-\/>\mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01052}01052\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01053}01053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 15)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01054}01054\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01055}01055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01056}01056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a3a0d238b444da51e7f04f65f8d390fd0}{salvarQuadro}}(KanBan,\ \textcolor{stringliteral}{"{}save.txt"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01057}01057\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01058}01058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcao\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01059}01059\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01060}01060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01061}01061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a3a0d238b444da51e7f04f65f8d390fd0}{salvarQuadro}}(KanBan,\ \textcolor{stringliteral}{"{}save.txt"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01062}01062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01063}01063\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01064}01064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01065}01065\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01066}01066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limparConsole}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01067}01067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Opcao\ invalida.\ Tente\ novamente."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01068}01068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01069}01069\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01070}01070\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01071}01071\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01072}01072\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01073}01073\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l01074}01074\ \}}
+
+\end{DoxyCode}
