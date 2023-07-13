@@ -1,0 +1,9 @@
+<map id="ListaDupla::inserirInicio" name="ListaDupla::inserirInicio">
+<area shape="rect" id="Node000001" title="Insere uma tarefa no início da lista." alt="" coords="5,56,161,83"/>
+<area shape="rect" id="Node000002" href="$d9/d55/class_no.html#a42bd9dc9c7b24743c82e89b42a1581a2" title="Obtém o próximo nó." alt="" coords="209,5,320,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,53,199,34,201,39,134,58"/>
+<area shape="rect" id="Node000003" href="$d9/d55/class_no.html#a337f5ed0c85f3ac6646fd8295f2017a7" title="Define o nó anterior." alt="" coords="210,56,319,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,67,196,67,196,72,161,72"/>
+<area shape="rect" id="Node000004" href="$d9/d55/class_no.html#a1fd6922d7a6b246aa11251effaceeb7b" title="Define o próximo nó." alt="" coords="209,107,320,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,81,201,100,199,105,133,86"/>
+</map>

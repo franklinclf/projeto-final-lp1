@@ -1,0 +1,29 @@
+digraph "Quadro::getEquipe"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Quadro::getEquipe",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Obtém a equipe de colaboradores do quadro."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="adicionarTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#a0d931717ab3053bc49784e26575b01d6",tooltip="Adiciona uma nova tarefa a uma coluna no quadro KanBan."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="buscarColaborador",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#a437489a63da65aff2f992d1273edacaa",tooltip="Busca um colaborador pelo ID no quadro KanBan e exibe suas informações."];
+  Node4 -> Node3 [id="edge4_Node000004_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node5 [id="edge5_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="carregarQuadro",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#ac19c0f76269ed6195cad2776a32e04f1",tooltip="Carrega um quadro KanBan a partir de um arquivo."];
+  Node5 -> Node3 [id="edge6_Node000005_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node6 [id="edge7_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="editarTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#ac8773e0e3b3c75454e680ff43c6fcd7f",tooltip="Edita uma tarefa existente no quadro KanBan."];
+  Node6 -> Node3 [id="edge8_Node000006_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node7 [id="edge9_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="exibirColaboradores",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#afbe7cc1d16fdd3689922aa9f97a05342",tooltip=" "];
+  Node7 -> Node3 [id="edge10_Node000007_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node8 [id="edge11_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="salvarQuadro",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#a3a0d238b444da51e7f04f65f8d390fd0",tooltip="Salva o quadro KanBan em um arquivo."];
+  Node8 -> Node3 [id="edge12_Node000008_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

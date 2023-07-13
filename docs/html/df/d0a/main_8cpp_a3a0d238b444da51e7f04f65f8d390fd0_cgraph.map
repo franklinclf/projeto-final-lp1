@@ -1,0 +1,35 @@
+<map id="salvarQuadro" name="salvarQuadro">
+<area shape="rect" id="Node000001" title="Salva o quadro KanBan em um arquivo." alt="" coords="5,335,102,361"/>
+<area shape="rect" id="Node000002" href="$da/d23/class_tarefa.html#ae2d353e0cd6fa0eb8d4d70eb36b49a10" title="Obtém a descrição da tarefa." alt="" coords="170,5,311,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,334,55,280,68,202,80,159,96,117,119,77,148,42,156,36,159,40,152,46,123,80,101,119,85,161,73,203,61,281,57,334"/>
+<area shape="rect" id="Node000003" href="$d1/d13/class_quadro.html#a7a8e238c28a7fb111f555a8508041824" title="Obtém a descrição do quadro." alt="" coords="167,56,314,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="53,334,59,288,74,223,86,188,102,153,123,121,148,93,153,89,156,93,152,97,127,124,107,156,91,190,79,224,64,289,58,334"/>
+<area shape="rect" id="Node000004" href="$d3/d3c/class_coluna.html#a2a359c5e42f66995c0529b2f2184d33f" title="Obtém a descrição da coluna." alt="" coords="168,107,313,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="55,334,63,296,81,245,108,190,126,165,148,143,154,139,157,143,151,147,130,169,113,193,86,247,69,297,60,335"/>
+<area shape="rect" id="Node000005" href="$d1/d13/class_quadro.html#a1cc0b576c7787cc7c82019a3fd424822" title="Obtém a equipe de colaboradores do quadro." alt="" coords="176,157,305,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="57,333,88,267,114,227,148,194,160,186,163,191,151,198,118,231,92,269,62,335"/>
+<area shape="rect" id="Node000006" href="$dc/dd3/class_colaborador.html#ad5284a3ae726d3cc39f160005b30c66d" title="Obtém o ID único do colaborador." alt="" coords="176,208,305,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="62,333,96,289,121,265,148,244,161,238,164,242,151,249,124,269,100,293,66,336"/>
+<area shape="rect" id="Node000007" href="$d1/d13/class_quadro.html#ae87472bb79c7073b7d6747d930d41a23" title="Obtém o nome do quadro." alt="" coords="179,259,302,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="76,332,149,295,168,288,170,293,151,300,79,336"/>
+<area shape="rect" id="Node000008" href="$d3/d3c/class_coluna.html#a25ecf45ce1e1c7a03b9c92d4a5da0544" title="Obtém o nome da coluna." alt="" coords="180,309,301,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="102,339,164,330,165,336,103,344"/>
+<area shape="rect" id="Node000009" href="$d1/d13/class_quadro.html#aad88cee2be59e368c4c09166a7777fb9" title="Obtém o número de colunas do quadro." alt="" coords="150,360,331,387"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="103,352,135,356,134,362,102,357"/>
+<area shape="rect" id="Node000011" href="$da/d23/class_tarefa.html#a7bf9fd90402ab301884f4dcbb36dcec8" title="Obtém a prioridade da tarefa." alt="" coords="170,411,311,437"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="79,360,151,396,170,403,168,408,149,401,76,364"/>
+<area shape="rect" id="Node000012" href="$da/d23/class_tarefa.html#a5a24414bd9d3ee8186112415cb7a9bcd" title="Obtém o responsável pela tarefa." alt="" coords="163,461,318,488"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="66,360,100,403,124,427,151,447,162,453,159,458,148,452,121,431,96,407,62,363"/>
+<area shape="rect" id="Node000013" href="$d3/d3c/class_coluna.html#a98df8d945c71c2cdc352d610325fea02" title="Obtém o tamanho da coluna, ou seja, a quantidade de tarefas nela contidas." alt="" coords="170,512,311,539"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="62,361,92,427,118,465,151,498,158,503,155,507,148,502,114,469,88,429,57,363"/>
+<area shape="rect" id="Node000014" href="$da/d23/class_tarefa.html#acafe89fa135d5af459beff157c292faa" title="Obtém o título da tarefa." alt="" coords="184,563,297,589"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="60,361,69,399,86,449,113,503,130,527,151,549,171,561,169,565,148,553,126,531,108,506,81,451,63,400,55,362"/>
+<area shape="rect" id="Node000015" href="$d1/d13/class_quadro.html#acdcb5194cb4b20e50f6211df473b59f2" title="Obtém uma coluna do quadro pelo índice." alt="" coords="170,613,311,640"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="58,362,64,407,79,472,91,506,107,540,127,572,151,599,159,605,156,609,148,603,123,575,102,543,86,508,74,473,59,408,53,362"/>
+<area shape="rect" id="Node000017" href="$d3/d3c/class_coluna.html#a1b697b50e065b83454e023c4ab24c4ef" title="Obtém uma tarefa da coluna pelo seu índice." alt="" coords="174,664,307,691"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="57,362,61,415,73,493,85,535,101,577,123,616,152,650,162,658,159,662,148,654,119,619,96,579,80,537,68,494,55,416,52,362"/>
+<area shape="rect" id="Node000010" href="$db/dba/class_lista.html#a5cd63f61264afc88d0a6c290f7cb7320" title="Obtém o tamanho da lista." alt="" coords="385,360,513,387"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="331,371,370,371,370,376,331,376"/>
+<area shape="rect" id="Node000016" href="$db/dba/class_lista.html#adb2dfb16eaf99f99fc1b39bf847af9bd" title="Obtém a coluna da lista pelo índice." alt="" coords="379,613,519,640"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="311,624,364,624,364,629,311,629"/>
+</map>

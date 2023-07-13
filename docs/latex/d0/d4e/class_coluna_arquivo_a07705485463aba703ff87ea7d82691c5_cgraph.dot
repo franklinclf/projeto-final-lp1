@@ -1,0 +1,12 @@
+digraph "ColunaArquivo::getTamanho"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ColunaArquivo::getTamanho",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Obtém o tamanho da coluna, ou seja, a quantidade de tarefas nela contidas."];
+  Node1 -> Node2 [id="edge2_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ListaDupla::getTamanho",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a86f5652f339d3af5fd81c6b913c95a52",tooltip="Obtém o tamanho da lista."];
+}

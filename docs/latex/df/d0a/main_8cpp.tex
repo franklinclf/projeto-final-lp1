@@ -1,5 +1,5 @@
-\hypertarget{main_8cpp}{}\doxysection{src/main.cpp File Reference}
-\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+\doxysection{src/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
 
 
 Sistema de Gerenciamento de Tarefas.  
@@ -9,49 +9,57 @@ Sistema de Gerenciamento de Tarefas.
 {\ttfamily \#include $<$cstdlib$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include $<$fstream$>$}\newline
-{\ttfamily \#include \char`\"{}../include/quadro.\+hpp\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../include/lista\+Duplamente\+Encadeada.\+hpp\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../include/lista\+Simplesmente\+Encadeada.\+hpp\char`\"{}}\newline
-\doxysubsection*{Functions}
+{\ttfamily \#include \"{}../include/quadro.\+hpp\"{}}\newline
+{\ttfamily \#include \"{}../include/lista\+Duplamente\+Encadeada.\+hpp\"{}}\newline
+{\ttfamily \#include \"{}../include/lista\+Simplesmente\+Encadeada.\+hpp\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dce/main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{main_8cpp_a48cc5faad95860e2166339ee588aec62}{limpar\+Console}} ()
 \begin{DoxyCompactList}\small\item\em Limpa a tela do console. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}{clear\+Buffer}} ()
 \begin{DoxyCompactList}\small\item\em Limpa o buffer do console. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_colaborador}{Colaborador}} $\ast$ \mbox{\hyperlink{main_8cpp_a2faf12c27b7e1711848f39f038c45f70}{busca\+Binaria}} (const set$<$ \mbox{\hyperlink{class_colaborador}{Colaborador}} $\ast$, \mbox{\hyperlink{structcomparador}{comparador}} $>$ \&equipe, int id)
+\mbox{\hyperlink{class_colaborador}{Colaborador}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8cpp_a2faf12c27b7e1711848f39f038c45f70}{busca\+Binaria}} (const set$<$ \mbox{\hyperlink{class_colaborador}{Colaborador}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{structcomparador}{comparador}} $>$ \&equipe, int id)
 \begin{DoxyCompactList}\small\item\em Realiza uma busca binária em uma equipe de colaboradores pelo ID. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_colaborador}{Colaborador}} $\ast$ \mbox{\hyperlink{main_8cpp_aed504424b48ab1ef3ce656ba1d439ae0}{cadastrar\+Colaborador}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
+\mbox{\hyperlink{class_colaborador}{Colaborador}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8cpp_aed504424b48ab1ef3ce656ba1d439ae0}{cadastrar\+Colaborador}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
 \begin{DoxyCompactList}\small\item\em Cria e cadastra um novo colaborador no quadro Kan\+Ban. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_a3efe6ab2635ad7386bcff5f15661a081}{criar\+Quadro}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
+void \mbox{\hyperlink{main_8cpp_a3efe6ab2635ad7386bcff5f15661a081}{criar\+Quadro}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
 \begin{DoxyCompactList}\small\item\em Cria um novo quadro Kan\+Ban. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_a48e1cbf9de98941d548837997b582870}{criar\+Coluna}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
+void \mbox{\hyperlink{main_8cpp_a48e1cbf9de98941d548837997b582870}{criar\+Coluna}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
 \begin{DoxyCompactList}\small\item\em Cria e adiciona uma nova coluna ao quadro Kan\+Ban. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_a512a56ef22516c5454d0f925b16adcd6}{editar\+Coluna}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
+void \mbox{\hyperlink{main_8cpp_a512a56ef22516c5454d0f925b16adcd6}{editar\+Coluna}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
 \begin{DoxyCompactList}\small\item\em Edita uma coluna existente no quadro Kan\+Ban. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_aaa15a96063fb4377e5ac1d46a68321c0}{remover\+Coluna}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
+void \mbox{\hyperlink{main_8cpp_aaa15a96063fb4377e5ac1d46a68321c0}{remover\+Coluna}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
 \begin{DoxyCompactList}\small\item\em Remove uma coluna do quadro Kan\+Ban. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_a0d931717ab3053bc49784e26575b01d6}{adicionar\+Tarefa}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
+void \mbox{\hyperlink{main_8cpp_a0d931717ab3053bc49784e26575b01d6}{adicionar\+Tarefa}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
 \begin{DoxyCompactList}\small\item\em Adiciona uma nova tarefa a uma coluna no quadro Kan\+Ban. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_a2eddfb0aac0ba265acd5268ce3d8e919}{mover\+Tarefas}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
+void \mbox{\hyperlink{main_8cpp_a2eddfb0aac0ba265acd5268ce3d8e919}{mover\+Tarefas}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
 \begin{DoxyCompactList}\small\item\em Move uma tarefa de uma coluna para outra no quadro Kan\+Ban. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_ac8773e0e3b3c75454e680ff43c6fcd7f}{editar\+Tarefa}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
+void \mbox{\hyperlink{main_8cpp_ac8773e0e3b3c75454e680ff43c6fcd7f}{editar\+Tarefa}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
 \begin{DoxyCompactList}\small\item\em Edita uma tarefa existente no quadro Kan\+Ban. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_aee02b44e62983f07d64c57db154c0467}{remover\+Tarefa}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
+void \mbox{\hyperlink{main_8cpp_aee02b44e62983f07d64c57db154c0467}{remover\+Tarefa}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
 \begin{DoxyCompactList}\small\item\em Remove uma tarefa de uma coluna no quadro Kan\+Ban. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_adeb70abb0e6d3cf5e724363a38ce80ca}{adicionar\+Coluna\+Arquivo}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
-\begin{DoxyCompactList}\small\item\em Adiciona uma nova coluna do tipo \char`\"{}arquivo\char`\"{} ao quadro Kan\+Ban. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_a23877ef139dcc4300c8f74067c517d27}{mover\+Coluna}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
+void \mbox{\hyperlink{main_8cpp_adeb70abb0e6d3cf5e724363a38ce80ca}{adicionar\+Coluna\+Arquivo}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova coluna do tipo \"{}arquivo\"{} ao quadro Kan\+Ban. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a23877ef139dcc4300c8f74067c517d27}{mover\+Coluna}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
 \begin{DoxyCompactList}\small\item\em Move uma coluna de uma posição para outra no quadro Kan\+Ban. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_ac91dd762f55fe21f3a2226d59abff942}{ordenar\+Coluna}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
+void \mbox{\hyperlink{main_8cpp_ac91dd762f55fe21f3a2226d59abff942}{ordenar\+Coluna}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
 \begin{DoxyCompactList}\small\item\em Ordena as tarefas por prioridade usando o algoritmo Bubble Sort. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_afbe7cc1d16fdd3689922aa9f97a05342}{exibir\+Colaboradores}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
+void \mbox{\hyperlink{main_8cpp_afbe7cc1d16fdd3689922aa9f97a05342}{exibir\+Colaboradores}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
 \item 
-void \mbox{\hyperlink{main_8cpp_a437489a63da65aff2f992d1273edacaa}{buscar\+Colaborador}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban)
+void \mbox{\hyperlink{main_8cpp_a437489a63da65aff2f992d1273edacaa}{buscar\+Colaborador}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban)
 \begin{DoxyCompactList}\small\item\em Busca um colaborador pelo ID no quadro Kan\+Ban e exibe suas informações. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{main_8cpp_a3a0d238b444da51e7f04f65f8d390fd0}{salvar\+Quadro}} (\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&Kan\+Ban, string file\+Name)
+void \mbox{\hyperlink{main_8cpp_a3a0d238b444da51e7f04f65f8d390fd0}{salvar\+Quadro}} (\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&Kan\+Ban, string file\+Name)
 \begin{DoxyCompactList}\small\item\em Salva o quadro Kan\+Ban em um arquivo. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$ \mbox{\hyperlink{main_8cpp_ac19c0f76269ed6195cad2776a32e04f1}{carregar\+Quadro}} (string file\+Name)
+\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8cpp_ac19c0f76269ed6195cad2776a32e04f1}{carregar\+Quadro}} (string file\+Name)
 \begin{DoxyCompactList}\small\item\em Carrega um quadro Kan\+Ban a partir de um arquivo. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 \end{DoxyCompactItemize}
@@ -72,15 +80,15 @@ Definition in file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{main_8cpp_adeb70abb0e6d3cf5e724363a38ce80ca}\label{main_8cpp_adeb70abb0e6d3cf5e724363a38ce80ca}} 
+\Hypertarget{main_8cpp_adeb70abb0e6d3cf5e724363a38ce80ca}\label{main_8cpp_adeb70abb0e6d3cf5e724363a38ce80ca} 
 \index{main.cpp@{main.cpp}!adicionarColunaArquivo@{adicionarColunaArquivo}}
 \index{adicionarColunaArquivo@{adicionarColunaArquivo}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{adicionarColunaArquivo()}{adicionarColunaArquivo()}}
-{\footnotesize\ttfamily void adicionar\+Coluna\+Arquivo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void adicionar\+Coluna\+Arquivo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
-Adiciona uma nova coluna do tipo \char`\"{}arquivo\char`\"{} ao quadro Kan\+Ban. 
+Adiciona uma nova coluna do tipo \"{}arquivo\"{} ao quadro Kan\+Ban. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -91,11 +99,27 @@ Adiciona uma nova coluna do tipo \char`\"{}arquivo\char`\"{} ao quadro Kan\+Ban.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00552}{552}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_a0d931717ab3053bc49784e26575b01d6}\label{main_8cpp_a0d931717ab3053bc49784e26575b01d6}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_adeb70abb0e6d3cf5e724363a38ce80ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{df/d0a/main_8cpp_adeb70abb0e6d3cf5e724363a38ce80ca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_a0d931717ab3053bc49784e26575b01d6}\label{main_8cpp_a0d931717ab3053bc49784e26575b01d6} 
 \index{main.cpp@{main.cpp}!adicionarTarefa@{adicionarTarefa}}
 \index{adicionarTarefa@{adicionarTarefa}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{adicionarTarefa()}{adicionarTarefa()}}
-{\footnotesize\ttfamily void adicionar\+Tarefa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void adicionar\+Tarefa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
@@ -110,11 +134,27 @@ Adiciona uma nova tarefa a uma coluna no quadro Kan\+Ban.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00223}{223}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_a2faf12c27b7e1711848f39f038c45f70}\label{main_8cpp_a2faf12c27b7e1711848f39f038c45f70}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_a0d931717ab3053bc49784e26575b01d6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{df/d0a/main_8cpp_a0d931717ab3053bc49784e26575b01d6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_a2faf12c27b7e1711848f39f038c45f70}\label{main_8cpp_a2faf12c27b7e1711848f39f038c45f70} 
 \index{main.cpp@{main.cpp}!buscaBinaria@{buscaBinaria}}
 \index{buscaBinaria@{buscaBinaria}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{buscaBinaria()}{buscaBinaria()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_colaborador}{Colaborador}} $\ast$ busca\+Binaria (\begin{DoxyParamCaption}\item[{const set$<$ \mbox{\hyperlink{class_colaborador}{Colaborador}} $\ast$, \mbox{\hyperlink{structcomparador}{comparador}} $>$ \&}]{equipe,  }\item[{int}]{id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_colaborador}{Colaborador}} \texorpdfstring{$\ast$}{*} busca\+Binaria (\begin{DoxyParamCaption}\item[{const set$<$ \mbox{\hyperlink{class_colaborador}{Colaborador}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{structcomparador}{comparador}} $>$ \&}]{equipe,  }\item[{int}]{id }\end{DoxyParamCaption})}
 
 
 
@@ -134,11 +174,19 @@ Um ponteiro para o colaborador encontrado ou nullptr se não for encontrado.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00052}{52}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_a437489a63da65aff2f992d1273edacaa}\label{main_8cpp_a437489a63da65aff2f992d1273edacaa}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_a2faf12c27b7e1711848f39f038c45f70_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_a437489a63da65aff2f992d1273edacaa}\label{main_8cpp_a437489a63da65aff2f992d1273edacaa} 
 \index{main.cpp@{main.cpp}!buscarColaborador@{buscarColaborador}}
 \index{buscarColaborador@{buscarColaborador}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{buscarColaborador()}{buscarColaborador()}}
-{\footnotesize\ttfamily void buscar\+Colaborador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void buscar\+Colaborador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
@@ -158,11 +206,27 @@ A complexidade do algoritmo de busca binária é O(log n), onde n é o número d
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00668}{668}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_aed504424b48ab1ef3ce656ba1d439ae0}\label{main_8cpp_aed504424b48ab1ef3ce656ba1d439ae0}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{df/d0a/main_8cpp_a437489a63da65aff2f992d1273edacaa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{df/d0a/main_8cpp_a437489a63da65aff2f992d1273edacaa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_aed504424b48ab1ef3ce656ba1d439ae0}\label{main_8cpp_aed504424b48ab1ef3ce656ba1d439ae0} 
 \index{main.cpp@{main.cpp}!cadastrarColaborador@{cadastrarColaborador}}
 \index{cadastrarColaborador@{cadastrarColaborador}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{cadastrarColaborador()}{cadastrarColaborador()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_colaborador}{Colaborador}} $\ast$ cadastrar\+Colaborador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_colaborador}{Colaborador}} \texorpdfstring{$\ast$}{*} cadastrar\+Colaborador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
@@ -180,11 +244,27 @@ O ponteiro para o novo colaborador cadastrado.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00084}{84}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_ac19c0f76269ed6195cad2776a32e04f1}\label{main_8cpp_ac19c0f76269ed6195cad2776a32e04f1}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_aed504424b48ab1ef3ce656ba1d439ae0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_aed504424b48ab1ef3ce656ba1d439ae0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_ac19c0f76269ed6195cad2776a32e04f1}\label{main_8cpp_ac19c0f76269ed6195cad2776a32e04f1} 
 \index{main.cpp@{main.cpp}!carregarQuadro@{carregarQuadro}}
 \index{carregarQuadro@{carregarQuadro}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{carregarQuadro()}{carregarQuadro()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_quadro}{Quadro}} $\ast$ carregar\+Quadro (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*} carregar\+Quadro (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})}
 
 
 
@@ -202,7 +282,23 @@ O ponteiro para o quadro Kan\+Ban carregado.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00795}{795}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}\label{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_ac19c0f76269ed6195cad2776a32e04f1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{df/d0a/main_8cpp_ac19c0f76269ed6195cad2776a32e04f1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952}\label{main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952} 
 \index{main.cpp@{main.cpp}!clearBuffer@{clearBuffer}}
 \index{clearBuffer@{clearBuffer}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{clearBuffer()}{clearBuffer()}}
@@ -216,11 +312,19 @@ Limpa o buffer do console.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_a48e1cbf9de98941d548837997b582870}\label{main_8cpp_a48e1cbf9de98941d548837997b582870}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_a20bbd4d45e3f01305dd709f5a9cc9952_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_a48e1cbf9de98941d548837997b582870}\label{main_8cpp_a48e1cbf9de98941d548837997b582870} 
 \index{main.cpp@{main.cpp}!criarColuna@{criarColuna}}
 \index{criarColuna@{criarColuna}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{criarColuna()}{criarColuna()}}
-{\footnotesize\ttfamily void criar\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void criar\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
@@ -235,11 +339,27 @@ Cria e adiciona uma nova coluna ao quadro Kan\+Ban.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00126}{126}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_a3efe6ab2635ad7386bcff5f15661a081}\label{main_8cpp_a3efe6ab2635ad7386bcff5f15661a081}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_a48e1cbf9de98941d548837997b582870_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{df/d0a/main_8cpp_a48e1cbf9de98941d548837997b582870_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_a3efe6ab2635ad7386bcff5f15661a081}\label{main_8cpp_a3efe6ab2635ad7386bcff5f15661a081} 
 \index{main.cpp@{main.cpp}!criarQuadro@{criarQuadro}}
 \index{criarQuadro@{criarQuadro}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{criarQuadro()}{criarQuadro()}}
-{\footnotesize\ttfamily void criar\+Quadro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void criar\+Quadro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
@@ -254,11 +374,27 @@ Cria um novo quadro Kan\+Ban.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00106}{106}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_a512a56ef22516c5454d0f925b16adcd6}\label{main_8cpp_a512a56ef22516c5454d0f925b16adcd6}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{df/d0a/main_8cpp_a3efe6ab2635ad7386bcff5f15661a081_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{df/d0a/main_8cpp_a3efe6ab2635ad7386bcff5f15661a081_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_a512a56ef22516c5454d0f925b16adcd6}\label{main_8cpp_a512a56ef22516c5454d0f925b16adcd6} 
 \index{main.cpp@{main.cpp}!editarColuna@{editarColuna}}
 \index{editarColuna@{editarColuna}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{editarColuna()}{editarColuna()}}
-{\footnotesize\ttfamily void editar\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void editar\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
@@ -273,11 +409,27 @@ Edita uma coluna existente no quadro Kan\+Ban.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00148}{148}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_ac8773e0e3b3c75454e680ff43c6fcd7f}\label{main_8cpp_ac8773e0e3b3c75454e680ff43c6fcd7f}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_a512a56ef22516c5454d0f925b16adcd6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{df/d0a/main_8cpp_a512a56ef22516c5454d0f925b16adcd6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_ac8773e0e3b3c75454e680ff43c6fcd7f}\label{main_8cpp_ac8773e0e3b3c75454e680ff43c6fcd7f} 
 \index{main.cpp@{main.cpp}!editarTarefa@{editarTarefa}}
 \index{editarTarefa@{editarTarefa}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{editarTarefa()}{editarTarefa()}}
-{\footnotesize\ttfamily void editar\+Tarefa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void editar\+Tarefa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
@@ -292,17 +444,49 @@ Edita uma tarefa existente no quadro Kan\+Ban.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00406}{406}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_afbe7cc1d16fdd3689922aa9f97a05342}\label{main_8cpp_afbe7cc1d16fdd3689922aa9f97a05342}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_ac8773e0e3b3c75454e680ff43c6fcd7f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{df/d0a/main_8cpp_ac8773e0e3b3c75454e680ff43c6fcd7f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_afbe7cc1d16fdd3689922aa9f97a05342}\label{main_8cpp_afbe7cc1d16fdd3689922aa9f97a05342} 
 \index{main.cpp@{main.cpp}!exibirColaboradores@{exibirColaboradores}}
 \index{exibirColaboradores@{exibirColaboradores}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{exibirColaboradores()}{exibirColaboradores()}}
-{\footnotesize\ttfamily void exibir\+Colaboradores (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void exibir\+Colaboradores (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00646}{646}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_a48cc5faad95860e2166339ee588aec62}\label{main_8cpp_a48cc5faad95860e2166339ee588aec62}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_afbe7cc1d16fdd3689922aa9f97a05342_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{df/d0a/main_8cpp_afbe7cc1d16fdd3689922aa9f97a05342_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_a48cc5faad95860e2166339ee588aec62}\label{main_8cpp_a48cc5faad95860e2166339ee588aec62} 
 \index{main.cpp@{main.cpp}!limparConsole@{limparConsole}}
 \index{limparConsole@{limparConsole}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{limparConsole()}{limparConsole()}}
@@ -316,7 +500,15 @@ Limpa a tela do console.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{df/d0a/main_8cpp_a48cc5faad95860e2166339ee588aec62_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
 \index{main.cpp@{main.cpp}!main@{main}}
 \index{main@{main}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{main()}{main()}}
@@ -326,11 +518,19 @@ Definition at line \mbox{\hyperlink{main_8cpp_source_l00025}{25}} of file \mbox{
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00885}{885}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_a23877ef139dcc4300c8f74067c517d27}\label{main_8cpp_a23877ef139dcc4300c8f74067c517d27}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{df/d0a/main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_a23877ef139dcc4300c8f74067c517d27}\label{main_8cpp_a23877ef139dcc4300c8f74067c517d27} 
 \index{main.cpp@{main.cpp}!moverColuna@{moverColuna}}
 \index{moverColuna@{moverColuna}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{moverColuna()}{moverColuna()}}
-{\footnotesize\ttfamily void mover\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mover\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
@@ -345,11 +545,27 @@ Move uma coluna de uma posição para outra no quadro Kan\+Ban.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00572}{572}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_a2eddfb0aac0ba265acd5268ce3d8e919}\label{main_8cpp_a2eddfb0aac0ba265acd5268ce3d8e919}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_a23877ef139dcc4300c8f74067c517d27_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{df/d0a/main_8cpp_a23877ef139dcc4300c8f74067c517d27_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_a2eddfb0aac0ba265acd5268ce3d8e919}\label{main_8cpp_a2eddfb0aac0ba265acd5268ce3d8e919} 
 \index{main.cpp@{main.cpp}!moverTarefas@{moverTarefas}}
 \index{moverTarefas@{moverTarefas}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{moverTarefas()}{moverTarefas()}}
-{\footnotesize\ttfamily void mover\+Tarefas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mover\+Tarefas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
@@ -364,11 +580,27 @@ Move uma tarefa de uma coluna para outra no quadro Kan\+Ban.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00326}{326}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_ac91dd762f55fe21f3a2226d59abff942}\label{main_8cpp_ac91dd762f55fe21f3a2226d59abff942}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_a2eddfb0aac0ba265acd5268ce3d8e919_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{df/d0a/main_8cpp_a2eddfb0aac0ba265acd5268ce3d8e919_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_ac91dd762f55fe21f3a2226d59abff942}\label{main_8cpp_ac91dd762f55fe21f3a2226d59abff942} 
 \index{main.cpp@{main.cpp}!ordenarColuna@{ordenarColuna}}
 \index{ordenarColuna@{ordenarColuna}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{ordenarColuna()}{ordenarColuna()}}
-{\footnotesize\ttfamily void ordenar\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void ordenar\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
@@ -382,17 +614,33 @@ Esta função implementa o algoritmo de ordenação conhecido como Bubble Sort (
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-A complexidade do Bubble Sort é quadrática, O(n$^\wedge$2), onde n é o número de elementos na lista. 
+A complexidade do Bubble Sort é quadrática, O(n\texorpdfstring{$^\wedge$}{\string^}2), onde n é o número de elementos na lista. 
 \end{DoxyNote}
 
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00621}{621}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_aaa15a96063fb4377e5ac1d46a68321c0}\label{main_8cpp_aaa15a96063fb4377e5ac1d46a68321c0}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_ac91dd762f55fe21f3a2226d59abff942_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{df/d0a/main_8cpp_ac91dd762f55fe21f3a2226d59abff942_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_aaa15a96063fb4377e5ac1d46a68321c0}\label{main_8cpp_aaa15a96063fb4377e5ac1d46a68321c0} 
 \index{main.cpp@{main.cpp}!removerColuna@{removerColuna}}
 \index{removerColuna@{removerColuna}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{removerColuna()}{removerColuna()}}
-{\footnotesize\ttfamily void remover\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void remover\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
@@ -407,11 +655,27 @@ Remove uma coluna do quadro Kan\+Ban.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00194}{194}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_aee02b44e62983f07d64c57db154c0467}\label{main_8cpp_aee02b44e62983f07d64c57db154c0467}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_aaa15a96063fb4377e5ac1d46a68321c0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{df/d0a/main_8cpp_aaa15a96063fb4377e5ac1d46a68321c0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_aee02b44e62983f07d64c57db154c0467}\label{main_8cpp_aee02b44e62983f07d64c57db154c0467} 
 \index{main.cpp@{main.cpp}!removerTarefa@{removerTarefa}}
 \index{removerTarefa@{removerTarefa}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{removerTarefa()}{removerTarefa()}}
-{\footnotesize\ttfamily void remover\+Tarefa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void remover\+Tarefa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban }\end{DoxyParamCaption})}
 
 
 
@@ -426,11 +690,27 @@ Remove uma tarefa de uma coluna no quadro Kan\+Ban.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00514}{514}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
-\mbox{\Hypertarget{main_8cpp_a3a0d238b444da51e7f04f65f8d390fd0}\label{main_8cpp_a3a0d238b444da51e7f04f65f8d390fd0}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_aee02b44e62983f07d64c57db154c0467_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{df/d0a/main_8cpp_aee02b44e62983f07d64c57db154c0467_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_a3a0d238b444da51e7f04f65f8d390fd0}\label{main_8cpp_a3a0d238b444da51e7f04f65f8d390fd0} 
 \index{main.cpp@{main.cpp}!salvarQuadro@{salvarQuadro}}
 \index{salvarQuadro@{salvarQuadro}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{salvarQuadro()}{salvarQuadro()}}
-{\footnotesize\ttfamily void salvar\+Quadro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} $\ast$\&}]{Kan\+Ban,  }\item[{string}]{file\+Name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void salvar\+Quadro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}\&}]{Kan\+Ban,  }\item[{string}]{file\+Name }\end{DoxyParamCaption})}
 
 
 
@@ -447,3 +727,19 @@ Salva o quadro Kan\+Ban em um arquivo.
 
 Definition at line \mbox{\hyperlink{main_8cpp_source_l00702}{702}} of file \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_a3a0d238b444da51e7f04f65f8d390fd0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{df/d0a/main_8cpp_a3a0d238b444da51e7f04f65f8d390fd0_icgraph}
+\end{center}
+\end{figure}

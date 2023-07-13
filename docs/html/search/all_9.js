@@ -5,7 +5,7 @@ var searchData=
   ['obtertarefa_2',['obterTarefa',['../d3/d3c/class_coluna.html#a1b697b50e065b83454e023c4ab24c4ef',1,'Coluna::obterTarefa()'],['../de/d1c/class_coluna_nomeada.html#a3f8cdd94b330161896b219720b7bc8e2',1,'ColunaNomeada::obterTarefa()'],['../d0/d4e/class_coluna_arquivo.html#abb1d729c65cf4680de28dd85fe20c737',1,'ColunaArquivo::obterTarefa()']]],
   ['operator_28_29_3',['operator()',['../dd/d5a/structcomparador.html#a0f1c3caa70f876d714be220cb699fe70',1,'comparador']]],
   ['operator_2b_2b_4',['operator++',['../dc/dd3/class_colaborador.html#a18c996a16235553e9bca3796aa1e11dd',1,'Colaborador']]],
-  ['operator_3c_3c_5',['operator&lt;&lt;',['../dc/dd3/class_colaborador.html#aed2d32cc47fb57d1af98b74895c66db2',1,'Colaborador::operator&lt;&lt;()'],['../da/d23/class_tarefa.html#a58971dffa1b7fee253a4920434684b30',1,'Tarefa::operator&lt;&lt;()']]],
+  ['operator_3c_3c_5',['operator&lt;&lt;',['../dc/dd3/class_colaborador.html#aed2d32cc47fb57d1af98b74895c66db2',1,'Colaborador::operator&lt;&lt;'],['../da/d23/class_tarefa.html#a58971dffa1b7fee253a4920434684b30',1,'Tarefa::operator&lt;&lt;']]],
   ['ordenar_6',['ordenar',['../d3/d3c/class_coluna.html#a072f1cae205d24c75bbf6e240e66c025',1,'Coluna::ordenar()'],['../de/d1c/class_coluna_nomeada.html#a73e9583ff304eef0a61d772976dac074',1,'ColunaNomeada::ordenar()'],['../d0/d4e/class_coluna_arquivo.html#af2122dc4d83288ec375515d4d16004a2',1,'ColunaArquivo::ordenar()']]],
   ['ordenarcoluna_7',['ordenarColuna',['../df/d0a/main_8cpp.html#ac91dd762f55fe21f3a2226d59abff942',1,'main.cpp']]],
   ['ordenarporprioridade_8',['ordenarPorPrioridade',['../dd/d91/class_lista_dupla.html#a0da08b292785498fc7bb358a84bed282',1,'ListaDupla']]]

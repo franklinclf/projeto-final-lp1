@@ -1,0 +1,467 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d0/d4e/class_coluna_arquivo" kind="class" language="C++" prot="public">
+    <compoundname>ColunaArquivo</compoundname>
+    <basecompoundref refid="d3/d3c/class_coluna" prot="public" virt="non-virtual">Coluna</basecompoundref>
+    <includes refid="da/d7b/colunas_8hpp" local="no">colunas.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d0/d4e/class_coluna_arquivo_1a8fa7fbadbd6adb1c0a259653737901d0" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ColunaArquivo::nome</definition>
+        <argsstring></argsstring>
+        <name>nome</name>
+        <qualifiedname>ColunaArquivo::nome</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="184" column="12" bodyfile="include/colunas.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d4e/class_coluna_arquivo_1ab51278542478379e59e8cd846cdb9b02" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ColunaArquivo::descricao</definition>
+        <argsstring></argsstring>
+        <name>descricao</name>
+        <qualifiedname>ColunaArquivo::descricao</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="185" column="12" bodyfile="include/colunas.hpp" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1a3b60a5d8d6bebf39b1acf78d049d52f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ColunaArquivo::ColunaArquivo</definition>
+        <argsstring>()</argsstring>
+        <name>ColunaArquivo</name>
+        <qualifiedname>ColunaArquivo::ColunaArquivo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="188" column="5" bodyfile="include/colunas.hpp" bodystart="188" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1aa7b4638c0a1f900754b0c3ac446fe963" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ColunaArquivo::ColunaArquivo</definition>
+        <argsstring>(string n, string d)</argsstring>
+        <name>ColunaArquivo</name>
+        <qualifiedname>ColunaArquivo::ColunaArquivo</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Construtor da classe <ref refid="d0/d4e/class_coluna_arquivo" kindref="compound">ColunaArquivo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nome da coluna. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Descrição da coluna. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="195" column="5" bodyfile="include/colunas.hpp" bodystart="195" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1aa40e86e89822421b4529d535c80b1e11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ColunaArquivo::~ColunaArquivo</definition>
+        <argsstring>()</argsstring>
+        <name>~ColunaArquivo</name>
+        <qualifiedname>ColunaArquivo::~ColunaArquivo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="196" column="5" bodyfile="include/colunas.hpp" bodystart="196" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1aeb82024caaccd6083d0ea0447ec2ba7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaArquivo::inserirTarefa</definition>
+        <argsstring>(Tarefa *t) override</argsstring>
+        <name>inserirTarefa</name>
+        <qualifiedname>ColunaArquivo::inserirTarefa</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1ac09fa33160badb14b7e4a095f15fb551">inserirTarefa</reimplements>
+        <param>
+          <type><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Insere uma tarefa na coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para a tarefa a ser inserida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="198" column="10" bodyfile="include/colunas.hpp" bodystart="198" bodyend="201"/>
+        <references refid="dd/d91/class_lista_dupla_1a997a8daa9fb1ccea46c233558ade8b4b" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="158" endline="169">ListaDupla::inserirFim</references>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1aae317988e21d9072edf5de1543085f14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaArquivo::removerTarefa</definition>
+        <argsstring>(int indice) override</argsstring>
+        <name>removerTarefa</name>
+        <qualifiedname>ColunaArquivo::removerTarefa</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1ae2733f6d09e1d3f9a2b136ad4517c4d0">removerTarefa</reimplements>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Remove uma tarefa da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da tarefa a ser removida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="203" column="10" bodyfile="include/colunas.hpp" bodystart="203" bodyend="206"/>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+        <references refid="dd/d91/class_lista_dupla_1ab976735e9038a9bd590a764b2a832e45" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="257" endline="292">ListaDupla::removerPorIndice</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1abb1d729c65cf4680de28dd85fe20c737" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref> *</type>
+        <definition>Tarefa * ColunaArquivo::obterTarefa</definition>
+        <argsstring>(int indice) override</argsstring>
+        <name>obterTarefa</name>
+        <qualifiedname>ColunaArquivo::obterTarefa</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a1b697b50e065b83454e023c4ab24c4ef">obterTarefa</reimplements>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Obtém uma tarefa da coluna pelo seu índice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da tarefa desejada. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ponteiro para a tarefa encontrada. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="208" column="12" bodyfile="include/colunas.hpp" bodystart="208" bodyend="211"/>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+        <references refid="dd/d91/class_lista_dupla_1a837ec6a1d28dbddd64b2028372f846c3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="341" endline="356">ListaDupla::obterPorIndice</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1ac4f7235fe2e8bbcdb959f5100d7c1bb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaArquivo::moverTarefa</definition>
+        <argsstring>(int indice, Coluna *colunaDestino) override</argsstring>
+        <name>moverTarefa</name>
+        <qualifiedname>ColunaArquivo::moverTarefa</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1afc72b9e6d07bb8c8bf926e6c96ed5e4f">moverTarefa</reimplements>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d3c/class_coluna" kindref="compound">Coluna</ref> *</type>
+          <declname>colunaDestino</declname>
+        </param>
+        <briefdescription>
+<para>Move uma tarefa de uma coluna para outra. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da tarefa a ser movida. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colunaDestino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para a coluna de destino. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="213" column="10" bodyfile="include/colunas.hpp" bodystart="213" bodyend="218"/>
+        <references refid="d3/d3c/class_coluna_1ac09fa33160badb14b7e4a095f15fb551">Coluna::inserirTarefa</references>
+        <references refid="dd/d91/class_lista_dupla_1a924380dcc218b78c4de0e0accc80e012" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="298" endline="323">ListaDupla::lightDelete</references>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+        <references refid="dd/d91/class_lista_dupla_1a837ec6a1d28dbddd64b2028372f846c3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="341" endline="356">ListaDupla::obterPorIndice</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1aa93ac97c8f31a46c939ee6e9e4803fa5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>string</type>
+        <definition>string ColunaArquivo::getNome</definition>
+        <argsstring>() override</argsstring>
+        <name>getNome</name>
+        <qualifiedname>ColunaArquivo::getNome</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a25ecf45ce1e1c7a03b9c92d4a5da0544">getNome</reimplements>
+        <briefdescription>
+<para>Obtém o nome da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nome da coluna. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="220" column="12" bodyfile="include/colunas.hpp" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1aa9c91a9dbac4a43620a220010fd2a4fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>string</type>
+        <definition>string ColunaArquivo::getDescricao</definition>
+        <argsstring>()</argsstring>
+        <name>getDescricao</name>
+        <qualifiedname>ColunaArquivo::getDescricao</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a2a359c5e42f66995c0529b2f2184d33f">getDescricao</reimplements>
+        <briefdescription>
+<para>Obtém a descrição da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Descrição da coluna. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="225" column="12" bodyfile="include/colunas.hpp" bodystart="225" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1a11e41b94814603cacc5ca29099d6efe1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaArquivo::setNome</definition>
+        <argsstring>(string n)</argsstring>
+        <name>setNome</name>
+        <qualifiedname>ColunaArquivo::setNome</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a8b576e2bbe66a544614667ca355d6545">setNome</reimplements>
+        <param>
+          <type>string</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Define o nome da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nome da coluna. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="230" column="10" bodyfile="include/colunas.hpp" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1a033b6173b2d25af8dd0513ef235bd493" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaArquivo::setDescricao</definition>
+        <argsstring>(string d)</argsstring>
+        <name>setDescricao</name>
+        <qualifiedname>ColunaArquivo::setDescricao</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a38913a9091206a4672e2ab608d8a7804">setDescricao</reimplements>
+        <param>
+          <type>string</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Define a descrição da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Descrição da coluna. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="235" column="10" bodyfile="include/colunas.hpp" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1a07705485463aba703ff87ea7d82691c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int ColunaArquivo::getTamanho</definition>
+        <argsstring>()</argsstring>
+        <name>getTamanho</name>
+        <qualifiedname>ColunaArquivo::getTamanho</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a98df8d945c71c2cdc352d610325fea02">getTamanho</reimplements>
+        <briefdescription>
+<para>Obtém o tamanho da coluna, ou seja, a quantidade de tarefas nela contidas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Tamanho da coluna. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="240" column="9" bodyfile="include/colunas.hpp" bodystart="240" bodyend="243"/>
+        <references refid="dd/d91/class_lista_dupla_1a86f5652f339d3af5fd81c6b913c95a52" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="123" endline="126">ListaDupla::getTamanho</references>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1af89c858cfeb225706983f3e91090792f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaArquivo::imprimir</definition>
+        <argsstring>() const override</argsstring>
+        <name>imprimir</name>
+        <qualifiedname>ColunaArquivo::imprimir</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a48875a7414e5f4d15bfed749bb0a5586">imprimir</reimplements>
+        <briefdescription>
+<para>Imprime as informações da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="245" column="10" bodyfile="include/colunas.hpp" bodystart="245" bodyend="253"/>
+        <references refid="dd/d91/class_lista_dupla_1a86f5652f339d3af5fd81c6b913c95a52" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="123" endline="126">ListaDupla::getTamanho</references>
+        <references refid="da/d23/class_tarefa_1acafe89fa135d5af459beff157c292faa" compoundref="d1/d1b/tarefa_8hpp" startline="152" endline="155">Tarefa::getTitulo</references>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+        <references refid="dd/d91/class_lista_dupla_1a837ec6a1d28dbddd64b2028372f846c3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="341" endline="356">ListaDupla::obterPorIndice</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4e/class_coluna_arquivo_1af2122dc4d83288ec375515d4d16004a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaArquivo::ordenar</definition>
+        <argsstring>()</argsstring>
+        <name>ordenar</name>
+        <qualifiedname>ColunaArquivo::ordenar</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a072f1cae205d24c75bbf6e240e66c025">ordenar</reimplements>
+        <briefdescription>
+<para>Ordena as tarefas da coluna por prioridade. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="255" column="10" bodyfile="include/colunas.hpp" bodystart="255" bodyend="258"/>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+        <references refid="dd/d91/class_lista_dupla_1a0da08b292785498fc7bb358a84bed282" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="361" endline="400">ListaDupla::ordenarPorPrioridade</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe que representa uma coluna de um quadro de tarefas do tipo &quot;Arquivo&quot;. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Coluna</label>
+        <link refid="d3/d3c/class_coluna"/>
+      </node>
+      <node id="1">
+        <label>ColunaArquivo</label>
+        <link refid="d0/d4e/class_coluna_arquivo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Coluna</label>
+        <link refid="d3/d3c/class_coluna"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>#lista</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ColunaArquivo</label>
+        <link refid="d0/d4e/class_coluna_arquivo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ListaDupla</label>
+        <link refid="dd/d91/class_lista_dupla"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/colunas.hpp" line="181" column="1" bodyfile="include/colunas.hpp" bodystart="182" bodyend="259"/>
+    <listofallmembers>
+      <member refid="d0/d4e/class_coluna_arquivo_1a3b60a5d8d6bebf39b1acf78d049d52f0" prot="public" virt="non-virtual"><scope>ColunaArquivo</scope><name>ColunaArquivo</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1aa7b4638c0a1f900754b0c3ac446fe963" prot="public" virt="non-virtual"><scope>ColunaArquivo</scope><name>ColunaArquivo</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1ab51278542478379e59e8cd846cdb9b02" prot="private" virt="non-virtual"><scope>ColunaArquivo</scope><name>descricao</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1aa9c91a9dbac4a43620a220010fd2a4fc" prot="public" virt="virtual"><scope>ColunaArquivo</scope><name>getDescricao</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1aa93ac97c8f31a46c939ee6e9e4803fa5" prot="public" virt="virtual"><scope>ColunaArquivo</scope><name>getNome</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1a07705485463aba703ff87ea7d82691c5" prot="public" virt="virtual"><scope>ColunaArquivo</scope><name>getTamanho</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1af89c858cfeb225706983f3e91090792f" prot="public" virt="virtual"><scope>ColunaArquivo</scope><name>imprimir</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1aeb82024caaccd6083d0ea0447ec2ba7e" prot="public" virt="virtual"><scope>ColunaArquivo</scope><name>inserirTarefa</name></member>
+      <member refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" prot="protected" virt="non-virtual"><scope>ColunaArquivo</scope><name>lista</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1ac4f7235fe2e8bbcdb959f5100d7c1bb7" prot="public" virt="virtual"><scope>ColunaArquivo</scope><name>moverTarefa</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1a8fa7fbadbd6adb1c0a259653737901d0" prot="private" virt="non-virtual"><scope>ColunaArquivo</scope><name>nome</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1abb1d729c65cf4680de28dd85fe20c737" prot="public" virt="virtual"><scope>ColunaArquivo</scope><name>obterTarefa</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1af2122dc4d83288ec375515d4d16004a2" prot="public" virt="virtual"><scope>ColunaArquivo</scope><name>ordenar</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1aae317988e21d9072edf5de1543085f14" prot="public" virt="virtual"><scope>ColunaArquivo</scope><name>removerTarefa</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1a033b6173b2d25af8dd0513ef235bd493" prot="public" virt="virtual"><scope>ColunaArquivo</scope><name>setDescricao</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1a11e41b94814603cacc5ca29099d6efe1" prot="public" virt="virtual"><scope>ColunaArquivo</scope><name>setNome</name></member>
+      <member refid="d3/d3c/class_coluna_1a914ff6225d464e612b7ce6cfa0c73fed" prot="public" virt="virtual"><scope>ColunaArquivo</scope><name>~Coluna</name></member>
+      <member refid="d0/d4e/class_coluna_arquivo_1aa40e86e89822421b4529d535c80b1e11" prot="public" virt="non-virtual"><scope>ColunaArquivo</scope><name>~ColunaArquivo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

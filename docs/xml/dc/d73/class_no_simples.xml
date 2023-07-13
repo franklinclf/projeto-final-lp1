@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dc/d73/class_no_simples" kind="class" language="C++" prot="public">
+    <compoundname>NoSimples</compoundname>
+    <includes refid="db/d5f/lista_simplesmente_encadeada_8hpp" local="no">listaSimplesmenteEncadeada.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dc/d73/class_no_simples_1a4c745e767ee31c88a352cbfca630a15a" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d3c/class_coluna" kindref="compound">Coluna</ref> *</type>
+        <definition>Coluna* NoSimples::coluna</definition>
+        <argsstring></argsstring>
+        <name>coluna</name>
+        <qualifiedname>NoSimples::coluna</qualifiedname>
+        <briefdescription>
+<para>Ponteiro para a coluna armazenada no nó. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="19" column="12" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="19" bodyend="-1"/>
+        <referencedby refid="db/dba/class_lista_1abc103d958cb4184693b59547ebf7cf9c" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="168" endline="184">Lista::moverColuna</referencedby>
+        <referencedby refid="db/dba/class_lista_1adb2dfb16eaf99f99fc1b39bf847af9bd" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="147" endline="161">Lista::obterPorIndice</referencedby>
+        <referencedby refid="db/dba/class_lista_1a2ab09a2fd57a3adeec30cea8fd9e770d" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="86" endline="98">Lista::removerInicio</referencedby>
+        <referencedby refid="db/dba/class_lista_1ad71c31e64374c31c878455e451386d1e" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="104" endline="129">Lista::removerPorIndice</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d73/class_no_simples_1a5c42cb9659157a8e985529ef32450c81" prot="public" static="no" mutable="no">
+        <type><ref refid="dc/d73/class_no_simples" kindref="compound">NoSimples</ref> *</type>
+        <definition>NoSimples* NoSimples::proximo</definition>
+        <argsstring></argsstring>
+        <name>proximo</name>
+        <qualifiedname>NoSimples::proximo</qualifiedname>
+        <briefdescription>
+<para>Ponteiro para o próximo nó. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="20" column="15" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="db/dba/class_lista_1af51fdf08cb850b001a83e43b0a19beab" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="75" endline="81">Lista::inserirInicio</referencedby>
+        <referencedby refid="db/dba/class_lista_1abc103d958cb4184693b59547ebf7cf9c" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="168" endline="184">Lista::moverColuna</referencedby>
+        <referencedby refid="db/dba/class_lista_1adb2dfb16eaf99f99fc1b39bf847af9bd" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="147" endline="161">Lista::obterPorIndice</referencedby>
+        <referencedby refid="db/dba/class_lista_1a2ab09a2fd57a3adeec30cea8fd9e770d" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="86" endline="98">Lista::removerInicio</referencedby>
+        <referencedby refid="db/dba/class_lista_1ad71c31e64374c31c878455e451386d1e" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="104" endline="129">Lista::removerPorIndice</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d73/class_no_simples_1a8a0d8e920a83379917dcf0110ed88c65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NoSimples::NoSimples</definition>
+        <argsstring>(Coluna *c)</argsstring>
+        <name>NoSimples</name>
+        <qualifiedname>NoSimples::NoSimples</qualifiedname>
+        <param>
+          <type><ref refid="d3/d3c/class_coluna" kindref="compound">Coluna</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Construtor da classe <ref refid="dc/d73/class_no_simples" kindref="compound">NoSimples</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para a coluna a ser armazenada no nó. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="26" column="5" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe que representa um nó de uma lista simplesmente encadeada. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Coluna</label>
+        <link refid="d3/d3c/class_coluna"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>#lista</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ListaDupla</label>
+        <link refid="dd/d91/class_lista_dupla"/>
+      </node>
+      <node id="1">
+        <label>NoSimples</label>
+        <link refid="dc/d73/class_no_simples"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+coluna</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>+proximo</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/listaSimplesmenteEncadeada.hpp" line="16" column="1" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="17" bodyend="27"/>
+    <listofallmembers>
+      <member refid="dc/d73/class_no_simples_1a4c745e767ee31c88a352cbfca630a15a" prot="public" virt="non-virtual"><scope>NoSimples</scope><name>coluna</name></member>
+      <member refid="dc/d73/class_no_simples_1a8a0d8e920a83379917dcf0110ed88c65" prot="public" virt="non-virtual"><scope>NoSimples</scope><name>NoSimples</name></member>
+      <member refid="dc/d73/class_no_simples_1a5c42cb9659157a8e985529ef32450c81" prot="public" virt="non-virtual"><scope>NoSimples</scope><name>proximo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

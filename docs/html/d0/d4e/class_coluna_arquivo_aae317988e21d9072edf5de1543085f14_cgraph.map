@@ -1,0 +1,30 @@
+<map id="ColunaArquivo::removerTarefa" name="ColunaArquivo::removerTarefa">
+<area shape="rect" id="Node000001" title="Remove uma tarefa da coluna." alt="" coords="5,132,197,159"/>
+<area shape="rect" id="Node000002" href="$dd/d91/class_lista_dupla.html#ab976735e9038a9bd590a764b2a832e45" title="Remove a tarefa da lista pelo índice." alt="" coords="245,132,434,159"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,143,230,143,230,148,197,148"/>
+<area shape="rect" id="Node000003" href="$d9/d55/class_no.html#a18866d7db046e7987120e93bf1a839d3" title="Obtém o nó anterior." alt="" coords="701,5,809,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="363,129,416,101,481,73,588,44,686,26,687,31,589,49,483,79,418,106,366,134"/>
+<area shape="rect" id="Node000004" href="$d9/d55/class_no.html#a42bd9dc9c7b24743c82e89b42a1581a2" title="Obtém o próximo nó." alt="" coords="699,284,811,311"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="356,157,409,204,444,229,483,250,534,267,587,280,685,292,684,298,586,285,532,272,481,254,442,233,405,208,352,161"/>
+<area shape="rect" id="Node000005" href="$d9/d55/class_no.html#a3e8d735fc07c24ecaee4e283ac9a1f36" title="Obtém a tarefa armazenada no nó." alt="" coords="706,81,804,108"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="372,129,423,111,482,96,536,89,592,86,691,88,691,93,592,92,537,95,482,101,424,116,374,134"/>
+<area shape="rect" id="Node000006" href="$dd/d91/class_lista_dupla.html#a0ec55e77494913e1041f772fb5abf176" title="Remove a tarefa do fim da lista." alt="" coords="486,132,643,159"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="434,143,471,143,471,148,434,148"/>
+<area shape="rect" id="Node000007" href="$d9/d55/class_no.html#a337f5ed0c85f3ac6646fd8295f2017a7" title="Define o nó anterior." alt="" coords="701,132,809,159"/>
+<area shape="poly" id="edge17_Node000002_Node000007" title=" " alt="" coords="404,129,482,117,565,112,648,117,692,125,691,131,647,123,565,117,482,123,405,134"/>
+<area shape="rect" id="Node000008" href="$d9/d55/class_no.html#a1fd6922d7a6b246aa11251effaceeb7b" title="Define o próximo nó." alt="" coords="699,233,811,260"/>
+<area shape="poly" id="edge18_Node000002_Node000008" title=" " alt="" coords="362,157,415,189,448,206,483,219,534,231,588,239,685,245,684,250,587,244,533,236,481,224,446,211,412,194,359,161"/>
+<area shape="rect" id="Node000010" href="$dd/d91/class_lista_dupla.html#a6c0c785cb9c4a4a2fbe25beb370bd102" title="Remove a tarefa do início da lista." alt="" coords="482,183,647,209"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="403,157,488,176,487,181,402,162"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="585,129,720,38,723,43,588,134"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="617,129,691,109,692,114,618,134"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="644,143,686,143,686,148,644,148"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="625,157,649,168,664,181,674,194,683,206,697,219,704,224,701,228,694,223,679,210,670,197,660,185,646,173,622,162"/>
+<area shape="rect" id="Node000009" href="$dd/d91/class_lista_dupla.html#a66888490f518d19c2d5cb3d3a053b816" title="Verifica se a lista está vazia." alt="" coords="695,183,815,209"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="618,157,689,176,687,181,617,162"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="589,207,697,270,708,275,706,280,694,274,586,212"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="622,180,646,168,660,156,670,144,679,131,694,118,701,113,704,118,697,122,683,135,674,147,664,160,649,173,625,185"/>
+<area shape="poly" id="edge14_Node000010_Node000007" title=" " alt="" coords="617,179,687,160,689,166,618,185"/>
+<area shape="poly" id="edge15_Node000010_Node000008" title=" " alt="" coords="618,207,689,226,687,232,617,213"/>
+<area shape="poly" id="edge16_Node000010_Node000009" title=" " alt="" coords="648,193,680,193,680,199,648,199"/>
+</map>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d3/dcc/md__r_e_a_d_m_e" kind="page">
+    <compoundname>md__r_e_a_d_m_e</compoundname>
+    <title>Projeto Final de Linguagem de Programação I</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="d3/dcc/md__r_e_a_d_m_e_1autotoc_md0"/>Franklin Oliveira (20220043521)</para>
+<para>Projeto escolhido: Gerenciador de Tarefas de Metodologia Ágil com Método Kanban</para>
+<para>O gerenciador Kanban discutido anteriormente é uma aplicação de console em C++ que implementa um sistema Kanban básico. O Kanban é uma metodologia de gerenciamento visual que ajuda a controlar e otimizar fluxos de trabalho. Nesse gerenciador, você pode criar quadros, adicionar colunas e tarefas, mover tarefas entre colunas e visualizar o quadro Kanban atualizado.</para>
+<para>A aplicação utiliza conceitos de programação orientada a objetos, como classes e estruturas de dados, para modelar o quadro Kanban, as colunas e as tarefas. Além disso, foram implementadas funcionalidades como adicionar tarefas, mover tarefas entre colunas, visualizar o quadro atual e sair do programa. </para>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

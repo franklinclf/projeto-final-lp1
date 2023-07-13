@@ -1,0 +1,549 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d1/d13/class_quadro" kind="class" language="C++" prot="public">
+    <compoundname>Quadro</compoundname>
+    <includes refid="de/d9e/quadro_8hpp" local="no">quadro.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/d13/class_quadro_1ac3796f45b2bc5ac20bc432936fd266b3" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Quadro::nome</definition>
+        <argsstring></argsstring>
+        <name>nome</name>
+        <qualifiedname>Quadro::nome</qualifiedname>
+        <briefdescription>
+<para>Nome do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="41" column="17" bodyfile="include/quadro.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d13/class_quadro_1adcaab16c92fbce6ceaf5951c0af634b5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Quadro::descricao</definition>
+        <argsstring></argsstring>
+        <name>descricao</name>
+        <qualifiedname>Quadro::descricao</qualifiedname>
+        <briefdescription>
+<para>Descrição do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="42" column="17" bodyfile="include/quadro.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d13/class_quadro_1a2d0b7a02e685bbb62d695bf5983e7874" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dba/class_lista" kindref="compound">Lista</ref></type>
+        <definition>Lista Quadro::listaColunas</definition>
+        <argsstring></argsstring>
+        <name>listaColunas</name>
+        <qualifiedname>Quadro::listaColunas</qualifiedname>
+        <briefdescription>
+<para><ref refid="db/dba/class_lista" kindref="compound">Lista</ref> de colunas do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="43" column="11" bodyfile="include/quadro.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d13/class_quadro_1a8ed2e8dae0808bc93db662c77b49b133" prot="private" static="no" mutable="no">
+        <type>std::set&lt; <ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref> *, <ref refid="dd/d5a/structcomparador" kindref="compound">comparador</ref> &gt;</type>
+        <definition>std::set&lt;Colaborador *, comparador&gt; Quadro::equipe</definition>
+        <argsstring></argsstring>
+        <name>equipe</name>
+        <qualifiedname>Quadro::equipe</qualifiedname>
+        <briefdescription>
+<para>Equipe de colaboradores do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="44" column="14" bodyfile="include/quadro.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d13/class_quadro_1a751c81797b3809680e57be184e7d4740" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Quadro::Quadro</definition>
+        <argsstring>()</argsstring>
+        <name>Quadro</name>
+        <qualifiedname>Quadro::Quadro</qualifiedname>
+        <briefdescription>
+<para>Construtor padrão da classe <ref refid="d1/d13/class_quadro" kindref="compound">Quadro</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="50" column="5" bodyfile="include/quadro.hpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1abf3adf33b21d377b495ec41b922bc3a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Quadro::Quadro</definition>
+        <argsstring>(const std::string &amp;n, const std::string &amp;d)</argsstring>
+        <name>Quadro</name>
+        <qualifiedname>Quadro::Quadro</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Construtor da classe <ref refid="d1/d13/class_quadro" kindref="compound">Quadro</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nome do quadro. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Descrição do quadro. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="57" column="5" bodyfile="include/quadro.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1af569ac1f73c8e6859effde0e2aa115d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Quadro::~Quadro</definition>
+        <argsstring>()</argsstring>
+        <name>~Quadro</name>
+        <qualifiedname>Quadro::~Quadro</qualifiedname>
+        <briefdescription>
+<para>Destrutor da classe <ref refid="d1/d13/class_quadro" kindref="compound">Quadro</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="62" column="5" bodyfile="include/quadro.hpp" bodystart="62" bodyend="65"/>
+        <references refid="db/dba/class_lista_1a70571e70c4b7945cc9907e89431624c9" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="134" endline="140">Lista::limpar</references>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1ae21d17fb833175bd68b00970c772fcd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Quadro::adicionarColuna</definition>
+        <argsstring>(Coluna *coluna)</argsstring>
+        <name>adicionarColuna</name>
+        <qualifiedname>Quadro::adicionarColuna</qualifiedname>
+        <param>
+          <type><ref refid="d3/d3c/class_coluna" kindref="compound">Coluna</ref> *</type>
+          <declname>coluna</declname>
+        </param>
+        <briefdescription>
+<para>Adiciona uma coluna ao quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coluna</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para a coluna a ser adicionada. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="71" column="10" bodyfile="include/quadro.hpp" bodystart="71" bodyend="74"/>
+        <references refid="db/dba/class_lista_1af51fdf08cb850b001a83e43b0a19beab" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="75" endline="81">Lista::inserirInicio</references>
+        <referencedby refid="df/d0a/main_8cpp_1adeb70abb0e6d3cf5e724363a38ce80ca" compoundref="df/d0a/main_8cpp" startline="552" endline="565">adicionarColunaArquivo</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ac19c0f76269ed6195cad2776a32e04f1" compoundref="df/d0a/main_8cpp" startline="795" endline="883">carregarQuadro</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a48e1cbf9de98941d548837997b582870" compoundref="df/d0a/main_8cpp" startline="126" endline="141">criarColuna</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1a977fc54d38236a3a70a20e65101f51c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Quadro::removerColuna</definition>
+        <argsstring>(int indice)</argsstring>
+        <name>removerColuna</name>
+        <qualifiedname>Quadro::removerColuna</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Remove uma coluna do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da coluna a ser removida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="80" column="10" bodyfile="include/quadro.hpp" bodystart="80" bodyend="83"/>
+        <references refid="db/dba/class_lista_1ad71c31e64374c31c878455e451386d1e" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="104" endline="129">Lista::removerPorIndice</references>
+        <referencedby refid="df/d0a/main_8cpp_1aaa15a96063fb4377e5ac1d46a68321c0" compoundref="df/d0a/main_8cpp" startline="194" endline="216">removerColuna</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1acdcb5194cb4b20e50f6211df473b59f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d3/d3c/class_coluna" kindref="compound">Coluna</ref> *</type>
+        <definition>Coluna * Quadro::obterColuna</definition>
+        <argsstring>(int indice) const</argsstring>
+        <name>obterColuna</name>
+        <qualifiedname>Quadro::obterColuna</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Obtém uma coluna do quadro pelo índice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da coluna. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ponteiro para a coluna encontrada. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="90" column="12" bodyfile="include/quadro.hpp" bodystart="90" bodyend="93"/>
+        <references refid="db/dba/class_lista_1adb2dfb16eaf99f99fc1b39bf847af9bd" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="147" endline="161">Lista::obterPorIndice</references>
+        <referencedby refid="df/d0a/main_8cpp_1a0d931717ab3053bc49784e26575b01d6" compoundref="df/d0a/main_8cpp" startline="223" endline="319">adicionarTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a512a56ef22516c5454d0f925b16adcd6" compoundref="df/d0a/main_8cpp" startline="148" endline="187">editarColuna</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ac8773e0e3b3c75454e680ff43c6fcd7f" compoundref="df/d0a/main_8cpp" startline="406" endline="507">editarTarefa</referencedby>
+        <referencedby refid="d1/d13/class_quadro_1a1d27dcd2c84b1742c7ebd4cb0f82a704" compoundref="de/d9e/quadro_8hpp" startline="152" endline="165">imprimir</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a2eddfb0aac0ba265acd5268ce3d8e919" compoundref="df/d0a/main_8cpp" startline="326" endline="399">moverTarefas</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ac91dd762f55fe21f3a2226d59abff942" compoundref="df/d0a/main_8cpp" startline="621" endline="644">ordenarColuna</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1aee02b44e62983f07d64c57db154c0467" compoundref="df/d0a/main_8cpp" startline="514" endline="545">removerTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1aad88cee2be59e368c4c09166a7777fb9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Quadro::getNumeroColunas</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumeroColunas</name>
+        <qualifiedname>Quadro::getNumeroColunas</qualifiedname>
+        <briefdescription>
+<para>Obtém o número de colunas do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Número de colunas do quadro. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="99" column="9" bodyfile="include/quadro.hpp" bodystart="99" bodyend="102"/>
+        <references refid="db/dba/class_lista_1a5cd63f61264afc88d0a6c290f7cb7320" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="66" endline="69">Lista::getTamanho</references>
+        <referencedby refid="df/d0a/main_8cpp_1a0d931717ab3053bc49784e26575b01d6" compoundref="df/d0a/main_8cpp" startline="223" endline="319">adicionarTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a512a56ef22516c5454d0f925b16adcd6" compoundref="df/d0a/main_8cpp" startline="148" endline="187">editarColuna</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ac8773e0e3b3c75454e680ff43c6fcd7f" compoundref="df/d0a/main_8cpp" startline="406" endline="507">editarTarefa</referencedby>
+        <referencedby refid="d1/d13/class_quadro_1a1d27dcd2c84b1742c7ebd4cb0f82a704" compoundref="de/d9e/quadro_8hpp" startline="152" endline="165">imprimir</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a23877ef139dcc4300c8f74067c517d27" compoundref="df/d0a/main_8cpp" startline="572" endline="608">moverColuna</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a2eddfb0aac0ba265acd5268ce3d8e919" compoundref="df/d0a/main_8cpp" startline="326" endline="399">moverTarefas</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ac91dd762f55fe21f3a2226d59abff942" compoundref="df/d0a/main_8cpp" startline="621" endline="644">ordenarColuna</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1aaa15a96063fb4377e5ac1d46a68321c0" compoundref="df/d0a/main_8cpp" startline="194" endline="216">removerColuna</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1aee02b44e62983f07d64c57db154c0467" compoundref="df/d0a/main_8cpp" startline="514" endline="545">removerTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1ae87472bb79c7073b7d6747d930d41a23" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Quadro::getNome</definition>
+        <argsstring>() const</argsstring>
+        <name>getNome</name>
+        <qualifiedname>Quadro::getNome</qualifiedname>
+        <briefdescription>
+<para>Obtém o nome do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nome do quadro. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="108" column="17" bodyfile="include/quadro.hpp" bodystart="108" bodyend="111"/>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1a7a8e238c28a7fb111f555a8508041824" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Quadro::getDescricao</definition>
+        <argsstring>() const</argsstring>
+        <name>getDescricao</name>
+        <qualifiedname>Quadro::getDescricao</qualifiedname>
+        <briefdescription>
+<para>Obtém a descrição do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Descrição do quadro. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="117" column="17" bodyfile="include/quadro.hpp" bodystart="117" bodyend="120"/>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1ad0dfa6d461fb81b6f93e7a085e0ba08b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Quadro::setNome</definition>
+        <argsstring>(std::string n)</argsstring>
+        <name>setNome</name>
+        <qualifiedname>Quadro::setNome</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Define o nome do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Novo nome do quadro. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="126" column="10" bodyfile="include/quadro.hpp" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1ad23562f279eb119f1b0a7263d3293251" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Quadro::setDescricao</definition>
+        <argsstring>(std::string d)</argsstring>
+        <name>setDescricao</name>
+        <qualifiedname>Quadro::setDescricao</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Define a descrição do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nova descrição do quadro. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="135" column="10" bodyfile="include/quadro.hpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1a1cc0b576c7787cc7c82019a3fd424822" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::set&lt; <ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref> *, <ref refid="dd/d5a/structcomparador" kindref="compound">comparador</ref> &gt;</type>
+        <definition>std::set&lt; Colaborador *, comparador &gt; Quadro::getEquipe</definition>
+        <argsstring>()</argsstring>
+        <name>getEquipe</name>
+        <qualifiedname>Quadro::getEquipe</qualifiedname>
+        <briefdescription>
+<para>Obtém a equipe de colaboradores do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Equipe de colaboradores do quadro. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="144" column="14" bodyfile="include/quadro.hpp" bodystart="144" bodyend="147"/>
+        <referencedby refid="df/d0a/main_8cpp_1a0d931717ab3053bc49784e26575b01d6" compoundref="df/d0a/main_8cpp" startline="223" endline="319">adicionarTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a437489a63da65aff2f992d1273edacaa" compoundref="df/d0a/main_8cpp" startline="668" endline="694">buscarColaborador</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ac19c0f76269ed6195cad2776a32e04f1" compoundref="df/d0a/main_8cpp" startline="795" endline="883">carregarQuadro</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ac8773e0e3b3c75454e680ff43c6fcd7f" compoundref="df/d0a/main_8cpp" startline="406" endline="507">editarTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1afbe7cc1d16fdd3689922aa9f97a05342" compoundref="df/d0a/main_8cpp" startline="646" endline="655">exibirColaboradores</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1a1d27dcd2c84b1742c7ebd4cb0f82a704" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Quadro::imprimir</definition>
+        <argsstring>() const</argsstring>
+        <name>imprimir</name>
+        <qualifiedname>Quadro::imprimir</qualifiedname>
+        <briefdescription>
+<para>Imprime as informações do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="152" column="10" bodyfile="include/quadro.hpp" bodystart="152" bodyend="165"/>
+        <references refid="d3/d3c/class_coluna_1a25ecf45ce1e1c7a03b9c92d4a5da0544">Coluna::getNome</references>
+        <references refid="d1/d13/class_quadro_1aad88cee2be59e368c4c09166a7777fb9" compoundref="de/d9e/quadro_8hpp" startline="99" endline="102">getNumeroColunas</references>
+        <references refid="d3/d3c/class_coluna_1a48875a7414e5f4d15bfed749bb0a5586">Coluna::imprimir</references>
+        <references refid="d1/d13/class_quadro_1acdcb5194cb4b20e50f6211df473b59f2" compoundref="de/d9e/quadro_8hpp" startline="90" endline="93">obterColuna</references>
+        <referencedby refid="df/d0a/main_8cpp_1a0d931717ab3053bc49784e26575b01d6" compoundref="df/d0a/main_8cpp" startline="223" endline="319">adicionarTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a512a56ef22516c5454d0f925b16adcd6" compoundref="df/d0a/main_8cpp" startline="148" endline="187">editarColuna</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ac8773e0e3b3c75454e680ff43c6fcd7f" compoundref="df/d0a/main_8cpp" startline="406" endline="507">editarTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="df/d0a/main_8cpp" startline="885" endline="1074">main</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a23877ef139dcc4300c8f74067c517d27" compoundref="df/d0a/main_8cpp" startline="572" endline="608">moverColuna</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a2eddfb0aac0ba265acd5268ce3d8e919" compoundref="df/d0a/main_8cpp" startline="326" endline="399">moverTarefas</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ac91dd762f55fe21f3a2226d59abff942" compoundref="df/d0a/main_8cpp" startline="621" endline="644">ordenarColuna</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1aaa15a96063fb4377e5ac1d46a68321c0" compoundref="df/d0a/main_8cpp" startline="194" endline="216">removerColuna</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1aee02b44e62983f07d64c57db154c0467" compoundref="df/d0a/main_8cpp" startline="514" endline="545">removerTarefa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1ae11cee4915eee6bf9b192ac8680fadf6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Quadro::inserirColaborador</definition>
+        <argsstring>(Colaborador *colaborador)</argsstring>
+        <name>inserirColaborador</name>
+        <qualifiedname>Quadro::inserirColaborador</qualifiedname>
+        <param>
+          <type><ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref> *</type>
+          <declname>colaborador</declname>
+        </param>
+        <briefdescription>
+<para>Insere um colaborador na equipe do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colaborador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para o colaborador a ser inserido. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="171" column="10" bodyfile="include/quadro.hpp" bodystart="171" bodyend="174"/>
+        <referencedby refid="df/d0a/main_8cpp_1aed504424b48ab1ef3ce656ba1d439ae0" compoundref="df/d0a/main_8cpp" startline="84" endline="99">cadastrarColaborador</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ac19c0f76269ed6195cad2776a32e04f1" compoundref="df/d0a/main_8cpp" startline="795" endline="883">carregarQuadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1ae9b22eeda08e196887b9033beb358c41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Quadro::exibirColaboradores</definition>
+        <argsstring>()</argsstring>
+        <name>exibirColaboradores</name>
+        <qualifiedname>Quadro::exibirColaboradores</qualifiedname>
+        <briefdescription>
+<para>Exibe os colaboradores da equipe do quadro. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="179" column="10" bodyfile="include/quadro.hpp" bodystart="179" bodyend="186"/>
+        <referencedby refid="df/d0a/main_8cpp_1afbe7cc1d16fdd3689922aa9f97a05342" compoundref="df/d0a/main_8cpp" startline="646" endline="655">exibirColaboradores</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="df/d0a/main_8cpp" startline="885" endline="1074">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d13/class_quadro_1ab9b6209542640bb5a3e0fb84cf62d6eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Quadro::moverColuna</definition>
+        <argsstring>(int indiceAntigo, int indiceNovo)</argsstring>
+        <name>moverColuna</name>
+        <qualifiedname>Quadro::moverColuna</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>indiceAntigo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indiceNovo</declname>
+        </param>
+        <briefdescription>
+<para>Move uma coluna do quadro para uma nova posição. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indiceAntigo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice atual da coluna. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indiceNovo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Novo índice para a coluna. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="193" column="10" bodyfile="include/quadro.hpp" bodystart="193" bodyend="196"/>
+        <references refid="db/dba/class_lista_1abc103d958cb4184693b59547ebf7cf9c" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="168" endline="184">Lista::moverColuna</references>
+        <referencedby refid="df/d0a/main_8cpp_1a23877ef139dcc4300c8f74067c517d27" compoundref="df/d0a/main_8cpp" startline="572" endline="608">moverColuna</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe que representa um quadro de tarefas. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Quadro</label>
+        <link refid="d1/d13/class_quadro"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/quadro.hpp" line="38" column="1" bodyfile="include/quadro.hpp" bodystart="39" bodyend="197"/>
+    <listofallmembers>
+      <member refid="d1/d13/class_quadro_1ae21d17fb833175bd68b00970c772fcd3" prot="public" virt="non-virtual"><scope>Quadro</scope><name>adicionarColuna</name></member>
+      <member refid="d1/d13/class_quadro_1adcaab16c92fbce6ceaf5951c0af634b5" prot="private" virt="non-virtual"><scope>Quadro</scope><name>descricao</name></member>
+      <member refid="d1/d13/class_quadro_1a8ed2e8dae0808bc93db662c77b49b133" prot="private" virt="non-virtual"><scope>Quadro</scope><name>equipe</name></member>
+      <member refid="d1/d13/class_quadro_1ae9b22eeda08e196887b9033beb358c41" prot="public" virt="non-virtual"><scope>Quadro</scope><name>exibirColaboradores</name></member>
+      <member refid="d1/d13/class_quadro_1a7a8e238c28a7fb111f555a8508041824" prot="public" virt="non-virtual"><scope>Quadro</scope><name>getDescricao</name></member>
+      <member refid="d1/d13/class_quadro_1a1cc0b576c7787cc7c82019a3fd424822" prot="public" virt="non-virtual"><scope>Quadro</scope><name>getEquipe</name></member>
+      <member refid="d1/d13/class_quadro_1ae87472bb79c7073b7d6747d930d41a23" prot="public" virt="non-virtual"><scope>Quadro</scope><name>getNome</name></member>
+      <member refid="d1/d13/class_quadro_1aad88cee2be59e368c4c09166a7777fb9" prot="public" virt="non-virtual"><scope>Quadro</scope><name>getNumeroColunas</name></member>
+      <member refid="d1/d13/class_quadro_1a1d27dcd2c84b1742c7ebd4cb0f82a704" prot="public" virt="non-virtual"><scope>Quadro</scope><name>imprimir</name></member>
+      <member refid="d1/d13/class_quadro_1ae11cee4915eee6bf9b192ac8680fadf6" prot="public" virt="non-virtual"><scope>Quadro</scope><name>inserirColaborador</name></member>
+      <member refid="d1/d13/class_quadro_1a2d0b7a02e685bbb62d695bf5983e7874" prot="private" virt="non-virtual"><scope>Quadro</scope><name>listaColunas</name></member>
+      <member refid="d1/d13/class_quadro_1ab9b6209542640bb5a3e0fb84cf62d6eb" prot="public" virt="non-virtual"><scope>Quadro</scope><name>moverColuna</name></member>
+      <member refid="d1/d13/class_quadro_1ac3796f45b2bc5ac20bc432936fd266b3" prot="private" virt="non-virtual"><scope>Quadro</scope><name>nome</name></member>
+      <member refid="d1/d13/class_quadro_1acdcb5194cb4b20e50f6211df473b59f2" prot="public" virt="non-virtual"><scope>Quadro</scope><name>obterColuna</name></member>
+      <member refid="d1/d13/class_quadro_1a751c81797b3809680e57be184e7d4740" prot="public" virt="non-virtual"><scope>Quadro</scope><name>Quadro</name></member>
+      <member refid="d1/d13/class_quadro_1abf3adf33b21d377b495ec41b922bc3a5" prot="public" virt="non-virtual"><scope>Quadro</scope><name>Quadro</name></member>
+      <member refid="d1/d13/class_quadro_1a977fc54d38236a3a70a20e65101f51c4" prot="public" virt="non-virtual"><scope>Quadro</scope><name>removerColuna</name></member>
+      <member refid="d1/d13/class_quadro_1ad23562f279eb119f1b0a7263d3293251" prot="public" virt="non-virtual"><scope>Quadro</scope><name>setDescricao</name></member>
+      <member refid="d1/d13/class_quadro_1ad0dfa6d461fb81b6f93e7a085e0ba08b" prot="public" virt="non-virtual"><scope>Quadro</scope><name>setNome</name></member>
+      <member refid="d1/d13/class_quadro_1af569ac1f73c8e6859effde0e2aa115d4" prot="public" virt="non-virtual"><scope>Quadro</scope><name>~Quadro</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

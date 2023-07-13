@@ -1,5 +1,5 @@
-\hypertarget{class_lista}{}\doxysection{Lista Class Reference}
-\label{class_lista}\index{Lista@{Lista}}
+\doxysection{Lista Class Reference}
+\hypertarget{class_lista}{}\label{class_lista}\index{Lista@{Lista}}
 
 
 Classe que implementa uma lista simplesmente encadeada de colunas de um quadro de tarefas.  
@@ -9,18 +9,28 @@ Classe que implementa uma lista simplesmente encadeada de colunas de um quadro d
 
 {\ttfamily \#include $<$lista\+Simplesmente\+Encadeada.\+hpp$>$}
 
-\doxysubsection*{Public Member Functions}
+
+
+Collaboration diagram for Lista\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d1/dd7/class_lista__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_lista_a1f668b36909182ef1360b48503529a31}{Lista}} ()
-\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_lista}{Lista}}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_lista_a4d7394b2728a00ad8404965b2e15d096}{$\sim$\+Lista}} ()
-\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_lista}{Lista}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{class_lista}{Lista}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_a4d7394b2728a00ad8404965b2e15d096}{\texorpdfstring{$\sim$}{\string~}\+Lista}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \doxylink{class_lista}{Lista}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_lista_a9a8529d0ea4e79cd6b7cd600e556d9f8}{vazia}} () const
 \begin{DoxyCompactList}\small\item\em Verifica se a lista está vazia. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_lista_a5cd63f61264afc88d0a6c290f7cb7320}{get\+Tamanho}} () const
 \begin{DoxyCompactList}\small\item\em Obtém o tamanho da lista. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_lista_af51fdf08cb850b001a83e43b0a19beab}{inserir\+Inicio}} (\mbox{\hyperlink{class_coluna}{Coluna}} $\ast$coluna)
+void \mbox{\hyperlink{class_lista_af51fdf08cb850b001a83e43b0a19beab}{inserir\+Inicio}} (\mbox{\hyperlink{class_coluna}{Coluna}} \texorpdfstring{$\ast$}{*}coluna)
 \begin{DoxyCompactList}\small\item\em Insere uma coluna no início da lista. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_lista_a2ab09a2fd57a3adeec30cea8fd9e770d}{remover\+Inicio}} ()
 \begin{DoxyCompactList}\small\item\em Remove a coluna do início da lista. \end{DoxyCompactList}\item 
@@ -28,7 +38,7 @@ void \mbox{\hyperlink{class_lista_ad71c31e64374c31c878455e451386d1e}{remover\+Po
 \begin{DoxyCompactList}\small\item\em Remove a coluna da lista pelo índice. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_lista_a70571e70c4b7945cc9907e89431624c9}{limpar}} ()
 \begin{DoxyCompactList}\small\item\em Remove todos os nós da lista e libera a memória. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_coluna}{Coluna}} $\ast$ \mbox{\hyperlink{class_lista_adb2dfb16eaf99f99fc1b39bf847af9bd}{obter\+Por\+Indice}} (int indice) const
+\mbox{\hyperlink{class_coluna}{Coluna}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_lista_adb2dfb16eaf99f99fc1b39bf847af9bd}{obter\+Por\+Indice}} (int indice) const
 \begin{DoxyCompactList}\small\item\em Obtém a coluna da lista pelo índice. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_lista_abc103d958cb4184693b59547ebf7cf9c}{mover\+Coluna}} (int indice\+Antigo, int indice\+Novo)
 \begin{DoxyCompactList}\small\item\em Move uma coluna da lista de uma posição para outra. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -42,7 +52,7 @@ Definition at line \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source_l00
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_lista_a1f668b36909182ef1360b48503529a31}\label{class_lista_a1f668b36909182ef1360b48503529a31}} 
+\Hypertarget{class_lista_a1f668b36909182ef1360b48503529a31}\label{class_lista_a1f668b36909182ef1360b48503529a31} 
 \index{Lista@{Lista}!Lista@{Lista}}
 \index{Lista@{Lista}!Lista@{Lista}}
 \doxysubsubsection{\texorpdfstring{Lista()}{Lista()}}
@@ -50,30 +60,38 @@ Definition at line \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source_l00
 
 
 
-Construtor da classe \mbox{\hyperlink{class_lista}{Lista}}. 
+Construtor da classe \doxylink{class_lista}{Lista}. 
 
 
 
 Definition at line \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source_l00043}{43}} of file \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source}{lista\+Simplesmente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_a4d7394b2728a00ad8404965b2e15d096}\label{class_lista_a4d7394b2728a00ad8404965b2e15d096}} 
-\index{Lista@{Lista}!````~Lista@{$\sim$Lista}}
-\index{````~Lista@{$\sim$Lista}!Lista@{Lista}}
-\doxysubsubsection{\texorpdfstring{$\sim$Lista()}{~Lista()}}
-{\footnotesize\ttfamily Lista\+::$\sim$\+Lista (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\Hypertarget{class_lista_a4d7394b2728a00ad8404965b2e15d096}\label{class_lista_a4d7394b2728a00ad8404965b2e15d096} 
+\index{Lista@{Lista}!````~Lista@{\texorpdfstring{$\sim$}{\string~}Lista}}
+\index{````~Lista@{\texorpdfstring{$\sim$}{\string~}Lista}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Lista()}{\string~Lista()}}
+{\footnotesize\ttfamily Lista\+::\texorpdfstring{$\sim$}{\string~}\+Lista (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Destrutor da classe \mbox{\hyperlink{class_lista}{Lista}}. 
+Destrutor da classe \doxylink{class_lista}{Lista}. 
 
 
 
 Definition at line \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source_l00048}{48}} of file \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source}{lista\+Simplesmente\+Encadeada.\+hpp}}.
 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dba/class_lista_a4d7394b2728a00ad8404965b2e15d096_cgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_lista_a5cd63f61264afc88d0a6c290f7cb7320}\label{class_lista_a5cd63f61264afc88d0a6c290f7cb7320}} 
+\Hypertarget{class_lista_a5cd63f61264afc88d0a6c290f7cb7320}\label{class_lista_a5cd63f61264afc88d0a6c290f7cb7320} 
 \index{Lista@{Lista}!getTamanho@{getTamanho}}
 \index{getTamanho@{getTamanho}!Lista@{Lista}}
 \doxysubsubsection{\texorpdfstring{getTamanho()}{getTamanho()}}
@@ -90,11 +108,19 @@ Tamanho da lista.
 
 Definition at line \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source_l00066}{66}} of file \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source}{lista\+Simplesmente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_af51fdf08cb850b001a83e43b0a19beab}\label{class_lista_af51fdf08cb850b001a83e43b0a19beab}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dba/class_lista_a5cd63f61264afc88d0a6c290f7cb7320_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_af51fdf08cb850b001a83e43b0a19beab}\label{class_lista_af51fdf08cb850b001a83e43b0a19beab} 
 \index{Lista@{Lista}!inserirInicio@{inserirInicio}}
 \index{inserirInicio@{inserirInicio}!Lista@{Lista}}
 \doxysubsubsection{\texorpdfstring{inserirInicio()}{inserirInicio()}}
-{\footnotesize\ttfamily void Lista\+::inserir\+Inicio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coluna}{Coluna}} $\ast$}]{coluna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Lista\+::inserir\+Inicio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coluna}{Coluna}} \texorpdfstring{$\ast$}{*}}]{coluna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -109,7 +135,15 @@ Insere uma coluna no início da lista.
 
 Definition at line \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source_l00075}{75}} of file \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source}{lista\+Simplesmente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_a70571e70c4b7945cc9907e89431624c9}\label{class_lista_a70571e70c4b7945cc9907e89431624c9}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dba/class_lista_af51fdf08cb850b001a83e43b0a19beab_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_a70571e70c4b7945cc9907e89431624c9}\label{class_lista_a70571e70c4b7945cc9907e89431624c9} 
 \index{Lista@{Lista}!limpar@{limpar}}
 \index{limpar@{limpar}!Lista@{Lista}}
 \doxysubsubsection{\texorpdfstring{limpar()}{limpar()}}
@@ -123,7 +157,23 @@ Remove todos os nós da lista e libera a memória.
 
 Definition at line \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source_l00134}{134}} of file \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source}{lista\+Simplesmente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_abc103d958cb4184693b59547ebf7cf9c}\label{class_lista_abc103d958cb4184693b59547ebf7cf9c}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dba/class_lista_a70571e70c4b7945cc9907e89431624c9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{db/dba/class_lista_a70571e70c4b7945cc9907e89431624c9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_abc103d958cb4184693b59547ebf7cf9c}\label{class_lista_abc103d958cb4184693b59547ebf7cf9c} 
 \index{Lista@{Lista}!moverColuna@{moverColuna}}
 \index{moverColuna@{moverColuna}!Lista@{Lista}}
 \doxysubsubsection{\texorpdfstring{moverColuna()}{moverColuna()}}
@@ -144,11 +194,19 @@ Move uma coluna da lista de uma posição para outra.
 
 Definition at line \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source_l00168}{168}} of file \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source}{lista\+Simplesmente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_adb2dfb16eaf99f99fc1b39bf847af9bd}\label{class_lista_adb2dfb16eaf99f99fc1b39bf847af9bd}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dba/class_lista_abc103d958cb4184693b59547ebf7cf9c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_adb2dfb16eaf99f99fc1b39bf847af9bd}\label{class_lista_adb2dfb16eaf99f99fc1b39bf847af9bd} 
 \index{Lista@{Lista}!obterPorIndice@{obterPorIndice}}
 \index{obterPorIndice@{obterPorIndice}!Lista@{Lista}}
 \doxysubsubsection{\texorpdfstring{obterPorIndice()}{obterPorIndice()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_coluna}{Coluna}} $\ast$ Lista\+::obter\+Por\+Indice (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coluna}{Coluna}} \texorpdfstring{$\ast$}{*} Lista\+::obter\+Por\+Indice (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -166,7 +224,15 @@ Ponteiro para a coluna encontrada.
 
 Definition at line \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source_l00147}{147}} of file \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source}{lista\+Simplesmente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_a2ab09a2fd57a3adeec30cea8fd9e770d}\label{class_lista_a2ab09a2fd57a3adeec30cea8fd9e770d}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dba/class_lista_adb2dfb16eaf99f99fc1b39bf847af9bd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_a2ab09a2fd57a3adeec30cea8fd9e770d}\label{class_lista_a2ab09a2fd57a3adeec30cea8fd9e770d} 
 \index{Lista@{Lista}!removerInicio@{removerInicio}}
 \index{removerInicio@{removerInicio}!Lista@{Lista}}
 \doxysubsubsection{\texorpdfstring{removerInicio()}{removerInicio()}}
@@ -180,7 +246,23 @@ Remove a coluna do início da lista.
 
 Definition at line \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source_l00086}{86}} of file \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source}{lista\+Simplesmente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_ad71c31e64374c31c878455e451386d1e}\label{class_lista_ad71c31e64374c31c878455e451386d1e}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{db/dba/class_lista_a2ab09a2fd57a3adeec30cea8fd9e770d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dba/class_lista_a2ab09a2fd57a3adeec30cea8fd9e770d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_ad71c31e64374c31c878455e451386d1e}\label{class_lista_ad71c31e64374c31c878455e451386d1e} 
 \index{Lista@{Lista}!removerPorIndice@{removerPorIndice}}
 \index{removerPorIndice@{removerPorIndice}!Lista@{Lista}}
 \doxysubsubsection{\texorpdfstring{removerPorIndice()}{removerPorIndice()}}
@@ -199,7 +281,23 @@ Remove a coluna da lista pelo índice.
 
 Definition at line \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source_l00104}{104}} of file \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source}{lista\+Simplesmente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_a9a8529d0ea4e79cd6b7cd600e556d9f8}\label{class_lista_a9a8529d0ea4e79cd6b7cd600e556d9f8}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dba/class_lista_ad71c31e64374c31c878455e451386d1e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dba/class_lista_ad71c31e64374c31c878455e451386d1e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_a9a8529d0ea4e79cd6b7cd600e556d9f8}\label{class_lista_a9a8529d0ea4e79cd6b7cd600e556d9f8} 
 \index{Lista@{Lista}!vazia@{vazia}}
 \index{vazia@{vazia}!Lista@{Lista}}
 \doxysubsubsection{\texorpdfstring{vazia()}{vazia()}}
@@ -216,6 +314,14 @@ true se a lista estiver vazia, false caso contrário.
 
 Definition at line \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source_l00057}{57}} of file \mbox{\hyperlink{lista_simplesmente_encadeada_8hpp_source}{lista\+Simplesmente\+Encadeada.\+hpp}}.
 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/dba/class_lista_a9a8529d0ea4e79cd6b7cd600e556d9f8_icgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

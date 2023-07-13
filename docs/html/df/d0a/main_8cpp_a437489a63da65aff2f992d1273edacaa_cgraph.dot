@@ -1,0 +1,14 @@
+digraph "buscarColaborador"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="buscarColaborador",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Busca um colaborador pelo ID no quadro KanBan e exibe suas informações."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="buscaBinaria",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#a2faf12c27b7e1711848f39f038c45f70",tooltip="Realiza uma busca binária em uma equipe de colaboradores pelo ID."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Quadro::getEquipe",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d13/class_quadro.html#a1cc0b576c7787cc7c82019a3fd424822",tooltip="Obtém a equipe de colaboradores do quadro."];
+}

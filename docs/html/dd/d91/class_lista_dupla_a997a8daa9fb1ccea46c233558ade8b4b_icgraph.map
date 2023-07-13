@@ -1,0 +1,9 @@
+<map id="ListaDupla::inserirFim" name="ListaDupla::inserirFim">
+<area shape="rect" id="Node000001" title="Insere uma tarefa no fim da lista." alt="" coords="248,56,395,83"/>
+<area shape="rect" id="Node000002" href="$dd/d91/class_lista_dupla.html#a8c0235db1d94b2dcbd4d22fec5645ac3" title="Insere uma tarefa na lista pelo índice." alt="" coords="13,5,192,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,55,163,35,164,30,247,49"/>
+<area shape="rect" id="Node000003" href="$de/d1c/class_coluna_nomeada.html#a660583902ae4cacabf28e61edee5ccd4" title="Insere uma tarefa na coluna." alt="" coords="5,56,200,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,72,200,72,200,67,233,67"/>
+<area shape="rect" id="Node000004" href="$d0/d4e/class_coluna_arquivo.html#aeb82024caaccd6083d0ea0447ec2ba7e" title="Insere uma tarefa na coluna." alt="" coords="12,107,193,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,89,164,109,163,103,246,84"/>
+</map>

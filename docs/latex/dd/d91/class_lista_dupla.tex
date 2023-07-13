@@ -1,5 +1,5 @@
-\hypertarget{class_lista_dupla}{}\doxysection{Lista\+Dupla Class Reference}
-\label{class_lista_dupla}\index{ListaDupla@{ListaDupla}}
+\doxysection{Lista\+Dupla Class Reference}
+\hypertarget{class_lista_dupla}{}\label{class_lista_dupla}\index{ListaDupla@{ListaDupla}}
 
 
 Classe que implementa uma lista duplamente encadeada de tarefas de um quadro de tarefas.  
@@ -9,22 +9,32 @@ Classe que implementa uma lista duplamente encadeada de tarefas de um quadro de 
 
 {\ttfamily \#include $<$lista\+Duplamente\+Encadeada.\+hpp$>$}
 
-\doxysubsection*{Public Member Functions}
+
+
+Collaboration diagram for Lista\+Dupla\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{d9/d7f/class_lista_dupla__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_lista_dupla_a5c057b40433f1dda8d221809c13c2619}{Lista\+Dupla}} ()
-\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \mbox{\hyperlink{class_lista_dupla}{Lista\+Dupla}}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_lista_dupla_a63481f371df6767019c8705208067514}{$\sim$\+Lista\+Dupla}} ()
-\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_lista_dupla}{Lista\+Dupla}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \doxylink{class_lista_dupla}{Lista\+Dupla}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_dupla_a63481f371df6767019c8705208067514}{\texorpdfstring{$\sim$}{\string~}\+Lista\+Dupla}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \doxylink{class_lista_dupla}{Lista\+Dupla}. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_lista_dupla_a86f5652f339d3af5fd81c6b913c95a52}{get\+Tamanho}} () const
 \begin{DoxyCompactList}\small\item\em Obtém o tamanho da lista. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_lista_dupla_a66888490f518d19c2d5cb3d3a053b816}{vazia}} () const
 \begin{DoxyCompactList}\small\item\em Verifica se a lista está vazia. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_lista_dupla_af02559c4c5c8265c8db861300cf598d8}{inserir\+Inicio}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$t)
+void \mbox{\hyperlink{class_lista_dupla_af02559c4c5c8265c8db861300cf598d8}{inserir\+Inicio}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*}t)
 \begin{DoxyCompactList}\small\item\em Insere uma tarefa no início da lista. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_lista_dupla_a997a8daa9fb1ccea46c233558ade8b4b}{inserir\+Fim}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$t)
+void \mbox{\hyperlink{class_lista_dupla_a997a8daa9fb1ccea46c233558ade8b4b}{inserir\+Fim}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*}t)
 \begin{DoxyCompactList}\small\item\em Insere uma tarefa no fim da lista. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_lista_dupla_a8c0235db1d94b2dcbd4d22fec5645ac3}{inserir\+Por\+Indice}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$t, int indice)
+void \mbox{\hyperlink{class_lista_dupla_a8c0235db1d94b2dcbd4d22fec5645ac3}{inserir\+Por\+Indice}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*}t, int indice)
 \begin{DoxyCompactList}\small\item\em Insere uma tarefa na lista pelo índice. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_lista_dupla_a6c0c785cb9c4a4a2fbe25beb370bd102}{remover\+Inicio}} ()
 \begin{DoxyCompactList}\small\item\em Remove a tarefa do início da lista. \end{DoxyCompactList}\item 
@@ -36,7 +46,7 @@ void \mbox{\hyperlink{class_lista_dupla_a924380dcc218b78c4de0e0accc80e012}{light
 \begin{DoxyCompactList}\small\item\em Remove a tarefa da lista, mas mantém o nó na lista sem referência à tarefa. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_lista_dupla_abfef1d092f78fb6862087097d809f1e7}{limpar}} ()
 \begin{DoxyCompactList}\small\item\em Remove todos os nós da lista e libera a memória. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ \mbox{\hyperlink{class_lista_dupla_a837ec6a1d28dbddd64b2028372f846c3}{obter\+Por\+Indice}} (int indice) const
+\mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_lista_dupla_a837ec6a1d28dbddd64b2028372f846c3}{obter\+Por\+Indice}} (int indice) const
 \begin{DoxyCompactList}\small\item\em Obtém a tarefa da lista pelo índice. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_lista_dupla_a0da08b292785498fc7bb358a84bed282}{ordenar\+Por\+Prioridade}} ()
 \begin{DoxyCompactList}\small\item\em Ordena a lista de tarefas por prioridade. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -50,7 +60,7 @@ Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l0008
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_lista_dupla_a5c057b40433f1dda8d221809c13c2619}\label{class_lista_dupla_a5c057b40433f1dda8d221809c13c2619}} 
+\Hypertarget{class_lista_dupla_a5c057b40433f1dda8d221809c13c2619}\label{class_lista_dupla_a5c057b40433f1dda8d221809c13c2619} 
 \index{ListaDupla@{ListaDupla}!ListaDupla@{ListaDupla}}
 \index{ListaDupla@{ListaDupla}!ListaDupla@{ListaDupla}}
 \doxysubsubsection{\texorpdfstring{ListaDupla()}{ListaDupla()}}
@@ -58,30 +68,46 @@ Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l0008
 
 
 
-Construtor padrão da classe \mbox{\hyperlink{class_lista_dupla}{Lista\+Dupla}}. 
+Construtor padrão da classe \doxylink{class_lista_dupla}{Lista\+Dupla}. 
 
 
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00100}{100}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_dupla_a63481f371df6767019c8705208067514}\label{class_lista_dupla_a63481f371df6767019c8705208067514}} 
-\index{ListaDupla@{ListaDupla}!````~ListaDupla@{$\sim$ListaDupla}}
-\index{````~ListaDupla@{$\sim$ListaDupla}!ListaDupla@{ListaDupla}}
-\doxysubsubsection{\texorpdfstring{$\sim$ListaDupla()}{~ListaDupla()}}
-{\footnotesize\ttfamily Lista\+Dupla\+::$\sim$\+Lista\+Dupla (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{dd/d91/class_lista_dupla_a5c057b40433f1dda8d221809c13c2619_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_dupla_a63481f371df6767019c8705208067514}\label{class_lista_dupla_a63481f371df6767019c8705208067514} 
+\index{ListaDupla@{ListaDupla}!````~ListaDupla@{\texorpdfstring{$\sim$}{\string~}ListaDupla}}
+\index{````~ListaDupla@{\texorpdfstring{$\sim$}{\string~}ListaDupla}!ListaDupla@{ListaDupla}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ListaDupla()}{\string~ListaDupla()}}
+{\footnotesize\ttfamily Lista\+Dupla\+::\texorpdfstring{$\sim$}{\string~}\+Lista\+Dupla (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Destrutor da classe \mbox{\hyperlink{class_lista_dupla}{Lista\+Dupla}}. 
+Destrutor da classe \doxylink{class_lista_dupla}{Lista\+Dupla}. 
 
 
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00112}{112}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_a63481f371df6767019c8705208067514_cgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_lista_dupla_a86f5652f339d3af5fd81c6b913c95a52}\label{class_lista_dupla_a86f5652f339d3af5fd81c6b913c95a52}} 
+\Hypertarget{class_lista_dupla_a86f5652f339d3af5fd81c6b913c95a52}\label{class_lista_dupla_a86f5652f339d3af5fd81c6b913c95a52} 
 \index{ListaDupla@{ListaDupla}!getTamanho@{getTamanho}}
 \index{getTamanho@{getTamanho}!ListaDupla@{ListaDupla}}
 \doxysubsubsection{\texorpdfstring{getTamanho()}{getTamanho()}}
@@ -98,11 +124,19 @@ Tamanho da lista.
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00123}{123}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_dupla_a997a8daa9fb1ccea46c233558ade8b4b}\label{class_lista_dupla_a997a8daa9fb1ccea46c233558ade8b4b}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_a86f5652f339d3af5fd81c6b913c95a52_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_dupla_a997a8daa9fb1ccea46c233558ade8b4b}\label{class_lista_dupla_a997a8daa9fb1ccea46c233558ade8b4b} 
 \index{ListaDupla@{ListaDupla}!inserirFim@{inserirFim}}
 \index{inserirFim@{inserirFim}!ListaDupla@{ListaDupla}}
 \doxysubsubsection{\texorpdfstring{inserirFim()}{inserirFim()}}
-{\footnotesize\ttfamily void Lista\+Dupla\+::inserir\+Fim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Lista\+Dupla\+::inserir\+Fim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*}}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -117,11 +151,27 @@ Insere uma tarefa no fim da lista.
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00158}{158}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_dupla_af02559c4c5c8265c8db861300cf598d8}\label{class_lista_dupla_af02559c4c5c8265c8db861300cf598d8}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{dd/d91/class_lista_dupla_a997a8daa9fb1ccea46c233558ade8b4b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_a997a8daa9fb1ccea46c233558ade8b4b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_dupla_af02559c4c5c8265c8db861300cf598d8}\label{class_lista_dupla_af02559c4c5c8265c8db861300cf598d8} 
 \index{ListaDupla@{ListaDupla}!inserirInicio@{inserirInicio}}
 \index{inserirInicio@{inserirInicio}!ListaDupla@{ListaDupla}}
 \doxysubsubsection{\texorpdfstring{inserirInicio()}{inserirInicio()}}
-{\footnotesize\ttfamily void Lista\+Dupla\+::inserir\+Inicio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Lista\+Dupla\+::inserir\+Inicio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*}}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -136,11 +186,27 @@ Insere uma tarefa no início da lista.
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00141}{141}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_dupla_a8c0235db1d94b2dcbd4d22fec5645ac3}\label{class_lista_dupla_a8c0235db1d94b2dcbd4d22fec5645ac3}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{dd/d91/class_lista_dupla_af02559c4c5c8265c8db861300cf598d8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_af02559c4c5c8265c8db861300cf598d8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_dupla_a8c0235db1d94b2dcbd4d22fec5645ac3}\label{class_lista_dupla_a8c0235db1d94b2dcbd4d22fec5645ac3} 
 \index{ListaDupla@{ListaDupla}!inserirPorIndice@{inserirPorIndice}}
 \index{inserirPorIndice@{inserirPorIndice}!ListaDupla@{ListaDupla}}
 \doxysubsubsection{\texorpdfstring{inserirPorIndice()}{inserirPorIndice()}}
-{\footnotesize\ttfamily void Lista\+Dupla\+::inserir\+Por\+Indice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$}]{t,  }\item[{int}]{indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Lista\+Dupla\+::inserir\+Por\+Indice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*}}]{t,  }\item[{int}]{indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -157,7 +223,15 @@ Insere uma tarefa na lista pelo índice.
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00176}{176}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_dupla_a924380dcc218b78c4de0e0accc80e012}\label{class_lista_dupla_a924380dcc218b78c4de0e0accc80e012}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_a8c0235db1d94b2dcbd4d22fec5645ac3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_dupla_a924380dcc218b78c4de0e0accc80e012}\label{class_lista_dupla_a924380dcc218b78c4de0e0accc80e012} 
 \index{ListaDupla@{ListaDupla}!lightDelete@{lightDelete}}
 \index{lightDelete@{lightDelete}!ListaDupla@{ListaDupla}}
 \doxysubsubsection{\texorpdfstring{lightDelete()}{lightDelete()}}
@@ -176,7 +250,23 @@ Remove a tarefa da lista, mas mantém o nó na lista sem referência à tarefa.
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00298}{298}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_dupla_abfef1d092f78fb6862087097d809f1e7}\label{class_lista_dupla_abfef1d092f78fb6862087097d809f1e7}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{dd/d91/class_lista_dupla_a924380dcc218b78c4de0e0accc80e012_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_a924380dcc218b78c4de0e0accc80e012_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_dupla_abfef1d092f78fb6862087097d809f1e7}\label{class_lista_dupla_abfef1d092f78fb6862087097d809f1e7} 
 \index{ListaDupla@{ListaDupla}!limpar@{limpar}}
 \index{limpar@{limpar}!ListaDupla@{ListaDupla}}
 \doxysubsubsection{\texorpdfstring{limpar()}{limpar()}}
@@ -190,11 +280,27 @@ Remove todos os nós da lista e libera a memória.
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00328}{328}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_dupla_a837ec6a1d28dbddd64b2028372f846c3}\label{class_lista_dupla_a837ec6a1d28dbddd64b2028372f846c3}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_abfef1d092f78fb6862087097d809f1e7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{dd/d91/class_lista_dupla_abfef1d092f78fb6862087097d809f1e7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_dupla_a837ec6a1d28dbddd64b2028372f846c3}\label{class_lista_dupla_a837ec6a1d28dbddd64b2028372f846c3} 
 \index{ListaDupla@{ListaDupla}!obterPorIndice@{obterPorIndice}}
 \index{obterPorIndice@{obterPorIndice}!ListaDupla@{ListaDupla}}
 \doxysubsubsection{\texorpdfstring{obterPorIndice()}{obterPorIndice()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ Lista\+Dupla\+::obter\+Por\+Indice (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*} Lista\+Dupla\+::obter\+Por\+Indice (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -212,7 +318,23 @@ Ponteiro para a tarefa encontrada.
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00341}{341}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_dupla_a0da08b292785498fc7bb358a84bed282}\label{class_lista_dupla_a0da08b292785498fc7bb358a84bed282}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{dd/d91/class_lista_dupla_a837ec6a1d28dbddd64b2028372f846c3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_a837ec6a1d28dbddd64b2028372f846c3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_dupla_a0da08b292785498fc7bb358a84bed282}\label{class_lista_dupla_a0da08b292785498fc7bb358a84bed282} 
 \index{ListaDupla@{ListaDupla}!ordenarPorPrioridade@{ordenarPorPrioridade}}
 \index{ordenarPorPrioridade@{ordenarPorPrioridade}!ListaDupla@{ListaDupla}}
 \doxysubsubsection{\texorpdfstring{ordenarPorPrioridade()}{ordenarPorPrioridade()}}
@@ -226,7 +348,23 @@ Ordena a lista de tarefas por prioridade.
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00361}{361}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_dupla_a0ec55e77494913e1041f772fb5abf176}\label{class_lista_dupla_a0ec55e77494913e1041f772fb5abf176}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_a0da08b292785498fc7bb358a84bed282_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_a0da08b292785498fc7bb358a84bed282_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_dupla_a0ec55e77494913e1041f772fb5abf176}\label{class_lista_dupla_a0ec55e77494913e1041f772fb5abf176} 
 \index{ListaDupla@{ListaDupla}!removerFim@{removerFim}}
 \index{removerFim@{removerFim}!ListaDupla@{ListaDupla}}
 \doxysubsubsection{\texorpdfstring{removerFim()}{removerFim()}}
@@ -240,7 +378,23 @@ Remove a tarefa do fim da lista.
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00235}{235}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_dupla_a6c0c785cb9c4a4a2fbe25beb370bd102}\label{class_lista_dupla_a6c0c785cb9c4a4a2fbe25beb370bd102}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{dd/d91/class_lista_dupla_a0ec55e77494913e1041f772fb5abf176_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_a0ec55e77494913e1041f772fb5abf176_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_dupla_a6c0c785cb9c4a4a2fbe25beb370bd102}\label{class_lista_dupla_a6c0c785cb9c4a4a2fbe25beb370bd102} 
 \index{ListaDupla@{ListaDupla}!removerInicio@{removerInicio}}
 \index{removerInicio@{removerInicio}!ListaDupla@{ListaDupla}}
 \doxysubsubsection{\texorpdfstring{removerInicio()}{removerInicio()}}
@@ -254,7 +408,23 @@ Remove a tarefa do início da lista.
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00214}{214}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_dupla_ab976735e9038a9bd590a764b2a832e45}\label{class_lista_dupla_ab976735e9038a9bd590a764b2a832e45}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{dd/d91/class_lista_dupla_a6c0c785cb9c4a4a2fbe25beb370bd102_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_a6c0c785cb9c4a4a2fbe25beb370bd102_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_dupla_ab976735e9038a9bd590a764b2a832e45}\label{class_lista_dupla_ab976735e9038a9bd590a764b2a832e45} 
 \index{ListaDupla@{ListaDupla}!removerPorIndice@{removerPorIndice}}
 \index{removerPorIndice@{removerPorIndice}!ListaDupla@{ListaDupla}}
 \doxysubsubsection{\texorpdfstring{removerPorIndice()}{removerPorIndice()}}
@@ -273,7 +443,23 @@ Remove a tarefa da lista pelo índice.
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00257}{257}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
-\mbox{\Hypertarget{class_lista_dupla_a66888490f518d19c2d5cb3d3a053b816}\label{class_lista_dupla_a66888490f518d19c2d5cb3d3a053b816}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_ab976735e9038a9bd590a764b2a832e45_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_ab976735e9038a9bd590a764b2a832e45_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_lista_dupla_a66888490f518d19c2d5cb3d3a053b816}\label{class_lista_dupla_a66888490f518d19c2d5cb3d3a053b816} 
 \index{ListaDupla@{ListaDupla}!vazia@{vazia}}
 \index{vazia@{vazia}!ListaDupla@{ListaDupla}}
 \doxysubsubsection{\texorpdfstring{vazia()}{vazia()}}
@@ -290,6 +476,14 @@ true se a lista estiver vazia, false caso contrário.
 
 Definition at line \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source_l00132}{132}} of file \mbox{\hyperlink{lista_duplamente_encadeada_8hpp_source}{lista\+Duplamente\+Encadeada.\+hpp}}.
 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d91/class_lista_dupla_a66888490f518d19c2d5cb3d3a053b816_icgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -1,0 +1,23 @@
+digraph "ListaDupla::limpar"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ListaDupla::limpar",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Remove todos os nós da lista e libera a memória."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ListaDupla::removerInicio",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a6c0c785cb9c4a4a2fbe25beb370bd102",tooltip="Remove a tarefa do início da lista."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="No::getProximo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d55/class_no.html#a42bd9dc9c7b24743c82e89b42a1581a2",tooltip="Obtém o próximo nó."];
+  Node2 -> Node4 [id="edge3_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="No::getTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d55/class_no.html#a3e8d735fc07c24ecaee4e283ac9a1f36",tooltip="Obtém a tarefa armazenada no nó."];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="No::setAnterior",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d55/class_no.html#a337f5ed0c85f3ac6646fd8295f2017a7",tooltip="Define o nó anterior."];
+  Node2 -> Node6 [id="edge5_Node000002_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="No::setProximo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d55/class_no.html#a1fd6922d7a6b246aa11251effaceeb7b",tooltip="Define o próximo nó."];
+  Node2 -> Node7 [id="edge6_Node000002_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ListaDupla::vazia",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a66888490f518d19c2d5cb3d3a053b816",tooltip="Verifica se a lista está vazia."];
+  Node1 -> Node7 [id="edge7_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
+}

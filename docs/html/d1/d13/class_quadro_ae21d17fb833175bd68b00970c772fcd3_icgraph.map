@@ -1,0 +1,13 @@
+<map id="Quadro::adicionarColuna" name="Quadro::adicionarColuna">
+<area shape="rect" id="Node000001" title="Adiciona uma coluna ao quadro." alt="" coords="306,56,469,83"/>
+<area shape="rect" id="Node000002" href="$df/d0a/main_8cpp.html#adeb70abb0e6d3cf5e724363a38ce80ca" title="Adiciona uma nova coluna do tipo &quot;arquivo&quot; ao quadro KanBan." alt="" coords="103,5,258,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="315,54,237,35,239,30,316,49"/>
+<area shape="rect" id="Node000004" href="$df/d0a/main_8cpp.html#ac19c0f76269ed6195cad2776a32e04f1" title="Carrega um quadro KanBan a partir de um arquivo." alt="" coords="125,56,236,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="291,72,236,72,236,67,291,67"/>
+<area shape="rect" id="Node000005" href="$df/d0a/main_8cpp.html#a48e1cbf9de98941d548837997b582870" title="Cria e adiciona uma nova coluna ao quadro KanBan." alt="" coords="137,107,224,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="316,89,224,112,223,107,315,84"/>
+<area shape="rect" id="Node000003" href="$df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="124,40,104,47,56,63,54,58,102,41,122,35"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="111,72,55,72,55,67,111,67"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="122,104,102,97,54,80,56,75,104,92,124,99"/>
+</map>

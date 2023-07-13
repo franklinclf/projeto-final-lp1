@@ -1,0 +1,16 @@
+<map id="include/tarefa.hpp" name="include/tarefa.hpp">
+<area shape="rect" id="Node000001" title="Definição da classe Tarefa." alt="" coords="137,5,260,32"/>
+<area shape="rect" id="Node000002" href="$d1/d7b/lista_duplamente_encadeada_8hpp.html" title="Define a classe ListaDupla e a classe No para implementar uma lista duplamente encadeada de tarefas d..." alt="" coords="74,80,323,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,47,201,80,196,80,196,47"/>
+<area shape="rect" id="Node000003" href="$da/d7b/colunas_8hpp.html" title="Definição das classes Coluna, ColunaNomeada e ColunaArquivo." alt="" coords="69,155,205,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,120,150,156,146,153,176,117"/>
+<area shape="rect" id="Node000006" href="$df/d0a/main_8cpp.html" title="Sistema de Gerenciamento de Tarefas." alt="" coords="125,395,221,421"/>
+<area shape="poly" id="edge8_Node000002_Node000006" title=" " alt="" coords="213,120,225,150,236,188,242,230,238,272,227,309,212,344,184,396,179,393,208,341,222,307,233,272,236,231,231,190,220,152,208,121"/>
+<area shape="rect" id="Node000004" href="$db/d5f/lista_simplesmente_encadeada_8hpp.html" title="Define a classe Lista e a classe NoSimples para implementar uma lista simplesmente encadeada de colun..." alt="" coords="51,229,224,272"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="140,196,140,229,135,229,135,196"/>
+<area shape="rect" id="Node000005" href="$de/d9e/quadro_8hpp.html" title="Define a classe Quadro para representar um quadro de tarefas." alt="" coords="5,320,136,347"/>
+<area shape="poly" id="edge7_Node000003_Node000005" title=" " alt="" coords="87,190,61,207,41,231,35,254,40,278,51,300,63,318,59,321,46,303,35,279,30,253,36,228,57,203,84,186"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="113,285,83,321,79,318,109,282"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="148,286,173,393,168,395,143,287"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="101,353,157,392,154,396,98,357"/>
+</map>

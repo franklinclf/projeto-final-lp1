@@ -1,0 +1,7 @@
+<map id="buscarColaborador" name="buscarColaborador">
+<area shape="rect" id="Node000001" title="Busca um colaborador pelo ID no quadro KanBan e exibe suas informações." alt="" coords="5,31,135,57"/>
+<area shape="rect" id="Node000002" href="$df/d0a/main_8cpp.html#a2faf12c27b7e1711848f39f038c45f70" title="Realiza uma busca binária em uma equipe de colaboradores pelo ID." alt="" coords="199,5,296,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,32,184,25,185,30,135,37"/>
+<area shape="rect" id="Node000003" href="$d1/d13/class_quadro.html#a1cc0b576c7787cc7c82019a3fd424822" title="Obtém a equipe de colaboradores do quadro." alt="" coords="183,56,312,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,51,168,55,167,61,135,56"/>
+</map>

@@ -1,0 +1,26 @@
+digraph "ListaDupla::vazia"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ListaDupla::vazia",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Verifica se a lista está vazia."];
+  Node1 -> Node2 [id="edge10_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ListaDupla::limpar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#abfef1d092f78fb6862087097d809f1e7",tooltip="Remove todos os nós da lista e libera a memória."];
+  Node2 -> Node3 [id="edge11_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ListaDupla::~ListaDupla",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a63481f371df6767019c8705208067514",tooltip="Destrutor da classe ListaDupla."];
+  Node1 -> Node4 [id="edge12_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ListaDupla::removerFim",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a0ec55e77494913e1041f772fb5abf176",tooltip="Remove a tarefa do fim da lista."];
+  Node4 -> Node5 [id="edge13_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ListaDupla::removerPorIndice",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#ab976735e9038a9bd590a764b2a832e45",tooltip="Remove a tarefa da lista pelo índice."];
+  Node5 -> Node6 [id="edge14_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ColunaNomeada::removerTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d1c/class_coluna_nomeada.html#ad9f5dc15ca20616f353008e5a3aa27e3",tooltip="Remove uma tarefa da coluna."];
+  Node5 -> Node7 [id="edge15_Node000005_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ColunaArquivo::removerTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d4e/class_coluna_arquivo.html#aae317988e21d9072edf5de1543085f14",tooltip="Remove uma tarefa da coluna."];
+  Node1 -> Node8 [id="edge16_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ListaDupla::removerInicio",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a6c0c785cb9c4a4a2fbe25beb370bd102",tooltip="Remove a tarefa do início da lista."];
+  Node8 -> Node2 [id="edge17_Node000008_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 -> Node5 [id="edge18_Node000008_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

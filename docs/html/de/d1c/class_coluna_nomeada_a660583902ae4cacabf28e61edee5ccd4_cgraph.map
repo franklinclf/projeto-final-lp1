@@ -1,0 +1,11 @@
+<map id="ColunaNomeada::inserirTarefa" name="ColunaNomeada::inserirTarefa">
+<area shape="rect" id="Node000001" title="Insere uma tarefa na coluna." alt="" coords="5,56,200,83"/>
+<area shape="rect" id="Node000002" href="$dd/d91/class_lista_dupla.html#a997a8daa9fb1ccea46c233558ade8b4b" title="Insere uma tarefa no fim da lista." alt="" coords="248,56,395,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,67,233,67,233,72,200,72"/>
+<area shape="rect" id="Node000003" href="$d9/d55/class_no.html#a18866d7db046e7987120e93bf1a839d3" title="Obtém o nó anterior." alt="" coords="445,5,553,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="370,53,435,34,436,39,372,58"/>
+<area shape="rect" id="Node000004" href="$d9/d55/class_no.html#a337f5ed0c85f3ac6646fd8295f2017a7" title="Define o nó anterior." alt="" coords="445,56,553,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="395,67,429,67,429,72,395,72"/>
+<area shape="rect" id="Node000005" href="$d9/d55/class_no.html#a1fd6922d7a6b246aa11251effaceeb7b" title="Define o próximo nó." alt="" coords="443,107,554,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="372,81,436,100,435,105,370,86"/>
+</map>

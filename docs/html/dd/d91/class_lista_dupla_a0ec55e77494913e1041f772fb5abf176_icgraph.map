@@ -1,0 +1,9 @@
+<map id="ListaDupla::removerFim" name="ListaDupla::removerFim">
+<area shape="rect" id="Node000001" title="Remove a tarefa do fim da lista." alt="" coords="495,31,652,57"/>
+<area shape="rect" id="Node000002" href="$dd/d91/class_lista_dupla.html#ab976735e9038a9bd590a764b2a832e45" title="Remove a tarefa da lista pelo índice." alt="" coords="258,31,447,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="480,47,448,47,448,41,480,41"/>
+<area shape="rect" id="Node000003" href="$de/d1c/class_coluna_nomeada.html#ad9f5dc15ca20616f353008e5a3aa27e3" title="Remove uma tarefa da coluna." alt="" coords="5,5,210,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="243,35,210,32,210,27,243,30"/>
+<area shape="rect" id="Node000004" href="$d0/d4e/class_coluna_arquivo.html#aae317988e21d9072edf5de1543085f14" title="Remove uma tarefa da coluna." alt="" coords="12,56,203,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="243,58,204,62,203,57,242,53"/>
+</map>

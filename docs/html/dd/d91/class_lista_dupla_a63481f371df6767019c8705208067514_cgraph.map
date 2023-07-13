@@ -1,0 +1,18 @@
+<map id="ListaDupla::~ListaDupla" name="ListaDupla::~ListaDupla">
+<area shape="rect" id="Node000001" title="Destrutor da classe ListaDupla." alt="" coords="5,157,165,184"/>
+<area shape="rect" id="Node000002" href="$dd/d91/class_lista_dupla.html#abfef1d092f78fb6862087097d809f1e7" title="Remove todos os nós da lista e libera a memória." alt="" coords="213,157,338,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,168,198,168,198,173,165,173"/>
+<area shape="rect" id="Node000003" href="$dd/d91/class_lista_dupla.html#a6c0c785cb9c4a4a2fbe25beb370bd102" title="Remove a tarefa do início da lista." alt="" coords="386,120,551,147"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,156,381,147,382,153,339,161"/>
+<area shape="rect" id="Node000008" href="$dd/d91/class_lista_dupla.html#a66888490f518d19c2d5cb3d3a053b816" title="Verifica se a lista está vazia." alt="" coords="599,208,719,235"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="339,176,585,209,585,214,338,182"/>
+<area shape="rect" id="Node000004" href="$d9/d55/class_no.html#a42bd9dc9c7b24743c82e89b42a1581a2" title="Obtém o próximo nó." alt="" coords="603,5,715,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="486,117,535,81,598,42,608,36,611,41,601,46,538,86,489,122"/>
+<area shape="rect" id="Node000005" href="$d9/d55/class_no.html#a3e8d735fc07c24ecaee4e283ac9a1f36" title="Obtém a tarefa armazenada no nó." alt="" coords="610,56,708,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="510,117,603,85,604,90,512,122"/>
+<area shape="rect" id="Node000006" href="$d9/d55/class_no.html#a337f5ed0c85f3ac6646fd8295f2017a7" title="Define o nó anterior." alt="" coords="605,107,713,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="552,125,589,122,590,127,552,130"/>
+<area shape="rect" id="Node000007" href="$d9/d55/class_no.html#a1fd6922d7a6b246aa11251effaceeb7b" title="Define o próximo nó." alt="" coords="603,157,715,184"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="540,145,589,154,588,160,539,150"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="499,145,600,194,613,199,611,204,598,198,496,150"/>
+</map>

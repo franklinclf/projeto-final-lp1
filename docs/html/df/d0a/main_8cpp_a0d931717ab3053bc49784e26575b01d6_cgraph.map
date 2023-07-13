@@ -1,0 +1,36 @@
+<map id="adicionarTarefa" name="adicionarTarefa">
+<area shape="rect" id="Node000001" title="Adiciona uma nova tarefa a uma coluna no quadro KanBan." alt="" coords="5,233,114,260"/>
+<area shape="rect" id="Node000002" href="$df/d0a/main_8cpp.html#a2faf12c27b7e1711848f39f038c45f70" title="Realiza uma busca binária em uma equipe de colaboradores pelo ID." alt="" coords="191,5,288,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,232,73,196,93,147,121,95,160,49,176,37,179,41,163,53,126,98,97,150,78,198,67,234"/>
+<area shape="rect" id="Node000003" href="$df/d0a/main_8cpp.html#aed504424b48ab1ef3ce656ba1d439ae0" title="Cria e cadastra um novo colaborador no quadro KanBan." alt="" coords="167,107,312,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="69,231,106,188,132,164,160,143,171,137,173,142,163,148,135,168,110,192,73,235"/>
+<area shape="rect" id="Node000004" href="$df/d0a/main_8cpp.html#a20bbd4d45e3f01305dd709f5a9cc9952" title="Limpa o buffer do console." alt="" coords="415,56,497,83"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="63,232,75,201,95,163,123,124,160,92,189,78,220,67,285,56,347,54,400,58,399,63,346,60,285,61,222,73,191,83,163,97,127,127,99,166,80,204,68,234"/>
+<area shape="rect" id="Node000006" href="$d1/d13/class_quadro.html#a1cc0b576c7787cc7c82019a3fd424822" title="Obtém a equipe de colaboradores do quadro." alt="" coords="175,157,304,184"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="92,230,161,200,190,188,192,193,163,205,94,235"/>
+<area shape="rect" id="Node000007" href="$d1/d13/class_quadro.html#aad88cee2be59e368c4c09166a7777fb9" title="Obtém o número de colunas do quadro." alt="" coords="365,183,546,209"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="114,237,350,207,350,212,115,242"/>
+<area shape="rect" id="Node000009" href="$d1/d13/class_quadro.html#a1d27dcd2c84b1742c7ebd4cb0f82a704" title="Imprime as informações do quadro." alt="" coords="181,259,298,285"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="114,252,167,259,166,264,114,257"/>
+<area shape="rect" id="Node000012" href="$d1/d13/class_quadro.html#acdcb5194cb4b20e50f6211df473b59f2" title="Obtém uma coluna do quadro pelo índice." alt="" coords="386,335,526,361"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="85,258,121,277,163,295,270,322,371,338,370,343,269,327,161,300,118,282,82,263"/>
+<area shape="rect" id="Node000014" href="$d3/d3c/class_coluna.html#ac09fa33160badb14b7e4a095f15fb551" title="Insere uma tarefa na coluna." alt="" coords="170,360,309,387"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="75,259,112,298,163,339,186,351,183,356,160,344,108,302,71,262"/>
+<area shape="rect" id="Node000015" href="$da/d23/class_tarefa.html#ab063c2349c20692e1aa021b829720847" title="Define a prioridade da tarefa." alt="" coords="169,411,310,437"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="69,259,102,325,129,363,163,397,170,401,167,406,160,401,125,367,97,328,64,261"/>
+<area shape="rect" id="Node000016" href="$da/d23/class_tarefa.html#a21b76d5cedc9cd577a99065bc84b4884" title="Define o responsável pela tarefa." alt="" coords="162,461,317,488"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="66,260,77,297,95,347,124,401,142,426,163,447,168,451,165,455,160,451,138,429,119,404,90,349,71,298,61,261"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="299,103,400,79,401,85,300,109"/>
+<area shape="rect" id="Node000005" href="$d1/d13/class_quadro.html#ae11cee4915eee6bf9b192ac8680fadf6" title="Insere um colaborador na equipe do quadro." alt="" coords="368,107,543,133"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="312,117,353,117,353,123,312,123"/>
+<area shape="rect" id="Node000008" href="$db/dba/class_lista.html#a5cd63f61264afc88d0a6c290f7cb7320" title="Obtém o tamanho da lista." alt="" coords="600,183,729,209"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="547,193,586,193,586,199,547,199"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="273,256,364,219,387,211,389,217,366,224,275,261"/>
+<area shape="rect" id="Node000010" href="$d3/d3c/class_coluna.html#a25ecf45ce1e1c7a03b9c92d4a5da0544" title="Obtém o nome da coluna." alt="" coords="395,233,516,260"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="298,262,380,253,380,258,299,268"/>
+<area shape="rect" id="Node000011" href="$d3/d3c/class_coluna.html#a48875a7414e5f4d15bfed749bb0a5586" title="Imprime as informações da coluna." alt="" coords="398,284,513,311"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="299,276,383,286,383,292,298,282"/>
+<area shape="poly" id="edge13_Node000009_Node000012" title=" " alt="" coords="275,283,366,320,389,327,387,333,364,325,273,288"/>
+<area shape="rect" id="Node000013" href="$db/dba/class_lista.html#adb2dfb16eaf99f99fc1b39bf847af9bd" title="Obtém a coluna da lista pelo índice." alt="" coords="594,335,735,361"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="526,345,579,345,579,351,526,351"/>
+</map>

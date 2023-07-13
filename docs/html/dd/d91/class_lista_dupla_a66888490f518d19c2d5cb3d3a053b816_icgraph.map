@@ -1,0 +1,19 @@
+<map id="ListaDupla::vazia" name="ListaDupla::vazia">
+<area shape="rect" id="Node000001" title="Verifica se a lista está vazia." alt="" coords="708,43,828,69"/>
+<area shape="rect" id="Node000002" href="$dd/d91/class_lista_dupla.html#abfef1d092f78fb6862087097d809f1e7" title="Remove todos os nós da lista e libera a memória." alt="" coords="290,5,415,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="703,41,660,33,530,22,416,20,416,15,530,17,661,28,704,36"/>
+<area shape="rect" id="Node000004" href="$dd/d91/class_lista_dupla.html#a0ec55e77494913e1041f772fb5abf176" title="Remove a tarefa do fim da lista." alt="" coords="499,93,656,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="702,76,631,95,630,90,700,71"/>
+<area shape="rect" id="Node000008" href="$dd/d91/class_lista_dupla.html#a6c0c785cb9c4a4a2fbe25beb370bd102" title="Remove a tarefa do início da lista." alt="" coords="495,43,660,69"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="693,59,661,59,661,53,693,53"/>
+<area shape="rect" id="Node000003" href="$dd/d91/class_lista_dupla.html#a63481f371df6767019c8705208067514" title="Destrutor da classe ListaDupla." alt="" coords="28,5,187,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="275,21,187,21,187,16,275,16"/>
+<area shape="rect" id="Node000005" href="$dd/d91/class_lista_dupla.html#ab976735e9038a9bd590a764b2a832e45" title="Remove a tarefa da lista pelo índice." alt="" coords="258,93,447,120"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="484,109,448,109,448,104,484,104"/>
+<area shape="rect" id="Node000006" href="$de/d1c/class_coluna_nomeada.html#ad9f5dc15ca20616f353008e5a3aa27e3" title="Remove uma tarefa da coluna." alt="" coords="5,68,210,95"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="243,98,210,95,210,89,243,93"/>
+<area shape="rect" id="Node000007" href="$d0/d4e/class_coluna_arquivo.html#aae317988e21d9072edf5de1543085f14" title="Remove uma tarefa da coluna." alt="" coords="12,119,203,145"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="243,121,204,125,203,119,242,115"/>
+<area shape="poly" id="edge8_Node000008_Node000002" title=" " alt="" coords="480,43,415,32,416,26,481,37"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="501,76,415,95,414,90,500,71"/>
+</map>

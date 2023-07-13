@@ -1,0 +1,8 @@
+<map id="include/listaSimplesmenteEncadeada.hpp" name="include/listaSimplesmenteEncadeada.hpp">
+<area shape="rect" id="Node000001" title="Define a classe Lista e a classe NoSimples para implementar uma lista simplesmente encadeada de colun..." alt="" coords="35,5,208,48"/>
+<area shape="rect" id="Node000002" href="$de/d9e/quadro_8hpp.html" title="Define a classe Quadro para representar um quadro de tarefas." alt="" coords="5,96,136,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,62,81,97,76,94,98,59"/>
+<area shape="rect" id="Node000003" href="$df/d0a/main_8cpp.html" title="Sistema de Gerenciamento de Tarefas." alt="" coords="73,171,169,197"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="141,61,150,91,150,123,142,150,131,171,126,169,137,148,145,122,145,92,136,63"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,134,115,169,110,172,85,137"/>
+</map>

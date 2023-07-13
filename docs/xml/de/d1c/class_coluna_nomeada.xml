@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="de/d1c/class_coluna_nomeada" kind="class" language="C++" prot="public">
+    <compoundname>ColunaNomeada</compoundname>
+    <basecompoundref refid="d3/d3c/class_coluna" prot="public" virt="non-virtual">Coluna</basecompoundref>
+    <includes refid="da/d7b/colunas_8hpp" local="no">colunas.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d1c/class_coluna_nomeada_1aa33892d898bacedddb4ea667047f6bca" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ColunaNomeada::nome</definition>
+        <argsstring></argsstring>
+        <name>nome</name>
+        <qualifiedname>ColunaNomeada::nome</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="101" column="12" bodyfile="include/colunas.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d1c/class_coluna_nomeada_1ad50e65121468dbe4b5a50c4bd02af0ef" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ColunaNomeada::descricao</definition>
+        <argsstring></argsstring>
+        <name>descricao</name>
+        <qualifiedname>ColunaNomeada::descricao</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="102" column="12" bodyfile="include/colunas.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d1c/class_coluna_nomeada_1a5354a7852ce43827bb113c2a4ef4bc3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ColunaNomeada::ColunaNomeada</definition>
+        <argsstring>(string n, string d)</argsstring>
+        <name>ColunaNomeada</name>
+        <qualifiedname>ColunaNomeada::ColunaNomeada</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Construtor da classe <ref refid="de/d1c/class_coluna_nomeada" kindref="compound">ColunaNomeada</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nome da coluna. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Descrição da coluna. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="110" column="5" bodyfile="include/colunas.hpp" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d1c/class_coluna_nomeada_1a660583902ae4cacabf28e61edee5ccd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaNomeada::inserirTarefa</definition>
+        <argsstring>(Tarefa *t) override</argsstring>
+        <name>inserirTarefa</name>
+        <qualifiedname>ColunaNomeada::inserirTarefa</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1ac09fa33160badb14b7e4a095f15fb551">inserirTarefa</reimplements>
+        <param>
+          <type><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Insere uma tarefa na coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para a tarefa a ser inserida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="112" column="10" bodyfile="include/colunas.hpp" bodystart="112" bodyend="115"/>
+        <references refid="dd/d91/class_lista_dupla_1a997a8daa9fb1ccea46c233558ade8b4b" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="158" endline="169">ListaDupla::inserirFim</references>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d1c/class_coluna_nomeada_1ad9f5dc15ca20616f353008e5a3aa27e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaNomeada::removerTarefa</definition>
+        <argsstring>(int indice) override</argsstring>
+        <name>removerTarefa</name>
+        <qualifiedname>ColunaNomeada::removerTarefa</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1ae2733f6d09e1d3f9a2b136ad4517c4d0">removerTarefa</reimplements>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Remove uma tarefa da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da tarefa a ser removida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="117" column="10" bodyfile="include/colunas.hpp" bodystart="117" bodyend="120"/>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+        <references refid="dd/d91/class_lista_dupla_1ab976735e9038a9bd590a764b2a832e45" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="257" endline="292">ListaDupla::removerPorIndice</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d1c/class_coluna_nomeada_1a3f8cdd94b330161896b219720b7bc8e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref> *</type>
+        <definition>Tarefa * ColunaNomeada::obterTarefa</definition>
+        <argsstring>(int indice) override</argsstring>
+        <name>obterTarefa</name>
+        <qualifiedname>ColunaNomeada::obterTarefa</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a1b697b50e065b83454e023c4ab24c4ef">obterTarefa</reimplements>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Obtém uma tarefa da coluna pelo seu índice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da tarefa desejada. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ponteiro para a tarefa encontrada. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="122" column="12" bodyfile="include/colunas.hpp" bodystart="122" bodyend="125"/>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+        <references refid="dd/d91/class_lista_dupla_1a837ec6a1d28dbddd64b2028372f846c3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="341" endline="356">ListaDupla::obterPorIndice</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d1c/class_coluna_nomeada_1ab47ba7b160204e7001f88c06ec25a305" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaNomeada::moverTarefa</definition>
+        <argsstring>(int indice, Coluna *colunaDestino) override</argsstring>
+        <name>moverTarefa</name>
+        <qualifiedname>ColunaNomeada::moverTarefa</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1afc72b9e6d07bb8c8bf926e6c96ed5e4f">moverTarefa</reimplements>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d3c/class_coluna" kindref="compound">Coluna</ref> *</type>
+          <declname>colunaDestino</declname>
+        </param>
+        <briefdescription>
+<para>Move uma tarefa de uma coluna para outra. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da tarefa a ser movida. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colunaDestino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para a coluna de destino. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="127" column="10" bodyfile="include/colunas.hpp" bodystart="127" bodyend="132"/>
+        <references refid="d3/d3c/class_coluna_1ac09fa33160badb14b7e4a095f15fb551">Coluna::inserirTarefa</references>
+        <references refid="dd/d91/class_lista_dupla_1a924380dcc218b78c4de0e0accc80e012" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="298" endline="323">ListaDupla::lightDelete</references>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+        <references refid="dd/d91/class_lista_dupla_1a837ec6a1d28dbddd64b2028372f846c3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="341" endline="356">ListaDupla::obterPorIndice</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d1c/class_coluna_nomeada_1ad0566fe1cc3fef87feeff8e76b74dffd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaNomeada::imprimir</definition>
+        <argsstring>() const override</argsstring>
+        <name>imprimir</name>
+        <qualifiedname>ColunaNomeada::imprimir</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a48875a7414e5f4d15bfed749bb0a5586">imprimir</reimplements>
+        <briefdescription>
+<para>Imprime as informações da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="134" column="10" bodyfile="include/colunas.hpp" bodystart="134" bodyend="145"/>
+        <references refid="dd/d91/class_lista_dupla_1a86f5652f339d3af5fd81c6b913c95a52" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="123" endline="126">ListaDupla::getTamanho</references>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+        <references refid="dd/d91/class_lista_dupla_1a837ec6a1d28dbddd64b2028372f846c3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="341" endline="356">ListaDupla::obterPorIndice</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d1c/class_coluna_nomeada_1a73e9583ff304eef0a61d772976dac074" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaNomeada::ordenar</definition>
+        <argsstring>()</argsstring>
+        <name>ordenar</name>
+        <qualifiedname>ColunaNomeada::ordenar</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a072f1cae205d24c75bbf6e240e66c025">ordenar</reimplements>
+        <briefdescription>
+<para>Ordena as tarefas da coluna por prioridade. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="147" column="10" bodyfile="include/colunas.hpp" bodystart="147" bodyend="150"/>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+        <references refid="dd/d91/class_lista_dupla_1a0da08b292785498fc7bb358a84bed282" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="361" endline="400">ListaDupla::ordenarPorPrioridade</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d1c/class_coluna_nomeada_1a4aa6abb21a20d7fb4d5d81aa584d8683" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>string</type>
+        <definition>string ColunaNomeada::getNome</definition>
+        <argsstring>() override</argsstring>
+        <name>getNome</name>
+        <qualifiedname>ColunaNomeada::getNome</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a25ecf45ce1e1c7a03b9c92d4a5da0544">getNome</reimplements>
+        <briefdescription>
+<para>Obtém o nome da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nome da coluna. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="152" column="12" bodyfile="include/colunas.hpp" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d1c/class_coluna_nomeada_1a5ca1fef4b69d671c80f399435b567af4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>string</type>
+        <definition>string ColunaNomeada::getDescricao</definition>
+        <argsstring>()</argsstring>
+        <name>getDescricao</name>
+        <qualifiedname>ColunaNomeada::getDescricao</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a2a359c5e42f66995c0529b2f2184d33f">getDescricao</reimplements>
+        <briefdescription>
+<para>Obtém a descrição da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Descrição da coluna. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="157" column="12" bodyfile="include/colunas.hpp" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d1c/class_coluna_nomeada_1a7a62c3debc4f87172a8e47a092437086" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaNomeada::setNome</definition>
+        <argsstring>(string n)</argsstring>
+        <name>setNome</name>
+        <qualifiedname>ColunaNomeada::setNome</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a8b576e2bbe66a544614667ca355d6545">setNome</reimplements>
+        <param>
+          <type>string</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Define o nome da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nome da coluna. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="162" column="10" bodyfile="include/colunas.hpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d1c/class_coluna_nomeada_1a3173b4eb484cab5fb328091bccd5379c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ColunaNomeada::setDescricao</definition>
+        <argsstring>(string d)</argsstring>
+        <name>setDescricao</name>
+        <qualifiedname>ColunaNomeada::setDescricao</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a38913a9091206a4672e2ab608d8a7804">setDescricao</reimplements>
+        <param>
+          <type>string</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Define a descrição da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Descrição da coluna. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="167" column="10" bodyfile="include/colunas.hpp" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d1c/class_coluna_nomeada_1af0ed75048904b4399b9955873f1ba7ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int ColunaNomeada::getTamanho</definition>
+        <argsstring>()</argsstring>
+        <name>getTamanho</name>
+        <qualifiedname>ColunaNomeada::getTamanho</qualifiedname>
+        <reimplements refid="d3/d3c/class_coluna_1a98df8d945c71c2cdc352d610325fea02">getTamanho</reimplements>
+        <briefdescription>
+<para>Obtém o tamanho da coluna, ou seja, a quantidade de tarefas nela contidas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Tamanho da coluna. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="172" column="9" bodyfile="include/colunas.hpp" bodystart="172" bodyend="175"/>
+        <references refid="dd/d91/class_lista_dupla_1a86f5652f339d3af5fd81c6b913c95a52" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="123" endline="126">ListaDupla::getTamanho</references>
+        <references refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" compoundref="da/d7b/colunas_8hpp" startline="23">Coluna::lista</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe que representa uma coluna nomeada de um quadro de tarefas. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Coluna</label>
+        <link refid="d3/d3c/class_coluna"/>
+      </node>
+      <node id="1">
+        <label>ColunaNomeada</label>
+        <link refid="de/d1c/class_coluna_nomeada"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Coluna</label>
+        <link refid="d3/d3c/class_coluna"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>#lista</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ColunaNomeada</label>
+        <link refid="de/d1c/class_coluna_nomeada"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ListaDupla</label>
+        <link refid="dd/d91/class_lista_dupla"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/colunas.hpp" line="98" column="1" bodyfile="include/colunas.hpp" bodystart="99" bodyend="176"/>
+    <listofallmembers>
+      <member refid="de/d1c/class_coluna_nomeada_1a5354a7852ce43827bb113c2a4ef4bc3b" prot="public" virt="non-virtual"><scope>ColunaNomeada</scope><name>ColunaNomeada</name></member>
+      <member refid="de/d1c/class_coluna_nomeada_1ad50e65121468dbe4b5a50c4bd02af0ef" prot="private" virt="non-virtual"><scope>ColunaNomeada</scope><name>descricao</name></member>
+      <member refid="de/d1c/class_coluna_nomeada_1a5ca1fef4b69d671c80f399435b567af4" prot="public" virt="virtual"><scope>ColunaNomeada</scope><name>getDescricao</name></member>
+      <member refid="de/d1c/class_coluna_nomeada_1a4aa6abb21a20d7fb4d5d81aa584d8683" prot="public" virt="virtual"><scope>ColunaNomeada</scope><name>getNome</name></member>
+      <member refid="de/d1c/class_coluna_nomeada_1af0ed75048904b4399b9955873f1ba7ba" prot="public" virt="virtual"><scope>ColunaNomeada</scope><name>getTamanho</name></member>
+      <member refid="de/d1c/class_coluna_nomeada_1ad0566fe1cc3fef87feeff8e76b74dffd" prot="public" virt="virtual"><scope>ColunaNomeada</scope><name>imprimir</name></member>
+      <member refid="de/d1c/class_coluna_nomeada_1a660583902ae4cacabf28e61edee5ccd4" prot="public" virt="virtual"><scope>ColunaNomeada</scope><name>inserirTarefa</name></member>
+      <member refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" prot="protected" virt="non-virtual"><scope>ColunaNomeada</scope><name>lista</name></member>
+      <member refid="de/d1c/class_coluna_nomeada_1ab47ba7b160204e7001f88c06ec25a305" prot="public" virt="virtual"><scope>ColunaNomeada</scope><name>moverTarefa</name></member>
+      <member refid="de/d1c/class_coluna_nomeada_1aa33892d898bacedddb4ea667047f6bca" prot="private" virt="non-virtual"><scope>ColunaNomeada</scope><name>nome</name></member>
+      <member refid="de/d1c/class_coluna_nomeada_1a3f8cdd94b330161896b219720b7bc8e2" prot="public" virt="virtual"><scope>ColunaNomeada</scope><name>obterTarefa</name></member>
+      <member refid="de/d1c/class_coluna_nomeada_1a73e9583ff304eef0a61d772976dac074" prot="public" virt="virtual"><scope>ColunaNomeada</scope><name>ordenar</name></member>
+      <member refid="de/d1c/class_coluna_nomeada_1ad9f5dc15ca20616f353008e5a3aa27e3" prot="public" virt="virtual"><scope>ColunaNomeada</scope><name>removerTarefa</name></member>
+      <member refid="de/d1c/class_coluna_nomeada_1a3173b4eb484cab5fb328091bccd5379c" prot="public" virt="virtual"><scope>ColunaNomeada</scope><name>setDescricao</name></member>
+      <member refid="de/d1c/class_coluna_nomeada_1a7a62c3debc4f87172a8e47a092437086" prot="public" virt="virtual"><scope>ColunaNomeada</scope><name>setNome</name></member>
+      <member refid="d3/d3c/class_coluna_1a914ff6225d464e612b7ce6cfa0c73fed" prot="public" virt="virtual"><scope>ColunaNomeada</scope><name>~Coluna</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,30 @@
+<map id="include/quadro.hpp" name="include/quadro.hpp">
+<area shape="rect" id="Node000001" title="Define a classe Quadro para representar um quadro de tarefas." alt="" coords="92,5,223,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="310,453,381,480"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,34,125,90,114,128,109,167,109,318,114,348,128,374,149,395,176,413,237,440,296,455,294,460,235,445,173,418,146,399,124,377,109,350,104,319,104,167,109,127,120,88,147,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="80,453,133,480"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,35,91,55,51,84,34,102,20,122,11,143,8,167,8,318,15,356,33,389,57,419,81,442,77,445,53,422,29,392,10,357,3,319,3,166,6,142,16,119,30,99,48,80,88,51,126,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="438,80,477,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="224,29,315,49,424,77,422,82,314,54,222,35"/>
+<area shape="rect" id="Node000005" href="$da/d7b/colunas_8hpp.html" title="Definição das classes Coluna, ColunaNomeada e ColunaArquivo." alt="" coords="229,155,320,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="161,32,167,67,174,87,185,105,207,128,233,145,230,149,204,132,181,108,170,89,162,68,156,33"/>
+<area shape="rect" id="Node000010" href="$db/d5f/lista_simplesmente_encadeada_8hpp.html" title="Define a classe Lista e a classe NoSimples para implementar uma lista simplesmente encadeada de colun..." alt="" coords="195,80,413,107"/>
+<area shape="poly" id="edge16_Node000001_Node000010" title=" " alt="" coords="184,30,267,71,264,75,182,35"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="321,170,353,175,386,186,417,203,442,228,455,256,458,286,452,317,440,347,406,402,370,444,366,441,402,399,436,344,447,315,453,286,450,257,438,231,414,207,384,191,351,180,320,175"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="229,180,179,199,155,213,134,231,103,272,88,311,85,353,91,405,99,438,94,440,85,406,80,353,83,309,98,270,130,228,152,209,177,194,228,175"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="372,229,428,256"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="298,180,367,219,364,224,295,184"/>
+<area shape="rect" id="Node000007" href="$d1/d7b/lista_duplamente_encadeada_8hpp.html" title="Define a classe ListaDupla e a classe No para implementar uma lista duplamente encadeada de tarefas d..." alt="" coords="145,229,349,256"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="272,183,259,217,254,215,267,181"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="260,255,296,303,313,338,326,375,343,438,338,439,321,376,308,340,291,305,256,258"/>
+<area shape="rect" id="Node000008" href="$d1/d1b/tarefa_8hpp.html" title="Definição da classe Tarefa." alt="" coords="204,304,282,331"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="249,257,247,289,241,289,243,256"/>
+<area shape="poly" id="edge12_Node000008_Node000002" title=" " alt="" coords="257,329,297,377,335,439,330,442,293,380,252,333"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="231,333,185,380,129,444,125,440,181,377,228,329"/>
+<area shape="rect" id="Node000009" href="$d9/da4/pessoa_8hpp.html" title="Definição das classes Pessoa e Colaborador." alt="" coords="195,379,283,405"/>
+<area shape="poly" id="edge13_Node000008_Node000009" title=" " alt="" coords="245,331,243,364,237,364,239,331"/>
+<area shape="poly" id="edge14_Node000009_Node000002" title=" " alt="" coords="259,404,316,442,313,447,256,408"/>
+<area shape="poly" id="edge15_Node000009_Node000003" title=" " alt="" coords="217,408,144,448,141,443,214,404"/>
+<area shape="poly" id="edge17_Node000010_Node000002" title=" " alt="" coords="360,105,411,123,463,150,485,168,503,189,514,214,519,241,519,319,515,343,506,364,493,384,476,401,436,429,396,450,393,445,433,425,472,397,489,380,502,362,510,341,513,318,513,242,509,215,498,192,481,172,460,155,409,128,358,110"/>
+<area shape="poly" id="edge18_Node000010_Node000005" title=" " alt="" coords="301,108,288,142,283,140,296,106"/>
+</map>

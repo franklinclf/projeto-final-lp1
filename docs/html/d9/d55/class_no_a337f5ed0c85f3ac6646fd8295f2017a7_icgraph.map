@@ -1,0 +1,45 @@
+<map id="No::setAnterior" name="No::setAnterior">
+<area shape="rect" id="Node000001" title="Define o nó anterior." alt="" coords="759,215,868,242"/>
+<area shape="rect" id="Node000002" href="$dd/d91/class_lista_dupla.html#a997a8daa9fb1ccea46c233558ade8b4b" title="Insere uma tarefa no fim da lista." alt="" coords="532,114,679,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="785,207,751,180,710,155,679,143,681,138,712,150,754,175,789,203"/>
+<area shape="rect" id="Node000003" href="$dd/d91/class_lista_dupla.html#a8c0235db1d94b2dcbd4d22fec5645ac3" title="Insere uma tarefa na lista pelo índice." alt="" coords="265,13,445,39"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="803,202,791,166,772,125,745,85,729,68,710,53,677,36,642,24,568,10,495,9,431,15,431,9,495,4,569,5,643,19,679,31,713,49,732,64,749,82,777,122,796,164,808,200"/>
+<area shape="rect" id="Node000006" href="$dd/d91/class_lista_dupla.html#af02559c4c5c8265c8db861300cf598d8" title="Insere uma tarefa no início da lista." alt="" coords="528,63,683,90"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="796,203,761,152,737,126,710,104,682,91,685,86,713,100,741,122,765,149,800,200"/>
+<area shape="rect" id="Node000007" href="$dd/d91/class_lista_dupla.html#a924380dcc218b78c4de0e0accc80e012" title="Remove a tarefa da lista, mas mantém o nó na lista sem referência à tarefa." alt="" coords="530,165,681,191"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="744,214,711,206,664,194,666,189,712,201,746,209"/>
+<area shape="rect" id="Node000010" href="$dd/d91/class_lista_dupla.html#a5c057b40433f1dda8d221809c13c2619" title="Construtor padrão da classe ListaDupla." alt="" coords="530,215,681,242"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="745,231,682,231,682,226,745,226"/>
+<area shape="rect" id="Node000011" href="$dd/d91/class_lista_dupla.html#a0da08b292785498fc7bb358a84bed282" title="Ordena a lista de tarefas por prioridade." alt="" coords="500,266,711,293"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="746,248,712,256,666,268,664,263,711,251,744,243"/>
+<area shape="rect" id="Node000014" href="$dd/d91/class_lista_dupla.html#a0ec55e77494913e1041f772fb5abf176" title="Remove a tarefa do fim da lista." alt="" coords="527,317,684,343"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="789,254,754,282,712,307,682,318,680,313,710,302,751,278,785,250"/>
+<area shape="rect" id="Node000015" href="$dd/d91/class_lista_dupla.html#ab976735e9038a9bd590a764b2a832e45" title="Remove a tarefa da lista pelo índice." alt="" coords="260,367,450,394"/>
+<area shape="poly" id="edge23_Node000001_Node000015" title=" " alt="" coords="802,257,767,310,742,336,713,358,648,383,579,395,511,399,450,396,450,391,511,393,578,390,646,377,710,353,739,332,763,307,797,254"/>
+<area shape="rect" id="Node000018" href="$dd/d91/class_lista_dupla.html#a6c0c785cb9c4a4a2fbe25beb370bd102" title="Remove a tarefa do início da lista." alt="" coords="523,418,688,445"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="806,257,792,290,772,329,746,368,713,401,679,420,677,415,710,397,742,364,768,326,787,288,801,255"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="517,113,499,104,483,91,474,78,465,65,451,53,426,42,428,37,453,49,469,62,478,75,487,88,501,100,519,108"/>
+<area shape="rect" id="Node000004" href="$de/d1c/class_coluna_nomeada.html#a660583902ae4cacabf28e61edee5ccd4" title="Insere uma tarefa na coluna." alt="" coords="258,63,452,90"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="521,113,424,93,425,88,522,108"/>
+<area shape="rect" id="Node000005" href="$d0/d4e/class_coluna_arquivo.html#aeb82024caaccd6083d0ea0447ec2ba7e" title="Insere uma tarefa na coluna." alt="" coords="264,114,446,141"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="517,130,446,130,446,125,517,125"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="521,62,424,42,425,37,522,57"/>
+<area shape="rect" id="Node000008" href="$de/d1c/class_coluna_nomeada.html#ab47ba7b160204e7001f88c06ec25a305" title="Move uma tarefa de uma coluna para outra." alt="" coords="258,165,452,191"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="515,181,452,181,452,175,515,175"/>
+<area shape="rect" id="Node000009" href="$d0/d4e/class_coluna_arquivo.html#ac4f7235fe2e8bbcdb959f5100d7c1bb7" title="Move uma tarefa de uma coluna para outra." alt="" coords="265,215,445,242"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="522,197,425,217,424,212,521,192"/>
+<area shape="rect" id="Node000012" href="$de/d1c/class_coluna_nomeada.html#a73e9583ff304eef0a61d772976dac074" title="Ordena as tarefas da coluna por prioridade." alt="" coords="271,266,439,293"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="485,282,439,282,439,277,485,277"/>
+<area shape="rect" id="Node000013" href="$d0/d4e/class_coluna_arquivo.html#af2122dc4d83288ec375515d4d16004a2" title="Ordena as tarefas da coluna por prioridade." alt="" coords="278,317,432,343"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="522,299,425,319,424,313,521,293"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="522,349,425,369,424,364,521,344"/>
+<area shape="rect" id="Node000016" href="$de/d1c/class_coluna_nomeada.html#ad9f5dc15ca20616f353008e5a3aa27e3" title="Remove uma tarefa da coluna." alt="" coords="5,317,210,343"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="271,366,176,346,177,341,273,361"/>
+<area shape="rect" id="Node000017" href="$d0/d4e/class_coluna_arquivo.html#aae317988e21d9072edf5de1543085f14" title="Remove uma tarefa da coluna." alt="" coords="12,367,203,394"/>
+<area shape="poly" id="edge18_Node000015_Node000017" title=" " alt="" coords="245,383,204,383,204,378,245,378"/>
+<area shape="poly" id="edge22_Node000018_Node000015" title=" " alt="" coords="521,417,424,397,425,392,522,412"/>
+<area shape="rect" id="Node000019" href="$dd/d91/class_lista_dupla.html#abfef1d092f78fb6862087097d809f1e7" title="Remove todos os nós da lista e libera a memória." alt="" coords="292,418,418,445"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="508,434,418,434,418,429,508,429"/>
+<area shape="rect" id="Node000020" href="$dd/d91/class_lista_dupla.html#a63481f371df6767019c8705208067514" title="Destrutor da classe ListaDupla." alt="" coords="28,418,187,445"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="277,434,188,434,188,429,277,429"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="include/listaDuplamenteEncadeada.hpp" name="include/listaDuplamenteEncadeada.hpp">
+<area shape="rect" id="Node000001" title="Define a classe ListaDupla e a classe No para implementar uma lista duplamente encadeada de tarefas d..." alt="" coords="5,5,255,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="108,229,179,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,32,144,215,139,215,128,33"/>
+<area shape="rect" id="Node000003" href="$d1/d1b/tarefa_8hpp.html" title="Definição da classe Tarefa." alt="" coords="158,80,236,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,31,177,67,173,71,140,34"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="193,108,171,156,153,216,147,214,166,154,188,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="241,229,294,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="228,105,258,124,272,138,283,153,288,169,289,186,282,216,277,215,283,185,283,170,278,156,268,141,255,128,225,109"/>
+<area shape="rect" id="Node000005" href="$d9/da4/pessoa_8hpp.html" title="Definição das classes Pessoa e Colaborador." alt="" coords="181,155,269,181"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="204,106,217,140,212,142,199,108"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="212,184,170,221,166,217,209,180"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="234,181,255,215,250,218,230,183"/>
+</map>

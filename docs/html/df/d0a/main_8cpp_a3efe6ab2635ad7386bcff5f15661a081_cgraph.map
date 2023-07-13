@@ -1,0 +1,5 @@
+<map id="criarQuadro" name="criarQuadro">
+<area shape="rect" id="Node000001" title="Cria um novo quadro KanBan." alt="" coords="5,5,94,32"/>
+<area shape="rect" id="Node000002" href="$df/d0a/main_8cpp.html#a20bbd4d45e3f01305dd709f5a9cc9952" title="Limpa o buffer do console." alt="" coords="142,5,224,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,16,127,16,127,21,94,21"/>
+</map>

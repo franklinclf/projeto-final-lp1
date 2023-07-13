@@ -1,0 +1,14 @@
+digraph "cadastrarColaborador"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="cadastrarColaborador",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Cria e cadastra um novo colaborador no quadro KanBan."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="clearBuffer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#a20bbd4d45e3f01305dd709f5a9cc9952",tooltip="Limpa o buffer do console."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Quadro::inserirColaborador",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d13/class_quadro.html#ae11cee4915eee6bf9b192ac8680fadf6",tooltip="Insere um colaborador na equipe do quadro."];
+}

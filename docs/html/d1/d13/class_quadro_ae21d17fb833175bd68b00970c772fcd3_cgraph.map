@@ -1,0 +1,5 @@
+<map id="Quadro::adicionarColuna" name="Quadro::adicionarColuna">
+<area shape="rect" id="Node000001" title="Adiciona uma coluna ao quadro." alt="" coords="5,5,169,32"/>
+<area shape="rect" id="Node000002" href="$db/dba/class_lista.html#af51fdf08cb850b001a83e43b0a19beab" title="Insere uma coluna no início da lista." alt="" coords="217,5,339,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,16,202,16,202,21,169,21"/>
+</map>

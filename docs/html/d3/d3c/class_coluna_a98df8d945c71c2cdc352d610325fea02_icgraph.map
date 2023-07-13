@@ -1,0 +1,16 @@
+<map id="Coluna::getTamanho" name="Coluna::getTamanho">
+<area shape="rect" id="Node000001" title="Obtém o tamanho da coluna, ou seja, a quantidade de tarefas nela contidas." alt="" coords="252,81,392,108"/>
+<area shape="rect" id="Node000002" href="$df/d0a/main_8cpp.html#ac8773e0e3b3c75454e680ff43c6fcd7f" title="Edita uma tarefa existente no quadro KanBan." alt="" coords="109,5,198,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,77,184,35,186,30,278,72"/>
+<area shape="rect" id="Node000004" href="$df/d0a/main_8cpp.html#a2eddfb0aac0ba265acd5268ce3d8e919" title="Move uma tarefa de uma coluna para outra no quadro KanBan." alt="" coords="105,56,202,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="237,85,202,79,203,74,238,79"/>
+<area shape="rect" id="Node000005" href="$df/d0a/main_8cpp.html#aee02b44e62983f07d64c57db154c0467" title="Remove uma tarefa de uma coluna no quadro KanBan." alt="" coords="103,107,204,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="238,110,205,115,204,110,237,105"/>
+<area shape="rect" id="Node000006" href="$df/d0a/main_8cpp.html#a3a0d238b444da51e7f04f65f8d390fd0" title="Salva o quadro KanBan em um arquivo." alt="" coords="105,157,202,184"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="278,117,186,159,184,154,276,112"/>
+<area shape="rect" id="Node000003" href="$df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,55,108"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="112,41,104,46,51,83,48,79,101,42,110,37"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="91,85,56,92,55,87,90,80"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="87,109,54,102,56,97,88,104"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="110,152,101,148,48,111,51,106,104,143,112,148"/>
+</map>

@@ -1,0 +1,52 @@
+digraph "No::setAnterior"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="No::setAnterior",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Define o nó anterior."];
+  Node1 -> Node2 [id="edge24_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ListaDupla::inserirFim",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a997a8daa9fb1ccea46c233558ade8b4b",tooltip="Insere uma tarefa no fim da lista."];
+  Node2 -> Node3 [id="edge25_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ListaDupla::inserirPorIndice",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a8c0235db1d94b2dcbd4d22fec5645ac3",tooltip="Insere uma tarefa na lista pelo índice."];
+  Node2 -> Node4 [id="edge26_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ColunaNomeada::inserirTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d1c/class_coluna_nomeada.html#a660583902ae4cacabf28e61edee5ccd4",tooltip="Insere uma tarefa na coluna."];
+  Node2 -> Node5 [id="edge27_Node000002_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ColunaArquivo::inserirTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d4e/class_coluna_arquivo.html#aeb82024caaccd6083d0ea0447ec2ba7e",tooltip="Insere uma tarefa na coluna."];
+  Node1 -> Node6 [id="edge28_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ListaDupla::inserirInicio",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#af02559c4c5c8265c8db861300cf598d8",tooltip="Insere uma tarefa no início da lista."];
+  Node6 -> Node3 [id="edge29_Node000006_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node3 [id="edge30_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node7 [id="edge31_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ListaDupla::lightDelete",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a924380dcc218b78c4de0e0accc80e012",tooltip="Remove a tarefa da lista, mas mantém o nó na lista sem referência à tarefa."];
+  Node7 -> Node8 [id="edge32_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ColunaNomeada::moverTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d1c/class_coluna_nomeada.html#ab47ba7b160204e7001f88c06ec25a305",tooltip="Move uma tarefa de uma coluna para outra."];
+  Node7 -> Node9 [id="edge33_Node000007_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="ColunaArquivo::moverTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d4e/class_coluna_arquivo.html#ac4f7235fe2e8bbcdb959f5100d7c1bb7",tooltip="Move uma tarefa de uma coluna para outra."];
+  Node1 -> Node10 [id="edge34_Node000001_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="ListaDupla::ListaDupla",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a5c057b40433f1dda8d221809c13c2619",tooltip="Construtor padrão da classe ListaDupla."];
+  Node1 -> Node11 [id="edge35_Node000001_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="ListaDupla::ordenarPorPrioridade",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a0da08b292785498fc7bb358a84bed282",tooltip="Ordena a lista de tarefas por prioridade."];
+  Node11 -> Node12 [id="edge36_Node000011_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="ColunaNomeada::ordenar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d1c/class_coluna_nomeada.html#a73e9583ff304eef0a61d772976dac074",tooltip="Ordena as tarefas da coluna por prioridade."];
+  Node11 -> Node13 [id="edge37_Node000011_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="ColunaArquivo::ordenar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d4e/class_coluna_arquivo.html#af2122dc4d83288ec375515d4d16004a2",tooltip="Ordena as tarefas da coluna por prioridade."];
+  Node1 -> Node14 [id="edge38_Node000001_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="ListaDupla::removerFim",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a0ec55e77494913e1041f772fb5abf176",tooltip="Remove a tarefa do fim da lista."];
+  Node14 -> Node15 [id="edge39_Node000014_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="ListaDupla::removerPorIndice",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#ab976735e9038a9bd590a764b2a832e45",tooltip="Remove a tarefa da lista pelo índice."];
+  Node15 -> Node16 [id="edge40_Node000015_Node000016",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="ColunaNomeada::removerTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d1c/class_coluna_nomeada.html#ad9f5dc15ca20616f353008e5a3aa27e3",tooltip="Remove uma tarefa da coluna."];
+  Node15 -> Node17 [id="edge41_Node000015_Node000017",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node17 [id="Node000017",label="ColunaArquivo::removerTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d4e/class_coluna_arquivo.html#aae317988e21d9072edf5de1543085f14",tooltip="Remove uma tarefa da coluna."];
+  Node1 -> Node18 [id="edge42_Node000001_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="ListaDupla::removerInicio",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a6c0c785cb9c4a4a2fbe25beb370bd102",tooltip="Remove a tarefa do início da lista."];
+  Node18 -> Node19 [id="edge43_Node000018_Node000019",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node19 [id="Node000019",label="ListaDupla::limpar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#abfef1d092f78fb6862087097d809f1e7",tooltip="Remove todos os nós da lista e libera a memória."];
+  Node19 -> Node20 [id="edge44_Node000019_Node000020",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node20 [id="Node000020",label="ListaDupla::~ListaDupla",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a63481f371df6767019c8705208067514",tooltip="Destrutor da classe ListaDupla."];
+  Node18 -> Node15 [id="edge45_Node000018_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node15 [id="edge46_Node000001_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

@@ -1,0 +1,20 @@
+<map id="ColunaArquivo::moverTarefa" name="ColunaArquivo::moverTarefa">
+<area shape="rect" id="Node000001" title="Move uma tarefa de uma coluna para outra." alt="" coords="5,107,186,133"/>
+<area shape="rect" id="Node000002" href="$d3/d3c/class_coluna.html#ac09fa33160badb14b7e4a095f15fb551" title="Insere uma tarefa na coluna." alt="" coords="251,56,390,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,103,243,84,244,89,159,109"/>
+<area shape="rect" id="Node000003" href="$dd/d91/class_lista_dupla.html#a924380dcc218b78c4de0e0accc80e012" title="Remove a tarefa da lista, mas mantém o nó na lista sem referência à tarefa." alt="" coords="245,107,396,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,117,230,117,230,123,186,123"/>
+<area shape="rect" id="Node000008" href="$dd/d91/class_lista_dupla.html#a837ec6a1d28dbddd64b2028372f846c3" title="Obtém a tarefa da lista pelo índice." alt="" coords="234,157,407,184"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="159,131,244,151,243,156,158,137"/>
+<area shape="rect" id="Node000004" href="$d9/d55/class_no.html#a18866d7db046e7987120e93bf1a839d3" title="Obtém o nó anterior." alt="" coords="457,5,565,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="382,104,406,92,420,81,429,68,439,56,453,42,460,37,463,42,457,46,443,59,434,72,424,84,408,97,384,108"/>
+<area shape="rect" id="Node000005" href="$d9/d55/class_no.html#a42bd9dc9c7b24743c82e89b42a1581a2" title="Obtém o próximo nó." alt="" coords="455,157,566,184"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="374,131,444,150,443,156,373,137"/>
+<area shape="rect" id="Node000006" href="$d9/d55/class_no.html#a337f5ed0c85f3ac6646fd8295f2017a7" title="Define o nó anterior." alt="" coords="457,56,565,83"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="373,103,443,84,444,90,374,109"/>
+<area shape="rect" id="Node000007" href="$d9/d55/class_no.html#a1fd6922d7a6b246aa11251effaceeb7b" title="Define o próximo nó." alt="" coords="455,107,566,133"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="396,117,440,117,440,123,396,123"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="407,168,440,168,440,173,407,173"/>
+<area shape="rect" id="Node000009" href="$d9/d55/class_no.html#a3e8d735fc07c24ecaee4e283ac9a1f36" title="Obtém a tarefa armazenada no nó." alt="" coords="462,208,560,235"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="374,182,448,202,446,207,373,187"/>
+</map>

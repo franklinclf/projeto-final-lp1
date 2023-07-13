@@ -1,0 +1,35 @@
+digraph "ListaDupla::removerPorIndice"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ListaDupla::removerPorIndice",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Remove a tarefa da lista pelo índice."];
+  Node1 -> Node2 [id="edge18_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="No::getAnterior",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d55/class_no.html#a18866d7db046e7987120e93bf1a839d3",tooltip="Obtém o nó anterior."];
+  Node1 -> Node3 [id="edge19_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="No::getProximo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d55/class_no.html#a42bd9dc9c7b24743c82e89b42a1581a2",tooltip="Obtém o próximo nó."];
+  Node1 -> Node4 [id="edge20_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="No::getTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d55/class_no.html#a3e8d735fc07c24ecaee4e283ac9a1f36",tooltip="Obtém a tarefa armazenada no nó."];
+  Node1 -> Node5 [id="edge21_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ListaDupla::removerFim",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a0ec55e77494913e1041f772fb5abf176",tooltip="Remove a tarefa do fim da lista."];
+  Node5 -> Node2 [id="edge22_Node000005_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node5 -> Node4 [id="edge23_Node000005_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node5 -> Node6 [id="edge24_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="No::setAnterior",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d55/class_no.html#a337f5ed0c85f3ac6646fd8295f2017a7",tooltip="Define o nó anterior."];
+  Node5 -> Node7 [id="edge25_Node000005_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="No::setProximo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d55/class_no.html#a1fd6922d7a6b246aa11251effaceeb7b",tooltip="Define o próximo nó."];
+  Node5 -> Node8 [id="edge26_Node000005_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ListaDupla::vazia",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a66888490f518d19c2d5cb3d3a053b816",tooltip="Verifica se a lista está vazia."];
+  Node1 -> Node9 [id="edge27_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="ListaDupla::removerInicio",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a6c0c785cb9c4a4a2fbe25beb370bd102",tooltip="Remove a tarefa do início da lista."];
+  Node9 -> Node3 [id="edge28_Node000009_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node9 -> Node4 [id="edge29_Node000009_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node9 -> Node6 [id="edge30_Node000009_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node9 -> Node7 [id="edge31_Node000009_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node9 -> Node8 [id="edge32_Node000009_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node6 [id="edge33_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node7 [id="edge34_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
+}

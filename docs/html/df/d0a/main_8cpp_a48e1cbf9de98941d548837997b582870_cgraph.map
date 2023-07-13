@@ -1,0 +1,9 @@
+<map id="criarColuna" name="criarColuna">
+<area shape="rect" id="Node000001" title="Cria e adiciona uma nova coluna ao quadro KanBan." alt="" coords="5,31,92,57"/>
+<area shape="rect" id="Node000002" href="$d1/d13/class_quadro.html#ae21d17fb833175bd68b00970c772fcd3" title="Adiciona uma coluna ao quadro." alt="" coords="140,5,303,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,35,125,30,125,35,92,40"/>
+<area shape="rect" id="Node000004" href="$df/d0a/main_8cpp.html#a20bbd4d45e3f01305dd709f5a9cc9952" title="Limpa o buffer do console." alt="" coords="180,56,263,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="92,48,166,59,165,64,92,53"/>
+<area shape="rect" id="Node000003" href="$db/dba/class_lista.html#af51fdf08cb850b001a83e43b0a19beab" title="Insere uma coluna no início da lista." alt="" coords="351,5,473,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="304,16,336,16,336,21,304,21"/>
+</map>

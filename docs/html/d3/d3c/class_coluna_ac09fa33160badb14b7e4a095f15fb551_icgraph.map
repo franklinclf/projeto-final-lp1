@@ -1,0 +1,14 @@
+<map id="Coluna::inserirTarefa" name="Coluna::inserirTarefa">
+<area shape="rect" id="Node000001" title="Insere uma tarefa na coluna." alt="" coords="344,81,483,108"/>
+<area shape="rect" id="Node000002" href="$df/d0a/main_8cpp.html#a0d931717ab3053bc49784e26575b01d6" title="Adiciona uma nova tarefa a uma coluna no quadro KanBan." alt="" coords="145,5,254,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="370,77,295,47,253,34,255,29,297,41,372,72"/>
+<area shape="rect" id="Node000004" href="$df/d0a/main_8cpp.html#ac19c0f76269ed6195cad2776a32e04f1" title="Carrega um quadro KanBan a partir de um arquivo." alt="" coords="144,56,255,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="329,87,255,78,255,73,329,82"/>
+<area shape="rect" id="Node000005" href="$de/d1c/class_coluna_nomeada.html#ab47ba7b160204e7001f88c06ec25a305" title="Move uma tarefa de uma coluna para outra." alt="" coords="103,107,296,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="329,107,297,111,296,106,329,102"/>
+<area shape="rect" id="Node000006" href="$d0/d4e/class_coluna_arquivo.html#ac4f7235fe2e8bbcdb959f5100d7c1bb7" title="Move uma tarefa de uma coluna para outra." alt="" coords="109,157,290,184"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="372,117,297,148,259,159,258,154,295,143,370,112"/>
+<area shape="rect" id="Node000003" href="$df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,32,56,43,55,38,130,26"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="129,62,55,50,55,45,130,56"/>
+</map>

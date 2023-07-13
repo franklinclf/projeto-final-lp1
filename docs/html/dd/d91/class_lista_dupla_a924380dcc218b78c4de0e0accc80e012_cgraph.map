@@ -1,0 +1,11 @@
+<map id="ListaDupla::lightDelete" name="ListaDupla::lightDelete">
+<area shape="rect" id="Node000001" title="Remove a tarefa da lista, mas mantém o nó na lista sem referência à tarefa." alt="" coords="5,81,157,108"/>
+<area shape="rect" id="Node000002" href="$d9/d55/class_no.html#a18866d7db046e7987120e93bf1a839d3" title="Obtém o nó anterior." alt="" coords="206,5,315,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,78,212,36,214,41,116,83"/>
+<area shape="rect" id="Node000003" href="$d9/d55/class_no.html#a42bd9dc9c7b24743c82e89b42a1581a2" title="Obtém o próximo nó." alt="" coords="205,56,316,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,81,190,77,190,82,158,87"/>
+<area shape="rect" id="Node000004" href="$d9/d55/class_no.html#a337f5ed0c85f3ac6646fd8295f2017a7" title="Define o nó anterior." alt="" coords="206,107,315,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="158,103,192,108,191,113,157,108"/>
+<area shape="rect" id="Node000005" href="$d9/d55/class_no.html#a1fd6922d7a6b246aa11251effaceeb7b" title="Define o próximo nó." alt="" coords="205,157,316,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="116,106,214,149,212,153,114,111"/>
+</map>

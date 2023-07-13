@@ -1,0 +1,7 @@
+<map id="Lista::limpar" name="Lista::limpar">
+<area shape="rect" id="Node000001" title="Remove todos os nós da lista e libera a memória." alt="" coords="175,31,267,57"/>
+<area shape="rect" id="Node000002" href="$db/dba/class_lista.html#a4d7394b2728a00ad8404965b2e15d096" title="Destrutor da classe Lista." alt="" coords="19,5,113,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,37,113,29,114,24,161,32"/>
+<area shape="rect" id="Node000003" href="$d1/d13/class_quadro.html#af569ac1f73c8e6859effde0e2aa115d4" title="Destrutor da classe Quadro." alt="" coords="5,56,127,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,57,127,62,126,57,159,51"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="ColunaNomeada::ordenar" name="ColunaNomeada::ordenar">
+<area shape="rect" id="Node000001" title="Ordena as tarefas da coluna por prioridade." alt="" coords="5,132,173,159"/>
+<area shape="rect" id="Node000002" href="$dd/d91/class_lista_dupla.html#a0da08b292785498fc7bb358a84bed282" title="Ordena a lista de tarefas por prioridade." alt="" coords="221,132,432,159"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,143,206,143,206,148,173,148"/>
+<area shape="rect" id="Node000003" href="$d9/d55/class_no.html#a18866d7db046e7987120e93bf1a839d3" title="Obtém o nó anterior." alt="" coords="496,5,604,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,129,402,87,479,42,492,36,494,40,481,46,405,92,347,134"/>
+<area shape="rect" id="Node000004" href="$da/d23/class_tarefa.html#a7bf9fd90402ab301884f4dcbb36dcec8" title="Obtém a prioridade da tarefa." alt="" coords="480,56,620,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="367,129,494,86,495,91,369,134"/>
+<area shape="rect" id="Node000005" href="$d9/d55/class_no.html#a42bd9dc9c7b24743c82e89b42a1581a2" title="Obtém o próximo nó." alt="" coords="495,107,606,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="432,131,480,125,481,131,433,136"/>
+<area shape="rect" id="Node000006" href="$d9/d55/class_no.html#a3e8d735fc07c24ecaee4e283ac9a1f36" title="Obtém a tarefa armazenada no nó." alt="" coords="501,157,599,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="433,155,487,161,486,166,432,160"/>
+<area shape="rect" id="Node000007" href="$d9/d55/class_no.html#a337f5ed0c85f3ac6646fd8295f2017a7" title="Define o nó anterior." alt="" coords="496,208,604,235"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="369,157,495,200,494,205,367,162"/>
+<area shape="rect" id="Node000008" href="$d9/d55/class_no.html#a1fd6922d7a6b246aa11251effaceeb7b" title="Define o próximo nó." alt="" coords="495,259,606,285"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="347,157,405,199,481,244,494,250,492,255,479,249,402,203,344,161"/>
+</map>

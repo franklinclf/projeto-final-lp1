@@ -1,5 +1,5 @@
-\hypertarget{class_quadro}{}\doxysection{Quadro Class Reference}
-\label{class_quadro}\index{Quadro@{Quadro}}
+\doxysection{Quadro Class Reference}
+\hypertarget{class_quadro}{}\label{class_quadro}\index{Quadro@{Quadro}}
 
 
 Classe que representa um quadro de tarefas.  
@@ -9,20 +9,30 @@ Classe que representa um quadro de tarefas.
 
 {\ttfamily \#include $<$quadro.\+hpp$>$}
 
-\doxysubsection*{Public Member Functions}
+
+
+Collaboration diagram for Quadro\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{d0/d0a/class_quadro__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_quadro_a751c81797b3809680e57be184e7d4740}{Quadro}} ()
-\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \mbox{\hyperlink{class_quadro}{Quadro}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \doxylink{class_quadro}{Quadro}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_quadro_abf3adf33b21d377b495ec41b922bc3a5}{Quadro}} (const std\+::string \&n, const std\+::string \&d)
-\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_quadro}{Quadro}}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_quadro_af569ac1f73c8e6859effde0e2aa115d4}{$\sim$\+Quadro}} ()
-\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{class_quadro}{Quadro}}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_quadro_ae21d17fb833175bd68b00970c772fcd3}{adicionar\+Coluna}} (\mbox{\hyperlink{class_coluna}{Coluna}} $\ast$coluna)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{class_quadro}{Quadro}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_quadro_af569ac1f73c8e6859effde0e2aa115d4}{\texorpdfstring{$\sim$}{\string~}\+Quadro}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \doxylink{class_quadro}{Quadro}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quadro_ae21d17fb833175bd68b00970c772fcd3}{adicionar\+Coluna}} (\mbox{\hyperlink{class_coluna}{Coluna}} \texorpdfstring{$\ast$}{*}coluna)
 \begin{DoxyCompactList}\small\item\em Adiciona uma coluna ao quadro. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_quadro_a977fc54d38236a3a70a20e65101f51c4}{remover\+Coluna}} (int indice)
 \begin{DoxyCompactList}\small\item\em Remove uma coluna do quadro. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_coluna}{Coluna}} $\ast$ \mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obter\+Coluna}} (int indice) const
+\mbox{\hyperlink{class_coluna}{Coluna}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}{obter\+Coluna}} (int indice) const
 \begin{DoxyCompactList}\small\item\em Obtém uma coluna do quadro pelo índice. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_quadro_aad88cee2be59e368c4c09166a7777fb9}{get\+Numero\+Colunas}} () const
 \begin{DoxyCompactList}\small\item\em Obtém o número de colunas do quadro. \end{DoxyCompactList}\item 
@@ -34,11 +44,11 @@ void \mbox{\hyperlink{class_quadro_ad0dfa6d461fb81b6f93e7a085e0ba08b}{set\+Nome}
 \begin{DoxyCompactList}\small\item\em Define o nome do quadro. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_quadro_ad23562f279eb119f1b0a7263d3293251}{set\+Descricao}} (std\+::string d)
 \begin{DoxyCompactList}\small\item\em Define a descrição do quadro. \end{DoxyCompactList}\item 
-std\+::set$<$ \mbox{\hyperlink{class_colaborador}{Colaborador}} $\ast$, \mbox{\hyperlink{structcomparador}{comparador}} $>$ \mbox{\hyperlink{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}{get\+Equipe}} ()
+std\+::set$<$ \mbox{\hyperlink{class_colaborador}{Colaborador}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{structcomparador}{comparador}} $>$ \mbox{\hyperlink{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}{get\+Equipe}} ()
 \begin{DoxyCompactList}\small\item\em Obtém a equipe de colaboradores do quadro. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}{imprimir}} () const
 \begin{DoxyCompactList}\small\item\em Imprime as informações do quadro. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_quadro_ae11cee4915eee6bf9b192ac8680fadf6}{inserir\+Colaborador}} (\mbox{\hyperlink{class_colaborador}{Colaborador}} $\ast$colaborador)
+void \mbox{\hyperlink{class_quadro_ae11cee4915eee6bf9b192ac8680fadf6}{inserir\+Colaborador}} (\mbox{\hyperlink{class_colaborador}{Colaborador}} \texorpdfstring{$\ast$}{*}colaborador)
 \begin{DoxyCompactList}\small\item\em Insere um colaborador na equipe do quadro. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_quadro_ae9b22eeda08e196887b9033beb358c41}{exibir\+Colaboradores}} ()
 \begin{DoxyCompactList}\small\item\em Exibe os colaboradores da equipe do quadro. \end{DoxyCompactList}\item 
@@ -54,7 +64,7 @@ Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00038}{38}} of file \mbo
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_quadro_a751c81797b3809680e57be184e7d4740}\label{class_quadro_a751c81797b3809680e57be184e7d4740}} 
+\Hypertarget{class_quadro_a751c81797b3809680e57be184e7d4740}\label{class_quadro_a751c81797b3809680e57be184e7d4740} 
 \index{Quadro@{Quadro}!Quadro@{Quadro}}
 \index{Quadro@{Quadro}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{Quadro()}{Quadro()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -62,13 +72,13 @@ Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00038}{38}} of file \mbo
 
 
 
-Construtor padrão da classe \mbox{\hyperlink{class_quadro}{Quadro}}. 
+Construtor padrão da classe \doxylink{class_quadro}{Quadro}. 
 
 
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00050}{50}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_abf3adf33b21d377b495ec41b922bc3a5}\label{class_quadro_abf3adf33b21d377b495ec41b922bc3a5}} 
+\Hypertarget{class_quadro_abf3adf33b21d377b495ec41b922bc3a5}\label{class_quadro_abf3adf33b21d377b495ec41b922bc3a5} 
 \index{Quadro@{Quadro}!Quadro@{Quadro}}
 \index{Quadro@{Quadro}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{Quadro()}{Quadro()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -76,7 +86,7 @@ Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00050}{50}} of file \mbo
 
 
 
-Construtor da classe \mbox{\hyperlink{class_quadro}{Quadro}}. 
+Construtor da classe \doxylink{class_quadro}{Quadro}. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -89,28 +99,36 @@ Construtor da classe \mbox{\hyperlink{class_quadro}{Quadro}}.
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00057}{57}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_af569ac1f73c8e6859effde0e2aa115d4}\label{class_quadro_af569ac1f73c8e6859effde0e2aa115d4}} 
-\index{Quadro@{Quadro}!````~Quadro@{$\sim$Quadro}}
-\index{````~Quadro@{$\sim$Quadro}!Quadro@{Quadro}}
-\doxysubsubsection{\texorpdfstring{$\sim$Quadro()}{~Quadro()}}
-{\footnotesize\ttfamily Quadro\+::$\sim$\+Quadro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\Hypertarget{class_quadro_af569ac1f73c8e6859effde0e2aa115d4}\label{class_quadro_af569ac1f73c8e6859effde0e2aa115d4} 
+\index{Quadro@{Quadro}!````~Quadro@{\texorpdfstring{$\sim$}{\string~}Quadro}}
+\index{````~Quadro@{\texorpdfstring{$\sim$}{\string~}Quadro}!Quadro@{Quadro}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Quadro()}{\string~Quadro()}}
+{\footnotesize\ttfamily Quadro\+::\texorpdfstring{$\sim$}{\string~}\+Quadro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Destrutor da classe \mbox{\hyperlink{class_quadro}{Quadro}}. 
+Destrutor da classe \doxylink{class_quadro}{Quadro}. 
 
 
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00062}{62}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_af569ac1f73c8e6859effde0e2aa115d4_cgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_quadro_ae21d17fb833175bd68b00970c772fcd3}\label{class_quadro_ae21d17fb833175bd68b00970c772fcd3}} 
+\Hypertarget{class_quadro_ae21d17fb833175bd68b00970c772fcd3}\label{class_quadro_ae21d17fb833175bd68b00970c772fcd3} 
 \index{Quadro@{Quadro}!adicionarColuna@{adicionarColuna}}
 \index{adicionarColuna@{adicionarColuna}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{adicionarColuna()}{adicionarColuna()}}
-{\footnotesize\ttfamily void Quadro\+::adicionar\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coluna}{Coluna}} $\ast$}]{coluna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Quadro\+::adicionar\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coluna}{Coluna}} \texorpdfstring{$\ast$}{*}}]{coluna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -125,7 +143,23 @@ Adiciona uma coluna ao quadro.
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00071}{71}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_ae9b22eeda08e196887b9033beb358c41}\label{class_quadro_ae9b22eeda08e196887b9033beb358c41}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{d1/d13/class_quadro_ae21d17fb833175bd68b00970c772fcd3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_ae21d17fb833175bd68b00970c772fcd3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_quadro_ae9b22eeda08e196887b9033beb358c41}\label{class_quadro_ae9b22eeda08e196887b9033beb358c41} 
 \index{Quadro@{Quadro}!exibirColaboradores@{exibirColaboradores}}
 \index{exibirColaboradores@{exibirColaboradores}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{exibirColaboradores()}{exibirColaboradores()}}
@@ -139,7 +173,15 @@ Exibe os colaboradores da equipe do quadro.
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00179}{179}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_a7a8e238c28a7fb111f555a8508041824}\label{class_quadro_a7a8e238c28a7fb111f555a8508041824}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_ae9b22eeda08e196887b9033beb358c41_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_quadro_a7a8e238c28a7fb111f555a8508041824}\label{class_quadro_a7a8e238c28a7fb111f555a8508041824} 
 \index{Quadro@{Quadro}!getDescricao@{getDescricao}}
 \index{getDescricao@{getDescricao}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{getDescricao()}{getDescricao()}}
@@ -156,11 +198,19 @@ Descrição do quadro.
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00117}{117}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}\label{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_a7a8e238c28a7fb111f555a8508041824_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_quadro_a1cc0b576c7787cc7c82019a3fd424822}\label{class_quadro_a1cc0b576c7787cc7c82019a3fd424822} 
 \index{Quadro@{Quadro}!getEquipe@{getEquipe}}
 \index{getEquipe@{getEquipe}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{getEquipe()}{getEquipe()}}
-{\footnotesize\ttfamily std\+::set$<$ \mbox{\hyperlink{class_colaborador}{Colaborador}} $\ast$, \mbox{\hyperlink{structcomparador}{comparador}} $>$ Quadro\+::get\+Equipe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily std\+::set$<$ \mbox{\hyperlink{class_colaborador}{Colaborador}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{structcomparador}{comparador}} $>$ Quadro\+::get\+Equipe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -173,7 +223,15 @@ Equipe de colaboradores do quadro.
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00144}{144}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_ae87472bb79c7073b7d6747d930d41a23}\label{class_quadro_ae87472bb79c7073b7d6747d930d41a23}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_a1cc0b576c7787cc7c82019a3fd424822_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_quadro_ae87472bb79c7073b7d6747d930d41a23}\label{class_quadro_ae87472bb79c7073b7d6747d930d41a23} 
 \index{Quadro@{Quadro}!getNome@{getNome}}
 \index{getNome@{getNome}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
@@ -190,7 +248,15 @@ Nome do quadro.
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00108}{108}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_aad88cee2be59e368c4c09166a7777fb9}\label{class_quadro_aad88cee2be59e368c4c09166a7777fb9}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_ae87472bb79c7073b7d6747d930d41a23_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_quadro_aad88cee2be59e368c4c09166a7777fb9}\label{class_quadro_aad88cee2be59e368c4c09166a7777fb9} 
 \index{Quadro@{Quadro}!getNumeroColunas@{getNumeroColunas}}
 \index{getNumeroColunas@{getNumeroColunas}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{getNumeroColunas()}{getNumeroColunas()}}
@@ -207,7 +273,23 @@ Número de colunas do quadro.
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00099}{99}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}\label{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{d1/d13/class_quadro_aad88cee2be59e368c4c09166a7777fb9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_aad88cee2be59e368c4c09166a7777fb9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704}\label{class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704} 
 \index{Quadro@{Quadro}!imprimir@{imprimir}}
 \index{imprimir@{imprimir}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{imprimir()}{imprimir()}}
@@ -221,11 +303,27 @@ Imprime as informações do quadro.
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00152}{152}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_ae11cee4915eee6bf9b192ac8680fadf6}\label{class_quadro_ae11cee4915eee6bf9b192ac8680fadf6}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_a1d27dcd2c84b1742c7ebd4cb0f82a704_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_quadro_ae11cee4915eee6bf9b192ac8680fadf6}\label{class_quadro_ae11cee4915eee6bf9b192ac8680fadf6} 
 \index{Quadro@{Quadro}!inserirColaborador@{inserirColaborador}}
 \index{inserirColaborador@{inserirColaborador}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{inserirColaborador()}{inserirColaborador()}}
-{\footnotesize\ttfamily void Quadro\+::inserir\+Colaborador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_colaborador}{Colaborador}} $\ast$}]{colaborador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Quadro\+::inserir\+Colaborador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_colaborador}{Colaborador}} \texorpdfstring{$\ast$}{*}}]{colaborador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -240,7 +338,15 @@ Insere um colaborador na equipe do quadro.
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00171}{171}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_ab9b6209542640bb5a3e0fb84cf62d6eb}\label{class_quadro_ab9b6209542640bb5a3e0fb84cf62d6eb}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_ae11cee4915eee6bf9b192ac8680fadf6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_quadro_ab9b6209542640bb5a3e0fb84cf62d6eb}\label{class_quadro_ab9b6209542640bb5a3e0fb84cf62d6eb} 
 \index{Quadro@{Quadro}!moverColuna@{moverColuna}}
 \index{moverColuna@{moverColuna}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{moverColuna()}{moverColuna()}}
@@ -261,11 +367,27 @@ Move uma coluna do quadro para uma nova posição.
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00193}{193}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}\label{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d1/d13/class_quadro_ab9b6209542640bb5a3e0fb84cf62d6eb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_ab9b6209542640bb5a3e0fb84cf62d6eb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_quadro_acdcb5194cb4b20e50f6211df473b59f2}\label{class_quadro_acdcb5194cb4b20e50f6211df473b59f2} 
 \index{Quadro@{Quadro}!obterColuna@{obterColuna}}
 \index{obterColuna@{obterColuna}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{obterColuna()}{obterColuna()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_coluna}{Coluna}} $\ast$ Quadro\+::obter\+Coluna (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coluna}{Coluna}} \texorpdfstring{$\ast$}{*} Quadro\+::obter\+Coluna (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -283,7 +405,23 @@ Ponteiro para a coluna encontrada.
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00090}{90}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_a977fc54d38236a3a70a20e65101f51c4}\label{class_quadro_a977fc54d38236a3a70a20e65101f51c4}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{d1/d13/class_quadro_acdcb5194cb4b20e50f6211df473b59f2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_acdcb5194cb4b20e50f6211df473b59f2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_quadro_a977fc54d38236a3a70a20e65101f51c4}\label{class_quadro_a977fc54d38236a3a70a20e65101f51c4} 
 \index{Quadro@{Quadro}!removerColuna@{removerColuna}}
 \index{removerColuna@{removerColuna}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{removerColuna()}{removerColuna()}}
@@ -302,7 +440,23 @@ Remove uma coluna do quadro.
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00080}{80}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_ad23562f279eb119f1b0a7263d3293251}\label{class_quadro_ad23562f279eb119f1b0a7263d3293251}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_a977fc54d38236a3a70a20e65101f51c4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d13/class_quadro_a977fc54d38236a3a70a20e65101f51c4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_quadro_ad23562f279eb119f1b0a7263d3293251}\label{class_quadro_ad23562f279eb119f1b0a7263d3293251} 
 \index{Quadro@{Quadro}!setDescricao@{setDescricao}}
 \index{setDescricao@{setDescricao}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{setDescricao()}{setDescricao()}}
@@ -321,7 +475,7 @@ Define a descrição do quadro.
 
 Definition at line \mbox{\hyperlink{quadro_8hpp_source_l00135}{135}} of file \mbox{\hyperlink{quadro_8hpp_source}{quadro.\+hpp}}.
 
-\mbox{\Hypertarget{class_quadro_ad0dfa6d461fb81b6f93e7a085e0ba08b}\label{class_quadro_ad0dfa6d461fb81b6f93e7a085e0ba08b}} 
+\Hypertarget{class_quadro_ad0dfa6d461fb81b6f93e7a085e0ba08b}\label{class_quadro_ad0dfa6d461fb81b6f93e7a085e0ba08b} 
 \index{Quadro@{Quadro}!setNome@{setNome}}
 \index{setNome@{setNome}!Quadro@{Quadro}}
 \doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}

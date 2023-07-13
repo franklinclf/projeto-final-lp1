@@ -1,0 +1,7 @@
+<map id="Coluna::moverTarefa" name="Coluna::moverTarefa">
+<area shape="rect" id="Node000001" title="Move uma tarefa de uma coluna para outra." alt="" coords="248,5,386,32"/>
+<area shape="rect" id="Node000002" href="$df/d0a/main_8cpp.html#a2eddfb0aac0ba265acd5268ce3d8e919" title="Move uma tarefa de uma coluna para outra no quadro KanBan." alt="" coords="103,5,200,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,21,200,21,200,16,233,16"/>
+<area shape="rect" id="Node000003" href="$df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

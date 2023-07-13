@@ -1,0 +1,5 @@
+<map id="Quadro::moverColuna" name="Quadro::moverColuna">
+<area shape="rect" id="Node000001" title="Move uma coluna do quadro para uma nova posição." alt="" coords="5,5,151,32"/>
+<area shape="rect" id="Node000002" href="$db/dba/class_lista.html#abc103d958cb4184693b59547ebf7cf9c" title="Move uma coluna da lista de uma posição para outra." alt="" coords="199,5,330,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,16,184,16,184,21,151,21"/>
+</map>

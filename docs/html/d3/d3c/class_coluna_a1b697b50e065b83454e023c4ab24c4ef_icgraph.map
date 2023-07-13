@@ -1,0 +1,13 @@
+<map id="Coluna::obterTarefa" name="Coluna::obterTarefa">
+<area shape="rect" id="Node000001" title="Obtém uma tarefa da coluna pelo seu índice." alt="" coords="248,56,381,83"/>
+<area shape="rect" id="Node000002" href="$df/d0a/main_8cpp.html#ac8773e0e3b3c75454e680ff43c6fcd7f" title="Edita uma tarefa existente no quadro KanBan." alt="" coords="107,5,196,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,54,195,35,197,30,256,48"/>
+<area shape="rect" id="Node000004" href="$df/d0a/main_8cpp.html#a2eddfb0aac0ba265acd5268ce3d8e919" title="Move uma tarefa de uma coluna para outra no quadro KanBan." alt="" coords="103,56,200,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,72,200,72,200,67,233,67"/>
+<area shape="rect" id="Node000005" href="$df/d0a/main_8cpp.html#a3a0d238b444da51e7f04f65f8d390fd0" title="Salva o quadro KanBan em um arquivo." alt="" coords="103,107,200,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="256,90,198,109,196,104,255,85"/>
+<area shape="rect" id="Node000003" href="$df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,41,56,62,54,57,103,36"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="103,103,54,82,56,77,106,98"/>
+</map>

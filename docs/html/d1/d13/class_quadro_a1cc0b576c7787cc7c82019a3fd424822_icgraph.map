@@ -1,0 +1,22 @@
+<map id="Quadro::getEquipe" name="Quadro::getEquipe">
+<area shape="rect" id="Node000001" title="Obtém a equipe de colaboradores do quadro." alt="" coords="286,132,415,159"/>
+<area shape="rect" id="Node000002" href="$df/d0a/main_8cpp.html#a0d931717ab3053bc49784e26575b01d6" title="Adiciona uma nova tarefa a uma coluna no quadro KanBan." alt="" coords="116,5,225,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="326,123,286,84,237,46,214,35,216,30,239,42,290,80,329,119"/>
+<area shape="rect" id="Node000004" href="$df/d0a/main_8cpp.html#a437489a63da65aff2f992d1273edacaa" title="Busca um colaborador pelo ID no quadro KanBan e exibe suas informações." alt="" coords="106,56,235,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="306,128,237,97,208,86,210,81,239,92,308,123"/>
+<area shape="rect" id="Node000005" href="$df/d0a/main_8cpp.html#ac19c0f76269ed6195cad2776a32e04f1" title="Carrega um quadro KanBan a partir de um arquivo." alt="" coords="115,107,226,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="271,137,226,130,226,125,272,132"/>
+<area shape="rect" id="Node000006" href="$df/d0a/main_8cpp.html#ac8773e0e3b3c75454e680ff43c6fcd7f" title="Edita uma tarefa existente no quadro KanBan." alt="" coords="126,157,215,184"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="272,159,215,167,214,162,271,154"/>
+<area shape="rect" id="Node000007" href="$df/d0a/main_8cpp.html#afbe7cc1d16fdd3689922aa9f97a05342" title=" " alt="" coords="103,208,238,235"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="308,168,239,198,210,210,208,205,237,194,306,163"/>
+<area shape="rect" id="Node000008" href="$df/d0a/main_8cpp.html#a3a0d238b444da51e7f04f65f8d390fd0" title="Salva o quadro KanBan em um arquivo." alt="" coords="122,259,219,285"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="329,172,290,211,239,249,216,260,214,256,237,244,286,207,326,168"/>
+<area shape="rect" id="Node000003" href="$df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,132,55,159"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="111,41,104,46,83,67,65,90,40,133,35,130,60,87,79,63,101,42,108,37"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="115,91,104,97,50,134,47,129,101,92,113,87"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="101,135,56,144,55,138,100,130"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="111,163,55,152,56,147,112,158"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="113,204,101,198,47,161,50,157,104,194,115,199"/>
+<area shape="poly" id="edge12_Node000008_Node000003" title=" " alt="" coords="108,254,101,249,79,228,60,203,35,160,40,158,65,200,83,224,104,245,111,249"/>
+</map>

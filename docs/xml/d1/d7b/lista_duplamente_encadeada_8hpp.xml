@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d1/d7b/lista_duplamente_encadeada_8hpp" kind="file" language="C++">
+    <compoundname>listaDuplamenteEncadeada.hpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="d1/d1b/tarefa_8hpp" local="yes">tarefa.hpp</includes>
+    <includedby refid="da/d7b/colunas_8hpp" local="yes">include/colunas.hpp</includedby>
+    <includedby refid="df/d0a/main_8cpp" local="yes">src/main.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/listaDuplamenteEncadeada.hpp</label>
+        <link refid="d1/d7b/lista_duplamente_encadeada_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pessoa.hpp</label>
+        <link refid="d9/da4/pessoa_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tarefa.hpp</label>
+        <link refid="d1/d1b/tarefa_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/colunas.hpp</label>
+        <link refid="da/d7b/colunas_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/listaDuplamenteEncadeada.hpp</label>
+        <link refid="d1/d7b/lista_duplamente_encadeada_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/listaSimplesmenteEncadeada.hpp</label>
+        <link refid="db/d5f/lista_simplesmente_encadeada_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/quadro.hpp</label>
+        <link refid="de/d9e/quadro_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d9/d55/class_no" prot="public">No</innerclass>
+    <innerclass refid="dd/d91/class_lista_dupla" prot="public">ListaDupla</innerclass>
+    <briefdescription>
+<para>Define a classe <ref refid="dd/d91/class_lista_dupla" kindref="compound">ListaDupla</ref> e a classe <ref refid="d9/d55/class_no" kindref="compound">No</ref> para implementar uma lista duplamente encadeada de tarefas de um quadro de tarefas. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Franklin Oliveira </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LISTA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LISTA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d1b/tarefa_8hpp" kindref="compound">tarefa.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d9/d55/class_no" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d9/d55/class_no" kindref="compound">No</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref><sp/>*tarefa;<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*proximo;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*anterior;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28" refid="d9/d55/class_no_1a17ab5591c2938baae7f3cb5233961e06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no_1a17ab5591c2938baae7f3cb5233961e06" kindref="member">No</ref>(<ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref><sp/>*t)<sp/>:<sp/>tarefa(t),<sp/>proximo(nullptr),<sp/>anterior(nullptr)<sp/>{}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref><sp/>*<ref refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" kindref="member">getTarefa</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="35"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tarefa;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d9/d55/class_no_1a47852bec5f00dfe7e18071827692bd42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d55/class_no_1a47852bec5f00dfe7e18071827692bd42" kindref="member">setTarefa</ref>(<ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref><sp/>*t)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tarefa<sp/>=<sp/>t;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="53"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>proximo;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(<ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*p)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proximo<sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*<ref refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" kindref="member">getAnterior</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="71"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>anterior;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(<ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*a)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>anterior<sp/>=<sp/>a;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="dd/d91/class_lista_dupla" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dd/d91/class_lista_dupla" kindref="compound">ListaDupla</ref></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*sentinelaInicio;<sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*sentinelaFim;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tamanho;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100" refid="dd/d91/class_lista_dupla_1a5c057b40433f1dda8d221809c13c2619" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d91/class_lista_dupla_1a5c057b40433f1dda8d221809c13c2619" kindref="member">ListaDupla</ref>()<sp/>:<sp/>tamanho(0)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sentinelaInicio<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sentinelaFim<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sentinelaInicio-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(sentinelaFim);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sentinelaFim-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(sentinelaInicio);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="dd/d91/class_lista_dupla_1a63481f371df6767019c8705208067514" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d91/class_lista_dupla_1a63481f371df6767019c8705208067514" kindref="member">~ListaDupla</ref>()</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d91/class_lista_dupla_1abfef1d092f78fb6862087097d809f1e7" kindref="member">limpar</ref>();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>sentinelaInicio;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>sentinelaFim;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="dd/d91/class_lista_dupla_1a86f5652f339d3af5fd81c6b913c95a52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dd/d91/class_lista_dupla_1a86f5652f339d3af5fd81c6b913c95a52" kindref="member">getTamanho</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="124"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tamanho;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="dd/d91/class_lista_dupla_1a66888490f518d19c2d5cb3d3a053b816" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/d91/class_lista_dupla_1a66888490f518d19c2d5cb3d3a053b816" kindref="member">vazia</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="133"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tamanho<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="dd/d91/class_lista_dupla_1af02559c4c5c8265c8db861300cf598d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/d91/class_lista_dupla_1af02559c4c5c8265c8db861300cf598d8" kindref="member">inserirInicio</ref>(<ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref><sp/>*t)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*novoNo<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref>(t);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>novoNo-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(sentinelaInicio-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>());</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>novoNo-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(sentinelaInicio);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sentinelaInicio-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>()-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(novoNo);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sentinelaInicio-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(novoNo);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tamanho++;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="dd/d91/class_lista_dupla_1a997a8daa9fb1ccea46c233558ade8b4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/d91/class_lista_dupla_1a997a8daa9fb1ccea46c233558ade8b4b" kindref="member">inserirFim</ref>(<ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref><sp/>*t)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*novoNo<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref>(t);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>novoNo-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(sentinelaFim);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>novoNo-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(sentinelaFim-&gt;<ref refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" kindref="member">getAnterior</ref>());</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sentinelaFim-&gt;<ref refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" kindref="member">getAnterior</ref>()-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(novoNo);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sentinelaFim-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(novoNo);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tamanho++;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="dd/d91/class_lista_dupla_1a8c0235db1d94b2dcbd4d22fec5645ac3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/d91/class_lista_dupla_1a8c0235db1d94b2dcbd4d22fec5645ac3" kindref="member">inserirPorIndice</ref>(<ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref><sp/>*t,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indice)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indice<sp/>&lt;<sp/>0<sp/>||<sp/>indice<sp/>&gt;<sp/>tamanho)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::out_of_range(</highlight><highlight class="stringliteral">&quot;Índice<sp/>inválido&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indice<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d91/class_lista_dupla_1af02559c4c5c8265c8db861300cf598d8" kindref="member">inserirInicio</ref>(t);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indice<sp/>==<sp/>tamanho)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d91/class_lista_dupla_1a997a8daa9fb1ccea46c233558ade8b4b" kindref="member">inserirFim</ref>(t);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*novoNo<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref>(t);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*atual<sp/>=<sp/>sentinelaInicio-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>indice;<sp/>i++)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atual<sp/>=<sp/>atual-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>novoNo-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(atual);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>novoNo-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(atual-&gt;<ref refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" kindref="member">getAnterior</ref>());</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atual-&gt;<ref refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" kindref="member">getAnterior</ref>()-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(novoNo);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atual-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(novoNo);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tamanho++;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="dd/d91/class_lista_dupla_1a6c0c785cb9c4a4a2fbe25beb370bd102" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/d91/class_lista_dupla_1a6c0c785cb9c4a4a2fbe25beb370bd102" kindref="member">removerInicio</ref>()</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="dd/d91/class_lista_dupla_1a66888490f518d19c2d5cb3d3a053b816" kindref="member">vazia</ref>())</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::out_of_range(</highlight><highlight class="stringliteral">&quot;Lista<sp/>vazia&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*noRemovido<sp/>=<sp/>sentinelaInicio-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*proximoNo<sp/>=<sp/>noRemovido-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sentinelaInicio-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(proximoNo);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proximoNo-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(sentinelaInicio);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>noRemovido-&gt;<ref refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" kindref="member">getTarefa</ref>();</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>noRemovido;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tamanho--;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="dd/d91/class_lista_dupla_1a0ec55e77494913e1041f772fb5abf176" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/d91/class_lista_dupla_1a0ec55e77494913e1041f772fb5abf176" kindref="member">removerFim</ref>()</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="dd/d91/class_lista_dupla_1a66888490f518d19c2d5cb3d3a053b816" kindref="member">vazia</ref>())</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::out_of_range(</highlight><highlight class="stringliteral">&quot;Lista<sp/>vazia&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*noRemovido<sp/>=<sp/>sentinelaFim-&gt;<ref refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" kindref="member">getAnterior</ref>();</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*anteriorNo<sp/>=<sp/>noRemovido-&gt;<ref refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" kindref="member">getAnterior</ref>();</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>anteriorNo-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(sentinelaFim);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sentinelaFim-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(anteriorNo);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>noRemovido-&gt;<ref refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" kindref="member">getTarefa</ref>();</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>noRemovido;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tamanho--;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="dd/d91/class_lista_dupla_1ab976735e9038a9bd590a764b2a832e45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/d91/class_lista_dupla_1ab976735e9038a9bd590a764b2a832e45" kindref="member">removerPorIndice</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indice)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indice<sp/>&lt;<sp/>0<sp/>||<sp/>indice<sp/>&gt;=<sp/>tamanho)</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::out_of_range(</highlight><highlight class="stringliteral">&quot;Índice<sp/>inválido&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indice<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d91/class_lista_dupla_1a6c0c785cb9c4a4a2fbe25beb370bd102" kindref="member">removerInicio</ref>();</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indice<sp/>==<sp/>tamanho<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d91/class_lista_dupla_1a0ec55e77494913e1041f772fb5abf176" kindref="member">removerFim</ref>();</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*atual<sp/>=<sp/>sentinelaInicio-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>indice;<sp/>i++)</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atual<sp/>=<sp/>atual-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*noRemovido<sp/>=<sp/>atual;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*proximoNo<sp/>=<sp/>atual-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*anteriorNo<sp/>=<sp/>atual-&gt;<ref refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" kindref="member">getAnterior</ref>();</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>anteriorNo-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(proximoNo);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proximoNo-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(anteriorNo);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>noRemovido-&gt;<ref refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" kindref="member">getTarefa</ref>();</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>noRemovido;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tamanho--;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="dd/d91/class_lista_dupla_1a924380dcc218b78c4de0e0accc80e012" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/d91/class_lista_dupla_1a924380dcc218b78c4de0e0accc80e012" kindref="member">lightDelete</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indice)</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indice<sp/>&lt;<sp/>0<sp/>||<sp/>indice<sp/>&gt;=<sp/>tamanho)</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::out_of_range(</highlight><highlight class="stringliteral">&quot;Índice<sp/>inválido&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*atual<sp/>=<sp/>sentinelaInicio-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>indice;<sp/>i++)</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atual<sp/>=<sp/>atual-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*noRemovido<sp/>=<sp/>atual;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*proximoNo<sp/>=<sp/>atual-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*anteriorNo<sp/>=<sp/>atual-&gt;<ref refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" kindref="member">getAnterior</ref>();</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>anteriorNo-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(proximoNo);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proximoNo-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(anteriorNo);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>noRemovido-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>noRemovido-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tamanho--;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328" refid="dd/d91/class_lista_dupla_1abfef1d092f78fb6862087097d809f1e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/d91/class_lista_dupla_1abfef1d092f78fb6862087097d809f1e7" kindref="member">limpar</ref>()</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="dd/d91/class_lista_dupla_1a66888490f518d19c2d5cb3d3a053b816" kindref="member">vazia</ref>())</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d91/class_lista_dupla_1a6c0c785cb9c4a4a2fbe25beb370bd102" kindref="member">removerInicio</ref>();</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341" refid="dd/d91/class_lista_dupla_1a837ec6a1d28dbddd64b2028372f846c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref><sp/>*<ref refid="dd/d91/class_lista_dupla_1a837ec6a1d28dbddd64b2028372f846c3" kindref="member">obterPorIndice</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indice)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="342"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indice<sp/>&lt;<sp/>0<sp/>||<sp/>indice<sp/>&gt;=<sp/>tamanho)</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::out_of_range(</highlight><highlight class="stringliteral">&quot;Índice<sp/>inválido&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*atual<sp/>=<sp/>sentinelaInicio-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>indice;<sp/>i++)</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atual<sp/>=<sp/>atual-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>atual-&gt;<ref refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" kindref="member">getTarefa</ref>();</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361" refid="dd/d91/class_lista_dupla_1a0da08b292785498fc7bb358a84bed282" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/d91/class_lista_dupla_1a0da08b292785498fc7bb358a84bed282" kindref="member">ordenarPorPrioridade</ref>()</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tamanho<sp/>&lt;=<sp/>1)</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>trocou;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*atual<sp/>=<sp/>sentinelaInicio-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*anterior<sp/>=<sp/>sentinelaInicio;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trocou<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(atual<sp/>!=<sp/>sentinelaFim-&gt;<ref refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" kindref="member">getAnterior</ref>())</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(atual-&gt;<ref refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" kindref="member">getTarefa</ref>()-&gt;<ref refid="da/d23/class_tarefa_1a7bf9fd90402ab301884f4dcbb36dcec8" kindref="member">getPrioridade</ref>()<sp/>&gt;<sp/>atual-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>()-&gt;<ref refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" kindref="member">getTarefa</ref>()-&gt;<ref refid="da/d23/class_tarefa_1a7bf9fd90402ab301884f4dcbb36dcec8" kindref="member">getPrioridade</ref>())</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*proximo<sp/>=<sp/>atual-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d55/class_no" kindref="compound">No</ref><sp/>*proximoDoProximo<sp/>=<sp/>proximo-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>anterior-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(proximo);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proximo-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(atual);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atual-&gt;<ref refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kindref="member">setProximo</ref>(proximoDoProximo);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proximoDoProximo-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(atual);</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atual-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(proximo);</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proximo-&gt;<ref refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kindref="member">setAnterior</ref>(anterior);</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trocou<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>anterior<sp/>=<sp/>atual;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atual<sp/>=<sp/>atual-&gt;<ref refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kindref="member">getProximo</ref>();</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(trocou);</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="401"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/listaDuplamenteEncadeada.hpp"/>
+  </compounddef>
+</doxygen>

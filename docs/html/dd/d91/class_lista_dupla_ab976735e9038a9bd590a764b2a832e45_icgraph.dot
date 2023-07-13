@@ -1,0 +1,14 @@
+digraph "ListaDupla::removerPorIndice"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ListaDupla::removerPorIndice",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Remove a tarefa da lista pelo índice."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ColunaNomeada::removerTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d1c/class_coluna_nomeada.html#ad9f5dc15ca20616f353008e5a3aa27e3",tooltip="Remove uma tarefa da coluna."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ColunaArquivo::removerTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d4e/class_coluna_arquivo.html#aae317988e21d9072edf5de1543085f14",tooltip="Remove uma tarefa da coluna."];
+}

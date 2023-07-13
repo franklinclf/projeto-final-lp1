@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d3/d3c/class_coluna" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Coluna</compoundname>
+    <derivedcompoundref refid="d0/d4e/class_coluna_arquivo" prot="public" virt="non-virtual">ColunaArquivo</derivedcompoundref>
+    <derivedcompoundref refid="de/d1c/class_coluna_nomeada" prot="public" virt="non-virtual">ColunaNomeada</derivedcompoundref>
+    <includes refid="da/d7b/colunas_8hpp" local="no">colunas.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" prot="protected" static="no" mutable="no">
+        <type><ref refid="dd/d91/class_lista_dupla" kindref="compound">ListaDupla</ref></type>
+        <definition>ListaDupla Coluna::lista</definition>
+        <argsstring></argsstring>
+        <name>lista</name>
+        <qualifiedname>Coluna::lista</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="23" column="16" bodyfile="include/colunas.hpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1af0ed75048904b4399b9955873f1ba7ba" compoundref="da/d7b/colunas_8hpp" startline="172" endline="175">ColunaNomeada::getTamanho</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1a07705485463aba703ff87ea7d82691c5" compoundref="da/d7b/colunas_8hpp" startline="240" endline="243">ColunaArquivo::getTamanho</referencedby>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1ad0566fe1cc3fef87feeff8e76b74dffd" compoundref="da/d7b/colunas_8hpp" startline="134" endline="145">ColunaNomeada::imprimir</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1af89c858cfeb225706983f3e91090792f" compoundref="da/d7b/colunas_8hpp" startline="245" endline="253">ColunaArquivo::imprimir</referencedby>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1a660583902ae4cacabf28e61edee5ccd4" compoundref="da/d7b/colunas_8hpp" startline="112" endline="115">ColunaNomeada::inserirTarefa</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1aeb82024caaccd6083d0ea0447ec2ba7e" compoundref="da/d7b/colunas_8hpp" startline="198" endline="201">ColunaArquivo::inserirTarefa</referencedby>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1ab47ba7b160204e7001f88c06ec25a305" compoundref="da/d7b/colunas_8hpp" startline="127" endline="132">ColunaNomeada::moverTarefa</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1ac4f7235fe2e8bbcdb959f5100d7c1bb7" compoundref="da/d7b/colunas_8hpp" startline="213" endline="218">ColunaArquivo::moverTarefa</referencedby>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1a3f8cdd94b330161896b219720b7bc8e2" compoundref="da/d7b/colunas_8hpp" startline="122" endline="125">ColunaNomeada::obterTarefa</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1abb1d729c65cf4680de28dd85fe20c737" compoundref="da/d7b/colunas_8hpp" startline="208" endline="211">ColunaArquivo::obterTarefa</referencedby>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1a73e9583ff304eef0a61d772976dac074" compoundref="da/d7b/colunas_8hpp" startline="147" endline="150">ColunaNomeada::ordenar</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1af2122dc4d83288ec375515d4d16004a2" compoundref="da/d7b/colunas_8hpp" startline="255" endline="258">ColunaArquivo::ordenar</referencedby>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1ad9f5dc15ca20616f353008e5a3aa27e3" compoundref="da/d7b/colunas_8hpp" startline="117" endline="120">ColunaNomeada::removerTarefa</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1aae317988e21d9072edf5de1543085f14" compoundref="da/d7b/colunas_8hpp" startline="203" endline="206">ColunaArquivo::removerTarefa</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d3c/class_coluna_1a914ff6225d464e612b7ce6cfa0c73fed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Coluna::~Coluna</definition>
+        <argsstring>()</argsstring>
+        <name>~Coluna</name>
+        <qualifiedname>Coluna::~Coluna</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="26" column="13" bodyfile="include/colunas.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/class_coluna_1ac09fa33160badb14b7e4a095f15fb551" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Coluna::inserirTarefa</definition>
+        <argsstring>(Tarefa *t)=0</argsstring>
+        <name>inserirTarefa</name>
+        <qualifiedname>Coluna::inserirTarefa</qualifiedname>
+        <reimplementedby refid="de/d1c/class_coluna_nomeada_1a660583902ae4cacabf28e61edee5ccd4">inserirTarefa</reimplementedby>
+        <reimplementedby refid="d0/d4e/class_coluna_arquivo_1aeb82024caaccd6083d0ea0447ec2ba7e">inserirTarefa</reimplementedby>
+        <param>
+          <type><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Insere uma tarefa na coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para a tarefa a ser inserida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="32" column="18"/>
+        <referencedby refid="df/d0a/main_8cpp_1a0d931717ab3053bc49784e26575b01d6" compoundref="df/d0a/main_8cpp" startline="223" endline="319">adicionarTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ac19c0f76269ed6195cad2776a32e04f1" compoundref="df/d0a/main_8cpp" startline="795" endline="883">carregarQuadro</referencedby>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1ab47ba7b160204e7001f88c06ec25a305" compoundref="da/d7b/colunas_8hpp" startline="127" endline="132">ColunaNomeada::moverTarefa</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1ac4f7235fe2e8bbcdb959f5100d7c1bb7" compoundref="da/d7b/colunas_8hpp" startline="213" endline="218">ColunaArquivo::moverTarefa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/class_coluna_1ae2733f6d09e1d3f9a2b136ad4517c4d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Coluna::removerTarefa</definition>
+        <argsstring>(int indice)=0</argsstring>
+        <name>removerTarefa</name>
+        <qualifiedname>Coluna::removerTarefa</qualifiedname>
+        <reimplementedby refid="de/d1c/class_coluna_nomeada_1ad9f5dc15ca20616f353008e5a3aa27e3">removerTarefa</reimplementedby>
+        <reimplementedby refid="d0/d4e/class_coluna_arquivo_1aae317988e21d9072edf5de1543085f14">removerTarefa</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Remove uma tarefa da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da tarefa a ser removida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="38" column="18"/>
+        <referencedby refid="df/d0a/main_8cpp_1aee02b44e62983f07d64c57db154c0467" compoundref="df/d0a/main_8cpp" startline="514" endline="545">removerTarefa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/class_coluna_1a48875a7414e5f4d15bfed749bb0a5586" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Coluna::imprimir</definition>
+        <argsstring>() const =0</argsstring>
+        <name>imprimir</name>
+        <qualifiedname>Coluna::imprimir</qualifiedname>
+        <reimplementedby refid="de/d1c/class_coluna_nomeada_1ad0566fe1cc3fef87feeff8e76b74dffd">imprimir</reimplementedby>
+        <reimplementedby refid="d0/d4e/class_coluna_arquivo_1af89c858cfeb225706983f3e91090792f">imprimir</reimplementedby>
+        <briefdescription>
+<para>Imprime as informações da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="43" column="18"/>
+        <referencedby refid="d1/d13/class_quadro_1a1d27dcd2c84b1742c7ebd4cb0f82a704" compoundref="de/d9e/quadro_8hpp" startline="152" endline="165">Quadro::imprimir</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/class_coluna_1afc72b9e6d07bb8c8bf926e6c96ed5e4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Coluna::moverTarefa</definition>
+        <argsstring>(int indice, Coluna *colunaDestino)=0</argsstring>
+        <name>moverTarefa</name>
+        <qualifiedname>Coluna::moverTarefa</qualifiedname>
+        <reimplementedby refid="de/d1c/class_coluna_nomeada_1ab47ba7b160204e7001f88c06ec25a305">moverTarefa</reimplementedby>
+        <reimplementedby refid="d0/d4e/class_coluna_arquivo_1ac4f7235fe2e8bbcdb959f5100d7c1bb7">moverTarefa</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d3c/class_coluna" kindref="compound">Coluna</ref> *</type>
+          <declname>colunaDestino</declname>
+        </param>
+        <briefdescription>
+<para>Move uma tarefa de uma coluna para outra. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da tarefa a ser movida. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colunaDestino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para a coluna de destino. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="50" column="18"/>
+        <referencedby refid="df/d0a/main_8cpp_1a2eddfb0aac0ba265acd5268ce3d8e919" compoundref="df/d0a/main_8cpp" startline="326" endline="399">moverTarefas</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/class_coluna_1a1b697b50e065b83454e023c4ab24c4ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref> *</type>
+        <definition>virtual Tarefa * Coluna::obterTarefa</definition>
+        <argsstring>(int indice)=0</argsstring>
+        <name>obterTarefa</name>
+        <qualifiedname>Coluna::obterTarefa</qualifiedname>
+        <reimplementedby refid="de/d1c/class_coluna_nomeada_1a3f8cdd94b330161896b219720b7bc8e2">obterTarefa</reimplementedby>
+        <reimplementedby refid="d0/d4e/class_coluna_arquivo_1abb1d729c65cf4680de28dd85fe20c737">obterTarefa</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Obtém uma tarefa da coluna pelo seu índice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da tarefa desejada. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ponteiro para a tarefa encontrada. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="57" column="20"/>
+        <referencedby refid="df/d0a/main_8cpp_1ac8773e0e3b3c75454e680ff43c6fcd7f" compoundref="df/d0a/main_8cpp" startline="406" endline="507">editarTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a2eddfb0aac0ba265acd5268ce3d8e919" compoundref="df/d0a/main_8cpp" startline="326" endline="399">moverTarefas</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/class_coluna_1a98df8d945c71c2cdc352d610325fea02" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Coluna::getTamanho</definition>
+        <argsstring>()=0</argsstring>
+        <name>getTamanho</name>
+        <qualifiedname>Coluna::getTamanho</qualifiedname>
+        <reimplementedby refid="de/d1c/class_coluna_nomeada_1af0ed75048904b4399b9955873f1ba7ba">getTamanho</reimplementedby>
+        <reimplementedby refid="d0/d4e/class_coluna_arquivo_1a07705485463aba703ff87ea7d82691c5">getTamanho</reimplementedby>
+        <briefdescription>
+<para>Obtém o tamanho da coluna, ou seja, a quantidade de tarefas nela contidas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Tamanho da coluna. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="63" column="17"/>
+        <referencedby refid="df/d0a/main_8cpp_1ac8773e0e3b3c75454e680ff43c6fcd7f" compoundref="df/d0a/main_8cpp" startline="406" endline="507">editarTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a2eddfb0aac0ba265acd5268ce3d8e919" compoundref="df/d0a/main_8cpp" startline="326" endline="399">moverTarefas</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1aee02b44e62983f07d64c57db154c0467" compoundref="df/d0a/main_8cpp" startline="514" endline="545">removerTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/class_coluna_1a25ecf45ce1e1c7a03b9c92d4a5da0544" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string Coluna::getNome</definition>
+        <argsstring>()=0</argsstring>
+        <name>getNome</name>
+        <qualifiedname>Coluna::getNome</qualifiedname>
+        <reimplementedby refid="de/d1c/class_coluna_nomeada_1a4aa6abb21a20d7fb4d5d81aa584d8683">getNome</reimplementedby>
+        <reimplementedby refid="d0/d4e/class_coluna_arquivo_1aa93ac97c8f31a46c939ee6e9e4803fa5">getNome</reimplementedby>
+        <briefdescription>
+<para>Obtém o nome da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nome da coluna. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="69" column="20"/>
+        <referencedby refid="d1/d13/class_quadro_1a1d27dcd2c84b1742c7ebd4cb0f82a704" compoundref="de/d9e/quadro_8hpp" startline="152" endline="165">Quadro::imprimir</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/class_coluna_1a2a359c5e42f66995c0529b2f2184d33f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string Coluna::getDescricao</definition>
+        <argsstring>()=0</argsstring>
+        <name>getDescricao</name>
+        <qualifiedname>Coluna::getDescricao</qualifiedname>
+        <reimplementedby refid="de/d1c/class_coluna_nomeada_1a5ca1fef4b69d671c80f399435b567af4">getDescricao</reimplementedby>
+        <reimplementedby refid="d0/d4e/class_coluna_arquivo_1aa9c91a9dbac4a43620a220010fd2a4fc">getDescricao</reimplementedby>
+        <briefdescription>
+<para>Obtém a descrição da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Descrição da coluna. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="75" column="20"/>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/class_coluna_1a8b576e2bbe66a544614667ca355d6545" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Coluna::setNome</definition>
+        <argsstring>(string n)=0</argsstring>
+        <name>setNome</name>
+        <qualifiedname>Coluna::setNome</qualifiedname>
+        <reimplementedby refid="de/d1c/class_coluna_nomeada_1a7a62c3debc4f87172a8e47a092437086">setNome</reimplementedby>
+        <reimplementedby refid="d0/d4e/class_coluna_arquivo_1a11e41b94814603cacc5ca29099d6efe1">setNome</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Define o nome da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nome da coluna. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="81" column="18"/>
+        <referencedby refid="df/d0a/main_8cpp_1a512a56ef22516c5454d0f925b16adcd6" compoundref="df/d0a/main_8cpp" startline="148" endline="187">editarColuna</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/class_coluna_1a38913a9091206a4672e2ab608d8a7804" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Coluna::setDescricao</definition>
+        <argsstring>(string d)=0</argsstring>
+        <name>setDescricao</name>
+        <qualifiedname>Coluna::setDescricao</qualifiedname>
+        <reimplementedby refid="de/d1c/class_coluna_nomeada_1a3173b4eb484cab5fb328091bccd5379c">setDescricao</reimplementedby>
+        <reimplementedby refid="d0/d4e/class_coluna_arquivo_1a033b6173b2d25af8dd0513ef235bd493">setDescricao</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Define a descrição da coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Descrição da coluna. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="87" column="18"/>
+        <referencedby refid="df/d0a/main_8cpp_1a512a56ef22516c5454d0f925b16adcd6" compoundref="df/d0a/main_8cpp" startline="148" endline="187">editarColuna</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/class_coluna_1a072f1cae205d24c75bbf6e240e66c025" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Coluna::ordenar</definition>
+        <argsstring>()=0</argsstring>
+        <name>ordenar</name>
+        <qualifiedname>Coluna::ordenar</qualifiedname>
+        <reimplementedby refid="de/d1c/class_coluna_nomeada_1a73e9583ff304eef0a61d772976dac074">ordenar</reimplementedby>
+        <reimplementedby refid="d0/d4e/class_coluna_arquivo_1af2122dc4d83288ec375515d4d16004a2">ordenar</reimplementedby>
+        <briefdescription>
+<para>Ordena as tarefas da coluna por prioridade. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/colunas.hpp" line="92" column="18"/>
+        <referencedby refid="df/d0a/main_8cpp_1ac91dd762f55fe21f3a2226d59abff942" compoundref="df/d0a/main_8cpp" startline="621" endline="644">ordenarColuna</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe abstrata que representa uma coluna de um quadro de tarefas. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Coluna</label>
+        <link refid="d3/d3c/class_coluna"/>
+      </node>
+      <node id="2">
+        <label>ColunaArquivo</label>
+        <link refid="d0/d4e/class_coluna_arquivo"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ColunaNomeada</label>
+        <link refid="de/d1c/class_coluna_nomeada"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Coluna</label>
+        <link refid="d3/d3c/class_coluna"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>#lista</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ListaDupla</label>
+        <link refid="dd/d91/class_lista_dupla"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/colunas.hpp" line="20" column="1" bodyfile="include/colunas.hpp" bodystart="21" bodyend="93"/>
+    <listofallmembers>
+      <member refid="d3/d3c/class_coluna_1a2a359c5e42f66995c0529b2f2184d33f" prot="public" virt="pure-virtual"><scope>Coluna</scope><name>getDescricao</name></member>
+      <member refid="d3/d3c/class_coluna_1a25ecf45ce1e1c7a03b9c92d4a5da0544" prot="public" virt="pure-virtual"><scope>Coluna</scope><name>getNome</name></member>
+      <member refid="d3/d3c/class_coluna_1a98df8d945c71c2cdc352d610325fea02" prot="public" virt="pure-virtual"><scope>Coluna</scope><name>getTamanho</name></member>
+      <member refid="d3/d3c/class_coluna_1a48875a7414e5f4d15bfed749bb0a5586" prot="public" virt="pure-virtual"><scope>Coluna</scope><name>imprimir</name></member>
+      <member refid="d3/d3c/class_coluna_1ac09fa33160badb14b7e4a095f15fb551" prot="public" virt="pure-virtual"><scope>Coluna</scope><name>inserirTarefa</name></member>
+      <member refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" prot="protected" virt="non-virtual"><scope>Coluna</scope><name>lista</name></member>
+      <member refid="d3/d3c/class_coluna_1afc72b9e6d07bb8c8bf926e6c96ed5e4f" prot="public" virt="pure-virtual"><scope>Coluna</scope><name>moverTarefa</name></member>
+      <member refid="d3/d3c/class_coluna_1a1b697b50e065b83454e023c4ab24c4ef" prot="public" virt="pure-virtual"><scope>Coluna</scope><name>obterTarefa</name></member>
+      <member refid="d3/d3c/class_coluna_1a072f1cae205d24c75bbf6e240e66c025" prot="public" virt="pure-virtual"><scope>Coluna</scope><name>ordenar</name></member>
+      <member refid="d3/d3c/class_coluna_1ae2733f6d09e1d3f9a2b136ad4517c4d0" prot="public" virt="pure-virtual"><scope>Coluna</scope><name>removerTarefa</name></member>
+      <member refid="d3/d3c/class_coluna_1a38913a9091206a4672e2ab608d8a7804" prot="public" virt="pure-virtual"><scope>Coluna</scope><name>setDescricao</name></member>
+      <member refid="d3/d3c/class_coluna_1a8b576e2bbe66a544614667ca355d6545" prot="public" virt="pure-virtual"><scope>Coluna</scope><name>setNome</name></member>
+      <member refid="d3/d3c/class_coluna_1a914ff6225d464e612b7ce6cfa0c73fed" prot="public" virt="virtual"><scope>Coluna</scope><name>~Coluna</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

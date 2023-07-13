@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="dc/dd3/class_colaborador" kind="class"><name>Colaborador</name>
+    <member refid="dc/dd3/class_colaborador_1a0053a5c4c9389866e2df76b3d2d4222a" kind="variable"><name>funcao</name></member>
+    <member refid="dc/dd3/class_colaborador_1ab3f1a5208168bc77aba3af084d761977" kind="variable"><name>tarefasAtribuidas</name></member>
+    <member refid="dc/dd3/class_colaborador_1a43a070abc694512c394f206e9982946f" kind="variable"><name>idUnico</name></member>
+    <member refid="dc/dd3/class_colaborador_1a8ff33664b258d48d0065161ce9d58027" kind="variable"><name>contador</name></member>
+    <member refid="dc/dd3/class_colaborador_1a4b2b69b2a83d78afa73a2ff84d5f1238" kind="function"><name>Colaborador</name></member>
+    <member refid="dc/dd3/class_colaborador_1a893897bf3c1d0d7a312d089bb576d4d5" kind="function"><name>Colaborador</name></member>
+    <member refid="dc/dd3/class_colaborador_1a7f725134de66cbf3d5e3104dfa8aa737" kind="function"><name>~Colaborador</name></member>
+    <member refid="dc/dd3/class_colaborador_1ab92fd3c2b259f96c99bcc96f1b4cfa5f" kind="function"><name>setFuncao</name></member>
+    <member refid="dc/dd3/class_colaborador_1a0c1b2af198e0426ff2d04aeb0e35e774" kind="function"><name>setTarefasAtribuidas</name></member>
+    <member refid="dc/dd3/class_colaborador_1a5a9389d58e53f49ff872d3ee7968d0fb" kind="function"><name>getFuncao</name></member>
+    <member refid="dc/dd3/class_colaborador_1a710e527617230560bb0233ad2461bebd" kind="function"><name>getTarefasAtribuidas</name></member>
+    <member refid="dc/dd3/class_colaborador_1ad5284a3ae726d3cc39f160005b30c66d" kind="function"><name>getID</name></member>
+    <member refid="dc/dd3/class_colaborador_1a18c996a16235553e9bca3796aa1e11dd" kind="friend"><name>operator++</name></member>
+    <member refid="dc/dd3/class_colaborador_1aed2d32cc47fb57d1af98b74895c66db2" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="d3/d3c/class_coluna" kind="class"><name>Coluna</name>
+    <member refid="d3/d3c/class_coluna_1a24093db18d53602f1b4b9ca436489ea8" kind="variable"><name>lista</name></member>
+    <member refid="d3/d3c/class_coluna_1a914ff6225d464e612b7ce6cfa0c73fed" kind="function"><name>~Coluna</name></member>
+    <member refid="d3/d3c/class_coluna_1ac09fa33160badb14b7e4a095f15fb551" kind="function"><name>inserirTarefa</name></member>
+    <member refid="d3/d3c/class_coluna_1ae2733f6d09e1d3f9a2b136ad4517c4d0" kind="function"><name>removerTarefa</name></member>
+    <member refid="d3/d3c/class_coluna_1a48875a7414e5f4d15bfed749bb0a5586" kind="function"><name>imprimir</name></member>
+    <member refid="d3/d3c/class_coluna_1afc72b9e6d07bb8c8bf926e6c96ed5e4f" kind="function"><name>moverTarefa</name></member>
+    <member refid="d3/d3c/class_coluna_1a1b697b50e065b83454e023c4ab24c4ef" kind="function"><name>obterTarefa</name></member>
+    <member refid="d3/d3c/class_coluna_1a98df8d945c71c2cdc352d610325fea02" kind="function"><name>getTamanho</name></member>
+    <member refid="d3/d3c/class_coluna_1a25ecf45ce1e1c7a03b9c92d4a5da0544" kind="function"><name>getNome</name></member>
+    <member refid="d3/d3c/class_coluna_1a2a359c5e42f66995c0529b2f2184d33f" kind="function"><name>getDescricao</name></member>
+    <member refid="d3/d3c/class_coluna_1a8b576e2bbe66a544614667ca355d6545" kind="function"><name>setNome</name></member>
+    <member refid="d3/d3c/class_coluna_1a38913a9091206a4672e2ab608d8a7804" kind="function"><name>setDescricao</name></member>
+    <member refid="d3/d3c/class_coluna_1a072f1cae205d24c75bbf6e240e66c025" kind="function"><name>ordenar</name></member>
+  </compound>
+  <compound refid="d0/d4e/class_coluna_arquivo" kind="class"><name>ColunaArquivo</name>
+    <member refid="d0/d4e/class_coluna_arquivo_1a8fa7fbadbd6adb1c0a259653737901d0" kind="variable"><name>nome</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1ab51278542478379e59e8cd846cdb9b02" kind="variable"><name>descricao</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1a3b60a5d8d6bebf39b1acf78d049d52f0" kind="function"><name>ColunaArquivo</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1aa7b4638c0a1f900754b0c3ac446fe963" kind="function"><name>ColunaArquivo</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1aa40e86e89822421b4529d535c80b1e11" kind="function"><name>~ColunaArquivo</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1aeb82024caaccd6083d0ea0447ec2ba7e" kind="function"><name>inserirTarefa</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1aae317988e21d9072edf5de1543085f14" kind="function"><name>removerTarefa</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1abb1d729c65cf4680de28dd85fe20c737" kind="function"><name>obterTarefa</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1ac4f7235fe2e8bbcdb959f5100d7c1bb7" kind="function"><name>moverTarefa</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1aa93ac97c8f31a46c939ee6e9e4803fa5" kind="function"><name>getNome</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1aa9c91a9dbac4a43620a220010fd2a4fc" kind="function"><name>getDescricao</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1a11e41b94814603cacc5ca29099d6efe1" kind="function"><name>setNome</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1a033b6173b2d25af8dd0513ef235bd493" kind="function"><name>setDescricao</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1a07705485463aba703ff87ea7d82691c5" kind="function"><name>getTamanho</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1af89c858cfeb225706983f3e91090792f" kind="function"><name>imprimir</name></member>
+    <member refid="d0/d4e/class_coluna_arquivo_1af2122dc4d83288ec375515d4d16004a2" kind="function"><name>ordenar</name></member>
+  </compound>
+  <compound refid="de/d1c/class_coluna_nomeada" kind="class"><name>ColunaNomeada</name>
+    <member refid="de/d1c/class_coluna_nomeada_1aa33892d898bacedddb4ea667047f6bca" kind="variable"><name>nome</name></member>
+    <member refid="de/d1c/class_coluna_nomeada_1ad50e65121468dbe4b5a50c4bd02af0ef" kind="variable"><name>descricao</name></member>
+    <member refid="de/d1c/class_coluna_nomeada_1a5354a7852ce43827bb113c2a4ef4bc3b" kind="function"><name>ColunaNomeada</name></member>
+    <member refid="de/d1c/class_coluna_nomeada_1a660583902ae4cacabf28e61edee5ccd4" kind="function"><name>inserirTarefa</name></member>
+    <member refid="de/d1c/class_coluna_nomeada_1ad9f5dc15ca20616f353008e5a3aa27e3" kind="function"><name>removerTarefa</name></member>
+    <member refid="de/d1c/class_coluna_nomeada_1a3f8cdd94b330161896b219720b7bc8e2" kind="function"><name>obterTarefa</name></member>
+    <member refid="de/d1c/class_coluna_nomeada_1ab47ba7b160204e7001f88c06ec25a305" kind="function"><name>moverTarefa</name></member>
+    <member refid="de/d1c/class_coluna_nomeada_1ad0566fe1cc3fef87feeff8e76b74dffd" kind="function"><name>imprimir</name></member>
+    <member refid="de/d1c/class_coluna_nomeada_1a73e9583ff304eef0a61d772976dac074" kind="function"><name>ordenar</name></member>
+    <member refid="de/d1c/class_coluna_nomeada_1a4aa6abb21a20d7fb4d5d81aa584d8683" kind="function"><name>getNome</name></member>
+    <member refid="de/d1c/class_coluna_nomeada_1a5ca1fef4b69d671c80f399435b567af4" kind="function"><name>getDescricao</name></member>
+    <member refid="de/d1c/class_coluna_nomeada_1a7a62c3debc4f87172a8e47a092437086" kind="function"><name>setNome</name></member>
+    <member refid="de/d1c/class_coluna_nomeada_1a3173b4eb484cab5fb328091bccd5379c" kind="function"><name>setDescricao</name></member>
+    <member refid="de/d1c/class_coluna_nomeada_1af0ed75048904b4399b9955873f1ba7ba" kind="function"><name>getTamanho</name></member>
+  </compound>
+  <compound refid="dd/d5a/structcomparador" kind="struct"><name>comparador</name>
+    <member refid="dd/d5a/structcomparador_1a0f1c3caa70f876d714be220cb699fe70" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="db/dba/class_lista" kind="class"><name>Lista</name>
+    <member refid="db/dba/class_lista_1a97ffc5afaaf2b8c26a0da79c0df6bc55" kind="variable"><name>inicio</name></member>
+    <member refid="db/dba/class_lista_1a3886290e1b1b38a5e302db6dd8d92136" kind="variable"><name>tamanho</name></member>
+    <member refid="db/dba/class_lista_1a1f668b36909182ef1360b48503529a31" kind="function"><name>Lista</name></member>
+    <member refid="db/dba/class_lista_1a4d7394b2728a00ad8404965b2e15d096" kind="function"><name>~Lista</name></member>
+    <member refid="db/dba/class_lista_1a9a8529d0ea4e79cd6b7cd600e556d9f8" kind="function"><name>vazia</name></member>
+    <member refid="db/dba/class_lista_1a5cd63f61264afc88d0a6c290f7cb7320" kind="function"><name>getTamanho</name></member>
+    <member refid="db/dba/class_lista_1af51fdf08cb850b001a83e43b0a19beab" kind="function"><name>inserirInicio</name></member>
+    <member refid="db/dba/class_lista_1a2ab09a2fd57a3adeec30cea8fd9e770d" kind="function"><name>removerInicio</name></member>
+    <member refid="db/dba/class_lista_1ad71c31e64374c31c878455e451386d1e" kind="function"><name>removerPorIndice</name></member>
+    <member refid="db/dba/class_lista_1a70571e70c4b7945cc9907e89431624c9" kind="function"><name>limpar</name></member>
+    <member refid="db/dba/class_lista_1adb2dfb16eaf99f99fc1b39bf847af9bd" kind="function"><name>obterPorIndice</name></member>
+    <member refid="db/dba/class_lista_1abc103d958cb4184693b59547ebf7cf9c" kind="function"><name>moverColuna</name></member>
+  </compound>
+  <compound refid="dd/d91/class_lista_dupla" kind="class"><name>ListaDupla</name>
+    <member refid="dd/d91/class_lista_dupla_1a073b42d0b256fb263188bc410cca1509" kind="variable"><name>sentinelaInicio</name></member>
+    <member refid="dd/d91/class_lista_dupla_1ab0cb4915ee28d6fdcb332fdc1a056249" kind="variable"><name>sentinelaFim</name></member>
+    <member refid="dd/d91/class_lista_dupla_1ac9151cc5802c1702fa1ecb2b9e2022a3" kind="variable"><name>tamanho</name></member>
+    <member refid="dd/d91/class_lista_dupla_1a5c057b40433f1dda8d221809c13c2619" kind="function"><name>ListaDupla</name></member>
+    <member refid="dd/d91/class_lista_dupla_1a63481f371df6767019c8705208067514" kind="function"><name>~ListaDupla</name></member>
+    <member refid="dd/d91/class_lista_dupla_1a86f5652f339d3af5fd81c6b913c95a52" kind="function"><name>getTamanho</name></member>
+    <member refid="dd/d91/class_lista_dupla_1a66888490f518d19c2d5cb3d3a053b816" kind="function"><name>vazia</name></member>
+    <member refid="dd/d91/class_lista_dupla_1af02559c4c5c8265c8db861300cf598d8" kind="function"><name>inserirInicio</name></member>
+    <member refid="dd/d91/class_lista_dupla_1a997a8daa9fb1ccea46c233558ade8b4b" kind="function"><name>inserirFim</name></member>
+    <member refid="dd/d91/class_lista_dupla_1a8c0235db1d94b2dcbd4d22fec5645ac3" kind="function"><name>inserirPorIndice</name></member>
+    <member refid="dd/d91/class_lista_dupla_1a6c0c785cb9c4a4a2fbe25beb370bd102" kind="function"><name>removerInicio</name></member>
+    <member refid="dd/d91/class_lista_dupla_1a0ec55e77494913e1041f772fb5abf176" kind="function"><name>removerFim</name></member>
+    <member refid="dd/d91/class_lista_dupla_1ab976735e9038a9bd590a764b2a832e45" kind="function"><name>removerPorIndice</name></member>
+    <member refid="dd/d91/class_lista_dupla_1a924380dcc218b78c4de0e0accc80e012" kind="function"><name>lightDelete</name></member>
+    <member refid="dd/d91/class_lista_dupla_1abfef1d092f78fb6862087097d809f1e7" kind="function"><name>limpar</name></member>
+    <member refid="dd/d91/class_lista_dupla_1a837ec6a1d28dbddd64b2028372f846c3" kind="function"><name>obterPorIndice</name></member>
+    <member refid="dd/d91/class_lista_dupla_1a0da08b292785498fc7bb358a84bed282" kind="function"><name>ordenarPorPrioridade</name></member>
+  </compound>
+  <compound refid="d9/d55/class_no" kind="class"><name>No</name>
+    <member refid="d9/d55/class_no_1a8a04c14bb107ff936a46e1c41dfaec95" kind="variable"><name>tarefa</name></member>
+    <member refid="d9/d55/class_no_1a49a16654b448f31f2a95b167ac3309e4" kind="variable"><name>proximo</name></member>
+    <member refid="d9/d55/class_no_1a9943742198b7356aa98cfe981a780c79" kind="variable"><name>anterior</name></member>
+    <member refid="d9/d55/class_no_1a17ab5591c2938baae7f3cb5233961e06" kind="function"><name>No</name></member>
+    <member refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" kind="function"><name>getTarefa</name></member>
+    <member refid="d9/d55/class_no_1a47852bec5f00dfe7e18071827692bd42" kind="function"><name>setTarefa</name></member>
+    <member refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" kind="function"><name>getProximo</name></member>
+    <member refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" kind="function"><name>setProximo</name></member>
+    <member refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" kind="function"><name>getAnterior</name></member>
+    <member refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" kind="function"><name>setAnterior</name></member>
+  </compound>
+  <compound refid="dc/d73/class_no_simples" kind="class"><name>NoSimples</name>
+    <member refid="dc/d73/class_no_simples_1a4c745e767ee31c88a352cbfca630a15a" kind="variable"><name>coluna</name></member>
+    <member refid="dc/d73/class_no_simples_1a5c42cb9659157a8e985529ef32450c81" kind="variable"><name>proximo</name></member>
+    <member refid="dc/d73/class_no_simples_1a8a0d8e920a83379917dcf0110ed88c65" kind="function"><name>NoSimples</name></member>
+  </compound>
+  <compound refid="d5/d57/class_pessoa" kind="class"><name>Pessoa</name>
+    <member refid="d5/d57/class_pessoa_1ad4e88b8f3499405a7a03df648857c338" kind="variable"><name>nome</name></member>
+    <member refid="d5/d57/class_pessoa_1aa68157998d091cf94d96e562756f8a04" kind="variable"><name>contato</name></member>
+    <member refid="d5/d57/class_pessoa_1a22563fe1f53faa9b1d8d10d28ae0c650" kind="function"><name>Pessoa</name></member>
+    <member refid="d5/d57/class_pessoa_1a2db08e20be4e3cee81772a48600e0105" kind="function"><name>Pessoa</name></member>
+    <member refid="d5/d57/class_pessoa_1a1501b01d184497075fe5ce042da3ae44" kind="function"><name>~Pessoa</name></member>
+    <member refid="d5/d57/class_pessoa_1a3c315a443aa1ead0fa9703d3669417cf" kind="function"><name>setNome</name></member>
+    <member refid="d5/d57/class_pessoa_1a19f97b767449d06ed0c2bab942a7a907" kind="function"><name>setContato</name></member>
+    <member refid="d5/d57/class_pessoa_1aedeca9c83ea13db9c487ceb48ac37da7" kind="function"><name>getNome</name></member>
+    <member refid="d5/d57/class_pessoa_1a6e6948ff40807fa52bd5d2b28348ed41" kind="function"><name>getContato</name></member>
+  </compound>
+  <compound refid="d1/d13/class_quadro" kind="class"><name>Quadro</name>
+    <member refid="d1/d13/class_quadro_1ac3796f45b2bc5ac20bc432936fd266b3" kind="variable"><name>nome</name></member>
+    <member refid="d1/d13/class_quadro_1adcaab16c92fbce6ceaf5951c0af634b5" kind="variable"><name>descricao</name></member>
+    <member refid="d1/d13/class_quadro_1a2d0b7a02e685bbb62d695bf5983e7874" kind="variable"><name>listaColunas</name></member>
+    <member refid="d1/d13/class_quadro_1a8ed2e8dae0808bc93db662c77b49b133" kind="variable"><name>equipe</name></member>
+    <member refid="d1/d13/class_quadro_1a751c81797b3809680e57be184e7d4740" kind="function"><name>Quadro</name></member>
+    <member refid="d1/d13/class_quadro_1abf3adf33b21d377b495ec41b922bc3a5" kind="function"><name>Quadro</name></member>
+    <member refid="d1/d13/class_quadro_1af569ac1f73c8e6859effde0e2aa115d4" kind="function"><name>~Quadro</name></member>
+    <member refid="d1/d13/class_quadro_1ae21d17fb833175bd68b00970c772fcd3" kind="function"><name>adicionarColuna</name></member>
+    <member refid="d1/d13/class_quadro_1a977fc54d38236a3a70a20e65101f51c4" kind="function"><name>removerColuna</name></member>
+    <member refid="d1/d13/class_quadro_1acdcb5194cb4b20e50f6211df473b59f2" kind="function"><name>obterColuna</name></member>
+    <member refid="d1/d13/class_quadro_1aad88cee2be59e368c4c09166a7777fb9" kind="function"><name>getNumeroColunas</name></member>
+    <member refid="d1/d13/class_quadro_1ae87472bb79c7073b7d6747d930d41a23" kind="function"><name>getNome</name></member>
+    <member refid="d1/d13/class_quadro_1a7a8e238c28a7fb111f555a8508041824" kind="function"><name>getDescricao</name></member>
+    <member refid="d1/d13/class_quadro_1ad0dfa6d461fb81b6f93e7a085e0ba08b" kind="function"><name>setNome</name></member>
+    <member refid="d1/d13/class_quadro_1ad23562f279eb119f1b0a7263d3293251" kind="function"><name>setDescricao</name></member>
+    <member refid="d1/d13/class_quadro_1a1cc0b576c7787cc7c82019a3fd424822" kind="function"><name>getEquipe</name></member>
+    <member refid="d1/d13/class_quadro_1a1d27dcd2c84b1742c7ebd4cb0f82a704" kind="function"><name>imprimir</name></member>
+    <member refid="d1/d13/class_quadro_1ae11cee4915eee6bf9b192ac8680fadf6" kind="function"><name>inserirColaborador</name></member>
+    <member refid="d1/d13/class_quadro_1ae9b22eeda08e196887b9033beb358c41" kind="function"><name>exibirColaboradores</name></member>
+    <member refid="d1/d13/class_quadro_1ab9b6209542640bb5a3e0fb84cf62d6eb" kind="function"><name>moverColuna</name></member>
+  </compound>
+  <compound refid="da/d23/class_tarefa" kind="class"><name>Tarefa</name>
+    <member refid="da/d23/class_tarefa_1a8d0b714105cd6d1ea69276d7b0a458ab" kind="variable"><name>titulo</name></member>
+    <member refid="da/d23/class_tarefa_1a70d829872c32f59fcecd080f43af6f32" kind="variable"><name>descricao</name></member>
+    <member refid="da/d23/class_tarefa_1a28b7960c00e73b3b8202211a9d2054c5" kind="variable"><name>prioridade</name></member>
+    <member refid="da/d23/class_tarefa_1a53b6fcb42e11e39e57610e59520aae9c" kind="variable"><name>responsavel</name></member>
+    <member refid="da/d23/class_tarefa_1a5fe8452a6f7ac8c618109493fb77d405" kind="function"><name>alinhamento</name></member>
+    <member refid="da/d23/class_tarefa_1a8a3b21ec8f28a243b688bd24413e47aa" kind="function"><name>quebrarLinha</name></member>
+    <member refid="da/d23/class_tarefa_1a120eea6d4d78b034aec8da4ad4d773c0" kind="function"><name>Tarefa</name></member>
+    <member refid="da/d23/class_tarefa_1aa1ebf7eca61dba3665083dc5977e62ef" kind="function"><name>Tarefa</name></member>
+    <member refid="da/d23/class_tarefa_1afbc2dece079311193c18a17600dca6e3" kind="function"><name>Tarefa</name></member>
+    <member refid="da/d23/class_tarefa_1ac0aded2b1a1333b92633e4f82d3d3ab7" kind="function"><name>~Tarefa</name></member>
+    <member refid="da/d23/class_tarefa_1a79e7e9660e18cd200ba67e18f370df5f" kind="function"><name>setTitulo</name></member>
+    <member refid="da/d23/class_tarefa_1a940984f91c30d56dcdc2e9815e2b3cc7" kind="function"><name>setDescricao</name></member>
+    <member refid="da/d23/class_tarefa_1ab063c2349c20692e1aa021b829720847" kind="function"><name>setPrioridade</name></member>
+    <member refid="da/d23/class_tarefa_1a21b76d5cedc9cd577a99065bc84b4884" kind="function"><name>setResponsavel</name></member>
+    <member refid="da/d23/class_tarefa_1acafe89fa135d5af459beff157c292faa" kind="function"><name>getTitulo</name></member>
+    <member refid="da/d23/class_tarefa_1ae2d353e0cd6fa0eb8d4d70eb36b49a10" kind="function"><name>getDescricao</name></member>
+    <member refid="da/d23/class_tarefa_1a7bf9fd90402ab301884f4dcbb36dcec8" kind="function"><name>getPrioridade</name></member>
+    <member refid="da/d23/class_tarefa_1a5a24414bd9d3ee8186112415cb7a9bcd" kind="function"><name>getResponsavel</name></member>
+    <member refid="da/d23/class_tarefa_1a58971dffa1b7fee253a4920434684b30" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="d8/dcc/namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="da/d7b/colunas_8hpp" kind="file"><name>colunas.hpp</name>
+  </compound>
+  <compound refid="d1/d7b/lista_duplamente_encadeada_8hpp" kind="file"><name>listaDuplamenteEncadeada.hpp</name>
+  </compound>
+  <compound refid="db/d5f/lista_simplesmente_encadeada_8hpp" kind="file"><name>listaSimplesmenteEncadeada.hpp</name>
+  </compound>
+  <compound refid="d9/da4/pessoa_8hpp" kind="file"><name>pessoa.hpp</name>
+  </compound>
+  <compound refid="de/d9e/quadro_8hpp" kind="file"><name>quadro.hpp</name>
+  </compound>
+  <compound refid="d1/d1b/tarefa_8hpp" kind="file"><name>tarefa.hpp</name>
+  </compound>
+  <compound refid="d9/dd6/_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="df/d0a/main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="df/d0a/main_8cpp_1a48cc5faad95860e2166339ee588aec62" kind="function"><name>limparConsole</name></member>
+    <member refid="df/d0a/main_8cpp_1a20bbd4d45e3f01305dd709f5a9cc9952" kind="function"><name>clearBuffer</name></member>
+    <member refid="df/d0a/main_8cpp_1a2faf12c27b7e1711848f39f038c45f70" kind="function"><name>buscaBinaria</name></member>
+    <member refid="df/d0a/main_8cpp_1aed504424b48ab1ef3ce656ba1d439ae0" kind="function"><name>cadastrarColaborador</name></member>
+    <member refid="df/d0a/main_8cpp_1a3efe6ab2635ad7386bcff5f15661a081" kind="function"><name>criarQuadro</name></member>
+    <member refid="df/d0a/main_8cpp_1a48e1cbf9de98941d548837997b582870" kind="function"><name>criarColuna</name></member>
+    <member refid="df/d0a/main_8cpp_1a512a56ef22516c5454d0f925b16adcd6" kind="function"><name>editarColuna</name></member>
+    <member refid="df/d0a/main_8cpp_1aaa15a96063fb4377e5ac1d46a68321c0" kind="function"><name>removerColuna</name></member>
+    <member refid="df/d0a/main_8cpp_1a0d931717ab3053bc49784e26575b01d6" kind="function"><name>adicionarTarefa</name></member>
+    <member refid="df/d0a/main_8cpp_1a2eddfb0aac0ba265acd5268ce3d8e919" kind="function"><name>moverTarefas</name></member>
+    <member refid="df/d0a/main_8cpp_1ac8773e0e3b3c75454e680ff43c6fcd7f" kind="function"><name>editarTarefa</name></member>
+    <member refid="df/d0a/main_8cpp_1aee02b44e62983f07d64c57db154c0467" kind="function"><name>removerTarefa</name></member>
+    <member refid="df/d0a/main_8cpp_1adeb70abb0e6d3cf5e724363a38ce80ca" kind="function"><name>adicionarColunaArquivo</name></member>
+    <member refid="df/d0a/main_8cpp_1a23877ef139dcc4300c8f74067c517d27" kind="function"><name>moverColuna</name></member>
+    <member refid="df/d0a/main_8cpp_1ac91dd762f55fe21f3a2226d59abff942" kind="function"><name>ordenarColuna</name></member>
+    <member refid="df/d0a/main_8cpp_1afbe7cc1d16fdd3689922aa9f97a05342" kind="function"><name>exibirColaboradores</name></member>
+    <member refid="df/d0a/main_8cpp_1a437489a63da65aff2f992d1273edacaa" kind="function"><name>buscarColaborador</name></member>
+    <member refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" kind="function"><name>salvarQuadro</name></member>
+    <member refid="df/d0a/main_8cpp_1ac19c0f76269ed6195cad2776a32e04f1" kind="function"><name>carregarQuadro</name></member>
+    <member refid="df/d0a/main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="d3/dcc/md__r_e_a_d_m_e" kind="page"><name>md__r_e_a_d_m_e</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

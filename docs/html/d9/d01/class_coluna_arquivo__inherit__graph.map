@@ -1,0 +1,5 @@
+<map id="ColunaArquivo" name="ColunaArquivo">
+<area shape="rect" id="Node000001" title="Classe que representa uma coluna de um quadro de tarefas do tipo &quot;Arquivo&quot;." alt="" coords="22,469,226,928"/>
+<area shape="rect" id="Node000002" href="$d3/d3c/class_coluna.html" title="Classe abstrata que representa uma coluna de um quadro de tarefas." alt="" coords="5,5,243,421"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,435,127,469,121,469,121,435"/>
+</map>

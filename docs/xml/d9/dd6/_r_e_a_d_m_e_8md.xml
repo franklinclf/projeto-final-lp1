@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d9/dd6/_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Projeto<sp/>Final<sp/>de<sp/>Linguagem<sp/>de<sp/>Programação<sp/>I</highlight></codeline>
+<codeline><highlight class="normal">Franklin<sp/>Oliveira<sp/>(20220043521)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Projeto<sp/>escolhido:<sp/>Gerenciador<sp/>de<sp/>Tarefas<sp/>de<sp/>Metodologia<sp/>Ágil<sp/>com<sp/>Método<sp/>Kanban</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>gerenciador<sp/>Kanban<sp/>discutido<sp/>anteriormente<sp/>é<sp/>uma<sp/>aplicação<sp/>de<sp/>console<sp/>em<sp/>C++<sp/>que<sp/>implementa<sp/>um<sp/>sistema<sp/>Kanban<sp/>básico.<sp/>O<sp/>Kanban<sp/>é<sp/>uma<sp/>metodologia<sp/>de<sp/>gerenciamento<sp/>visual<sp/>que<sp/>ajuda<sp/>a<sp/>controlar<sp/>e<sp/>otimizar<sp/>fluxos<sp/>de<sp/>trabalho.<sp/>Nesse<sp/>gerenciador,<sp/>você<sp/>pode<sp/>criar<sp/>quadros,<sp/>adicionar<sp/>colunas<sp/>e<sp/>tarefas,<sp/>mover<sp/>tarefas<sp/>entre<sp/>colunas<sp/>e<sp/>visualizar<sp/>o<sp/>quadro<sp/>Kanban<sp/>atualizado.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>aplicação<sp/>utiliza<sp/>conceitos<sp/>de<sp/>programação<sp/>orientada<sp/>a<sp/>objetos,<sp/>como<sp/>classes<sp/>e<sp/>estruturas<sp/>de<sp/>dados,<sp/>para<sp/>modelar<sp/>o<sp/>quadro<sp/>Kanban,<sp/>as<sp/>colunas<sp/>e<sp/>as<sp/>tarefas.<sp/>Além<sp/>disso,<sp/>foram<sp/>implementadas<sp/>funcionalidades<sp/>como<sp/>adicionar<sp/>tarefas,<sp/>mover<sp/>tarefas<sp/>entre<sp/>colunas,<sp/>visualizar<sp/>o<sp/>quadro<sp/>atual<sp/>e<sp/>sair<sp/>do<sp/>programa.</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

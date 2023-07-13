@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dc/dd3/class_colaborador" kind="class" language="C++" prot="public">
+    <compoundname>Colaborador</compoundname>
+    <basecompoundref refid="d5/d57/class_pessoa" prot="public" virt="non-virtual">Pessoa</basecompoundref>
+    <includes refid="d9/da4/pessoa_8hpp" local="no">pessoa.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/dd3/class_colaborador_1a0053a5c4c9389866e2df76b3d2d4222a" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Colaborador::funcao</definition>
+        <argsstring></argsstring>
+        <name>funcao</name>
+        <qualifiedname>Colaborador::funcao</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Função do colaborador </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="87" column="12" bodyfile="include/pessoa.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dd3/class_colaborador_1ab3f1a5208168bc77aba3af084d761977" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Colaborador::tarefasAtribuidas</definition>
+        <argsstring></argsstring>
+        <name>tarefasAtribuidas</name>
+        <qualifiedname>Colaborador::tarefasAtribuidas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Número de tarefas atribuídas ao colaborador </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="88" column="9" bodyfile="include/pessoa.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dd3/class_colaborador_1a43a070abc694512c394f206e9982946f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Colaborador::idUnico</definition>
+        <argsstring></argsstring>
+        <name>idUnico</name>
+        <qualifiedname>Colaborador::idUnico</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ID único do colaborador </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="89" column="9" bodyfile="include/pessoa.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="dc/dd3/class_colaborador_1a8ff33664b258d48d0065161ce9d58027" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Colaborador::contador</definition>
+        <argsstring></argsstring>
+        <name>contador</name>
+        <qualifiedname>Colaborador::contador</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contador para atribuição de ID único </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="90" column="16" bodyfile="include/pessoa.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/dd3/class_colaborador_1a4b2b69b2a83d78afa73a2ff84d5f1238" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Colaborador::Colaborador</definition>
+        <argsstring>()</argsstring>
+        <name>Colaborador</name>
+        <qualifiedname>Colaborador::Colaborador</qualifiedname>
+        <briefdescription>
+<para>Construtor padrão da classe <ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="96" column="5" bodyfile="include/pessoa.hpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dd3/class_colaborador_1a893897bf3c1d0d7a312d089bb576d4d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Colaborador::Colaborador</definition>
+        <argsstring>(string n, string c, string f)</argsstring>
+        <name>Colaborador</name>
+        <qualifiedname>Colaborador::Colaborador</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Construtor da classe <ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nome do colaborador. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Informações de contato do colaborador. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Função do colaborador. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="107" column="5" bodyfile="include/pessoa.hpp" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dd3/class_colaborador_1a7f725134de66cbf3d5e3104dfa8aa737" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Colaborador::~Colaborador</definition>
+        <argsstring>()</argsstring>
+        <name>~Colaborador</name>
+        <qualifiedname>Colaborador::~Colaborador</qualifiedname>
+        <briefdescription>
+<para>Destrutor da classe <ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="115" column="5" bodyfile="include/pessoa.hpp" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dd3/class_colaborador_1ab92fd3c2b259f96c99bcc96f1b4cfa5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Colaborador::setFuncao</definition>
+        <argsstring>(string f)</argsstring>
+        <name>setFuncao</name>
+        <qualifiedname>Colaborador::setFuncao</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Define a função do colaborador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Função do colaborador. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="121" column="10" bodyfile="include/pessoa.hpp" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dd3/class_colaborador_1a0c1b2af198e0426ff2d04aeb0e35e774" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Colaborador::setTarefasAtribuidas</definition>
+        <argsstring>(int t)</argsstring>
+        <name>setTarefasAtribuidas</name>
+        <qualifiedname>Colaborador::setTarefasAtribuidas</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Define o número de tarefas atribuídas ao colaborador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número de tarefas atribuídas ao colaborador. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="130" column="10" bodyfile="include/pessoa.hpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dd3/class_colaborador_1a5a9389d58e53f49ff872d3ee7968d0fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Colaborador::getFuncao</definition>
+        <argsstring>()</argsstring>
+        <name>getFuncao</name>
+        <qualifiedname>Colaborador::getFuncao</qualifiedname>
+        <briefdescription>
+<para>Obtém a função do colaborador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Função do colaborador. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="139" column="12" bodyfile="include/pessoa.hpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dd3/class_colaborador_1a710e527617230560bb0233ad2461bebd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Colaborador::getTarefasAtribuidas</definition>
+        <argsstring>()</argsstring>
+        <name>getTarefasAtribuidas</name>
+        <qualifiedname>Colaborador::getTarefasAtribuidas</qualifiedname>
+        <briefdescription>
+<para>Obtém o número de tarefas atribuídas ao colaborador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Número de tarefas atribuídas ao colaborador. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="148" column="9" bodyfile="include/pessoa.hpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dd3/class_colaborador_1ad5284a3ae726d3cc39f160005b30c66d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Colaborador::getID</definition>
+        <argsstring>()</argsstring>
+        <name>getID</name>
+        <qualifiedname>Colaborador::getID</qualifiedname>
+        <briefdescription>
+<para>Obtém o ID único do colaborador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ID único do colaborador. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="157" column="9" bodyfile="include/pessoa.hpp" bodystart="157" bodyend="160"/>
+        <referencedby refid="dd/d5a/structcomparador_1a0f1c3caa70f876d714be220cb699fe70" compoundref="de/d9e/quadro_8hpp" startline="28" endline="31">comparador::operator()</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="dc/dd3/class_colaborador_1a18c996a16235553e9bca3796aa1e11dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref> &amp;</type>
+        <definition>Colaborador &amp; operator++</definition>
+        <argsstring>(Colaborador &amp;colaborador)</argsstring>
+        <name>operator++</name>
+        <qualifiedname>Colaborador::operator++</qualifiedname>
+        <param>
+          <type><ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref> &amp;</type>
+          <declname>colaborador</declname>
+        </param>
+        <briefdescription>
+<para>Sobrecarga do operador de pré-incremento (++colaborador). Incrementa o número de tarefas atribuídas ao colaborador em 1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colaborador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Referência para o colaborador a ser incrementado. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Referência para o colaborador após o incremento. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="168" column="24" bodyfile="include/pessoa.hpp" bodystart="168" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="friend" id="dc/dd3/class_colaborador_1aed2d32cc47fb57d1af98b74895c66db2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, Colaborador *&amp;colaborador)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Colaborador::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref> *&amp;</type>
+          <declname>colaborador</declname>
+        </param>
+        <briefdescription>
+<para>Sobrecarga do operador de saída (&lt;&lt;) para imprimir as informações do colaborador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fluxo de saída. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colaborador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para o colaborador a ser impresso. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Fluxo de saída atualizado. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/pessoa.hpp" line="180" column="12" bodyfile="include/pessoa.hpp" bodystart="180" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe que representa um <ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref>, derivada da classe <ref refid="d5/d57/class_pessoa" kindref="compound">Pessoa</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Colaborador</label>
+        <link refid="dc/dd3/class_colaborador"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Pessoa</label>
+        <link refid="d5/d57/class_pessoa"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Colaborador</label>
+        <link refid="dc/dd3/class_colaborador"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Pessoa</label>
+        <link refid="d5/d57/class_pessoa"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>#contato</edgelabel>
+          <edgelabel>#nome</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/pessoa.hpp" line="84" column="1" bodyfile="include/pessoa.hpp" bodystart="85" bodyend="190"/>
+    <listofallmembers>
+      <member refid="dc/dd3/class_colaborador_1a4b2b69b2a83d78afa73a2ff84d5f1238" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>Colaborador</name></member>
+      <member refid="dc/dd3/class_colaborador_1a893897bf3c1d0d7a312d089bb576d4d5" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>Colaborador</name></member>
+      <member refid="dc/dd3/class_colaborador_1a8ff33664b258d48d0065161ce9d58027" prot="private" virt="non-virtual"><scope>Colaborador</scope><name>contador</name></member>
+      <member refid="d5/d57/class_pessoa_1aa68157998d091cf94d96e562756f8a04" prot="protected" virt="non-virtual"><scope>Colaborador</scope><name>contato</name></member>
+      <member refid="dc/dd3/class_colaborador_1a0053a5c4c9389866e2df76b3d2d4222a" prot="private" virt="non-virtual"><scope>Colaborador</scope><name>funcao</name></member>
+      <member refid="d5/d57/class_pessoa_1a6e6948ff40807fa52bd5d2b28348ed41" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>getContato</name></member>
+      <member refid="dc/dd3/class_colaborador_1a5a9389d58e53f49ff872d3ee7968d0fb" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>getFuncao</name></member>
+      <member refid="dc/dd3/class_colaborador_1ad5284a3ae726d3cc39f160005b30c66d" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>getID</name></member>
+      <member refid="d5/d57/class_pessoa_1aedeca9c83ea13db9c487ceb48ac37da7" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>getNome</name></member>
+      <member refid="dc/dd3/class_colaborador_1a710e527617230560bb0233ad2461bebd" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>getTarefasAtribuidas</name></member>
+      <member refid="dc/dd3/class_colaborador_1a43a070abc694512c394f206e9982946f" prot="private" virt="non-virtual"><scope>Colaborador</scope><name>idUnico</name></member>
+      <member refid="d5/d57/class_pessoa_1ad4e88b8f3499405a7a03df648857c338" prot="protected" virt="non-virtual"><scope>Colaborador</scope><name>nome</name></member>
+      <member refid="dc/dd3/class_colaborador_1a18c996a16235553e9bca3796aa1e11dd" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>operator++</name></member>
+      <member refid="dc/dd3/class_colaborador_1aed2d32cc47fb57d1af98b74895c66db2" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d5/d57/class_pessoa_1a22563fe1f53faa9b1d8d10d28ae0c650" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>Pessoa</name></member>
+      <member refid="d5/d57/class_pessoa_1a2db08e20be4e3cee81772a48600e0105" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>Pessoa</name></member>
+      <member refid="d5/d57/class_pessoa_1a19f97b767449d06ed0c2bab942a7a907" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>setContato</name></member>
+      <member refid="dc/dd3/class_colaborador_1ab92fd3c2b259f96c99bcc96f1b4cfa5f" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>setFuncao</name></member>
+      <member refid="d5/d57/class_pessoa_1a3c315a443aa1ead0fa9703d3669417cf" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>setNome</name></member>
+      <member refid="dc/dd3/class_colaborador_1a0c1b2af198e0426ff2d04aeb0e35e774" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>setTarefasAtribuidas</name></member>
+      <member refid="dc/dd3/class_colaborador_1ab3f1a5208168bc77aba3af084d761977" prot="private" virt="non-virtual"><scope>Colaborador</scope><name>tarefasAtribuidas</name></member>
+      <member refid="dc/dd3/class_colaborador_1a7f725134de66cbf3d5e3104dfa8aa737" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>~Colaborador</name></member>
+      <member refid="d5/d57/class_pessoa_1a1501b01d184497075fe5ce042da3ae44" prot="public" virt="non-virtual"><scope>Colaborador</scope><name>~Pessoa</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

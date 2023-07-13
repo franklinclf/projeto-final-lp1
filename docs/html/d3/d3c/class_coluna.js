@@ -1,5 +1,6 @@
 var class_coluna =
 [
+    [ "~Coluna", "d3/d3c/class_coluna.html#a914ff6225d464e612b7ce6cfa0c73fed", null ],
     [ "getDescricao", "d3/d3c/class_coluna.html#a2a359c5e42f66995c0529b2f2184d33f", null ],
     [ "getNome", "d3/d3c/class_coluna.html#a25ecf45ce1e1c7a03b9c92d4a5da0544", null ],
     [ "getTamanho", "d3/d3c/class_coluna.html#a98df8d945c71c2cdc352d610325fea02", null ],
@@ -10,5 +11,6 @@ var class_coluna =
     [ "ordenar", "d3/d3c/class_coluna.html#a072f1cae205d24c75bbf6e240e66c025", null ],
     [ "removerTarefa", "d3/d3c/class_coluna.html#ae2733f6d09e1d3f9a2b136ad4517c4d0", null ],
     [ "setDescricao", "d3/d3c/class_coluna.html#a38913a9091206a4672e2ab608d8a7804", null ],
-    [ "setNome", "d3/d3c/class_coluna.html#a8b576e2bbe66a544614667ca355d6545", null ]
+    [ "setNome", "d3/d3c/class_coluna.html#a8b576e2bbe66a544614667ca355d6545", null ],
+    [ "lista", "d3/d3c/class_coluna.html#a24093db18d53602f1b4b9ca436489ea8", null ]
 ];

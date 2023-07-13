@@ -1,0 +1,43 @@
+digraph "adicionarTarefa"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="adicionarTarefa",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Adiciona uma nova tarefa a uma coluna no quadro KanBan."];
+  Node1 -> Node2 [id="edge19_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="buscaBinaria",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#a2faf12c27b7e1711848f39f038c45f70",tooltip="Realiza uma busca binária em uma equipe de colaboradores pelo ID."];
+  Node1 -> Node3 [id="edge20_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="cadastrarColaborador",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#aed504424b48ab1ef3ce656ba1d439ae0",tooltip="Cria e cadastra um novo colaborador no quadro KanBan."];
+  Node3 -> Node4 [id="edge21_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="clearBuffer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#a20bbd4d45e3f01305dd709f5a9cc9952",tooltip="Limpa o buffer do console."];
+  Node3 -> Node5 [id="edge22_Node000003_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Quadro::inserirColaborador",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d13/class_quadro.html#ae11cee4915eee6bf9b192ac8680fadf6",tooltip="Insere um colaborador na equipe do quadro."];
+  Node1 -> Node4 [id="edge23_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node6 [id="edge24_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Quadro::getEquipe",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d13/class_quadro.html#a1cc0b576c7787cc7c82019a3fd424822",tooltip="Obtém a equipe de colaboradores do quadro."];
+  Node1 -> Node7 [id="edge25_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="Quadro::getNumeroColunas",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d13/class_quadro.html#aad88cee2be59e368c4c09166a7777fb9",tooltip="Obtém o número de colunas do quadro."];
+  Node7 -> Node8 [id="edge26_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="Lista::getTamanho",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/dba/class_lista.html#a5cd63f61264afc88d0a6c290f7cb7320",tooltip="Obtém o tamanho da lista."];
+  Node1 -> Node9 [id="edge27_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="Quadro::imprimir",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d13/class_quadro.html#a1d27dcd2c84b1742c7ebd4cb0f82a704",tooltip="Imprime as informações do quadro."];
+  Node9 -> Node10 [id="edge28_Node000009_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="Coluna::getNome",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d3c/class_coluna.html#a25ecf45ce1e1c7a03b9c92d4a5da0544",tooltip="Obtém o nome da coluna."];
+  Node9 -> Node7 [id="edge29_Node000009_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node9 -> Node11 [id="edge30_Node000009_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="Coluna::imprimir",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d3c/class_coluna.html#a48875a7414e5f4d15bfed749bb0a5586",tooltip="Imprime as informações da coluna."];
+  Node9 -> Node12 [id="edge31_Node000009_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="Quadro::obterColuna",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d13/class_quadro.html#acdcb5194cb4b20e50f6211df473b59f2",tooltip="Obtém uma coluna do quadro pelo índice."];
+  Node12 -> Node13 [id="edge32_Node000012_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="Lista::obterPorIndice",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/dba/class_lista.html#adb2dfb16eaf99f99fc1b39bf847af9bd",tooltip="Obtém a coluna da lista pelo índice."];
+  Node1 -> Node14 [id="edge33_Node000001_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="Coluna::inserirTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d3c/class_coluna.html#ac09fa33160badb14b7e4a095f15fb551",tooltip="Insere uma tarefa na coluna."];
+  Node1 -> Node12 [id="edge34_Node000001_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node15 [id="edge35_Node000001_Node000015",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="Tarefa::setPrioridade",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/d23/class_tarefa.html#ab063c2349c20692e1aa021b829720847",tooltip="Define a prioridade da tarefa."];
+  Node1 -> Node16 [id="edge36_Node000001_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="Tarefa::setResponsavel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/d23/class_tarefa.html#a21b76d5cedc9cd577a99065bc84b4884",tooltip="Define o responsável pela tarefa."];
+}

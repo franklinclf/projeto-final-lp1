@@ -1,0 +1,28 @@
+<map id="removerColuna" name="removerColuna">
+<area shape="rect" id="Node000001" title="Remove uma coluna do quadro KanBan." alt="" coords="5,81,112,108"/>
+<area shape="rect" id="Node000002" href="$df/d0a/main_8cpp.html#a20bbd4d45e3f01305dd709f5a9cc9952" title="Limpa o buffer do console." alt="" coords="197,5,279,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,78,159,48,188,36,190,41,161,53,92,83"/>
+<area shape="rect" id="Node000003" href="$d1/d13/class_quadro.html#aad88cee2be59e368c4c09166a7777fb9" title="Obtém o número de colunas do quadro." alt="" coords="364,31,545,57"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,85,349,55,349,60,112,91"/>
+<area shape="rect" id="Node000005" href="$d1/d13/class_quadro.html#a1d27dcd2c84b1742c7ebd4cb0f82a704" title="Imprime as informações do quadro." alt="" coords="179,107,297,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="112,99,165,107,164,112,112,105"/>
+<area shape="rect" id="Node000010" href="$d1/d13/class_quadro.html#a977fc54d38236a3a70a20e65101f51c4" title="Remove uma coluna do quadro." alt="" coords="160,183,316,209"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="85,106,202,173,199,177,83,111"/>
+<area shape="rect" id="Node000004" href="$db/dba/class_lista.html#a5cd63f61264afc88d0a6c290f7cb7320" title="Obtém o tamanho da lista." alt="" coords="599,31,728,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="546,41,585,41,585,47,546,47"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="271,104,363,67,386,59,388,65,365,72,273,109"/>
+<area shape="rect" id="Node000006" href="$d3/d3c/class_coluna.html#a25ecf45ce1e1c7a03b9c92d4a5da0544" title="Obtém o nome da coluna." alt="" coords="394,81,515,108"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="297,110,379,101,379,106,297,116"/>
+<area shape="rect" id="Node000007" href="$d3/d3c/class_coluna.html#a48875a7414e5f4d15bfed749bb0a5586" title="Imprime as informações da coluna." alt="" coords="397,132,512,159"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="297,124,382,134,382,140,297,130"/>
+<area shape="rect" id="Node000008" href="$d1/d13/class_quadro.html#acdcb5194cb4b20e50f6211df473b59f2" title="Obtém uma coluna do quadro pelo índice." alt="" coords="385,183,525,209"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="272,131,365,168,388,175,386,181,363,173,270,136"/>
+<area shape="rect" id="Node000009" href="$db/dba/class_lista.html#adb2dfb16eaf99f99fc1b39bf847af9bd" title="Obtém a coluna da lista pelo índice." alt="" coords="593,183,734,209"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="525,193,578,193,578,199,525,199"/>
+<area shape="rect" id="Node000011" href="$db/dba/class_lista.html#ad71c31e64374c31c878455e451386d1e" title="Remove a coluna da lista pelo índice." alt="" coords="377,233,533,260"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="299,207,381,227,380,232,298,213"/>
+<area shape="rect" id="Node000012" href="$db/dba/class_lista.html#a2ab09a2fd57a3adeec30cea8fd9e770d" title="Remove a coluna do início da lista." alt="" coords="597,233,730,260"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="533,244,583,244,583,249,533,249"/>
+<area shape="rect" id="Node000013" href="$db/dba/class_lista.html#a9a8529d0ea4e79cd6b7cd600e556d9f8" title="Verifica se a lista está vazia." alt="" coords="782,233,868,260"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="730,244,767,244,767,249,730,249"/>
+</map>

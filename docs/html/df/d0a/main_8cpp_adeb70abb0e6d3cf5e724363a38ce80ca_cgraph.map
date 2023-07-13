@@ -1,0 +1,9 @@
+<map id="adicionarColunaArquivo" name="adicionarColunaArquivo">
+<area shape="rect" id="Node000001" title="Adiciona uma nova coluna do tipo &quot;arquivo&quot; ao quadro KanBan." alt="" coords="5,31,161,57"/>
+<area shape="rect" id="Node000002" href="$d1/d13/class_quadro.html#ae21d17fb833175bd68b00970c772fcd3" title="Adiciona uma coluna ao quadro." alt="" coords="209,5,372,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,32,193,28,194,33,161,37"/>
+<area shape="rect" id="Node000004" href="$df/d0a/main_8cpp.html#a20bbd4d45e3f01305dd709f5a9cc9952" title="Limpa o buffer do console." alt="" coords="249,56,332,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,51,235,60,234,65,161,56"/>
+<area shape="rect" id="Node000003" href="$db/dba/class_lista.html#af51fdf08cb850b001a83e43b0a19beab" title="Insere uma coluna no início da lista." alt="" coords="420,5,542,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="373,16,405,16,405,21,373,21"/>
+</map>

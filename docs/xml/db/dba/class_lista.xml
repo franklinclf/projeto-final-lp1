@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="db/dba/class_lista" kind="class" language="C++" prot="public">
+    <compoundname>Lista</compoundname>
+    <includes refid="db/d5f/lista_simplesmente_encadeada_8hpp" local="no">listaSimplesmenteEncadeada.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/dba/class_lista_1a97ffc5afaaf2b8c26a0da79c0df6bc55" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/d73/class_no_simples" kindref="compound">NoSimples</ref> *</type>
+        <definition>NoSimples* Lista::inicio</definition>
+        <argsstring></argsstring>
+        <name>inicio</name>
+        <qualifiedname>Lista::inicio</qualifiedname>
+        <briefdescription>
+<para>Ponteiro para o primeiro nó da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="36" column="15" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/dba/class_lista_1a3886290e1b1b38a5e302db6dd8d92136" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Lista::tamanho</definition>
+        <argsstring></argsstring>
+        <name>tamanho</name>
+        <qualifiedname>Lista::tamanho</qualifiedname>
+        <briefdescription>
+<para>Tamanho da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="37" column="9" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/dba/class_lista_1a1f668b36909182ef1360b48503529a31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lista::Lista</definition>
+        <argsstring>()</argsstring>
+        <name>Lista</name>
+        <qualifiedname>Lista::Lista</qualifiedname>
+        <briefdescription>
+<para>Construtor da classe <ref refid="db/dba/class_lista" kindref="compound">Lista</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="43" column="5" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="db/dba/class_lista_1a4d7394b2728a00ad8404965b2e15d096" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lista::~Lista</definition>
+        <argsstring>()</argsstring>
+        <name>~Lista</name>
+        <qualifiedname>Lista::~Lista</qualifiedname>
+        <briefdescription>
+<para>Destrutor da classe <ref refid="db/dba/class_lista" kindref="compound">Lista</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="48" column="5" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="48" bodyend="51"/>
+        <references refid="db/dba/class_lista_1a70571e70c4b7945cc9907e89431624c9" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="134" endline="140">limpar</references>
+      </memberdef>
+      <memberdef kind="function" id="db/dba/class_lista_1a9a8529d0ea4e79cd6b7cd600e556d9f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Lista::vazia</definition>
+        <argsstring>() const</argsstring>
+        <name>vazia</name>
+        <qualifiedname>Lista::vazia</qualifiedname>
+        <briefdescription>
+<para>Verifica se a lista está vazia. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true se a lista estiver vazia, false caso contrário. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="57" column="10" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="57" bodyend="60"/>
+        <referencedby refid="db/dba/class_lista_1a70571e70c4b7945cc9907e89431624c9" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="134" endline="140">limpar</referencedby>
+        <referencedby refid="db/dba/class_lista_1a2ab09a2fd57a3adeec30cea8fd9e770d" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="86" endline="98">removerInicio</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/dba/class_lista_1a5cd63f61264afc88d0a6c290f7cb7320" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Lista::getTamanho</definition>
+        <argsstring>() const</argsstring>
+        <name>getTamanho</name>
+        <qualifiedname>Lista::getTamanho</qualifiedname>
+        <briefdescription>
+<para>Obtém o tamanho da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Tamanho da lista. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="66" column="9" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="66" bodyend="69"/>
+        <referencedby refid="d1/d13/class_quadro_1aad88cee2be59e368c4c09166a7777fb9" compoundref="de/d9e/quadro_8hpp" startline="99" endline="102">Quadro::getNumeroColunas</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/dba/class_lista_1af51fdf08cb850b001a83e43b0a19beab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lista::inserirInicio</definition>
+        <argsstring>(Coluna *coluna)</argsstring>
+        <name>inserirInicio</name>
+        <qualifiedname>Lista::inserirInicio</qualifiedname>
+        <param>
+          <type><ref refid="d3/d3c/class_coluna" kindref="compound">Coluna</ref> *</type>
+          <declname>coluna</declname>
+        </param>
+        <briefdescription>
+<para>Insere uma coluna no início da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coluna</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para a coluna a ser inserida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="75" column="10" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="75" bodyend="81"/>
+        <references refid="dc/d73/class_no_simples_1a5c42cb9659157a8e985529ef32450c81" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="20">NoSimples::proximo</references>
+        <referencedby refid="d1/d13/class_quadro_1ae21d17fb833175bd68b00970c772fcd3" compoundref="de/d9e/quadro_8hpp" startline="71" endline="74">Quadro::adicionarColuna</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/dba/class_lista_1a2ab09a2fd57a3adeec30cea8fd9e770d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lista::removerInicio</definition>
+        <argsstring>()</argsstring>
+        <name>removerInicio</name>
+        <qualifiedname>Lista::removerInicio</qualifiedname>
+        <briefdescription>
+<para>Remove a coluna do início da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="86" column="10" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="86" bodyend="98"/>
+        <references refid="dc/d73/class_no_simples_1a4c745e767ee31c88a352cbfca630a15a" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="19">NoSimples::coluna</references>
+        <references refid="dc/d73/class_no_simples_1a5c42cb9659157a8e985529ef32450c81" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="20">NoSimples::proximo</references>
+        <references refid="db/dba/class_lista_1a9a8529d0ea4e79cd6b7cd600e556d9f8" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="57" endline="60">vazia</references>
+        <referencedby refid="db/dba/class_lista_1a70571e70c4b7945cc9907e89431624c9" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="134" endline="140">limpar</referencedby>
+        <referencedby refid="db/dba/class_lista_1ad71c31e64374c31c878455e451386d1e" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="104" endline="129">removerPorIndice</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/dba/class_lista_1ad71c31e64374c31c878455e451386d1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lista::removerPorIndice</definition>
+        <argsstring>(int indice)</argsstring>
+        <name>removerPorIndice</name>
+        <qualifiedname>Lista::removerPorIndice</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Remove a coluna da lista pelo índice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da coluna a ser removida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="104" column="10" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="104" bodyend="129"/>
+        <references refid="dc/d73/class_no_simples_1a4c745e767ee31c88a352cbfca630a15a" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="19">NoSimples::coluna</references>
+        <references refid="dc/d73/class_no_simples_1a5c42cb9659157a8e985529ef32450c81" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="20">NoSimples::proximo</references>
+        <references refid="db/dba/class_lista_1a2ab09a2fd57a3adeec30cea8fd9e770d" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="86" endline="98">removerInicio</references>
+        <referencedby refid="d1/d13/class_quadro_1a977fc54d38236a3a70a20e65101f51c4" compoundref="de/d9e/quadro_8hpp" startline="80" endline="83">Quadro::removerColuna</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/dba/class_lista_1a70571e70c4b7945cc9907e89431624c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lista::limpar</definition>
+        <argsstring>()</argsstring>
+        <name>limpar</name>
+        <qualifiedname>Lista::limpar</qualifiedname>
+        <briefdescription>
+<para>Remove todos os nós da lista e libera a memória. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="134" column="10" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="134" bodyend="140"/>
+        <references refid="db/dba/class_lista_1a2ab09a2fd57a3adeec30cea8fd9e770d" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="86" endline="98">removerInicio</references>
+        <references refid="db/dba/class_lista_1a9a8529d0ea4e79cd6b7cd600e556d9f8" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="57" endline="60">vazia</references>
+        <referencedby refid="db/dba/class_lista_1a4d7394b2728a00ad8404965b2e15d096" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="48" endline="51">~Lista</referencedby>
+        <referencedby refid="d1/d13/class_quadro_1af569ac1f73c8e6859effde0e2aa115d4" compoundref="de/d9e/quadro_8hpp" startline="62" endline="65">Quadro::~Quadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/dba/class_lista_1adb2dfb16eaf99f99fc1b39bf847af9bd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d3/d3c/class_coluna" kindref="compound">Coluna</ref> *</type>
+        <definition>Coluna * Lista::obterPorIndice</definition>
+        <argsstring>(int indice) const</argsstring>
+        <name>obterPorIndice</name>
+        <qualifiedname>Lista::obterPorIndice</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Obtém a coluna da lista pelo índice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da coluna. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ponteiro para a coluna encontrada. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="147" column="12" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="147" bodyend="161"/>
+        <references refid="dc/d73/class_no_simples_1a4c745e767ee31c88a352cbfca630a15a" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="19">NoSimples::coluna</references>
+        <references refid="dc/d73/class_no_simples_1a5c42cb9659157a8e985529ef32450c81" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="20">NoSimples::proximo</references>
+        <referencedby refid="d1/d13/class_quadro_1acdcb5194cb4b20e50f6211df473b59f2" compoundref="de/d9e/quadro_8hpp" startline="90" endline="93">Quadro::obterColuna</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/dba/class_lista_1abc103d958cb4184693b59547ebf7cf9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lista::moverColuna</definition>
+        <argsstring>(int indiceAntigo, int indiceNovo)</argsstring>
+        <name>moverColuna</name>
+        <qualifiedname>Lista::moverColuna</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>indiceAntigo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indiceNovo</declname>
+        </param>
+        <briefdescription>
+<para>Move uma coluna da lista de uma posição para outra. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indiceAntigo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice atual da coluna. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indiceNovo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Novo índice da coluna. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaSimplesmenteEncadeada.hpp" line="168" column="10" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="168" bodyend="184"/>
+        <references refid="dc/d73/class_no_simples_1a4c745e767ee31c88a352cbfca630a15a" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="19">NoSimples::coluna</references>
+        <references refid="dc/d73/class_no_simples_1a5c42cb9659157a8e985529ef32450c81" compoundref="db/d5f/lista_simplesmente_encadeada_8hpp" startline="20">NoSimples::proximo</references>
+        <referencedby refid="d1/d13/class_quadro_1ab9b6209542640bb5a3e0fb84cf62d6eb" compoundref="de/d9e/quadro_8hpp" startline="193" endline="196">Quadro::moverColuna</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe que implementa uma lista simplesmente encadeada de colunas de um quadro de tarefas. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Lista</label>
+        <link refid="db/dba/class_lista"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/listaSimplesmenteEncadeada.hpp" line="33" column="1" bodyfile="include/listaSimplesmenteEncadeada.hpp" bodystart="34" bodyend="185"/>
+    <listofallmembers>
+      <member refid="db/dba/class_lista_1a5cd63f61264afc88d0a6c290f7cb7320" prot="public" virt="non-virtual"><scope>Lista</scope><name>getTamanho</name></member>
+      <member refid="db/dba/class_lista_1a97ffc5afaaf2b8c26a0da79c0df6bc55" prot="private" virt="non-virtual"><scope>Lista</scope><name>inicio</name></member>
+      <member refid="db/dba/class_lista_1af51fdf08cb850b001a83e43b0a19beab" prot="public" virt="non-virtual"><scope>Lista</scope><name>inserirInicio</name></member>
+      <member refid="db/dba/class_lista_1a70571e70c4b7945cc9907e89431624c9" prot="public" virt="non-virtual"><scope>Lista</scope><name>limpar</name></member>
+      <member refid="db/dba/class_lista_1a1f668b36909182ef1360b48503529a31" prot="public" virt="non-virtual"><scope>Lista</scope><name>Lista</name></member>
+      <member refid="db/dba/class_lista_1abc103d958cb4184693b59547ebf7cf9c" prot="public" virt="non-virtual"><scope>Lista</scope><name>moverColuna</name></member>
+      <member refid="db/dba/class_lista_1adb2dfb16eaf99f99fc1b39bf847af9bd" prot="public" virt="non-virtual"><scope>Lista</scope><name>obterPorIndice</name></member>
+      <member refid="db/dba/class_lista_1a2ab09a2fd57a3adeec30cea8fd9e770d" prot="public" virt="non-virtual"><scope>Lista</scope><name>removerInicio</name></member>
+      <member refid="db/dba/class_lista_1ad71c31e64374c31c878455e451386d1e" prot="public" virt="non-virtual"><scope>Lista</scope><name>removerPorIndice</name></member>
+      <member refid="db/dba/class_lista_1a3886290e1b1b38a5e302db6dd8d92136" prot="private" virt="non-virtual"><scope>Lista</scope><name>tamanho</name></member>
+      <member refid="db/dba/class_lista_1a9a8529d0ea4e79cd6b7cd600e556d9f8" prot="public" virt="non-virtual"><scope>Lista</scope><name>vazia</name></member>
+      <member refid="db/dba/class_lista_1a4d7394b2728a00ad8404965b2e15d096" prot="public" virt="non-virtual"><scope>Lista</scope><name>~Lista</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

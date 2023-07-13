@@ -1,0 +1,10 @@
+<map id="Lista::~Lista" name="Lista::~Lista">
+<area shape="rect" id="Node000001" title="Destrutor da classe Lista." alt="" coords="5,31,99,57"/>
+<area shape="rect" id="Node000002" href="$db/dba/class_lista.html#a70571e70c4b7945cc9907e89431624c9" title="Remove todos os nós da lista e libera a memória." alt="" coords="147,31,239,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,41,132,41,132,47,99,47"/>
+<area shape="rect" id="Node000003" href="$db/dba/class_lista.html#a2ab09a2fd57a3adeec30cea8fd9e770d" title="Remove a coluna do início da lista." alt="" coords="287,5,419,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="239,34,272,29,273,34,240,39"/>
+<area shape="rect" id="Node000004" href="$db/dba/class_lista.html#a9a8529d0ea4e79cd6b7cd600e556d9f8" title="Verifica se a lista está vazia." alt="" coords="467,31,554,57"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="240,41,452,41,452,47,240,47"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="420,27,453,32,452,37,419,32"/>
+</map>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dd/d5a/structcomparador" kind="struct" language="C++" prot="public">
+    <compoundname>comparador</compoundname>
+    <includes refid="de/d9e/quadro_8hpp" local="no">quadro.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d5a/structcomparador_1a0f1c3caa70f876d714be220cb699fe70" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool comparador::operator()</definition>
+        <argsstring>(Colaborador *c1, Colaborador *c2) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>comparador::operator()</qualifiedname>
+        <param>
+          <type><ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref> *</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref> *</type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+<para>Operador de comparação para ordenar os colaboradores por ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Primeiro colaborador a ser comparado. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Segundo colaborador a ser comparado. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true se o ID do primeiro colaborador é menor que o do segundo, false caso contrário. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/quadro.hpp" line="28" column="10" bodyfile="include/quadro.hpp" bodystart="28" bodyend="31"/>
+        <references refid="dc/dd3/class_colaborador_1ad5284a3ae726d3cc39f160005b30c66d" compoundref="d9/da4/pessoa_8hpp" startline="157" endline="160">Colaborador::getID</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Estrutura de comparação para ordenar os colaboradores por ID. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>comparador</label>
+        <link refid="dd/d5a/structcomparador"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/quadro.hpp" line="20" column="1" bodyfile="include/quadro.hpp" bodystart="21" bodyend="32"/>
+    <listofallmembers>
+      <member refid="dd/d5a/structcomparador_1a0f1c3caa70f876d714be220cb699fe70" prot="public" virt="non-virtual"><scope>comparador</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

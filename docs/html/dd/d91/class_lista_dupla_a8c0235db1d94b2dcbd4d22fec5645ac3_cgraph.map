@@ -1,0 +1,21 @@
+<map id="ListaDupla::inserirPorIndice" name="ListaDupla::inserirPorIndice">
+<area shape="rect" id="Node000001" title="Insere uma tarefa na lista pelo índice." alt="" coords="5,110,185,137"/>
+<area shape="rect" id="Node000002" href="$d9/d55/class_no.html#a18866d7db046e7987120e93bf1a839d3" title="Obtém o nó anterior." alt="" coords="438,9,546,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,108,158,61,193,38,232,20,281,8,331,4,423,8,422,13,331,9,281,13,234,25,196,42,161,66,111,111"/>
+<area shape="rect" id="Node000003" href="$d9/d55/class_no.html#a42bd9dc9c7b24743c82e89b42a1581a2" title="Obtém o próximo nó." alt="" coords="436,211,547,238"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,135,172,161,233,185,331,206,421,218,421,223,330,212,232,190,170,166,119,140"/>
+<area shape="rect" id="Node000004" href="$dd/d91/class_lista_dupla.html#a997a8daa9fb1ccea46c233558ade8b4b" title="Insere uma tarefa no fim da lista." alt="" coords="237,34,384,61"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,107,255,64,257,69,136,112"/>
+<area shape="rect" id="Node000005" href="$d9/d55/class_no.html#a337f5ed0c85f3ac6646fd8295f2017a7" title="Define o nó anterior." alt="" coords="438,85,546,111"/>
+<area shape="poly" id="edge11_Node000001_Node000005" title=" " alt="" coords="185,115,422,100,423,105,185,120"/>
+<area shape="rect" id="Node000006" href="$d9/d55/class_no.html#a1fd6922d7a6b246aa11251effaceeb7b" title="Define o próximo nó." alt="" coords="436,135,547,162"/>
+<area shape="poly" id="edge12_Node000001_Node000006" title=" " alt="" coords="126,135,175,155,233,172,276,178,310,179,388,171,430,164,431,169,388,177,310,185,276,183,232,177,173,160,124,140"/>
+<area shape="rect" id="Node000007" href="$dd/d91/class_lista_dupla.html#af02559c4c5c8265c8db861300cf598d8" title="Insere uma tarefa no início da lista." alt="" coords="233,135,388,162"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="186,131,219,135,218,141,185,137"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="384,35,422,29,423,34,385,40"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="362,59,428,78,427,83,360,64"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="334,59,437,121,447,126,445,131,435,126,331,64"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="345,160,446,203,444,208,343,165"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="360,132,427,113,428,119,362,137"/>
+<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="388,146,421,146,421,151,388,151"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="Quadro::imprimir" name="Quadro::imprimir">
+<area shape="rect" id="Node000001" title="Imprime as informações do quadro." alt="" coords="5,81,123,108"/>
+<area shape="rect" id="Node000002" href="$d3/d3c/class_coluna.html#a25ecf45ce1e1c7a03b9c92d4a5da0544" title="Obtém o nome da coluna." alt="" coords="201,5,322,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,78,170,42,191,34,192,39,172,46,92,83"/>
+<area shape="rect" id="Node000003" href="$d1/d13/class_quadro.html#aad88cee2be59e368c4c09166a7777fb9" title="Obtém o número de colunas do quadro." alt="" coords="171,56,352,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,84,156,80,156,86,124,90"/>
+<area shape="rect" id="Node000005" href="$d3/d3c/class_coluna.html#a48875a7414e5f4d15bfed749bb0a5586" title="Imprime as informações da coluna." alt="" coords="204,107,319,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="124,100,189,108,188,113,123,105"/>
+<area shape="rect" id="Node000006" href="$d1/d13/class_quadro.html#acdcb5194cb4b20e50f6211df473b59f2" title="Obtém uma coluna do quadro pelo índice." alt="" coords="191,157,332,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="92,106,172,143,192,150,191,155,170,148,90,111"/>
+<area shape="rect" id="Node000004" href="$db/dba/class_lista.html#a5cd63f61264afc88d0a6c290f7cb7320" title="Obtém o tamanho da lista." alt="" coords="406,56,534,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="352,67,391,67,391,72,352,72"/>
+<area shape="rect" id="Node000007" href="$db/dba/class_lista.html#adb2dfb16eaf99f99fc1b39bf847af9bd" title="Obtém a coluna da lista pelo índice." alt="" coords="400,157,540,184"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="332,168,385,168,385,173,332,173"/>
+</map>

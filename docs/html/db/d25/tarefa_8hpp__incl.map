@@ -1,0 +1,11 @@
+<map id="include/tarefa.hpp" name="include/tarefa.hpp">
+<area shape="rect" id="Node000001" title="Definição da classe Tarefa." alt="" coords="14,5,138,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,155,59,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,34,39,55,23,81,19,111,24,140,19,141,13,111,17,79,35,51,57,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="102,155,173,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="94,30,116,51,134,79,142,110,143,140,138,140,137,111,130,81,112,55,91,34"/>
+<area shape="rect" id="Node000004" href="$d9/da4/pessoa_8hpp.html" title="Definição das classes Pessoa e Colaborador." alt="" coords="32,80,120,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="79,33,79,65,73,65,73,33"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="71,109,49,143,45,141,66,106"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="89,105,119,141,115,145,85,109"/>
+</map>

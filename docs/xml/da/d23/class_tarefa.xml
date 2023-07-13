@@ -1,0 +1,573 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="da/d23/class_tarefa" kind="class" language="C++" prot="public">
+    <compoundname>Tarefa</compoundname>
+    <includes refid="d1/d1b/tarefa_8hpp" local="no">tarefa.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/d23/class_tarefa_1a8d0b714105cd6d1ea69276d7b0a458ab" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Tarefa::titulo</definition>
+        <argsstring></argsstring>
+        <name>titulo</name>
+        <qualifiedname>Tarefa::titulo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Título da tarefa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="24" column="12" bodyfile="include/tarefa.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d23/class_tarefa_1a70d829872c32f59fcecd080f43af6f32" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Tarefa::descricao</definition>
+        <argsstring></argsstring>
+        <name>descricao</name>
+        <qualifiedname>Tarefa::descricao</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Descrição da tarefa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="25" column="12" bodyfile="include/tarefa.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d23/class_tarefa_1a28b7960c00e73b3b8202211a9d2054c5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tarefa::prioridade</definition>
+        <argsstring></argsstring>
+        <name>prioridade</name>
+        <qualifiedname>Tarefa::prioridade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prioridade da tarefa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="26" column="9" bodyfile="include/tarefa.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d23/class_tarefa_1a53b6fcb42e11e39e57610e59520aae9c" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref> *</type>
+        <definition>Colaborador* Tarefa::responsavel</definition>
+        <argsstring></argsstring>
+        <name>responsavel</name>
+        <qualifiedname>Tarefa::responsavel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Responsável pela tarefa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="27" column="17" bodyfile="include/tarefa.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="da/d23/class_tarefa_1a5fe8452a6f7ac8c618109493fb77d405" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Tarefa::alinhamento</definition>
+        <argsstring>(const string &amp;texto, int width)</argsstring>
+        <name>alinhamento</name>
+        <qualifiedname>Tarefa::alinhamento</qualifiedname>
+        <param>
+          <type>const string &amp;</type>
+          <declname>texto</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Alinha um texto ao centro de uma largura específica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Texto a ser alinhado. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Largura do alinhamento. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Texto alinhado. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="35" column="19" bodyfile="include/tarefa.hpp" bodystart="35" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d23/class_tarefa_1a8a3b21ec8f28a243b688bd24413e47aa" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Tarefa::quebrarLinha</definition>
+        <argsstring>(const string &amp;texto, int width)</argsstring>
+        <name>quebrarLinha</name>
+        <qualifiedname>Tarefa::quebrarLinha</qualifiedname>
+        <param>
+          <type>const string &amp;</type>
+          <declname>texto</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Quebra o texto em várias linhas com base em uma largura específica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Texto a ser quebrado. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Largura máxima de cada linha. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Texto quebrado em várias linhas. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="53" column="19" bodyfile="include/tarefa.hpp" bodystart="53" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d23/class_tarefa_1a120eea6d4d78b034aec8da4ad4d773c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Tarefa::Tarefa</definition>
+        <argsstring>()</argsstring>
+        <name>Tarefa</name>
+        <qualifiedname>Tarefa::Tarefa</qualifiedname>
+        <briefdescription>
+<para>Construtor padrão da classe <ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="86" column="5" bodyfile="include/tarefa.hpp" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d23/class_tarefa_1aa1ebf7eca61dba3665083dc5977e62ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Tarefa::Tarefa</definition>
+        <argsstring>(string t, string d)</argsstring>
+        <name>Tarefa</name>
+        <qualifiedname>Tarefa::Tarefa</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Construtor da classe <ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Título da tarefa. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Descrição da tarefa. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="93" column="5" bodyfile="include/tarefa.hpp" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d23/class_tarefa_1afbc2dece079311193c18a17600dca6e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Tarefa::Tarefa</definition>
+        <argsstring>(string t, string d, int p, Colaborador *r)</argsstring>
+        <name>Tarefa</name>
+        <qualifiedname>Tarefa::Tarefa</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Construtor da classe <ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Título da tarefa. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Descrição da tarefa. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prioridade da tarefa. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Responsável pela tarefa. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="104" column="5" bodyfile="include/tarefa.hpp" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d23/class_tarefa_1ac0aded2b1a1333b92633e4f82d3d3ab7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Tarefa::~Tarefa</definition>
+        <argsstring>()</argsstring>
+        <name>~Tarefa</name>
+        <qualifiedname>Tarefa::~Tarefa</qualifiedname>
+        <briefdescription>
+<para>Destrutor da classe <ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="109" column="5" bodyfile="include/tarefa.hpp" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d23/class_tarefa_1a79e7e9660e18cd200ba67e18f370df5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Tarefa::setTitulo</definition>
+        <argsstring>(string t)</argsstring>
+        <name>setTitulo</name>
+        <qualifiedname>Tarefa::setTitulo</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Define o título da tarefa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Título da tarefa. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="115" column="10" bodyfile="include/tarefa.hpp" bodystart="115" bodyend="118"/>
+        <referencedby refid="df/d0a/main_8cpp_1ac8773e0e3b3c75454e680ff43c6fcd7f" compoundref="df/d0a/main_8cpp" startline="406" endline="507">editarTarefa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="da/d23/class_tarefa_1a940984f91c30d56dcdc2e9815e2b3cc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Tarefa::setDescricao</definition>
+        <argsstring>(string d)</argsstring>
+        <name>setDescricao</name>
+        <qualifiedname>Tarefa::setDescricao</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Define a descrição da tarefa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Descrição da tarefa. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="124" column="10" bodyfile="include/tarefa.hpp" bodystart="124" bodyend="127"/>
+        <referencedby refid="df/d0a/main_8cpp_1ac8773e0e3b3c75454e680ff43c6fcd7f" compoundref="df/d0a/main_8cpp" startline="406" endline="507">editarTarefa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="da/d23/class_tarefa_1ab063c2349c20692e1aa021b829720847" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Tarefa::setPrioridade</definition>
+        <argsstring>(int p)</argsstring>
+        <name>setPrioridade</name>
+        <qualifiedname>Tarefa::setPrioridade</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Define a prioridade da tarefa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prioridade da tarefa. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="133" column="10" bodyfile="include/tarefa.hpp" bodystart="133" bodyend="136"/>
+        <referencedby refid="df/d0a/main_8cpp_1a0d931717ab3053bc49784e26575b01d6" compoundref="df/d0a/main_8cpp" startline="223" endline="319">adicionarTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ac8773e0e3b3c75454e680ff43c6fcd7f" compoundref="df/d0a/main_8cpp" startline="406" endline="507">editarTarefa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="da/d23/class_tarefa_1a21b76d5cedc9cd577a99065bc84b4884" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Tarefa::setResponsavel</definition>
+        <argsstring>(Colaborador *r)</argsstring>
+        <name>setResponsavel</name>
+        <qualifiedname>Tarefa::setResponsavel</qualifiedname>
+        <param>
+          <type><ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Define o responsável pela tarefa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Responsável pela tarefa. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="142" column="10" bodyfile="include/tarefa.hpp" bodystart="142" bodyend="146"/>
+        <referencedby refid="df/d0a/main_8cpp_1a0d931717ab3053bc49784e26575b01d6" compoundref="df/d0a/main_8cpp" startline="223" endline="319">adicionarTarefa</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1ac8773e0e3b3c75454e680ff43c6fcd7f" compoundref="df/d0a/main_8cpp" startline="406" endline="507">editarTarefa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="da/d23/class_tarefa_1acafe89fa135d5af459beff157c292faa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Tarefa::getTitulo</definition>
+        <argsstring>()</argsstring>
+        <name>getTitulo</name>
+        <qualifiedname>Tarefa::getTitulo</qualifiedname>
+        <briefdescription>
+<para>Obtém o título da tarefa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Título da tarefa. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="152" column="12" bodyfile="include/tarefa.hpp" bodystart="152" bodyend="155"/>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1af89c858cfeb225706983f3e91090792f" compoundref="da/d7b/colunas_8hpp" startline="245" endline="253">ColunaArquivo::imprimir</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="da/d23/class_tarefa_1ae2d353e0cd6fa0eb8d4d70eb36b49a10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Tarefa::getDescricao</definition>
+        <argsstring>()</argsstring>
+        <name>getDescricao</name>
+        <qualifiedname>Tarefa::getDescricao</qualifiedname>
+        <briefdescription>
+<para>Obtém a descrição da tarefa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Descrição da tarefa. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="161" column="12" bodyfile="include/tarefa.hpp" bodystart="161" bodyend="164"/>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="da/d23/class_tarefa_1a7bf9fd90402ab301884f4dcbb36dcec8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Tarefa::getPrioridade</definition>
+        <argsstring>()</argsstring>
+        <name>getPrioridade</name>
+        <qualifiedname>Tarefa::getPrioridade</qualifiedname>
+        <briefdescription>
+<para>Obtém a prioridade da tarefa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Prioridade da tarefa. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="170" column="9" bodyfile="include/tarefa.hpp" bodystart="170" bodyend="173"/>
+        <referencedby refid="dd/d91/class_lista_dupla_1a0da08b292785498fc7bb358a84bed282" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="361" endline="400">ListaDupla::ordenarPorPrioridade</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="da/d23/class_tarefa_1a5a24414bd9d3ee8186112415cb7a9bcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dc/dd3/class_colaborador" kindref="compound">Colaborador</ref> *</type>
+        <definition>Colaborador * Tarefa::getResponsavel</definition>
+        <argsstring>()</argsstring>
+        <name>getResponsavel</name>
+        <qualifiedname>Tarefa::getResponsavel</qualifiedname>
+        <briefdescription>
+<para>Obtém o responsável pela tarefa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Responsável pela tarefa. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="179" column="17" bodyfile="include/tarefa.hpp" bodystart="179" bodyend="182"/>
+        <referencedby refid="df/d0a/main_8cpp_1a3a0d238b444da51e7f04f65f8d390fd0" compoundref="df/d0a/main_8cpp" startline="702" endline="787">salvarQuadro</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="da/d23/class_tarefa_1a58971dffa1b7fee253a4920434684b30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, Tarefa *&amp;tarefa)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Tarefa::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref> *&amp;</type>
+          <declname>tarefa</declname>
+        </param>
+        <briefdescription>
+<para>Sobrecarga do operador de saída (&lt;&lt;) para imprimir as informações da tarefa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fluxo de saída. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tarefa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para a tarefa a ser impressa. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Fluxo de saída atualizado. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tarefa.hpp" line="190" column="12" bodyfile="include/tarefa.hpp" bodystart="190" bodyend="212"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe que representa uma <ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Tarefa</label>
+        <link refid="da/d23/class_tarefa"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tarefa.hpp" line="21" column="1" bodyfile="include/tarefa.hpp" bodystart="22" bodyend="213"/>
+    <listofallmembers>
+      <member refid="da/d23/class_tarefa_1a5fe8452a6f7ac8c618109493fb77d405" prot="private" virt="non-virtual"><scope>Tarefa</scope><name>alinhamento</name></member>
+      <member refid="da/d23/class_tarefa_1a70d829872c32f59fcecd080f43af6f32" prot="private" virt="non-virtual"><scope>Tarefa</scope><name>descricao</name></member>
+      <member refid="da/d23/class_tarefa_1ae2d353e0cd6fa0eb8d4d70eb36b49a10" prot="public" virt="non-virtual"><scope>Tarefa</scope><name>getDescricao</name></member>
+      <member refid="da/d23/class_tarefa_1a7bf9fd90402ab301884f4dcbb36dcec8" prot="public" virt="non-virtual"><scope>Tarefa</scope><name>getPrioridade</name></member>
+      <member refid="da/d23/class_tarefa_1a5a24414bd9d3ee8186112415cb7a9bcd" prot="public" virt="non-virtual"><scope>Tarefa</scope><name>getResponsavel</name></member>
+      <member refid="da/d23/class_tarefa_1acafe89fa135d5af459beff157c292faa" prot="public" virt="non-virtual"><scope>Tarefa</scope><name>getTitulo</name></member>
+      <member refid="da/d23/class_tarefa_1a58971dffa1b7fee253a4920434684b30" prot="public" virt="non-virtual"><scope>Tarefa</scope><name>operator&lt;&lt;</name></member>
+      <member refid="da/d23/class_tarefa_1a28b7960c00e73b3b8202211a9d2054c5" prot="private" virt="non-virtual"><scope>Tarefa</scope><name>prioridade</name></member>
+      <member refid="da/d23/class_tarefa_1a8a3b21ec8f28a243b688bd24413e47aa" prot="private" virt="non-virtual"><scope>Tarefa</scope><name>quebrarLinha</name></member>
+      <member refid="da/d23/class_tarefa_1a53b6fcb42e11e39e57610e59520aae9c" prot="private" virt="non-virtual"><scope>Tarefa</scope><name>responsavel</name></member>
+      <member refid="da/d23/class_tarefa_1a940984f91c30d56dcdc2e9815e2b3cc7" prot="public" virt="non-virtual"><scope>Tarefa</scope><name>setDescricao</name></member>
+      <member refid="da/d23/class_tarefa_1ab063c2349c20692e1aa021b829720847" prot="public" virt="non-virtual"><scope>Tarefa</scope><name>setPrioridade</name></member>
+      <member refid="da/d23/class_tarefa_1a21b76d5cedc9cd577a99065bc84b4884" prot="public" virt="non-virtual"><scope>Tarefa</scope><name>setResponsavel</name></member>
+      <member refid="da/d23/class_tarefa_1a79e7e9660e18cd200ba67e18f370df5f" prot="public" virt="non-virtual"><scope>Tarefa</scope><name>setTitulo</name></member>
+      <member refid="da/d23/class_tarefa_1a120eea6d4d78b034aec8da4ad4d773c0" prot="public" virt="non-virtual"><scope>Tarefa</scope><name>Tarefa</name></member>
+      <member refid="da/d23/class_tarefa_1aa1ebf7eca61dba3665083dc5977e62ef" prot="public" virt="non-virtual"><scope>Tarefa</scope><name>Tarefa</name></member>
+      <member refid="da/d23/class_tarefa_1afbc2dece079311193c18a17600dca6e3" prot="public" virt="non-virtual"><scope>Tarefa</scope><name>Tarefa</name></member>
+      <member refid="da/d23/class_tarefa_1a8d0b714105cd6d1ea69276d7b0a458ab" prot="private" virt="non-virtual"><scope>Tarefa</scope><name>titulo</name></member>
+      <member refid="da/d23/class_tarefa_1ac0aded2b1a1333b92633e4f82d3d3ab7" prot="public" virt="non-virtual"><scope>Tarefa</scope><name>~Tarefa</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

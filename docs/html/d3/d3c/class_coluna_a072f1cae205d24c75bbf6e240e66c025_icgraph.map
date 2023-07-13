@@ -1,0 +1,7 @@
+<map id="Coluna::ordenar" name="Coluna::ordenar">
+<area shape="rect" id="Node000001" title="Ordena as tarefas da coluna por prioridade." alt="" coords="255,5,367,32"/>
+<area shape="rect" id="Node000002" href="$df/d0a/main_8cpp.html#ac91dd762f55fe21f3a2226d59abff942" title="Ordena as tarefas por prioridade usando o algoritmo Bubble Sort." alt="" coords="103,5,207,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,21,207,21,207,16,240,16"/>
+<area shape="rect" id="Node000003" href="$df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,21,55,21,55,16,88,16"/>
+</map>

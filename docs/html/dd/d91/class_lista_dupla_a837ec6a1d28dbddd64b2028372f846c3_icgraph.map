@@ -1,0 +1,15 @@
+<map id="ListaDupla::obterPorIndice" name="ListaDupla::obterPorIndice">
+<area shape="rect" id="Node000001" title="Obtém a tarefa da lista pelo índice." alt="" coords="247,132,420,159"/>
+<area shape="rect" id="Node000002" href="$de/d1c/class_coluna_nomeada.html#ad0566fe1cc3fef87feeff8e76b74dffd" title="Imprime as informações da coluna." alt="" coords="17,5,187,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="306,124,258,84,197,46,168,35,170,30,200,42,261,80,309,120"/>
+<area shape="rect" id="Node000003" href="$d0/d4e/class_coluna_arquivo.html#af89c858cfeb225706983f3e91090792f" title="Imprime as informações da coluna." alt="" coords="23,56,181,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="284,129,198,97,159,86,160,81,199,92,286,124"/>
+<area shape="rect" id="Node000004" href="$de/d1c/class_coluna_nomeada.html#ab47ba7b160204e7001f88c06ec25a305" title="Move uma tarefa de uma coluna para outra." alt="" coords="5,107,199,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,137,199,133,200,128,232,132"/>
+<area shape="rect" id="Node000005" href="$d0/d4e/class_coluna_arquivo.html#ac4f7235fe2e8bbcdb959f5100d7c1bb7" title="Move uma tarefa de uma coluna para outra." alt="" coords="12,157,192,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="232,159,193,163,192,158,231,154"/>
+<area shape="rect" id="Node000006" href="$de/d1c/class_coluna_nomeada.html#a3f8cdd94b330161896b219720b7bc8e2" title="Obtém uma tarefa da coluna pelo seu índice." alt="" coords="8,208,196,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="286,167,199,199,160,210,159,205,198,193,284,162"/>
+<area shape="rect" id="Node000007" href="$d0/d4e/class_coluna_arquivo.html#abb1d729c65cf4680de28dd85fe20c737" title="Obtém uma tarefa da coluna pelo seu índice." alt="" coords="14,259,190,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="309,171,261,211,200,249,170,261,168,256,197,244,258,207,306,167"/>
+</map>

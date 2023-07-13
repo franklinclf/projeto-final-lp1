@@ -1,0 +1,44 @@
+<map id="Lista::getTamanho" name="Lista::getTamanho">
+<area shape="rect" id="Node000001" title="Obtém o tamanho da lista." alt="" coords="654,233,782,260"/>
+<area shape="rect" id="Node000002" href="$d1/d13/class_quadro.html#aad88cee2be59e368c4c09166a7777fb9" title="Obtém o número de colunas do quadro." alt="" coords="424,233,606,260"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="639,249,606,249,606,244,639,244"/>
+<area shape="rect" id="Node000003" href="$df/d0a/main_8cpp.html#a0d931717ab3053bc49784e26575b01d6" title="Adiciona uma nova tarefa a uma coluna no quadro KanBan." alt="" coords="103,5,211,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="495,223,445,160,412,126,375,97,334,74,291,56,211,32,212,27,293,51,337,69,378,92,415,122,449,156,499,219"/>
+<area shape="rect" id="Node000005" href="$df/d0a/main_8cpp.html#a512a56ef22516c5454d0f925b16adcd6" title="Edita uma coluna existente no quadro KanBan." alt="" coords="110,56,204,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="489,225,439,180,408,157,375,137,331,117,286,101,203,80,205,75,287,96,333,112,378,132,411,153,442,176,492,221"/>
+<area shape="rect" id="Node000006" href="$df/d0a/main_8cpp.html#ac8773e0e3b3c75454e680ff43c6fcd7f" title="Edita uma tarefa existente no quadro KanBan." alt="" coords="113,107,201,133"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="480,227,432,199,375,172,283,144,201,129,202,123,284,139,377,167,434,194,483,223"/>
+<area shape="rect" id="Node000007" href="$d1/d13/class_quadro.html#a1d27dcd2c84b1742c7ebd4cb0f82a704" title="Imprime as informações do quadro." alt="" coords="259,208,376,235"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="409,236,377,232,377,226,410,230"/>
+<area shape="rect" id="Node000008" href="$df/d0a/main_8cpp.html#a23877ef139dcc4300c8f74067c517d27" title="Move uma coluna de uma posição para outra no quadro KanBan." alt="" coords="109,157,205,184"/>
+<area shape="poly" id="edge23_Node000002_Node000008" title=" " alt="" coords="468,230,424,213,376,199,285,183,205,176,205,170,286,178,377,193,426,208,470,225"/>
+<area shape="rect" id="Node000009" href="$df/d0a/main_8cpp.html#a2eddfb0aac0ba265acd5268ce3d8e919" title="Move uma tarefa de uma coluna para outra no quadro KanBan." alt="" coords="108,259,206,285"/>
+<area shape="poly" id="edge24_Node000002_Node000009" title=" " alt="" coords="410,257,206,271,206,266,409,251"/>
+<area shape="rect" id="Node000010" href="$df/d0a/main_8cpp.html#ac91dd762f55fe21f3a2226d59abff942" title="Ordena as tarefas por prioridade usando o algoritmo Bubble Sort." alt="" coords="105,309,209,336"/>
+<area shape="poly" id="edge25_Node000002_Node000010" title=" " alt="" coords="435,266,210,314,209,309,434,261"/>
+<area shape="rect" id="Node000011" href="$df/d0a/main_8cpp.html#aaa15a96063fb4377e5ac1d46a68321c0" title="Remove uma coluna do quadro KanBan." alt="" coords="104,360,210,387"/>
+<area shape="poly" id="edge26_Node000002_Node000011" title=" " alt="" coords="472,269,377,309,290,339,211,362,209,357,288,334,375,304,470,264"/>
+<area shape="rect" id="Node000012" href="$df/d0a/main_8cpp.html#aee02b44e62983f07d64c57db154c0467" title="Remove uma tarefa de uma coluna no quadro KanBan." alt="" coords="106,411,208,437"/>
+<area shape="poly" id="edge27_Node000002_Node000012" title=" " alt="" coords="489,272,439,312,378,352,290,389,209,414,207,409,288,384,375,347,436,308,486,268"/>
+<area shape="rect" id="Node000013" href="$df/d0a/main_8cpp.html#a3a0d238b444da51e7f04f65f8d390fd0" title="Salva o quadro KanBan em um arquivo." alt="" coords="270,461,366,488"/>
+<area shape="poly" id="edge28_Node000002_Node000013" title=" " alt="" coords="502,275,453,356,418,402,378,445,351,463,348,459,375,441,414,399,449,353,498,272"/>
+<area shape="rect" id="Node000004" href="$df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,233,55,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="107,43,105,46,87,69,73,94,52,147,41,197,35,233,30,233,35,196,47,146,68,92,83,66,101,42,104,39"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="108,93,105,96,78,131,58,169,37,234,32,232,54,167,74,128,101,93,104,89"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="109,144,104,147,83,169,65,192,40,234,36,231,61,189,79,165,101,143,106,139"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="304,195,268,122,241,82,209,46,193,35,196,30,213,42,246,79,273,120,309,193"/>
+<area shape="poly" id="edge12_Node000007_Node000004" title=" " alt="" coords="244,230,55,247,55,242,244,225"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="298,197,260,147,236,121,209,97,191,85,194,81,213,93,240,117,264,144,302,194"/>
+<area shape="poly" id="edge11_Node000007_Node000006" title=" " alt="" coords="286,201,210,148,188,136,191,131,212,143,289,197"/>
+<area shape="poly" id="edge13_Node000007_Node000008" title=" " alt="" coords="258,206,201,187,202,182,260,201"/>
+<area shape="poly" id="edge15_Node000007_Node000009" title=" " alt="" coords="260,242,202,261,201,256,258,237"/>
+<area shape="poly" id="edge17_Node000007_Node000010" title=" " alt="" coords="289,246,212,300,191,311,188,306,210,295,286,242"/>
+<area shape="poly" id="edge19_Node000007_Node000011" title=" " alt="" coords="302,249,264,299,240,326,213,350,194,362,191,357,209,346,236,322,260,296,298,246"/>
+<area shape="poly" id="edge21_Node000007_Node000012" title=" " alt="" coords="309,250,273,323,246,364,213,401,196,412,193,408,209,397,241,361,268,320,304,247"/>
+<area shape="poly" id="edge14_Node000008_Node000004" title=" " alt="" coords="121,194,104,205,55,235,52,230,101,200,119,190"/>
+<area shape="poly" id="edge16_Node000009_Node000004" title=" " alt="" coords="93,262,55,254,56,249,94,257"/>
+<area shape="poly" id="edge18_Node000010_Node000004" title=" " alt="" coords="110,304,101,300,47,263,50,258,104,295,113,300"/>
+<area shape="poly" id="edge20_Node000011_Node000004" title=" " alt="" coords="106,354,101,350,79,328,61,304,36,262,40,259,65,301,83,325,104,346,109,350"/>
+<area shape="poly" id="edge22_Node000012_Node000004" title=" " alt="" coords="104,404,101,400,74,365,54,326,32,261,37,259,58,324,78,362,105,397,108,400"/>
+<area shape="poly" id="edge29_Node000013_Node000004" title=" " alt="" coords="254,486,217,487,176,483,137,472,101,451,80,430,64,406,42,351,32,299,29,260,34,260,37,298,47,350,69,403,84,427,104,447,139,467,177,478,217,482,254,481"/>
+</map>

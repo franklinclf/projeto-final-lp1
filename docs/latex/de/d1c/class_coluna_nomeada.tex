@@ -1,5 +1,5 @@
-\hypertarget{class_coluna_nomeada}{}\doxysection{Coluna\+Nomeada Class Reference}
-\label{class_coluna_nomeada}\index{ColunaNomeada@{ColunaNomeada}}
+\doxysection{Coluna\+Nomeada Class Reference}
+\hypertarget{class_coluna_nomeada}{}\label{class_coluna_nomeada}\index{ColunaNomeada@{ColunaNomeada}}
 
 
 Classe que representa uma coluna nomeada de um quadro de tarefas.  
@@ -9,24 +9,38 @@ Classe que representa uma coluna nomeada de um quadro de tarefas.
 
 {\ttfamily \#include $<$colunas.\+hpp$>$}
 
-Inheritance diagram for Coluna\+Nomeada\+:\begin{figure}[H]
+
+
+Inheritance diagram for Coluna\+Nomeada\+:
+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{de/d1c/class_coluna_nomeada}
+\includegraphics[height=550pt]{d4/df1/class_coluna_nomeada__inherit__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+
+
+Collaboration diagram for Coluna\+Nomeada\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/de3/class_coluna_nomeada__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_coluna_nomeada_a5354a7852ce43827bb113c2a4ef4bc3b}{Coluna\+Nomeada}} (string n, string d)
-\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_coluna_nomeada}{Coluna\+Nomeada}}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_coluna_nomeada_a660583902ae4cacabf28e61edee5ccd4}{inserir\+Tarefa}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$t) override
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{class_coluna_nomeada}{Coluna\+Nomeada}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coluna_nomeada_a660583902ae4cacabf28e61edee5ccd4}{inserir\+Tarefa}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*}t) override
 \begin{DoxyCompactList}\small\item\em Insere uma tarefa na coluna. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_coluna_nomeada_ad9f5dc15ca20616f353008e5a3aa27e3}{remover\+Tarefa}} (int indice) override
 \begin{DoxyCompactList}\small\item\em Remove uma tarefa da coluna. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ \mbox{\hyperlink{class_coluna_nomeada_a3f8cdd94b330161896b219720b7bc8e2}{obter\+Tarefa}} (int indice) override
+\mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_coluna_nomeada_a3f8cdd94b330161896b219720b7bc8e2}{obter\+Tarefa}} (int indice) override
 \begin{DoxyCompactList}\small\item\em Obtém uma tarefa da coluna pelo seu índice. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_coluna_nomeada_ab47ba7b160204e7001f88c06ec25a305}{mover\+Tarefa}} (int indice, \mbox{\hyperlink{class_coluna}{Coluna}} $\ast$coluna\+Destino) override
+void \mbox{\hyperlink{class_coluna_nomeada_ab47ba7b160204e7001f88c06ec25a305}{mover\+Tarefa}} (int indice, \mbox{\hyperlink{class_coluna}{Coluna}} \texorpdfstring{$\ast$}{*}coluna\+Destino) override
 \begin{DoxyCompactList}\small\item\em Move uma tarefa de uma coluna para outra. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_coluna_nomeada_ad0566fe1cc3fef87feeff8e76b74dffd}{imprimir}} () const override
 \begin{DoxyCompactList}\small\item\em Imprime as informações da coluna. \end{DoxyCompactList}\item 
@@ -42,17 +56,20 @@ void \mbox{\hyperlink{class_coluna_nomeada_a3173b4eb484cab5fb328091bccd5379c}{se
 \begin{DoxyCompactList}\small\item\em Define a descrição da coluna. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_coluna_nomeada_af0ed75048904b4399b9955873f1ba7ba}{get\+Tamanho}} ()
 \begin{DoxyCompactList}\small\item\em Obtém o tamanho da coluna, ou seja, a quantidade de tarefas nela contidas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_coluna}{Coluna}}}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \mbox{\hyperlink{class_coluna_ac09fa33160badb14b7e4a095f15fb551}{inserir\+Tarefa}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$t)=0
+virtual \mbox{\hyperlink{class_coluna_a914ff6225d464e612b7ce6cfa0c73fed}{\texorpdfstring{$\sim$}{\string~}\+Coluna}} ()
+\item 
+virtual void \mbox{\hyperlink{class_coluna_ac09fa33160badb14b7e4a095f15fb551}{inserir\+Tarefa}} (\mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*}t)=0
 \begin{DoxyCompactList}\small\item\em Insere uma tarefa na coluna. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_coluna_ae2733f6d09e1d3f9a2b136ad4517c4d0}{remover\+Tarefa}} (int indice)=0
 \begin{DoxyCompactList}\small\item\em Remove uma tarefa da coluna. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_coluna_a48875a7414e5f4d15bfed749bb0a5586}{imprimir}} () const =0
 \begin{DoxyCompactList}\small\item\em Imprime as informações da coluna. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_coluna_afc72b9e6d07bb8c8bf926e6c96ed5e4f}{mover\+Tarefa}} (int indice, \mbox{\hyperlink{class_coluna}{Coluna}} $\ast$coluna\+Destino)=0
+virtual void \mbox{\hyperlink{class_coluna_afc72b9e6d07bb8c8bf926e6c96ed5e4f}{mover\+Tarefa}} (int indice, \mbox{\hyperlink{class_coluna}{Coluna}} \texorpdfstring{$\ast$}{*}coluna\+Destino)=0
 \begin{DoxyCompactList}\small\item\em Move uma tarefa de uma coluna para outra. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ \mbox{\hyperlink{class_coluna_a1b697b50e065b83454e023c4ab24c4ef}{obter\+Tarefa}} (int indice)=0
+virtual \mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_coluna_a1b697b50e065b83454e023c4ab24c4ef}{obter\+Tarefa}} (int indice)=0
 \begin{DoxyCompactList}\small\item\em Obtém uma tarefa da coluna pelo seu índice. \end{DoxyCompactList}\item 
 virtual int \mbox{\hyperlink{class_coluna_a98df8d945c71c2cdc352d610325fea02}{get\+Tamanho}} ()=0
 \begin{DoxyCompactList}\small\item\em Obtém o tamanho da coluna, ou seja, a quantidade de tarefas nela contidas. \end{DoxyCompactList}\item 
@@ -66,8 +83,8 @@ virtual void \mbox{\hyperlink{class_coluna_a38913a9091206a4672e2ab608d8a7804}{se
 \begin{DoxyCompactList}\small\item\em Define a descrição da coluna. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_coluna_a072f1cae205d24c75bbf6e240e66c025}{ordenar}} ()=0
 \begin{DoxyCompactList}\small\item\em Ordena as tarefas da coluna por prioridade. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
-\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_coluna}{Coluna}}}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_coluna}{Coluna}}}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_lista_dupla}{Lista\+Dupla}} \mbox{\hyperlink{class_coluna_a24093db18d53602f1b4b9ca436489ea8}{lista}}
@@ -82,7 +99,7 @@ Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00098}{98}} of file \mb
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_coluna_nomeada_a5354a7852ce43827bb113c2a4ef4bc3b}\label{class_coluna_nomeada_a5354a7852ce43827bb113c2a4ef4bc3b}} 
+\Hypertarget{class_coluna_nomeada_a5354a7852ce43827bb113c2a4ef4bc3b}\label{class_coluna_nomeada_a5354a7852ce43827bb113c2a4ef4bc3b} 
 \index{ColunaNomeada@{ColunaNomeada}!ColunaNomeada@{ColunaNomeada}}
 \index{ColunaNomeada@{ColunaNomeada}!ColunaNomeada@{ColunaNomeada}}
 \doxysubsubsection{\texorpdfstring{ColunaNomeada()}{ColunaNomeada()}}
@@ -90,7 +107,7 @@ Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00098}{98}} of file \mb
 
 
 
-Construtor da classe \mbox{\hyperlink{class_coluna_nomeada}{Coluna\+Nomeada}}. 
+Construtor da classe \doxylink{class_coluna_nomeada}{Coluna\+Nomeada}. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -106,7 +123,7 @@ Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00110}{110}} of file \m
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_coluna_nomeada_a5ca1fef4b69d671c80f399435b567af4}\label{class_coluna_nomeada_a5ca1fef4b69d671c80f399435b567af4}} 
+\Hypertarget{class_coluna_nomeada_a5ca1fef4b69d671c80f399435b567af4}\label{class_coluna_nomeada_a5ca1fef4b69d671c80f399435b567af4} 
 \index{ColunaNomeada@{ColunaNomeada}!getDescricao@{getDescricao}}
 \index{getDescricao@{getDescricao}!ColunaNomeada@{ColunaNomeada}}
 \doxysubsubsection{\texorpdfstring{getDescricao()}{getDescricao()}}
@@ -127,7 +144,7 @@ Implements \mbox{\hyperlink{class_coluna_a2a359c5e42f66995c0529b2f2184d33f}{Colu
 
 Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00157}{157}} of file \mbox{\hyperlink{colunas_8hpp_source}{colunas.\+hpp}}.
 
-\mbox{\Hypertarget{class_coluna_nomeada_a4aa6abb21a20d7fb4d5d81aa584d8683}\label{class_coluna_nomeada_a4aa6abb21a20d7fb4d5d81aa584d8683}} 
+\Hypertarget{class_coluna_nomeada_a4aa6abb21a20d7fb4d5d81aa584d8683}\label{class_coluna_nomeada_a4aa6abb21a20d7fb4d5d81aa584d8683} 
 \index{ColunaNomeada@{ColunaNomeada}!getNome@{getNome}}
 \index{getNome@{getNome}!ColunaNomeada@{ColunaNomeada}}
 \doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
@@ -148,7 +165,7 @@ Implements \mbox{\hyperlink{class_coluna_a25ecf45ce1e1c7a03b9c92d4a5da0544}{Colu
 
 Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00152}{152}} of file \mbox{\hyperlink{colunas_8hpp_source}{colunas.\+hpp}}.
 
-\mbox{\Hypertarget{class_coluna_nomeada_af0ed75048904b4399b9955873f1ba7ba}\label{class_coluna_nomeada_af0ed75048904b4399b9955873f1ba7ba}} 
+\Hypertarget{class_coluna_nomeada_af0ed75048904b4399b9955873f1ba7ba}\label{class_coluna_nomeada_af0ed75048904b4399b9955873f1ba7ba} 
 \index{ColunaNomeada@{ColunaNomeada}!getTamanho@{getTamanho}}
 \index{getTamanho@{getTamanho}!ColunaNomeada@{ColunaNomeada}}
 \doxysubsubsection{\texorpdfstring{getTamanho()}{getTamanho()}}
@@ -169,7 +186,15 @@ Implements \mbox{\hyperlink{class_coluna_a98df8d945c71c2cdc352d610325fea02}{Colu
 
 Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00172}{172}} of file \mbox{\hyperlink{colunas_8hpp_source}{colunas.\+hpp}}.
 
-\mbox{\Hypertarget{class_coluna_nomeada_ad0566fe1cc3fef87feeff8e76b74dffd}\label{class_coluna_nomeada_ad0566fe1cc3fef87feeff8e76b74dffd}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d1c/class_coluna_nomeada_af0ed75048904b4399b9955873f1ba7ba_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_coluna_nomeada_ad0566fe1cc3fef87feeff8e76b74dffd}\label{class_coluna_nomeada_ad0566fe1cc3fef87feeff8e76b74dffd} 
 \index{ColunaNomeada@{ColunaNomeada}!imprimir@{imprimir}}
 \index{imprimir@{imprimir}!ColunaNomeada@{ColunaNomeada}}
 \doxysubsubsection{\texorpdfstring{imprimir()}{imprimir()}}
@@ -187,11 +212,19 @@ Implements \mbox{\hyperlink{class_coluna_a48875a7414e5f4d15bfed749bb0a5586}{Colu
 
 Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00134}{134}} of file \mbox{\hyperlink{colunas_8hpp_source}{colunas.\+hpp}}.
 
-\mbox{\Hypertarget{class_coluna_nomeada_a660583902ae4cacabf28e61edee5ccd4}\label{class_coluna_nomeada_a660583902ae4cacabf28e61edee5ccd4}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d1c/class_coluna_nomeada_ad0566fe1cc3fef87feeff8e76b74dffd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_coluna_nomeada_a660583902ae4cacabf28e61edee5ccd4}\label{class_coluna_nomeada_a660583902ae4cacabf28e61edee5ccd4} 
 \index{ColunaNomeada@{ColunaNomeada}!inserirTarefa@{inserirTarefa}}
 \index{inserirTarefa@{inserirTarefa}!ColunaNomeada@{ColunaNomeada}}
 \doxysubsubsection{\texorpdfstring{inserirTarefa()}{inserirTarefa()}}
-{\footnotesize\ttfamily void Coluna\+Nomeada\+::inserir\+Tarefa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Coluna\+Nomeada\+::inserir\+Tarefa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*}}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -210,11 +243,19 @@ Implements \mbox{\hyperlink{class_coluna_ac09fa33160badb14b7e4a095f15fb551}{Colu
 
 Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00112}{112}} of file \mbox{\hyperlink{colunas_8hpp_source}{colunas.\+hpp}}.
 
-\mbox{\Hypertarget{class_coluna_nomeada_ab47ba7b160204e7001f88c06ec25a305}\label{class_coluna_nomeada_ab47ba7b160204e7001f88c06ec25a305}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d1c/class_coluna_nomeada_a660583902ae4cacabf28e61edee5ccd4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_coluna_nomeada_ab47ba7b160204e7001f88c06ec25a305}\label{class_coluna_nomeada_ab47ba7b160204e7001f88c06ec25a305} 
 \index{ColunaNomeada@{ColunaNomeada}!moverTarefa@{moverTarefa}}
 \index{moverTarefa@{moverTarefa}!ColunaNomeada@{ColunaNomeada}}
 \doxysubsubsection{\texorpdfstring{moverTarefa()}{moverTarefa()}}
-{\footnotesize\ttfamily void Coluna\+Nomeada\+::mover\+Tarefa (\begin{DoxyParamCaption}\item[{int}]{indice,  }\item[{\mbox{\hyperlink{class_coluna}{Coluna}} $\ast$}]{coluna\+Destino }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Coluna\+Nomeada\+::mover\+Tarefa (\begin{DoxyParamCaption}\item[{int}]{indice,  }\item[{\mbox{\hyperlink{class_coluna}{Coluna}} \texorpdfstring{$\ast$}{*}}]{coluna\+Destino }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -235,11 +276,19 @@ Implements \mbox{\hyperlink{class_coluna_afc72b9e6d07bb8c8bf926e6c96ed5e4f}{Colu
 
 Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00127}{127}} of file \mbox{\hyperlink{colunas_8hpp_source}{colunas.\+hpp}}.
 
-\mbox{\Hypertarget{class_coluna_nomeada_a3f8cdd94b330161896b219720b7bc8e2}\label{class_coluna_nomeada_a3f8cdd94b330161896b219720b7bc8e2}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d1c/class_coluna_nomeada_ab47ba7b160204e7001f88c06ec25a305_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_coluna_nomeada_a3f8cdd94b330161896b219720b7bc8e2}\label{class_coluna_nomeada_a3f8cdd94b330161896b219720b7bc8e2} 
 \index{ColunaNomeada@{ColunaNomeada}!obterTarefa@{obterTarefa}}
 \index{obterTarefa@{obterTarefa}!ColunaNomeada@{ColunaNomeada}}
 \doxysubsubsection{\texorpdfstring{obterTarefa()}{obterTarefa()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_tarefa}{Tarefa}} $\ast$ Coluna\+Nomeada\+::obter\+Tarefa (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tarefa}{Tarefa}} \texorpdfstring{$\ast$}{*} Coluna\+Nomeada\+::obter\+Tarefa (\begin{DoxyParamCaption}\item[{int}]{indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -261,7 +310,15 @@ Implements \mbox{\hyperlink{class_coluna_a1b697b50e065b83454e023c4ab24c4ef}{Colu
 
 Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00122}{122}} of file \mbox{\hyperlink{colunas_8hpp_source}{colunas.\+hpp}}.
 
-\mbox{\Hypertarget{class_coluna_nomeada_a73e9583ff304eef0a61d772976dac074}\label{class_coluna_nomeada_a73e9583ff304eef0a61d772976dac074}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d1c/class_coluna_nomeada_a3f8cdd94b330161896b219720b7bc8e2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_coluna_nomeada_a73e9583ff304eef0a61d772976dac074}\label{class_coluna_nomeada_a73e9583ff304eef0a61d772976dac074} 
 \index{ColunaNomeada@{ColunaNomeada}!ordenar@{ordenar}}
 \index{ordenar@{ordenar}!ColunaNomeada@{ColunaNomeada}}
 \doxysubsubsection{\texorpdfstring{ordenar()}{ordenar()}}
@@ -279,7 +336,15 @@ Implements \mbox{\hyperlink{class_coluna_a072f1cae205d24c75bbf6e240e66c025}{Colu
 
 Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00147}{147}} of file \mbox{\hyperlink{colunas_8hpp_source}{colunas.\+hpp}}.
 
-\mbox{\Hypertarget{class_coluna_nomeada_ad9f5dc15ca20616f353008e5a3aa27e3}\label{class_coluna_nomeada_ad9f5dc15ca20616f353008e5a3aa27e3}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d1c/class_coluna_nomeada_a73e9583ff304eef0a61d772976dac074_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_coluna_nomeada_ad9f5dc15ca20616f353008e5a3aa27e3}\label{class_coluna_nomeada_ad9f5dc15ca20616f353008e5a3aa27e3} 
 \index{ColunaNomeada@{ColunaNomeada}!removerTarefa@{removerTarefa}}
 \index{removerTarefa@{removerTarefa}!ColunaNomeada@{ColunaNomeada}}
 \doxysubsubsection{\texorpdfstring{removerTarefa()}{removerTarefa()}}
@@ -302,7 +367,15 @@ Implements \mbox{\hyperlink{class_coluna_ae2733f6d09e1d3f9a2b136ad4517c4d0}{Colu
 
 Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00117}{117}} of file \mbox{\hyperlink{colunas_8hpp_source}{colunas.\+hpp}}.
 
-\mbox{\Hypertarget{class_coluna_nomeada_a3173b4eb484cab5fb328091bccd5379c}\label{class_coluna_nomeada_a3173b4eb484cab5fb328091bccd5379c}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d1c/class_coluna_nomeada_ad9f5dc15ca20616f353008e5a3aa27e3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_coluna_nomeada_a3173b4eb484cab5fb328091bccd5379c}\label{class_coluna_nomeada_a3173b4eb484cab5fb328091bccd5379c} 
 \index{ColunaNomeada@{ColunaNomeada}!setDescricao@{setDescricao}}
 \index{setDescricao@{setDescricao}!ColunaNomeada@{ColunaNomeada}}
 \doxysubsubsection{\texorpdfstring{setDescricao()}{setDescricao()}}
@@ -325,7 +398,7 @@ Implements \mbox{\hyperlink{class_coluna_a38913a9091206a4672e2ab608d8a7804}{Colu
 
 Definition at line \mbox{\hyperlink{colunas_8hpp_source_l00167}{167}} of file \mbox{\hyperlink{colunas_8hpp_source}{colunas.\+hpp}}.
 
-\mbox{\Hypertarget{class_coluna_nomeada_a7a62c3debc4f87172a8e47a092437086}\label{class_coluna_nomeada_a7a62c3debc4f87172a8e47a092437086}} 
+\Hypertarget{class_coluna_nomeada_a7a62c3debc4f87172a8e47a092437086}\label{class_coluna_nomeada_a7a62c3debc4f87172a8e47a092437086} 
 \index{ColunaNomeada@{ColunaNomeada}!setNome@{setNome}}
 \index{setNome@{setNome}!ColunaNomeada@{ColunaNomeada}}
 \doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}

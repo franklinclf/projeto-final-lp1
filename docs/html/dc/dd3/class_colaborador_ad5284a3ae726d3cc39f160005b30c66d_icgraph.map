@@ -1,0 +1,9 @@
+<map id="Colaborador::getID" name="Colaborador::getID">
+<area shape="rect" id="Node000001" title="Obtém o ID único do colaborador." alt="" coords="303,31,431,57"/>
+<area shape="rect" id="Node000002" href="$dd/d5a/structcomparador.html#a0f1c3caa70f876d714be220cb699fe70" title="Operador de comparação para ordenar os colaboradores por ID." alt="" coords="103,5,255,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,36,255,32,256,26,288,31"/>
+<area shape="rect" id="Node000003" href="$df/d0a/main_8cpp.html#a3a0d238b444da51e7f04f65f8d390fd0" title="Salva o quadro KanBan em um arquivo." alt="" coords="131,56,227,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="289,57,228,66,227,60,288,52"/>
+<area shape="rect" id="Node000004" href="$df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="116,72,55,72,55,67,116,67"/>
+</map>

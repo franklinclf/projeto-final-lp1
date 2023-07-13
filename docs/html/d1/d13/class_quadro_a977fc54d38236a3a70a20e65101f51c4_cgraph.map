@@ -1,0 +1,9 @@
+<map id="Quadro::removerColuna" name="Quadro::removerColuna">
+<area shape="rect" id="Node000001" title="Remove uma coluna do quadro." alt="" coords="5,5,162,32"/>
+<area shape="rect" id="Node000002" href="$db/dba/class_lista.html#ad71c31e64374c31c878455e451386d1e" title="Remove a coluna da lista pelo índice." alt="" coords="210,5,366,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,16,195,16,195,21,162,21"/>
+<area shape="rect" id="Node000003" href="$db/dba/class_lista.html#a2ab09a2fd57a3adeec30cea8fd9e770d" title="Remove a coluna do início da lista." alt="" coords="414,5,546,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="366,16,399,16,399,21,366,21"/>
+<area shape="rect" id="Node000004" href="$db/dba/class_lista.html#a9a8529d0ea4e79cd6b7cd600e556d9f8" title="Verifica se a lista está vazia." alt="" coords="594,5,681,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="547,16,579,16,579,21,547,21"/>
+</map>

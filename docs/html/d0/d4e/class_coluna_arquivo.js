@@ -1,6 +1,8 @@
 var class_coluna_arquivo =
 [
+    [ "ColunaArquivo", "d0/d4e/class_coluna_arquivo.html#a3b60a5d8d6bebf39b1acf78d049d52f0", null ],
     [ "ColunaArquivo", "d0/d4e/class_coluna_arquivo.html#aa7b4638c0a1f900754b0c3ac446fe963", null ],
+    [ "~ColunaArquivo", "d0/d4e/class_coluna_arquivo.html#aa40e86e89822421b4529d535c80b1e11", null ],
     [ "getDescricao", "d0/d4e/class_coluna_arquivo.html#aa9c91a9dbac4a43620a220010fd2a4fc", null ],
     [ "getNome", "d0/d4e/class_coluna_arquivo.html#aa93ac97c8f31a46c939ee6e9e4803fa5", null ],
     [ "getTamanho", "d0/d4e/class_coluna_arquivo.html#a07705485463aba703ff87ea7d82691c5", null ],

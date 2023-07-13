@@ -1,0 +1,7 @@
+<map id="ColunaNomeada" name="ColunaNomeada">
+<area shape="rect" id="Node000001" title="Classe que representa uma coluna nomeada de um quadro de tarefas." alt="" coords="22,961,226,1377"/>
+<area shape="rect" id="Node000002" href="$d3/d3c/class_coluna.html" title="Classe abstrata que representa uma coluna de um quadro de tarefas." alt="" coords="5,496,243,912"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,926,127,962,121,962,121,926"/>
+<area shape="rect" id="Node000003" href="$dd/d91/class_lista_dupla.html" title="Classe que implementa uma lista duplamente encadeada de tarefas de um quadro de tarefas." alt="" coords="35,5,213,432"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="127,432,127,479,121,479,121,432"/>
+</map>

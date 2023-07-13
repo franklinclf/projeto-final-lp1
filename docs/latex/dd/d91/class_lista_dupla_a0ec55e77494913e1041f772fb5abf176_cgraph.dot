@@ -1,0 +1,20 @@
+digraph "ListaDupla::removerFim"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ListaDupla::removerFim",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Remove a tarefa do fim da lista."];
+  Node1 -> Node2 [id="edge6_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="No::getAnterior",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d55/class_no.html#a18866d7db046e7987120e93bf1a839d3",tooltip="Obtém o nó anterior."];
+  Node1 -> Node3 [id="edge7_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="No::getTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d55/class_no.html#a3e8d735fc07c24ecaee4e283ac9a1f36",tooltip="Obtém a tarefa armazenada no nó."];
+  Node1 -> Node4 [id="edge8_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="No::setAnterior",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d55/class_no.html#a337f5ed0c85f3ac6646fd8295f2017a7",tooltip="Define o nó anterior."];
+  Node1 -> Node5 [id="edge9_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="No::setProximo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/d55/class_no.html#a1fd6922d7a6b246aa11251effaceeb7b",tooltip="Define o próximo nó."];
+  Node1 -> Node6 [id="edge10_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="ListaDupla::vazia",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d91/class_lista_dupla.html#a66888490f518d19c2d5cb3d3a053b816",tooltip="Verifica se a lista está vazia."];
+}

@@ -1,0 +1,42 @@
+<map id="clearBuffer" name="clearBuffer">
+<area shape="rect" id="Node000001" title="Limpa o buffer do console." alt="" coords="498,309,581,336"/>
+<area shape="rect" id="Node000002" href="$df/d0a/main_8cpp.html#adeb70abb0e6d3cf5e724363a38ce80ca" title="Adiciona uma nova coluna do tipo &quot;arquivo&quot; ao quadro KanBan." alt="" coords="103,5,258,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="536,295,532,242,519,175,508,141,493,108,474,78,449,53,428,38,405,27,356,14,306,9,259,10,258,5,306,3,357,8,407,22,431,34,452,49,478,75,498,106,513,139,525,174,537,241,541,295"/>
+<area shape="rect" id="Node000003" href="$df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,309,55,336"/>
+<area shape="poly" id="edge16_Node000001_Node000003" title=" " alt="" coords="533,296,526,253,512,202,487,151,470,129,449,110,419,95,378,83,329,74,276,70,224,69,175,74,134,83,104,97,81,119,64,145,51,175,42,206,34,266,33,309,28,309,29,265,37,205,46,173,59,143,77,115,101,92,132,78,174,68,223,64,276,65,330,69,379,78,421,90,452,106,473,125,491,148,517,200,531,252,539,295"/>
+<area shape="rect" id="Node000004" href="$df/d0a/main_8cpp.html#a0d931717ab3053bc49784e26575b01d6" title="Adiciona uma nova tarefa a uma coluna no quadro KanBan." alt="" coords="126,107,235,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="531,296,521,260,505,219,482,180,449,147,424,133,397,123,340,112,284,110,235,113,234,108,284,104,341,106,399,118,426,129,452,143,486,176,510,217,526,259,536,294"/>
+<area shape="rect" id="Node000005" href="$df/d0a/main_8cpp.html#aed504424b48ab1ef3ce656ba1d439ae0" title="Cria e cadastra um novo colaborador no quadro KanBan." alt="" coords="306,157,450,184"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="522,298,492,251,471,226,449,205,418,187,421,182,452,201,475,223,496,248,526,295"/>
+<area shape="rect" id="Node000006" href="$df/d0a/main_8cpp.html#a48e1cbf9de98941d548837997b582870" title="Cria e adiciona uma nova coluna ao quadro KanBan." alt="" coords="137,208,224,235"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="506,303,479,287,449,273,389,255,328,241,223,227,224,222,329,236,391,249,451,268,482,282,509,299"/>
+<area shape="rect" id="Node000007" href="$df/d0a/main_8cpp.html#a3efe6ab2635ad7386bcff5f15661a081" title="Cria um novo quadro KanBan." alt="" coords="136,259,225,285"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="483,308,450,300,328,283,225,276,225,271,328,278,451,295,484,303"/>
+<area shape="rect" id="Node000008" href="$df/d0a/main_8cpp.html#a512a56ef22516c5454d0f925b16adcd6" title="Edita uma coluna existente no quadro KanBan." alt="" coords="332,309,425,336"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="483,325,425,325,425,320,483,320"/>
+<area shape="rect" id="Node000009" href="$df/d0a/main_8cpp.html#ac8773e0e3b3c75454e680ff43c6fcd7f" title="Edita uma tarefa existente no quadro KanBan." alt="" coords="334,360,422,387"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="485,342,423,362,422,357,483,337"/>
+<area shape="rect" id="Node000010" href="$df/d0a/main_8cpp.html#a23877ef139dcc4300c8f74067c517d27" title="Move uma coluna de uma posição para outra no quadro KanBan." alt="" coords="331,411,426,437"/>
+<area shape="poly" id="edge17_Node000001_Node000010" title=" " alt="" coords="518,348,488,375,452,401,427,412,425,408,449,396,484,371,514,344"/>
+<area shape="rect" id="Node000011" href="$df/d0a/main_8cpp.html#a2eddfb0aac0ba265acd5268ce3d8e919" title="Move uma tarefa de uma coluna para outra no quadro KanBan." alt="" coords="330,461,427,488"/>
+<area shape="poly" id="edge19_Node000001_Node000011" title=" " alt="" coords="528,351,498,402,477,428,452,451,429,465,426,460,449,447,473,425,494,399,524,348"/>
+<area shape="rect" id="Node000012" href="$df/d0a/main_8cpp.html#ac91dd762f55fe21f3a2226d59abff942" title="Ordena as tarefas por prioridade usando o algoritmo Bubble Sort." alt="" coords="128,512,233,539"/>
+<area shape="poly" id="edge21_Node000001_Node000012" title=" " alt="" coords="536,351,526,387,510,428,486,469,452,502,426,517,398,528,340,539,282,541,233,537,233,532,283,536,339,534,397,523,424,512,449,498,482,466,505,426,521,385,531,350"/>
+<area shape="rect" id="Node000013" href="$df/d0a/main_8cpp.html#aaa15a96063fb4377e5ac1d46a68321c0" title="Remove uma coluna do quadro KanBan." alt="" coords="127,563,234,589"/>
+<area shape="poly" id="edge23_Node000001_Node000013" title=" " alt="" coords="539,351,532,395,517,448,491,502,474,526,452,546,427,562,399,574,341,587,284,590,234,587,234,582,284,585,341,582,398,569,424,557,449,542,470,522,487,499,512,447,526,394,533,350"/>
+<area shape="rect" id="Node000014" href="$df/d0a/main_8cpp.html#aee02b44e62983f07d64c57db154c0467" title="Remove uma tarefa de uma coluna no quadro KanBan." alt="" coords="328,613,429,640"/>
+<area shape="poly" id="edge25_Node000001_Node000014" title=" " alt="" coords="539,351,533,402,518,467,492,535,474,567,452,597,427,615,424,611,448,593,470,564,488,533,513,465,527,401,534,351"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,42,105,52,82,84,65,119,52,156,44,193,35,261,34,309,28,309,30,261,38,192,47,155,60,117,78,81,101,49,113,38"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="119,143,105,154,76,193,56,236,43,278,36,309,31,308,38,277,51,235,71,190,101,150,116,139"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="291,162,245,161,197,165,148,177,104,198,78,223,58,254,45,285,37,310,32,308,40,283,53,251,74,219,101,194,147,172,196,160,245,156,291,156"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="308,156,234,136,236,131,310,150"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="124,239,104,249,68,280,43,311,39,307,65,276,101,244,122,234"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="125,293,56,317,54,312,124,288"/>
+<area shape="poly" id="edge13_Node000008_Node000003" title=" " alt="" coords="317,325,55,325,55,320,317,320"/>
+<area shape="poly" id="edge15_Node000009_Node000003" title=" " alt="" coords="319,368,55,329,55,323,320,362"/>
+<area shape="poly" id="edge18_Node000010_Node000003" title=" " alt="" coords="315,418,214,397,157,382,102,364,52,339,54,334,104,359,159,377,215,392,316,412"/>
+<area shape="poly" id="edge20_Node000011_Node000003" title=" " alt="" coords="314,474,265,467,210,456,154,438,101,412,80,395,62,375,36,338,41,335,66,371,83,391,104,407,156,433,212,451,266,462,315,469"/>
+<area shape="poly" id="edge22_Node000012_Node000003" title=" " alt="" coords="116,507,101,495,71,455,51,411,38,369,31,337,36,336,43,367,56,409,76,453,105,491,119,503"/>
+<area shape="poly" id="edge24_Node000013_Node000003" title=" " alt="" coords="112,562,101,553,80,527,64,498,42,436,32,378,29,337,34,336,37,378,47,435,69,496,84,524,105,549,116,557"/>
+<area shape="poly" id="edge26_Node000014_Node000003" title=" " alt="" coords="313,642,263,647,206,645,150,632,124,620,101,603,86,583,73,553,52,476,38,395,30,337,35,336,43,394,57,474,78,551,90,581,105,599,127,615,152,627,207,640,263,642,313,637"/>
+</map>

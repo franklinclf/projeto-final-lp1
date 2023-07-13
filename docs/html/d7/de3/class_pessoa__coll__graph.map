@@ -1,0 +1,5 @@
+<map id="Pessoa" name="Pessoa">
+<area shape="rect" id="Node000001" title="Classe base que representa uma Pessoa." alt="" coords="5,155,175,352"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="67,5,113,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,74,93,137,87,137,87,74"/>
+</map>

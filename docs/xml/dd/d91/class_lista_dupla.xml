@@ -1,0 +1,474 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dd/d91/class_lista_dupla" kind="class" language="C++" prot="public">
+    <compoundname>ListaDupla</compoundname>
+    <includes refid="d1/d7b/lista_duplamente_encadeada_8hpp" local="no">listaDuplamenteEncadeada.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/d91/class_lista_dupla_1a073b42d0b256fb263188bc410cca1509" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/d55/class_no" kindref="compound">No</ref> *</type>
+        <definition>No* ListaDupla::sentinelaInicio</definition>
+        <argsstring></argsstring>
+        <name>sentinelaInicio</name>
+        <qualifiedname>ListaDupla::sentinelaInicio</qualifiedname>
+        <briefdescription>
+<para>Ponteiro para o sentinela de início da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="92" column="8" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d91/class_lista_dupla_1ab0cb4915ee28d6fdcb332fdc1a056249" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/d55/class_no" kindref="compound">No</ref> *</type>
+        <definition>No* ListaDupla::sentinelaFim</definition>
+        <argsstring></argsstring>
+        <name>sentinelaFim</name>
+        <qualifiedname>ListaDupla::sentinelaFim</qualifiedname>
+        <briefdescription>
+<para>Ponteiro para o sentinela de fim da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="93" column="8" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d91/class_lista_dupla_1ac9151cc5802c1702fa1ecb2b9e2022a3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListaDupla::tamanho</definition>
+        <argsstring></argsstring>
+        <name>tamanho</name>
+        <qualifiedname>ListaDupla::tamanho</qualifiedname>
+        <briefdescription>
+<para>Tamanho da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="94" column="9" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1a5c057b40433f1dda8d221809c13c2619" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListaDupla::ListaDupla</definition>
+        <argsstring>()</argsstring>
+        <name>ListaDupla</name>
+        <qualifiedname>ListaDupla::ListaDupla</qualifiedname>
+        <briefdescription>
+<para>Construtor padrão da classe <ref refid="dd/d91/class_lista_dupla" kindref="compound">ListaDupla</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="100" column="5" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="100" bodyend="107"/>
+        <references refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="79" endline="82">No::setAnterior</references>
+        <references refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="61" endline="64">No::setProximo</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1a63481f371df6767019c8705208067514" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListaDupla::~ListaDupla</definition>
+        <argsstring>()</argsstring>
+        <name>~ListaDupla</name>
+        <qualifiedname>ListaDupla::~ListaDupla</qualifiedname>
+        <briefdescription>
+<para>Destrutor da classe <ref refid="dd/d91/class_lista_dupla" kindref="compound">ListaDupla</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="112" column="5" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="112" bodyend="117"/>
+        <references refid="dd/d91/class_lista_dupla_1abfef1d092f78fb6862087097d809f1e7" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="328" endline="334">limpar</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1a86f5652f339d3af5fd81c6b913c95a52" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ListaDupla::getTamanho</definition>
+        <argsstring>() const</argsstring>
+        <name>getTamanho</name>
+        <qualifiedname>ListaDupla::getTamanho</qualifiedname>
+        <briefdescription>
+<para>Obtém o tamanho da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Tamanho da lista. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="123" column="9" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="123" bodyend="126"/>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1af0ed75048904b4399b9955873f1ba7ba" compoundref="da/d7b/colunas_8hpp" startline="172" endline="175">ColunaNomeada::getTamanho</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1a07705485463aba703ff87ea7d82691c5" compoundref="da/d7b/colunas_8hpp" startline="240" endline="243">ColunaArquivo::getTamanho</referencedby>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1ad0566fe1cc3fef87feeff8e76b74dffd" compoundref="da/d7b/colunas_8hpp" startline="134" endline="145">ColunaNomeada::imprimir</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1af89c858cfeb225706983f3e91090792f" compoundref="da/d7b/colunas_8hpp" startline="245" endline="253">ColunaArquivo::imprimir</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1a66888490f518d19c2d5cb3d3a053b816" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ListaDupla::vazia</definition>
+        <argsstring>() const</argsstring>
+        <name>vazia</name>
+        <qualifiedname>ListaDupla::vazia</qualifiedname>
+        <briefdescription>
+<para>Verifica se a lista está vazia. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true se a lista estiver vazia, false caso contrário. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="132" column="10" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="132" bodyend="135"/>
+        <referencedby refid="dd/d91/class_lista_dupla_1abfef1d092f78fb6862087097d809f1e7" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="328" endline="334">limpar</referencedby>
+        <referencedby refid="dd/d91/class_lista_dupla_1a0ec55e77494913e1041f772fb5abf176" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="235" endline="251">removerFim</referencedby>
+        <referencedby refid="dd/d91/class_lista_dupla_1a6c0c785cb9c4a4a2fbe25beb370bd102" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="214" endline="230">removerInicio</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1af02559c4c5c8265c8db861300cf598d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDupla::inserirInicio</definition>
+        <argsstring>(Tarefa *t)</argsstring>
+        <name>inserirInicio</name>
+        <qualifiedname>ListaDupla::inserirInicio</qualifiedname>
+        <param>
+          <type><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Insere uma tarefa no início da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para a tarefa a ser inserida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="141" column="10" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="141" bodyend="152"/>
+        <references refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="52" endline="55">No::getProximo</references>
+        <references refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="79" endline="82">No::setAnterior</references>
+        <references refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="61" endline="64">No::setProximo</references>
+        <referencedby refid="dd/d91/class_lista_dupla_1a8c0235db1d94b2dcbd4d22fec5645ac3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="176" endline="209">inserirPorIndice</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1a997a8daa9fb1ccea46c233558ade8b4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDupla::inserirFim</definition>
+        <argsstring>(Tarefa *t)</argsstring>
+        <name>inserirFim</name>
+        <qualifiedname>ListaDupla::inserirFim</qualifiedname>
+        <param>
+          <type><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Insere uma tarefa no fim da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para a tarefa a ser inserida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="158" column="10" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="158" bodyend="169"/>
+        <references refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="70" endline="73">No::getAnterior</references>
+        <references refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="79" endline="82">No::setAnterior</references>
+        <references refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="61" endline="64">No::setProximo</references>
+        <referencedby refid="dd/d91/class_lista_dupla_1a8c0235db1d94b2dcbd4d22fec5645ac3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="176" endline="209">inserirPorIndice</referencedby>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1a660583902ae4cacabf28e61edee5ccd4" compoundref="da/d7b/colunas_8hpp" startline="112" endline="115">ColunaNomeada::inserirTarefa</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1aeb82024caaccd6083d0ea0447ec2ba7e" compoundref="da/d7b/colunas_8hpp" startline="198" endline="201">ColunaArquivo::inserirTarefa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1a8c0235db1d94b2dcbd4d22fec5645ac3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDupla::inserirPorIndice</definition>
+        <argsstring>(Tarefa *t, int indice)</argsstring>
+        <name>inserirPorIndice</name>
+        <qualifiedname>ListaDupla::inserirPorIndice</qualifiedname>
+        <param>
+          <type><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Insere uma tarefa na lista pelo índice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ponteiro para a tarefa a ser inserida. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice de inserção. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="176" column="10" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="176" bodyend="209"/>
+        <references refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="70" endline="73">No::getAnterior</references>
+        <references refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="52" endline="55">No::getProximo</references>
+        <references refid="dd/d91/class_lista_dupla_1a997a8daa9fb1ccea46c233558ade8b4b" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="158" endline="169">inserirFim</references>
+        <references refid="dd/d91/class_lista_dupla_1af02559c4c5c8265c8db861300cf598d8" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="141" endline="152">inserirInicio</references>
+        <references refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="79" endline="82">No::setAnterior</references>
+        <references refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="61" endline="64">No::setProximo</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1a6c0c785cb9c4a4a2fbe25beb370bd102" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDupla::removerInicio</definition>
+        <argsstring>()</argsstring>
+        <name>removerInicio</name>
+        <qualifiedname>ListaDupla::removerInicio</qualifiedname>
+        <briefdescription>
+<para>Remove a tarefa do início da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="214" column="10" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="214" bodyend="230"/>
+        <references refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="52" endline="55">No::getProximo</references>
+        <references refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="34" endline="37">No::getTarefa</references>
+        <references refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="79" endline="82">No::setAnterior</references>
+        <references refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="61" endline="64">No::setProximo</references>
+        <references refid="dd/d91/class_lista_dupla_1a66888490f518d19c2d5cb3d3a053b816" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="132" endline="135">vazia</references>
+        <referencedby refid="dd/d91/class_lista_dupla_1abfef1d092f78fb6862087097d809f1e7" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="328" endline="334">limpar</referencedby>
+        <referencedby refid="dd/d91/class_lista_dupla_1ab976735e9038a9bd590a764b2a832e45" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="257" endline="292">removerPorIndice</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1a0ec55e77494913e1041f772fb5abf176" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDupla::removerFim</definition>
+        <argsstring>()</argsstring>
+        <name>removerFim</name>
+        <qualifiedname>ListaDupla::removerFim</qualifiedname>
+        <briefdescription>
+<para>Remove a tarefa do fim da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="235" column="10" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="235" bodyend="251"/>
+        <references refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="70" endline="73">No::getAnterior</references>
+        <references refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="34" endline="37">No::getTarefa</references>
+        <references refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="79" endline="82">No::setAnterior</references>
+        <references refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="61" endline="64">No::setProximo</references>
+        <references refid="dd/d91/class_lista_dupla_1a66888490f518d19c2d5cb3d3a053b816" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="132" endline="135">vazia</references>
+        <referencedby refid="dd/d91/class_lista_dupla_1ab976735e9038a9bd590a764b2a832e45" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="257" endline="292">removerPorIndice</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1ab976735e9038a9bd590a764b2a832e45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDupla::removerPorIndice</definition>
+        <argsstring>(int indice)</argsstring>
+        <name>removerPorIndice</name>
+        <qualifiedname>ListaDupla::removerPorIndice</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Remove a tarefa da lista pelo índice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da tarefa a ser removida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="257" column="10" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="257" bodyend="292"/>
+        <references refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="70" endline="73">No::getAnterior</references>
+        <references refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="52" endline="55">No::getProximo</references>
+        <references refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="34" endline="37">No::getTarefa</references>
+        <references refid="dd/d91/class_lista_dupla_1a0ec55e77494913e1041f772fb5abf176" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="235" endline="251">removerFim</references>
+        <references refid="dd/d91/class_lista_dupla_1a6c0c785cb9c4a4a2fbe25beb370bd102" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="214" endline="230">removerInicio</references>
+        <references refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="79" endline="82">No::setAnterior</references>
+        <references refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="61" endline="64">No::setProximo</references>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1ad9f5dc15ca20616f353008e5a3aa27e3" compoundref="da/d7b/colunas_8hpp" startline="117" endline="120">ColunaNomeada::removerTarefa</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1aae317988e21d9072edf5de1543085f14" compoundref="da/d7b/colunas_8hpp" startline="203" endline="206">ColunaArquivo::removerTarefa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1a924380dcc218b78c4de0e0accc80e012" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDupla::lightDelete</definition>
+        <argsstring>(int indice)</argsstring>
+        <name>lightDelete</name>
+        <qualifiedname>ListaDupla::lightDelete</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Remove a tarefa da lista, mas mantém o nó na lista sem referência à tarefa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da tarefa a ser removida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="298" column="10" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="298" bodyend="323"/>
+        <references refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="70" endline="73">No::getAnterior</references>
+        <references refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="52" endline="55">No::getProximo</references>
+        <references refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="79" endline="82">No::setAnterior</references>
+        <references refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="61" endline="64">No::setProximo</references>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1ab47ba7b160204e7001f88c06ec25a305" compoundref="da/d7b/colunas_8hpp" startline="127" endline="132">ColunaNomeada::moverTarefa</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1ac4f7235fe2e8bbcdb959f5100d7c1bb7" compoundref="da/d7b/colunas_8hpp" startline="213" endline="218">ColunaArquivo::moverTarefa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1abfef1d092f78fb6862087097d809f1e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDupla::limpar</definition>
+        <argsstring>()</argsstring>
+        <name>limpar</name>
+        <qualifiedname>ListaDupla::limpar</qualifiedname>
+        <briefdescription>
+<para>Remove todos os nós da lista e libera a memória. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="328" column="10" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="328" bodyend="334"/>
+        <references refid="dd/d91/class_lista_dupla_1a6c0c785cb9c4a4a2fbe25beb370bd102" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="214" endline="230">removerInicio</references>
+        <references refid="dd/d91/class_lista_dupla_1a66888490f518d19c2d5cb3d3a053b816" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="132" endline="135">vazia</references>
+        <referencedby refid="dd/d91/class_lista_dupla_1a63481f371df6767019c8705208067514" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="112" endline="117">~ListaDupla</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1a837ec6a1d28dbddd64b2028372f846c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="da/d23/class_tarefa" kindref="compound">Tarefa</ref> *</type>
+        <definition>Tarefa * ListaDupla::obterPorIndice</definition>
+        <argsstring>(int indice) const</argsstring>
+        <name>obterPorIndice</name>
+        <qualifiedname>ListaDupla::obterPorIndice</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>indice</declname>
+        </param>
+        <briefdescription>
+<para>Obtém a tarefa da lista pelo índice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice da tarefa. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ponteiro para a tarefa encontrada. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="341" column="12" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="341" bodyend="356"/>
+        <references refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="52" endline="55">No::getProximo</references>
+        <references refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="34" endline="37">No::getTarefa</references>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1ad0566fe1cc3fef87feeff8e76b74dffd" compoundref="da/d7b/colunas_8hpp" startline="134" endline="145">ColunaNomeada::imprimir</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1af89c858cfeb225706983f3e91090792f" compoundref="da/d7b/colunas_8hpp" startline="245" endline="253">ColunaArquivo::imprimir</referencedby>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1ab47ba7b160204e7001f88c06ec25a305" compoundref="da/d7b/colunas_8hpp" startline="127" endline="132">ColunaNomeada::moverTarefa</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1ac4f7235fe2e8bbcdb959f5100d7c1bb7" compoundref="da/d7b/colunas_8hpp" startline="213" endline="218">ColunaArquivo::moverTarefa</referencedby>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1a3f8cdd94b330161896b219720b7bc8e2" compoundref="da/d7b/colunas_8hpp" startline="122" endline="125">ColunaNomeada::obterTarefa</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1abb1d729c65cf4680de28dd85fe20c737" compoundref="da/d7b/colunas_8hpp" startline="208" endline="211">ColunaArquivo::obterTarefa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d91/class_lista_dupla_1a0da08b292785498fc7bb358a84bed282" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDupla::ordenarPorPrioridade</definition>
+        <argsstring>()</argsstring>
+        <name>ordenarPorPrioridade</name>
+        <qualifiedname>ListaDupla::ordenarPorPrioridade</qualifiedname>
+        <briefdescription>
+<para>Ordena a lista de tarefas por prioridade. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/listaDuplamenteEncadeada.hpp" line="361" column="10" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="361" bodyend="400"/>
+        <references refid="d9/d55/class_no_1a18866d7db046e7987120e93bf1a839d3" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="70" endline="73">No::getAnterior</references>
+        <references refid="da/d23/class_tarefa_1a7bf9fd90402ab301884f4dcbb36dcec8" compoundref="d1/d1b/tarefa_8hpp" startline="170" endline="173">Tarefa::getPrioridade</references>
+        <references refid="d9/d55/class_no_1a42bd9dc9c7b24743c82e89b42a1581a2" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="52" endline="55">No::getProximo</references>
+        <references refid="d9/d55/class_no_1a3e8d735fc07c24ecaee4e283ac9a1f36" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="34" endline="37">No::getTarefa</references>
+        <references refid="d9/d55/class_no_1a337f5ed0c85f3ac6646fd8295f2017a7" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="79" endline="82">No::setAnterior</references>
+        <references refid="d9/d55/class_no_1a1fd6922d7a6b246aa11251effaceeb7b" compoundref="d1/d7b/lista_duplamente_encadeada_8hpp" startline="61" endline="64">No::setProximo</references>
+        <referencedby refid="de/d1c/class_coluna_nomeada_1a73e9583ff304eef0a61d772976dac074" compoundref="da/d7b/colunas_8hpp" startline="147" endline="150">ColunaNomeada::ordenar</referencedby>
+        <referencedby refid="d0/d4e/class_coluna_arquivo_1af2122dc4d83288ec375515d4d16004a2" compoundref="da/d7b/colunas_8hpp" startline="255" endline="258">ColunaArquivo::ordenar</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe que implementa uma lista duplamente encadeada de tarefas de um quadro de tarefas. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ListaDupla</label>
+        <link refid="dd/d91/class_lista_dupla"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/listaDuplamenteEncadeada.hpp" line="89" column="1" bodyfile="include/listaDuplamenteEncadeada.hpp" bodystart="90" bodyend="401"/>
+    <listofallmembers>
+      <member refid="dd/d91/class_lista_dupla_1a86f5652f339d3af5fd81c6b913c95a52" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>getTamanho</name></member>
+      <member refid="dd/d91/class_lista_dupla_1a997a8daa9fb1ccea46c233558ade8b4b" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>inserirFim</name></member>
+      <member refid="dd/d91/class_lista_dupla_1af02559c4c5c8265c8db861300cf598d8" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>inserirInicio</name></member>
+      <member refid="dd/d91/class_lista_dupla_1a8c0235db1d94b2dcbd4d22fec5645ac3" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>inserirPorIndice</name></member>
+      <member refid="dd/d91/class_lista_dupla_1a924380dcc218b78c4de0e0accc80e012" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>lightDelete</name></member>
+      <member refid="dd/d91/class_lista_dupla_1abfef1d092f78fb6862087097d809f1e7" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>limpar</name></member>
+      <member refid="dd/d91/class_lista_dupla_1a5c057b40433f1dda8d221809c13c2619" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>ListaDupla</name></member>
+      <member refid="dd/d91/class_lista_dupla_1a837ec6a1d28dbddd64b2028372f846c3" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>obterPorIndice</name></member>
+      <member refid="dd/d91/class_lista_dupla_1a0da08b292785498fc7bb358a84bed282" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>ordenarPorPrioridade</name></member>
+      <member refid="dd/d91/class_lista_dupla_1a0ec55e77494913e1041f772fb5abf176" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>removerFim</name></member>
+      <member refid="dd/d91/class_lista_dupla_1a6c0c785cb9c4a4a2fbe25beb370bd102" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>removerInicio</name></member>
+      <member refid="dd/d91/class_lista_dupla_1ab976735e9038a9bd590a764b2a832e45" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>removerPorIndice</name></member>
+      <member refid="dd/d91/class_lista_dupla_1ab0cb4915ee28d6fdcb332fdc1a056249" prot="private" virt="non-virtual"><scope>ListaDupla</scope><name>sentinelaFim</name></member>
+      <member refid="dd/d91/class_lista_dupla_1a073b42d0b256fb263188bc410cca1509" prot="private" virt="non-virtual"><scope>ListaDupla</scope><name>sentinelaInicio</name></member>
+      <member refid="dd/d91/class_lista_dupla_1ac9151cc5802c1702fa1ecb2b9e2022a3" prot="private" virt="non-virtual"><scope>ListaDupla</scope><name>tamanho</name></member>
+      <member refid="dd/d91/class_lista_dupla_1a66888490f518d19c2d5cb3d3a053b816" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>vazia</name></member>
+      <member refid="dd/d91/class_lista_dupla_1a63481f371df6767019c8705208067514" prot="public" virt="non-virtual"><scope>ListaDupla</scope><name>~ListaDupla</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

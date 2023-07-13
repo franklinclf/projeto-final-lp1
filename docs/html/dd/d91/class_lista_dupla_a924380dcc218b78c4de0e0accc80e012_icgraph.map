@@ -1,0 +1,7 @@
+<map id="ListaDupla::lightDelete" name="ListaDupla::lightDelete">
+<area shape="rect" id="Node000001" title="Remove a tarefa da lista, mas mantém o nó na lista sem referência à tarefa." alt="" coords="247,31,398,57"/>
+<area shape="rect" id="Node000002" href="$de/d1c/class_coluna_nomeada.html#ab47ba7b160204e7001f88c06ec25a305" title="Move uma tarefa de uma coluna para outra." alt="" coords="5,5,199,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,36,199,32,199,27,232,31"/>
+<area shape="rect" id="Node000003" href="$d0/d4e/class_coluna_arquivo.html#ac4f7235fe2e8bbcdb959f5100d7c1bb7" title="Move uma tarefa de uma coluna para outra." alt="" coords="12,56,192,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,57,193,62,192,56,231,52"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Colaborador" name="Colaborador">
+<area shape="rect" id="Node000001" title="Classe que representa um Colaborador, derivada da classe Pessoa." alt="" coords="6,272,174,523"/>
+<area shape="rect" id="Node000002" href="$d5/d57/class_pessoa.html" title="Classe base que representa uma Pessoa." alt="" coords="5,5,175,224"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,238,93,272,87,272,87,238"/>
+</map>

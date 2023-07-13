@@ -1,0 +1,22 @@
+digraph "carregarQuadro"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="carregarQuadro",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Carrega um quadro KanBan a partir de um arquivo."];
+  Node1 -> Node2 [id="edge7_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Quadro::adicionarColuna",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d13/class_quadro.html#ae21d17fb833175bd68b00970c772fcd3",tooltip="Adiciona uma coluna ao quadro."];
+  Node2 -> Node3 [id="edge8_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Lista::inserirInicio",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/dba/class_lista.html#af51fdf08cb850b001a83e43b0a19beab",tooltip="Insere uma coluna no início da lista."];
+  Node1 -> Node4 [id="edge9_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="buscaBinaria",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html#a2faf12c27b7e1711848f39f038c45f70",tooltip="Realiza uma busca binária em uma equipe de colaboradores pelo ID."];
+  Node1 -> Node5 [id="edge10_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Quadro::getEquipe",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d13/class_quadro.html#a1cc0b576c7787cc7c82019a3fd424822",tooltip="Obtém a equipe de colaboradores do quadro."];
+  Node1 -> Node6 [id="edge11_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Quadro::inserirColaborador",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d13/class_quadro.html#ae11cee4915eee6bf9b192ac8680fadf6",tooltip="Insere um colaborador na equipe do quadro."];
+  Node1 -> Node7 [id="edge12_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="Coluna::inserirTarefa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d3c/class_coluna.html#ac09fa33160badb14b7e4a095f15fb551",tooltip="Insere uma tarefa na coluna."];
+}
